@@ -10,16 +10,16 @@ jobs:
    # If timeout is not specified, the job will be terminated after 24 hours.
    timeout: 2h30m
    steps:
-    - name: run source freshness # Give each step in your job a name. This will enable you to track the steps in the logs.
+     - name: run source freshness # Give each step in your job a name. This will enable you to track the steps in the logs.
        command: dbt source freshness # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.
      
-    - name: test sources 
+     - name: test sources 
        command: dbt test --select source:* # This example will run all your tests.
      
-    - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
+     - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
        command: dbt run # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.
      
-    - name: test models
+     - name: test models
        command: dbt test   # This example will run all your tests.
 
 
