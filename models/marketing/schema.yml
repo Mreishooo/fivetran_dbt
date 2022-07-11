@@ -1,0 +1,135 @@
+
+version: 2
+ 
+models:
+
+  - name: google_ads
+    description:  Table containes data from google ads 
+
+    columns:
+      - name: platform
+        description: google_ads
+
+      - name: account_name
+        description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
+
+      - name: date
+        description: Digital Ads date 
+
+      - name: clicks
+        description: Count of times users click on a digital ad to reach the target url
+
+      - name: impressions
+        description: Count of times a digital ad is shown
+
+      - name: conversions
+        description: Orders
+
+      - name: conversions_value
+        description: Order value
+
+      - name: spend
+        description: money spent on digital Ads
+
+      - name: interactions
+        description: ""  
+
+
+  - name: facebook_ads
+    description: Table containes data from facebook ads 
+
+    columns:
+      - name: platform
+        description: marketing platforms,  Facebook
+
+      - name: account_name
+        description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
+
+      - name: date
+        description: Digital Ads date 
+
+      - name: clicks
+        description: Count of times users click on a digital ad to reach the target url
+
+      - name: impressions
+        description: Count of times a digital ad is shown
+
+      - name: conversions
+        description: Orders
+
+      - name: conversions_value
+        description: Order value
+
+      - name: spend
+        description: money spent on digital Ads
+
+      - name: interactions
+        description: ""    
+
+
+  - name: google_dv360
+    description: Table containes data from google dv360 
+
+    columns:
+      - name: platform
+        description: marketing platforms,  Google DV360
+
+      - name: advertiser
+        description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
+
+      - name: date
+        description: Digital Ads date 
+
+      - name: clicks
+        description: Count of times users click on a digital ad to reach the target url
+
+      - name: impressions
+        description: Count of times a digital ad is shown
+
+      - name: conversions
+        description: Orders
+
+      - name: conversions_value
+        description: Order value
+
+      - name: spend
+        description: money spent on digital Ads
+
+      - name: interactions
+        description: "" 
+  
+  - name: performance
+    description: Marketing perfomance table 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - platform
+            - account_name
+            - date
+    columns:
+      - name: platform
+        description: marketing platforms, as in FB Ads, Google Ads, Google DV360
+
+      - name: account_name
+        description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
+
+      - name: date
+        description: Digital Ads date 
+
+      - name: clicks
+        description: Count of times users click on a digital ad to reach the target url
+
+      - name: impressions
+        description: Count of times a digital ad is shown
+
+      - name: conversions
+        description: Orders
+
+      - name: conversions_value
+        description: Order value
+
+      - name: spend
+        description: money spent on digital Ads
+
+      - name: interactions
+        description: "" 

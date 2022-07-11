@@ -1,0 +1,52 @@
+version: 2
+
+sources:
+  - name: '201229008'
+    description:  Google Analytic row data, linked with rollup view  https://support.google.com/analytics/answer/3437719?hl=en 
+    database: stage-landing
+    tables:
+      - name: ga_sessions_2022*
+        description:  Each row within a table corresponds to a session in Analytics 360
+        loaded_at_field: timestamp(PARSE_DATE("%Y%m%d",date))
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}  
+        columns:
+          - name: visitorId
+            description: This field is deprecated. Use fullVisitorId instead
+          - name: fullvisitorid
+            description: The unique visitor ID
+          - name: visitnumber
+            description:  The session number for this user. If this is the first session, then this is set to 1 
+          - name: visitid
+            description:  An identifier for this session. This is part of the value usually stored as the _utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId 
+          - name: visitstarttime
+            description:  The timestamp (expressed as POSIX time 
+          - name: date
+            description:  The date of the session in YYYYMMDD format 
+          - name: totals
+            description:  This section contains aggregate values across the session 
+          - name: trafficsource
+            description:  This section contains information about the Traffic Source from which the session originated 
+          - name: device
+            description:  This section contains information about the user devices 
+          - name: geonetwork
+            description:  This section contains information about the geography of the user 
+          - name: customdimensions
+            description:  This section contains any user-level or session-level custom dimensions that are set for a session. This is a repeated field and has an entry for each dimension that is set 
+          - name: hits
+            description:  This row and nested fields are populated for any and all types of hits 
+          - name: userid
+            description:  Overridden User ID sent to Analytics 
+          - name: clientid
+            description:  Unhashed version of the Client ID for a given user associated with any given visit/session 
+          - name: channelgrouping
+            description:  The Default Channel Group associated with an end user's session for this View 
+          - name: socialengagementtype
+            description:  Engagement type, either Socially Engaged or Not Socially Engaged 
+          - name: privacyinfo
+            description:  session privacy info 
+
+
+
+            

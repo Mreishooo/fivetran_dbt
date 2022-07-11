@@ -1,0 +1,132 @@
+
+version: 2
+ 
+models:
+
+  - name: basic_report
+    description: Baisc report conatins Google Analytic Roll-up view data 
+    columns:
+      - name: page_group
+        description: page group of session 
+
+      - name: hostname
+        description: The hostname of the URL
+
+      - name: date
+        description: The date of the session
+        tests:
+          - not_null  
+
+      - name: full_visitor_id
+        description: The unique visitor ID
+
+      - name: visit_id
+        description: An identifier for this session. This is part of the value usually stored as the _utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId
+
+      - name: visit_start_time
+        description: The timestamp (expressed as POSIX time).
+
+      - name: campaign
+        description: The campaign value. Usually set by the utm_campaign URL parameter
+
+      - name: medium
+        description: The medium of the traffic source. Could be "organic", "cpc", "referral", or the value of the utm_medium URL parameter.
+
+      - name: source
+        description: The source of the traffic source. Could be the name of the search engine, the referring hostname, or a value of the utm_source URL parameter
+
+      - name: device_category
+        description: The type of device (Mobile, Tablet, Desktop)
+
+      - name: browser
+        description: The browser used (e.g., "Chrome" or "Firefox").
+
+      - name: geo_country
+        description: The country from which sessions originated, based on IP address
+
+      - name: geo_city
+        description: Users' city, derived from their IP addresses or Geographical IDs
+
+      - name: geo_region
+        description: The region from which sessions originate, derived from IP addresses. In the U.S., a region is a state, such as New York
+
+      - name: type
+        description: The type of hit One of  PAGE, TRANSACTION, ITEM, EVENT, SOCIAL, APPVIEW, EXCEPTION. Timing hits are considered an event type in the Analytics backend. When you query time-related fields (e.g., hits.latencyTracking.pageLoadTime), choose hits.type as Event if you want to use hit.type in your queries
+
+      - name: event_action
+        description: The event action
+
+      - name: event_category
+        description: 	The event category
+
+      - name: event_label
+        description: The event label
+
+      - name: web_order_id
+        description: The transaction ID of the ecommerce transaction
+
+      - name: revenue
+        description: ER	Total revenue from the item - Value\10^6
+
+      - name: affiliation
+        description: The affiliate information passed to the ecommerce tracking code
+
+      - name: transaction
+        description: Record - This section is populated for each hit with type transaction 
+
+      - name: transactionid
+        description: 	The transaction ID of the ecommerce transaction
+
+      - name: currencycode
+        description: The local currency code for the transaction
+
+      - name: source_property_tracking_id
+        description: Source property tracking ID of roll-up properties. This is valid for only roll-up properties
+
+      - name: hits_time
+        description: ""
+
+      - name: hit_number
+        description: The sequenced hit number. For the first hit of each session, this is set to 1
+
+      - name: is_interaction
+        description: ""
+
+      - name: screen_name
+        description: The name of the screen
+
+      - name: new_visits
+        description: Total number of new users in session (for convenience). If this is the first visit, this value is 1, otherwise it is null
+
+      - name: page_path
+        description: The URL path of the page
+
+      - name: page_title
+        description: 	The page title
+
+      - name: channel_grouping
+        description: The Default Channel Group associated with an end user's session for this View
+
+      - name: country
+        description: country owned hostname
+
+      - name: internal
+        description: boolean show if the host name is internal website or external 
+
+      - name: is_show
+        description: boolean show if the page group is related to a show or not 
+     
+      - name: group_desc
+        description: desc of the page group - if musical or informational page ot checkout  
+
+ 
+  - name: ga_country_show_agg
+    description: da data aggragded one counrty and show level  
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: impressions = 0 and page_group = 'Others' 
+          config:
+              severity: error
+              error_if: ">10000"
+              warn_if: ">6000"
+

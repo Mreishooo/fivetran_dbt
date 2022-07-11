@@ -1,0 +1,51 @@
+version: 2
+
+sources:
+  - name: 'GoogleAd'
+    description:  Google Ads data for more info visit  https://cloud.google.com/bigquery-transfer/docs/adwords-transformation 
+    database: stage-landing
+    tables:
+      - name: AdBasicStats_9940526481
+        description: Google Ads basic perfomance report
+        loaded_at_field: timestamp(date)
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}
+       
+      - name: Campaign_9940526481
+        description: Google ads campaigns data
+
+
+
+  - name: 'ft_facebook_ads'
+    description:  Facebook ad data comes from fivetran conntion for more info visit  https://fivetran.com/docs/applications/facebook-ads#facebookads
+    database: stage-landing
+    tables:
+      - name: basic_report
+        description:   Facebook ad basic perfomance report
+        loaded_at_field: timestamp(date)
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day} 
+        
+      - name: basic_report_actions
+        description:  facebook actions data
+       
+        
+      - name: basic_report_action_values
+        description:  facebook actions data value 
+
+
+
+
+  - name: 'ft_google_display_and_video_360'
+    description: google display and video data comes from fivetran conntion for more info visit https://fivetran.com/docs/applications/google-display-and-video-360 
+    database: stage-landing
+    tables:
+      - name: basic_report
+        description:  google display and video basic perfomance report
+        loaded_at_field: timestamp(date)
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}
+       
