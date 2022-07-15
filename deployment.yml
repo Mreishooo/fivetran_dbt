@@ -2,7 +2,7 @@
 jobs:
 # Give each job a unique name. The name will be displayed in the Fivetran dashboard once your jobs are imported.
 # Job names must be unique.
- - name: Marketing Models - daily 
+ - name: Marketing_Models_daily 
    targetName: prod # The name of the target that will be used when running the job. If it's not specified, the target will be named 'prod'.
    schedule: 0 10 * * * # Define when this job should run, using cron format. This example will run every day at 12:00pm (according to your warehouse timezone). For help with cron formatting, visit https://crontab.guru/.
    # Optional timeout that limits the maximum run time of the job. You can specify only hours, only minutes or both, for example "6h", "2h30m", "30m"
@@ -17,25 +17,25 @@ jobs:
        command: dbt test --models marketing   # This example will run all your tests.
 
 
- - name: Refresh Seeds - on demand 
+ - name: Refresh_Seeds_ondemand 
    schedule: 1 1 1 1 1 
    steps:
      - name: seeds
        command: dbt seeds
 
- - name:  build all models - on demand 
+ - name:  build_all_models_ondemand 
    schedule: 1 1 1 1 1 
    steps:
      - name: seeds
        command: dbt build
 
-  - name: Check Sources Freshness -  Daily 1:10 AM 
+  - name: "Check Sources Freshness -  Daily 1:10 AM"
     schedule: 10 1 * * * 
     steps:
      - name: run source freshness 
        command: dbt source freshness
 
-  - name: Ga Models -  Daily 1 AM 
+  - name: Ga_Models_Daily 
     schedule: 1 10 * * * 
    steps:
      - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
