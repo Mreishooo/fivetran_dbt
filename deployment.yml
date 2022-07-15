@@ -26,10 +26,10 @@ jobs:
  - name:  build_all_models_ondemand 
    schedule: 1 1 1 1 1 
    steps:
-     - name: seeds
+     - name: build
        command: dbt build
 
-  - name: "Check Sources Freshness -  Daily 1:10 AM"
+  - name: Check_Sources_Freshness_Daily 
     schedule: 10 1 * * * 
     steps:
      - name: run source freshness 
