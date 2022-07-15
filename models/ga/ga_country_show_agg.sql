@@ -12,7 +12,7 @@
       "data_type": "date",
       "granularity": "day"
     },
-    labels = {'source': 'enriched_table', 'refresh': 'daily','connection':'ga_link'},
+    labels = {'source': 'enriched_table', 'refresh': 'daily','connection':'ga_link','type':'mart'},
     incremental_strategy = 'insert_overwrite',
 )}}
 
@@ -22,9 +22,9 @@ group_desc,
 is_show, 
 date,
 count (distinct full_visitor_id) distinct_visitor,
-count(new_visits) new_visits , 
+countif(new_visits) new_visits , 
 count(*) impressions 
-FROM {{ ref('basic_report' ) }}    
+FROM {{ ref('ga_data' ) }}    
 where true 
     {% if is_incremental() %}
       and   date >=  current_date() - 2

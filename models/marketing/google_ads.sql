@@ -5,7 +5,7 @@
       "data_type": "date",
       "granularity": "day"
     },
-    labels = {'source': 'google_ads', 'refresh': 'daily','connection':'bq_transfer'},
+    labels = {'source': 'google_ads', 'refresh': 'daily','connection':'bq_transfer','type':'enriched'},
 )}}
 with google_ad_basic as
 (

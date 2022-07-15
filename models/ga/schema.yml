@@ -3,19 +3,18 @@ version: 2
  
 models:
 
-  - name: basic_report
+  - name: ga_data
     description: Baisc report conatins Google Analytic Roll-up view data 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - full_visitor_id
+            - visit_id
     columns:
-      - name: page_group
-        description: page group of session 
-
-      - name: hostname
-        description: The hostname of the URL
-
       - name: date
         description: The date of the session
         tests:
-          - not_null  
+          - not_null 
 
       - name: full_visitor_id
         description: The unique visitor ID
@@ -23,8 +22,20 @@ models:
       - name: visit_id
         description: An identifier for this session. This is part of the value usually stored as the _utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId
 
+      - name: visit_first_county
+        description: County of the first hit based on hostname
+        tests:
+          - not_null:
+              config:
+                severity: error
+                error_if: ">10000"
+                warn_if: ">6000"  
+
       - name: visit_start_time
-        description: The timestamp (expressed as POSIX time).
+        description: Visit timestamp
+
+      - name: traffic_source
+        description: This section contains information about the Traffic Source from which the session originated
 
       - name: campaign
         description: The campaign value. Usually set by the utm_campaign URL parameter
@@ -35,11 +46,17 @@ models:
       - name: source
         description: The source of the traffic source. Could be the name of the search engine, the referring hostname, or a value of the utm_source URL parameter
 
+      - name: device
+        description: This section contains information about the user devices
+
       - name: device_category
         description: The type of device (Mobile, Tablet, Desktop)
 
       - name: browser
-        description: The browser used (e.g., "Chrome" or "Firefox").
+        description: The browser used (e.g., "Chrome" or "Firefox")
+
+      - name: geo_network
+        description: This section contains information about the geography of the user
 
       - name: geo_country
         description: The country from which sessions originated, based on IP address
@@ -50,7 +67,43 @@ models:
       - name: geo_region
         description: The region from which sessions originate, derived from IP addresses. In the U.S., a region is a state, such as New York
 
-      - name: type
+      - name: channel_grouping
+        description: The Default Channel Group associated with an end user's session for this View
+
+      - name: totals
+        description: 	This section contains aggregate values across the session
+
+      - name: visits
+        description: The number of sessions (for convenience). This value is 1 for sessions with interaction events. The value is null if there are no interaction events in the session
+
+      - name: hits
+        description: Total number of hits within the session
+
+      - name: pageviews
+        description: Total number of pageviews within the session
+
+      - name: time_on_site
+        description: 	Total time of the session expressed in seconds
+
+      - name: bounces
+        description: Total bounces (for convenience). For a bounced session, the value is 1, otherwise it is null
+
+      - name: transactions
+        description: Total number of ecommerce transactions within the session
+
+      - name: total_transaction_revenue
+        description: Total transaction revenue
+
+      - name: new_visits
+        description: boolean show if the user is new
+
+      - name: session_quality_dim
+        description: An estimate of how close a particular session was to transacting, ranging from 1 to 100, calculated for each session. A value closer to 1 indicates a low session quality, or far from transacting, while a value closer to 100 indicates a high session quality, or very close to transacting. A value of 0 indicates that Session Quality is not calculated for the selected time range
+
+      - name: hits
+        description: record contains data bout visit   hits
+
+      - name: hits_type
         description: The type of hit One of  PAGE, TRANSACTION, ITEM, EVENT, SOCIAL, APPVIEW, EXCEPTION. Timing hits are considered an event type in the Analytics backend. When you query time-related fields (e.g., hits.latencyTracking.pageLoadTime), choose hits.type as Event if you want to use hit.type in your queries
 
       - name: event_action
@@ -70,21 +123,15 @@ models:
 
       - name: affiliation
         description: The affiliate information passed to the ecommerce tracking code
-
-      - name: transaction
-        description: Record - This section is populated for each hit with type transaction 
-
-      - name: transactionid
-        description: 	The transaction ID of the ecommerce transaction
-
-      - name: currencycode
-        description: The local currency code for the transaction
-
+  
       - name: source_property_tracking_id
         description: Source property tracking ID of roll-up properties. This is valid for only roll-up properties
 
-      - name: hits_time
-        description: ""
+      - name: hits_timestampe
+        description: Timestame of hit
+
+      - name: time
+        description: secands after first hit
 
       - name: hit_number
         description: The sequenced hit number. For the first hit of each session, this is set to 1
@@ -92,33 +139,34 @@ models:
       - name: is_interaction
         description: ""
 
-      - name: screen_name
-        description: The name of the screen
-
-      - name: new_visits
-        description: Total number of new users in session (for convenience). If this is the first visit, this value is 1, otherwise it is null
-
       - name: page_path
         description: The URL path of the page
 
-      - name: page_title
-        description: 	The page title
-
-      - name: channel_grouping
-        description: The Default Channel Group associated with an end user's session for this View
+      - name: hostname
+        description: The hostname of the URL
 
       - name: country
         description: country owned hostname
 
       - name: internal
-        description: boolean show if the host name is internal website or external 
+        description: boolean show if the host name is internal website or externa
+
+      - name: page_title
+        description: 	The page title
+      
+      - name: page_group
+        description: page group of session
 
       - name: is_show
         description: boolean show if the page group is related to a show or not 
      
       - name: group_desc
-        description: desc of the page group - if musical or informational page ot checkout  
+        description: desc of the page group - if musical or informational page ot checkout 
 
+      - name: screen_name
+        description: The name of the screen
+
+  
  
   - name: ga_country_show_agg
     description: da data aggragded one counrty and show level  

@@ -5,7 +5,7 @@
       "data_type": "date",
       "granularity": "day"
     },
-    labels = {'source': 'facebook_ads', 'refresh': 'daily','connection':'fivetran'},
+    labels = {'source': 'facebook_ads', 'refresh': 'daily','connection':'fivetran','type':'enriched'},
 )}}
 
 with facebook_ad_basic as

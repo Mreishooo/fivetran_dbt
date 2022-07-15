@@ -24,9 +24,10 @@ https://hub.getdbt.com/dbt-labs/codegen/latest/
  dbt run-operation generate_source --args "{schema_name: fivetran_log, database_name: stage-landing, include_descriptions: true,generate_columns: true, table_names: [temp]   }"
 
 
- dbt run --select basic_report
+dbt test --select source:*
 
- dbt run-operation generate_model_yaml --args '{"model_name": "basic_report"}'
+
+ dbt run-operation generate_model_yaml --args '{"model_name": "ga_data"}'
 
  dbt docs generate
  dbt docs serve

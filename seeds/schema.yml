@@ -7,6 +7,8 @@ seeds:
     columns:
       - name: hostname
         description: hostname wher ga data comes from
+        test:
+          - unique
       - name: country
         description: contry owned hostname 
       - name: internal

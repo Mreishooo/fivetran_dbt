@@ -1,6 +1,6 @@
 {{ config(
     materialized='view',
-    labels = {'source': 'enriched_table', 'refresh': 'daily','connection':'na'},
+    labels = {'source': 'enriched_table', 'refresh': 'daily','connection':'multi','type':'mart'},
 )}}
 
 {% set kpis  = ["clicks","impressions","conversions","conversions_value","spend","interactions"] %}

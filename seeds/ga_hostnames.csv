@@ -1,7 +1,7 @@
 hostname,country,internal
-www.theatremogador.com,Frnace,TRUE
-www.stage-entertainment.fr,Frnace,TRUE
-www.eventim.fr,Frnace,FALSE
+www.theatremogador.com,France,TRUE
+www.stage-entertainment.fr,France,TRUE
+www.eventim.fr,France,FALSE
 www.ticketonline.de,Germany,FALSE
 staging.eventim.de,Germany,FALSE
 staging.ticketonline.de,Germany,FALSE
@@ -31,7 +31,7 @@ afascircustheater.com,Netherlands,TRUE
 sedestg.prod.acquia-sites.com,other,FALSE
 cc.bingj.com,other,FALSE
 www-stage--entertainment-de.translate.goog,Germany,TRUE
-www-theatremogador-com.translate.goog,Frnace,TRUE
+www-theatremogador-com.translate.goog,France,TRUE
 ourigs.com,other,FALSE
 sefrdev.prod.acquia-sites.com,other,FALSE
 seplatform.lndo.site,other,FALSE
@@ -41,7 +41,6 @@ sededev.prod.acquia-sites.com,other,FALSE
 translated.turbopages.org,other,FALSE
 my2.siteimprove.com,other,FALSE
 sede.prod.acquia-sites.com,other,FALSE
-www.entradas.com,other,FALSE
 sees.prod.acquia-sites.com,other,FALSE
 wave.webaim.org,other,FALSE
 www.anastasia-elmusical.com,other,FALSE
@@ -52,4 +51,5 @@ www.ghostlemusical.com,other,FALSE
 stage.ddev.site,other,FALSE
 readmodel.m.sogou.com,other,FALSE
 sefr.prod.acquia-sites.com,other,FALSE
-staging.entradas.com,other,FALSE
+staging.entradas.com,Spain,FALSE
+www.entradas.com,Spain,FALSE

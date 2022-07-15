@@ -46,6 +46,6 @@ sources:
         description:  google display and video basic perfomance report
         loaded_at_field: timestamp(date)
         freshness: 
-          warn_after: {count: 2, period: day}
-          error_after: {count: 5, period: day}
+          warn_after: {count: 7, period: day}
+          error_after: {count: 355, period: day}
        

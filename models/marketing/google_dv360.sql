@@ -5,7 +5,7 @@
       "data_type": "date",
       "granularity": "day"
     },
-    labels = {'source': 'google_dv360', 'refresh': 'daily','connection':'fivetran'},
+    labels = {'source': 'google_dv360', 'refresh': 'daily','connection':'fivetran','type':'enriched'},
 )}}
 
 with google_dv_360 as
