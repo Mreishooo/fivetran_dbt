@@ -38,7 +38,7 @@ with
   ),
 
  hits_data as (  
-  SELECT fullVisitorId , 
+  SELECT distinct fullVisitorId , 
     visitId ,
     hits.type as hits_type,
     hits.eventInfo.eventAction as event_action,
@@ -65,7 +65,7 @@ LEFT JOIN UNNEST (hits) hits
 hit_data_enr as (
 SELECT  *,
 FIRST_VALUE(country IGNORE NULLS )
-          OVER (PARTITION BY fullVisitorId , visitId ORDER BY hit_number ASC  ) visit_first_county
+          OVER (PARTITION BY fullVisitorId , visitId ORDER BY hit_number ASC  ) visit_first_country
 FROM hits_data
     left join ga_hostnames using (hostname)
     left join ga_page_groups using (page_group)
@@ -74,7 +74,7 @@ FROM hits_data
 hit_data_enr_agg as (
 SELECT fullVisitorId , 
     visitId , 
-    visit_first_county,
+    visit_first_country,
     ARRAY_AGG( STRUCT (  hits_type,
         event_action,
         event_category,
@@ -88,9 +88,13 @@ SELECT fullVisitorId ,
         hit_number,
         is_interaction,
         page_path,
-        hostname, country, internal,
+        hostname, 
+        country, 
+        internal,
         page_title,
-        page_group,	is_show,	group_desc,
+        page_group,	
+        is_show,	
+        group_desc,
         screen_name)) hits
 from hit_data_enr
 group by 1 , 2 , 3
@@ -104,25 +108,25 @@ WHERE  hits_type = 'EVENT' and event_type ='optin'
 ),
 
 ga_newsletter_sessions as (
-  select distinct fullVisitorId,visitId  ,true newsletter
+  select distinct fullVisitorId, visitId  ,true newsletter
   from hits_data 
   join ga_event_type using ( event_category)
 WHERE  hits_type = 'EVENT' and event_type ='newsletter'
 ),
 
 ga_ecommerce_sessions as (
-  select fullVisitorId ,visitId ,true ecommerce
+  select distinct fullVisitorId ,visitId ,true ecommerce
   from hits_data
   join ga_event_type using ( event_category)
 WHERE  hits_type = 'EVENT' and event_type ='ecommerce'
 )
  
 
-SELECT
+SELECT 
   PARSE_DATE("%Y%m%d", date) date,
   fullVisitorId full_visitor_id,
   visitId visit_id, 
-  visit_first_county,
+  visit_first_country,
   TIMESTAMP_SECONDS(visitStartTime) AS visit_start_time,
   (
   SELECT

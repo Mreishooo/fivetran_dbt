@@ -23,7 +23,7 @@ country,
 page_group,
 group_desc,
 is_show, 
-count(distinct  concat (full_visitor_id , visit_id )) Visitors ,
+count(distinct  concat (full_visitor_id , visit_id )) visitors ,
 count(distinct full_visitor_id ) unique_visitors ,
 COUNT(DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
 count(*) impressions 

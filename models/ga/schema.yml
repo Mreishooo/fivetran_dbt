@@ -10,6 +10,8 @@ models:
           combination_of_columns:
             - full_visitor_id
             - visit_id
+            - date
+            
     columns:
       - name: date
         description: The date of the session
@@ -22,7 +24,7 @@ models:
       - name: visit_id
         description: An identifier for this session. This is part of the value usually stored as the _utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId
 
-      - name: visit_first_county
+      - name: visit_first_country
         description: County of the first hit based on hostname
         tests:
           - not_null:
@@ -230,7 +232,9 @@ models:
       - name: country
         description: country of the hit bases on hostname 
       - name: page_group
-        description: hit page group based on page path  
+        description: hit page group based on page path 
+      - name: group_desc 
+        description: page group desception based on manual entry by seed  
       - name: is_show
         description: is the page a show page 
       - name: visitors

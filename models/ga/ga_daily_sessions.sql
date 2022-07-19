@@ -23,8 +23,8 @@ with ga_data AS (
 
 SELECT  
 date , 
-visit_first_county county ,
-count  ( distinct  concat (full_visitor_id , visit_id )) Visitors ,
+visit_first_country country ,
+count  ( distinct  concat (full_visitor_id , visit_id )) visitors ,
 count  ( distinct full_visitor_id ) unique_visitors ,
 COUNT(DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
 sum (totals.pageviews) pageviews,
