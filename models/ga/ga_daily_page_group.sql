@@ -16,18 +16,22 @@
     incremental_strategy = 'insert_overwrite',
 )}}
 
-SELECT  country,
+with ga_data as ( select * FROM {{ ref('ga_data' ) }} )
+
+SELECT date,
+country,
 page_group,
 group_desc,
 is_show, 
-date,
-count (distinct full_visitor_id) distinct_visitor,
-countif(new_visits) new_visits , 
+count(distinct  concat (full_visitor_id , visit_id )) Visitors ,
+count(distinct full_visitor_id ) unique_visitors ,
+COUNT(DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
 count(*) impressions 
-FROM {{ ref('ga_data' ) }}    
+FROM ga_data
+join unnest  (hits)  hits     
 where true 
     {% if is_incremental() %}
       and   date >=  current_date() - 2
     {% endif %}
-and type = 'PAGE' 
+and hits.hits_type = 'PAGE' 
 group by 1 , 2 , 3 , 4 ,5 

@@ -165,16 +165,79 @@ models:
 
       - name: screen_name
         description: The name of the screen
+      - name: optin
+        description: boolean show if the session has an optin event 
+      - name: newsletter
+        description: boolean show if the session has an newsletter event
+      - name: ecommerce
+        description: boolean show if the session has an ecommerce event
 
-  
+
+  - name: ga_daily_sessions
+    description: ga data aggragded on counrty and page group level 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - date
+            - country
+
+    columns:
+      - name: date
+        description: The date of the session
+      - name: country
+        description: country of the the first hit in the session bases on hostname 
+      - name: visitors
+        description: count of the visits on that date 
+      - name: unique_visitors
+        description: count of unique vistors on that date
+      - name: new_vistor
+        description: count of new visitor on that date
+      - name: pageviews
+        description: count of the pages views  on that date
+      - name: transactions
+        description: count of transaction based on GA data 
+      - name: total_transaction_revenue
+        description: sum of transaction revenue bases on GA data 
+      - name: time_on_site
+        description: sum on time on site that day
+      - name: converstion
+        description: count of session with financial transaction on count of all sessions
+      - name: optin
+        description: count of sesstions with optin events 
+      - name: newsletter
+        description: count of sesstions with newsletter events 
+      - name: ecommerce
+        description: count of sesstions with ecommerce events 
+
  
-  - name: ga_country_show_agg
-    description: da data aggragded one counrty and show level  
+  - name: ga_daily_page_group
+    description: ga data aggragded on counrty and page group level 
     tests:
       - dbt_utils.expression_is_true:
           expression: impressions = 0 and page_group = 'Others' 
           config:
               severity: error
-              error_if: ">10000"
-              warn_if: ">6000"
-
+              error_if: ">15000"
+              warn_if: ">10000"
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - date
+            - country
+            - page_group
+    columns:
+      - name: date
+        description: The date of the session
+      - name: country
+        description: country of the hit bases on hostname 
+      - name: page_group
+        description: hit page group based on page path  
+      - name: is_show
+        description: is the page a show page 
+      - name: visitors
+        description: count of the visit on tha page 
+      - name: unique_visitors
+        description: count of unique vistors on the page 
+      - name: new_vistor
+        description: count of new visitor on the page
+      - name: impressions
+        description: count of the hits on the page 

@@ -17,19 +17,28 @@
 )}}
 
 with  
+  ga_source AS (
+   SELECT *  
+   FROM {{ source( '201229008','ga_sessions_2022*') }}
+  ),
+
   ga_hostnames AS ( 
-    select hostname, country, internal
-    from {{ ref('ga_hostnames') }}
+    SELECT hostname, country, internal
+    FROM {{ ref('ga_hostnames') }}
   ),
   
   ga_page_groups AS ( 
-    select page_group,	is_show,	group_desc
-    from {{ ref('ga_page_groups') }}
+    SELECT page_group,	is_show,	group_desc
+    FROM {{ ref('ga_page_groups') }}
   ),
 
+  ga_event_type AS ( 
+    SELECT *
+    FROM {{ ref('ga_event_types') }}
+  ),
 
  hits_data as (  
-  select fullVisitorId , 
+  SELECT fullVisitorId , 
     visitId ,
     hits.type as hits_type,
     hits.eventInfo.eventAction as event_action,
@@ -48,23 +57,22 @@ with
     hits.page.pageTitle as page_title,
     {{ get_production_name('hits.page.pagePath') }} as page_group,
     appInfo.screenName as screen_name,
-  FROM
-  stage-landing.201229008.ga_sessions_20220711
+  FROM ga_source
 LEFT JOIN UNNEST (hits) hits
   --where  fullVisitorId = '3190936853180529794'
  ),
 
 hit_data_enr as (
-select  *,
+SELECT  *,
 FIRST_VALUE(country IGNORE NULLS )
           OVER (PARTITION BY fullVisitorId , visitId ORDER BY hit_number ASC  ) visit_first_county
-from hits_data
+FROM hits_data
     left join ga_hostnames using (hostname)
     left join ga_page_groups using (page_group)
 ),
 
 hit_data_enr_agg as (
-select fullVisitorId , 
+SELECT fullVisitorId , 
     visitId , 
     visit_first_county,
     ARRAY_AGG( STRUCT (  hits_type,
@@ -86,6 +94,27 @@ select fullVisitorId ,
         screen_name)) hits
 from hit_data_enr
 group by 1 , 2 , 3
+),
+
+ga_optin_sessions as (
+  select distinct fullVisitorId ,visitId ,true optin
+  from hits_data
+  join ga_event_type using ( event_category)
+WHERE  hits_type = 'EVENT' and event_type ='optin'
+),
+
+ga_newsletter_sessions as (
+  select distinct fullVisitorId,visitId  ,true newsletter
+  from hits_data 
+  join ga_event_type using ( event_category)
+WHERE  hits_type = 'EVENT' and event_type ='newsletter'
+),
+
+ga_ecommerce_sessions as (
+  select fullVisitorId ,visitId ,true ecommerce
+  from hits_data
+  join ga_event_type using ( event_category)
+WHERE  hits_type = 'EVENT' and event_type ='ecommerce'
 )
  
 
@@ -123,8 +152,17 @@ SELECT
     (ifnull( totals.newVisits , 0 )  = 1 ) new_visits , 
      totals.sessionQualityDim session_quality_dim
     ) totals,
+    ifnull( optin, false) optin ,
+    ifnull( newsletter, false)  newsletter ,
+    ifnull( ecommerce, false)  ecommerce ,
   hdea.hits hits
-FROM
-  stage-landing.201229008.ga_sessions_20220711
+FROM ga_source
 LEFT JOIN hit_data_enr_agg hdea using (fullVisitorId,visitId )
+left join ga_optin_sessions using (fullVisitorId,visitId )
+left join ga_newsletter_sessions using (fullVisitorId,visitId )
+left join ga_ecommerce_sessions using (fullVisitorId,visitId )
+where true 
+    {% if is_incremental() %}
+      and   date >=  current_date() - 2
+    {% endif %}
  -- where  fullVisitorId = '3190936853180529794'

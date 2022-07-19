@@ -17,13 +17,13 @@ jobs:
        command: dbt test --models marketing   # This example will run all your tests.
 
 
- - name: Refresh_Seeds_ondemand 
+ - name: Refresh_Seeds_Ondemand 
    schedule: 1 1 1 1 1 
    steps:
      - name: seeds
        command: dbt seeds
 
- - name:  Build_All_Models_ondemand 
+ - name:  Build_All_Models_Ondemand 
    schedule: 1 1 1 1 1 
    steps:
      - name: build
