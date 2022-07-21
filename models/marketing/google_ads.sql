@@ -15,10 +15,12 @@ with google_ad_basic as
 google_campaign as
 (
   select *  FROM {{ source('GoogleAd', 'Campaign_9940526481') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) 
 
 SELECT 'google_ads' platform ,
 AdvertisingChannelType account_name ,
+CampaignName campaign_name,
 date , 
 clicks clicks ,
 impressions impressions , 

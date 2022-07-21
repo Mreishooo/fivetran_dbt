@@ -47,6 +47,9 @@ models:
 
       - name: source
         description: The source of the traffic source. Could be the name of the search engine, the referring hostname, or a value of the utm_source URL parameter
+      
+      - name: ad_network_type
+        description: Network Type. Takes one of the following values Google Search, Content, Search partners, Ad Exchange, Yahoo Japan Search, Yahoo Japan AFS, unknown
 
       - name: device
         description: This section contains information about the user devices

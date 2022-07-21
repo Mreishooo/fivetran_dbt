@@ -21,27 +21,27 @@ facebook_ads as
 )  
 
 
-SELECT platform , account_name ,date ,
+SELECT platform , account_name ,date ,campaign_name,
 {% for kpi in kpis %}
     sum({{kpi}}) as {{kpi}},
 {% endfor %}
 from   google_ads
-group by 1,2 ,3 
+group by 1,2 ,3 ,4
 
 union all
 
-SELECT platform , account_name ,date ,
+SELECT platform , account_name ,date ,campaign_name,
 {% for kpi in kpis %}
     sum({{kpi}}) as {{kpi}},
 {% endfor %}
 from   google_dv360
-group by 1,2 ,3 
+group by 1,2 ,3 ,4
 
 union all
 
-SELECT platform , account_name ,date  ,
+SELECT platform , account_name ,date  ,campaign_name,
 {% for kpi in kpis %}
     sum({{kpi}}) as {{kpi}},
 {% endfor %} 
 from facebook_ads 
-group by 1,2 ,3 
+group by 1,2 ,3 ,4

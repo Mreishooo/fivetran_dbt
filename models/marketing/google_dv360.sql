@@ -15,6 +15,7 @@ with google_dv_360 as
 
 SELECT 'google_dv360' platform, 
 advertiser account_name ,
+campaign campaign_name,
 date,
 clicks clicks ,
 impressions impressions , 

@@ -26,7 +26,9 @@ facebook_basic_report_action_values as
 
 
 SELECT 'facebook_ads' platform , 
-account_name ,date ,
+account_name ,
+date ,
+campaign_name campaign_name,
 inline_link_clicks clicks ,
 impressions impressions , 
 ra.value  conversions , 

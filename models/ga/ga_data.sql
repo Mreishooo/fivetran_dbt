@@ -132,7 +132,8 @@ SELECT
   SELECT
     AS STRUCT trafficSource.campaign campaign,
     trafficSource.medium medium,
-    trafficSource.source  source ) traffic_source,
+    trafficSource.source  source,
+    trafficSource.adwordsClickInfo.adNetworkType ad_network_type ) traffic_source,
   (
   SELECT
     AS STRUCT device.deviceCategory device_category,
