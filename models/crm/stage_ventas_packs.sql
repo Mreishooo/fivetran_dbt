@@ -1,0 +1,30 @@
+{{ config(
+    materialized='table',
+    labels = {'source': 'the_revenue_labs', 'refresh': 'daily','connection':'fivetran','type':'enriched'},
+)}}
+
+with facebook_ad_basic as
+(
+  select * FROM {{ source('ft_therevenuelabs', 'stage_ventas_packs') }}
+) 
+
+select _line, 
+PARSE_DATE("%d/%m/%Y" ,fecha_compra ) fecha_compra , 
+musical ,
+PARSE_DATE("%d/%m/%Y" ,fecha_check_in ) fecha_check_in,
+PARSE_DATE("%d/%m/%Y" ,fecha_check_out ) fecha_check_out,
+numero_de_entradas,
+PARSE_DATE("%d/%m/%Y" ,fecha_sesion ) fecha_sesion,
+sesion,
+hotel,
+referencia,
+{{ fix_double_value ('importe_total') }}   importe_total , 
+{{ fix_double_value ('importe_entradas') }}   importe_entradas , 
+{{ fix_double_value ('importe_hotel') }}   importe_hotel , 
+{{ fix_double_value ('comision_a_stage_iva_incluido_') }}   comision_a_stage_iva_incluido , 
+hotel_cancelado,
+factura,
+pagado
+FROM facebook_ad_basic
+qualify  row_number() OVER (PARTITION BY _line ORDER BY _modified DESC)  = 1
+order by _line

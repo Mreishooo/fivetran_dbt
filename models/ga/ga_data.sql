@@ -1,11 +1,5 @@
-{% set partitions_to_replace = [
-  'timestamp(current_date)',
-  'timestamp(date_sub(current_date, interval 1 day))',
-  'timestamp(date_sub(current_date, interval 2 day))'
-] %}
-
 {{ config(
-    materialized='incremental',
+    materialized='table',
     on_schema_change='fail',
     partition_by={
       "field": "date",
@@ -13,20 +7,14 @@
       "granularity": "day"
     },
     labels = {'source': 'ga', 'refresh': 'daily','connection':'ga_link','type':'enriched'},
-    incremental_strategy = 'insert_overwrite',
 )}}
 
 with  
   ga_source AS (
    SELECT *  
-   FROM {{ source( '201229008','ga_sessions_2022*') }}
+   FROM {{ source( '75566045','ga_sessions_2022*') }}
   ),
 
-  ga_hostnames AS ( 
-    SELECT hostname, country, internal
-    FROM {{ ref('ga_hostnames') }}
-  ),
-  
   ga_page_groups AS ( 
     SELECT page_group,	is_show,	group_desc
     FROM {{ ref('ga_page_groups') }}
@@ -64,17 +52,16 @@ LEFT JOIN UNNEST (hits) hits
 
 hit_data_enr as (
 SELECT  *,
-FIRST_VALUE(country IGNORE NULLS )
-          OVER (PARTITION BY fullVisitorId , visitId ORDER BY hit_number ASC  ) visit_first_country
+'Germany' as country
 FROM hits_data
-    left join ga_hostnames using (hostname)
+    --left join ga_hostnames using (hostname)
     left join ga_page_groups using (page_group)
 ),
 
 hit_data_enr_agg as (
 SELECT fullVisitorId , 
     visitId , 
-    visit_first_country,
+    country,
     ARRAY_AGG( STRUCT (  hits_type,
         event_action,
         event_category,
@@ -88,9 +75,7 @@ SELECT fullVisitorId ,
         hit_number,
         is_interaction,
         page_path,
-        hostname, 
-        country, 
-        internal,
+        hostname,  
         page_title,
         page_group,	
         is_show,	
@@ -126,7 +111,7 @@ SELECT
   PARSE_DATE("%Y%m%d", date) date,
   fullVisitorId full_visitor_id,
   visitId visit_id, 
-  visit_first_country,
+  country,
   TIMESTAMP_SECONDS(visitStartTime) AS visit_start_time,
   (
   SELECT
@@ -166,8 +151,5 @@ LEFT JOIN hit_data_enr_agg hdea using (fullVisitorId,visitId )
 left join ga_optin_sessions using (fullVisitorId,visitId )
 left join ga_newsletter_sessions using (fullVisitorId,visitId )
 left join ga_ecommerce_sessions using (fullVisitorId,visitId )
-where true 
-    {% if is_incremental() %}
-      and   date >=  current_date() - 2
-    {% endif %}
+
  -- where  fullVisitorId = '3190936853180529794'

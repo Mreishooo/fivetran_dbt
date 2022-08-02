@@ -1,0 +1,43 @@
+
+version: 2
+ 
+models:
+
+  - name: stage_ventas_packs
+    description:  Table containes data of hotel and tickets for spain by the revenue labs 
+
+    columns:
+      - name: _line
+        description:  ""
+      - name:  fecha_compra
+        description:  ""
+      - name:  musical
+        description:  ""
+      - name:  fecha_check_in
+        description:  ""
+      - name:  fecha_check_out
+        description:  ""
+      - name:  numero_de_entradas
+        description:  ""
+      - name: fecha_sesion
+        description:  ""
+      - name:  sesion
+        description: ""
+      - name:  hotel
+        description:  ""
+      - name:  referencia
+        description: "" 
+      - name:  importe_total
+        description:  "" 
+      - name:  importe_entradas
+        description:  "" 
+      - name:  importe_hotel
+        description: ""
+      - name:  comision_a_stage_iva_incluido
+        description:  ""
+      - name:  hotel_cancelado
+        description:  ""
+      - name:  factura
+        description:   ""
+      - name:  pagado
+        description:   ""

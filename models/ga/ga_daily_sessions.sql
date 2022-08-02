@@ -23,10 +23,10 @@ with ga_data AS (
 
 SELECT  
 date , 
-visit_first_country country ,
-count  ( distinct  concat (full_visitor_id , visit_id )) visitors ,
-count  ( distinct full_visitor_id ) unique_visitors ,
-COUNT(DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
+country ,
+COUNT ( DISTINCT  concat (full_visitor_id , visit_id )) visitors ,
+COUNT ( DISTINCT full_visitor_id ) unique_visitors ,
+COUNT (DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
 sum (totals.pageviews) pageviews,
 sum ( totals.transactions) transactions,
 sum ( totals.total_transaction_revenue) total_transaction_revenue,

@@ -88,6 +88,7 @@ models:
             - platform
             - account_name
             - date
+            - campaign_name
     columns:
       - name: platform
         description: marketing platforms, as in FB Ads, Google Ads, Google DV360

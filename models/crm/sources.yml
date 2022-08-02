@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: 'ft_therevenuelabs'
+    description:  export data from 3rd party for hotel and ticket in spain 
+    database: stage-landing
+    tables:
+      - name: stage_ventas_packs
+        description: stage hotel and tickets data from 3rd party uploaded to cloud bucket
+        loaded_at_field: _fivetran_synced
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}
+       

@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: '201229008'
+  - name: '75566045'
     description:  Google Analytic row data, linked with rollup view  https://support.google.com/analytics/answer/3437719?hl=en 
     database: stage-landing
     tables:

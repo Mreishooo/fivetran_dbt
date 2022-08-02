@@ -24,8 +24,8 @@ models:
       - name: visit_id
         description: An identifier for this session. This is part of the value usually stored as the _utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId
 
-      - name: visit_first_country
-        description: County of the first hit based on hostname
+      - name: country
+        description: County of the GA
         tests:
           - not_null:
               config:
@@ -149,12 +149,6 @@ models:
 
       - name: hostname
         description: The hostname of the URL
-
-      - name: country
-        description: country owned hostname
-
-      - name: internal
-        description: boolean show if the host name is internal website or externa
 
       - name: page_title
         description: 	The page title
