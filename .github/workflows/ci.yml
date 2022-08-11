@@ -14,6 +14,8 @@ on:
   workflow_dispatch:
 
 env:
+  gcp_project: 'stage-landing'
+  
   DBT_COMMERCIAL_KEY:  ${{ secrets.DBT_COMMERCIAL_KEY }}  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
