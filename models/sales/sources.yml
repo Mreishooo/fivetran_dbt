@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: 'ft_mdb1_se'
+    description:  MDB database 
+    database: stage-landing
+    tables:
+      - name: bi_selectforexport_bq
+        description:  Each row within a table is information about ticket
+        loaded_at_field: timestamp(PARSE_DATE("%Y%m%d", cast(DimBookingDateId as string )) )
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 7, period: day}  
+
+            

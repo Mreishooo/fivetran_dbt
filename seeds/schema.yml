@@ -31,3 +31,185 @@ seeds:
         description: 	The event category
       - name: event_types
         description: ga event types - as optin , ecommerce or newsletter 
+
+  - name: mdb_age
+    description: ""
+    columns:
+      - name: dimageid
+        description: ""
+      - name: agecode
+        description: ""
+      - name: agename
+        description: ""
+      - name: agedeceniabincode
+        description: ""
+      - name: agedeceniabinname
+        description: ""
+      - name: agebina
+        description: ""
+      - name: agebinaid
+        description: ""
+      - name: agebinb
+        description: ""
+      - name: agebinbid
+        description: ""
+      - name: agebindid
+        description: ""
+      - name: agebind
+        description: ""
+      - name: agebinc
+        description: ""
+      - name: agebincid
+        description: ""
+
+  - name: mdb_article_type
+    description: ""
+    columns:
+      - name: dimarticletypeid
+        description: ""
+      - name: articletypecode
+        description: ""
+      - name: articletypename
+        description: ""
+
+  - name: mdb_country
+    description: ""
+    columns:
+      - name: dimcountryid
+        description: ""
+      - name: countrycode
+        description: ""
+      - name: countryname
+        description: ""
+      - name: currencycode
+        description: ""
+      - name: ticketpriceadjustmentfactor
+        description: ""
+
+  - name: mdb_price_type
+    description: ""
+    columns:
+       - name: dimpricetypeid
+         description: ""
+       - name: pricetypeid
+         description: ""
+       - name: pricetypename
+         description: ""
+       - name: pricetypegroup
+         description: ""
+
+  - name: mdb_production
+    description: ""
+    columns:
+       - name: dimproductionid
+         description: ""
+       - name: countrycode
+         description: ""
+       - name: countryname
+         description: ""
+       - name: productioncode
+         description: ""
+       - name: productionname
+         description: ""
+       - name: isexpired
+         description: ""
+       - name: licensename
+         description: ""
+       - name: licensor
+         description: ""
+       - name: licensetype
+         description: ""
+       - name: productionid
+         description: ""
+       - name: licenseclassification
+         description: ""
+
+  - name: mdb_production_location
+    description: ""
+    columns:
+       - name: dimproductionlocationid
+         description: ""
+       - name: countrycode
+         description: ""
+       - name: countryname
+         description: ""
+       - name: dimproductionid
+         description: ""
+       - name: productioncode
+         description: ""
+       - name: productionname
+         description: ""
+       - name: dimauditoriumid
+         description: ""
+       - name: productionlocationid
+         description: ""
+       - name: salesstartdate
+         description: ""
+       - name: productionlocationpremieredate
+         description: ""
+       - name: productionlocationstartdate
+         description: ""
+       - name: productionlocationenddate
+         description: ""
+       - name: m
+         description: ""
+       - name: isexpired
+         description: ""
+       - name: productionlocationcapacity
+         description: ""
+       - name: productionlocationdescription
+         description: ""
+       - name: productionlocationtype
+         description: ""
+       - name: showingroupsalesreporting
+         description: ""
+       - name: showingroupsalesreportingname
+         description: ""
+
+  - name: mdb_source
+    description: ""
+    columns:
+      - name: dimsourceid
+        description: ""
+      - name: sourcecode
+        description: ""
+      - name: sourcename
+        description: ""
+      - name: sourcegroup
+        description: ""
+      - name: isactivesource
+        description: ""
+      - name: isactiveticketsource
+        description: ""
+      - name: isactivedigitaltrafficsource
+        description: ""
+
+  - name: mdb_theatre
+    description: ""
+    columns:
+      - name: dimtheatreid
+        description: ""
+      - name: countrycode
+        description: ""
+      - name: countryname
+        description: ""
+      - name: theatreid
+        description: ""
+      - name: theatrecode
+        description: ""
+      - name: theatrename
+        description: ""
+      - name: address
+        description: ""
+      - name: postcode
+        description: ""
+      - name: citycode
+        description: ""
+      - name: city
+        description: ""
+      - name: owner
+        description: ""
+      - name: maxcapacity
+        description: ""
+      - name: istheatreownedbystage
+        description: ""

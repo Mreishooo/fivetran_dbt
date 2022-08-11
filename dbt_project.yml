@@ -51,4 +51,6 @@ models:
     crm:
       +schema: crm # this applies to all models in the `marts/crm/`` directory
       description: dataset contains crm  data
-
+    sales:
+      +schema: sales # this applies to all models in the `marts/crm/`` directory
+      description: dataset contains sales and tickets  data
