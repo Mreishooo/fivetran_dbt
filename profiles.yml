@@ -1,0 +1,25 @@
+fivetran_dbt:
+  outputs:
+    prod:
+      dataset: marketing
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: C:\dbt\fivetran_dbt\secrets\fivetran-dbt-sa.json
+      location: EU
+      method: service-account
+      priority: interactive
+      project: stage-commercial
+      threads: 10
+      type: bigquery
+    play:
+      dataset: marketing
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: C:\dbt\fivetran_dbt\secrets\fivetran-dbt-sa.json
+      location: EU
+      method: service-account
+      priority: interactive
+      project: stage-playground
+      threads: 10
+      type: bigquery
+  target: play
