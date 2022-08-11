@@ -21,8 +21,8 @@ https://hub.getdbt.com/dbt-labs/codegen/latest/
  dbt run-operation generate_source --args 'schema_name: ga'
 
  # for multiple arguments, use the dict syntax
- dbt run-operation generate_source --args "{schema_name: fivetran_log, database_name: stage-landing, include_descriptions: true,generate_columns: true, table_names: [temp]   }"
-
+ dbt run-operation generate_source --args "{schema_name: seed_data, database_name: stage-landing, include_descriptions: true,generate_columns: true, table_names: [temp]   }"
+dbt run-operation generate_source --args "{schema_name: seed_data, include_descriptions: true,generate_columns: true}"
 
 dbt test --select source:*
 
