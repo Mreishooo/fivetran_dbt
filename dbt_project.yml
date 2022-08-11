@@ -28,7 +28,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 config-version: 2
 
-seeds:
+seeds: 
   fivetran_dbt:
     +schema: seed_data
     description: dataset contains Seed data
