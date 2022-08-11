@@ -34,7 +34,7 @@ jobs:
         run: pip install dbt-bigquery
       
       - name: run dbt deps
-        run: dbt deps --profile-dir .
+        run: dbt deps --profiles-dir .
 
       - name: Generate Documentation
         run: dbt docs generate --target prod
