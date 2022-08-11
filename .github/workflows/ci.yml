@@ -13,6 +13,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  DBT_PROFILES_DIR: ./
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -37,7 +40,7 @@ jobs:
         run: dbt deps --profiles-dir .
 
       - name: Generate Documentation
-        run: dbt docs generate --target prod
+        run: dbt docs generate --profiles-dir . --target prod
 
       - name: Deploy Documentation
         uses: JamesIves/github-pages-deploy-action@v4
