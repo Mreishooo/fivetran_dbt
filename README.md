@@ -31,3 +31,6 @@ dbt test --select source:*
 
  dbt docs generate
  dbt docs serve
+
+
+ StageDNA1234
