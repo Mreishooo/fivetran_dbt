@@ -1,4 +1,4 @@
-﻿DimProductionId,CountryCode,CountryName,ProductionCode,ProductionName,IsExpired,LicenseName,Licensor,LicenseType,ProductionId,LicenseClassification
+﻿dim_production_id,country_code,country_name,production_code,production_name,is_expired,license_name,licensor,license_type,production_id,license_classification
 1,DE,Germany,ALA,Aladdin,0,Aladdin,Disney Theatrical Productions Ltd.,Musical,DE - ALA,Child
 2,DE,Germany,BMG,Blue Man Group,0,Blue Man Group,Blue Man Productions Inc.,Musical,DE - BMG,Drama
 3,DE,Germany,CHI,Chicago,1,Chicago,National Artists Management Company,Musical,DE - CHI,Drama

@@ -15,7 +15,7 @@ fivetran_dbt:
       dataset: marketing
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile:  "{{ env_var('DBT_COMMERCIAL_KEY') }}"     
+      keyfile:  ./fivetran-dbt-sa.json   
       location: EU
       method: service-account
       priority: interactive

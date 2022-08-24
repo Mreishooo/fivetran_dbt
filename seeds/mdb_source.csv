@@ -1,4 +1,4 @@
-﻿DimSourceId,SourceCode,SourceName,SourceGroup,IsActiveSource,IsActiveTicketSource,IsActiveDigitalTrafficSource
+﻿dim_source_id,source_code,source_name,source_group,is_active_source,is_active_ticket_source,is_active_digital_traffic_source
 1,CTS,CTS Eventim,CTS,1,1,0
 2,ELEKTRA,Elektra,ELEKTRA,1,1,0
 3,TICKETMASTER,Ticketmaster,TICKETMASTER,0,0,0

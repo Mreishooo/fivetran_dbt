@@ -1,4 +1,4 @@
-﻿DimPriceTypeId,PriceTypeId,PriceTypeName,PriceTypeGroup
+﻿dim_price_type_id,price_type_id,price_type_name,price_type_group
 1,1 - FULL PRICE,FULL PRICE,FULL PRICE
 2,2 - 10% OFF,10% OFF,PROMOTION
 3,0 - FREE TICKET,FREE TICKET,FREE TICKET

@@ -22,6 +22,10 @@ https://hub.getdbt.com/dbt-labs/codegen/latest/
 
  # for multiple arguments, use the dict syntax
  dbt run-operation generate_source --args "{schema_name: seed_data, database_name: stage-landing, include_descriptions: true,generate_columns: true, table_names: [temp]   }"
+
+ dbt run-operation generate_source --args "{schema_name: ft_abintus, database_name: stage-landing, include_descriptions: true,generate_columns: true, table_names: [abintus_hq]   }"
+
+ 
 dbt run-operation generate_source --args "{schema_name: seed_data, include_descriptions: true,generate_columns: true}"
 
 dbt test --select source:*
@@ -34,3 +38,6 @@ dbt test --select source:*
 
 
  StageDNA1234
+
+ cd .\fivetran_dbt\
+ & c:/dbt/dbt-env/Scripts/Activate.ps1

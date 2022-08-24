@@ -229,9 +229,11 @@ models:
       - name: country
         description: country of the hit bases on hostname 
       - name: page_group
-        description: hit page group based on page path 
+        description: hit page group based on page path - incase of a show its Production Location Id
       - name: group_desc 
-        description: page group desception based on manual entry by seed  
+        description: page group desception based on manual entry by seed 
+      - name: production_name 
+        description: if the page is a show - production name  
       - name: is_show
         description: is the page a show page 
       - name: visitors

@@ -1,4 +1,4 @@
-﻿DimAgeId,AgeCode,AgeName,AgeDeceniaBinCode,AgeDeceniaBinName,AgeBinA,AgeBinAId,AgeBinB,AgeBinBId,AgeBinDId,AgeBinD,AgeBinC,AgeBinCId
+﻿dim_age_id,age_code,age_name,age_decenia_bin_code,age_decenia_bin_name,age_bin_a,age_bin_a_id,age_bin_b,age_bin_b_id,age_bin_d_id,age_bin_d,age_bin_c,age_bin_c_id
 0,0,0 Year,0,0-9,< 25,1,< 18,1,1,<35,25-34,2
 1,1,1 Year,0,0-9,< 25,1,< 18,1,1,<35,25-34,2
 2,2,2 Year,0,0-9,< 25,1,< 18,1,1,<35,25-34,2

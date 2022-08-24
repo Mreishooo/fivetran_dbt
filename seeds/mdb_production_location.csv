@@ -1,663 +1,663 @@
-﻿DimProductionLocationId,CountryCode,CountryName,DimProductionId,ProductionCode,ProductionName,DimAuditoriumId,ProductionLocationId,SalesStartDate,ProductionLocationPremiereDate,ProductionLocationStartDate,ProductionLocationEndDate,,IsExpired,ProductionLocationCapacity,ProductionLocationDescription,ProductionLocationType,ShowInGroupSalesReporting,ShowInGroupSalesReportingName
-60,DE,Germany,5,KDL,Der König der Löwen,3,DE - KDL - THH - 1,,00:00.0,00:00.0,00:00.0,,0,2045,_N/A,Sit Down,1,Yes
-61,DE,Germany,11,ROC,Rocky,6,DE - ROC - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1341,_N/A,Sit Down,1,Yes
-62,DE,Germany,11,ROC,Rocky,12,DE - ROC - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1815,_N/A,Sit Down,1,Yes
-63,DE,Germany,2,BMG,Blue Man Group,8,DE - BMG - BMX - 1,00:00.0,00:00.0,00:00.0,,,0,612,_N/A,Sit Down,1,Yes
-64,DE,Germany,2,BMG,Blue Man Group,10,DE - BMG - TPP - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1740,_N/A,Sit Down,1,Yes
-65,DE,Germany,2,BMG,Blue Man Group,11,DE - BMG - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1790,_N/A,Sit Down,1,Yes
-66,DE,Germany,2,BMG,Blue Man Group,2,DE - BMG - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1575,_N/A,Sit Down,1,Yes
-67,DE,Germany,14,TDV,Tanz der Vampire,2,DE - TDV - APO - 1,,00:00.0,,00:00.0,00:00.0,1,1786,_N/A,Sit Down,1,Yes
-68,DE,Germany,14,TDV,Tanz der Vampire,5,DE - TDV - TNF - 1,,00:00.0,00:00.0,30:00.0,30:00.0,1,1960,_N/A,Sit Down,1,Yes
-69,DE,Germany,14,TDV,Tanz der Vampire,9,DE - TDV - TDW - 1,00:00.0,00:00.0,00:00.0,30:00.0,30:00.0,1,1660,_N/A,Sit Down,1,Yes
-70,DE,Germany,14,TDV,Tanz der Vampire,11,DE - TDV - MET - 1,00:00.0,00:00.0,00:00.0,30:00.0,30:00.0,1,1615,_N/A,Sit Down,1,Yes
-71,DE,Germany,14,TDV,Tanz der Vampire,12,DE - TDV - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1767,_N/A,Sit Down,1,Yes
-72,DE,Germany,14,TDV,Tanz der Vampire,9,DE - TDV - TDW - 2,00:00.0,00:00.0,00:00.0,30:00.0,30:00.0,1,1617,_N/A,Sit Down,1,Yes
-73,DE,Germany,14,TDV,Tanz der Vampire,9,DE - TDV - TDW - 3,00:00.0,00:00.0,30:00.0,00:00.0,00:00.0,1,1620,_N/A,Sit Down,1,Yes
-74,DE,Germany,14,TDV,Tanz der Vampire,12,DE - TDV - PAL - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1737,_N/A,Sit Down,1,Yes
-75,DE,Germany,15,UDO,Hinterm Horizont,10,DE - UDO - TPP - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1750,_N/A,Sit Down,1,Yes
-76,DE,Germany,15,UDO,Hinterm Horizont,6,DE - UDO - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1314,_N/A,Sit Down,1,Yes
-77,DE,Germany,8,MP,Mary Poppins,2,DE - MP - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1739,_N/A,Sit Down,1,Yes
-78,DE,Germany,9,NY,Ich war noch niemals in New York,6,DE - NY - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1385,_N/A,Sit Down,1,Yes
-79,DE,Germany,9,NY,Ich war noch niemals in New York,2,DE - NY - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1844,_N/A,Sit Down,1,Yes
-80,DE,Germany,9,NY,Ich war noch niemals in New York,11,DE - NY - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1616,_N/A,Sit Down,1,Yes
-81,DE,Germany,9,NY,Ich war noch niemals in New York,9,DE - NY - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
-82,DE,Germany,9,NY,Ich war noch niemals in New York,9,DE - NY - TDW - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
-83,DE,Germany,9,NY,Ich war noch niemals in New York,4,DE - NY - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1880,_N/A,Sit Down,1,Yes
-84,DE,Germany,13,TAR,Tarzan,5,DE - TAR - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1870,_N/A,Sit Down,1,Yes
-85,DE,Germany,13,TAR,Tarzan,2,DE - TAR - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1743,_N/A,Sit Down,1,Yes
-86,DE,Germany,13,TAR,Tarzan,11,DE - TAR - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1648,_N/A,Sit Down,1,Yes
-87,DE,Germany,1,ALA,Aladdin,5,DE - ALA - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1880,_N/A,Sit Down,1,Yes
-88,DE,Germany,4,GVN,Der Glöckner von Notre Dame,9,DE - GVN - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
-89,DE,Germany,16,WVB,Das Wunder von Bern,4,DE - WVB - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1850,_N/A,Sit Down,1,Yes
-90,DE,Germany,10,PDO,Das Phantom der Oper,12,DE - PDO - PAL - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1754,_N/A,Sit Down,1,Yes
-91,DE,Germany,10,PDO,Das Phantom der Oper,1,DE - PDO - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1640,_N/A,Sit Down,1,Yes
-92,DE,Germany,10,PDO,Das Phantom der Oper,5,DE - PDO - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1860,_N/A,Sit Down,1,Yes
-93,DE,Germany,10,PDO,Das Phantom der Oper,11,DE - PDO - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1616,_N/A,Sit Down,1,Yes
-94,DE,Germany,3,CHI,Chicago,12,DE - CHI - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1832,_N/A,Sit Down,1,Yes
-95,DE,Germany,3,CHI,Chicago,9,DE - CHI - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
-96,DE,Germany,6,LSN,Liebe stirbt nie,6,DE - LSN - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1381,_N/A,Sit Down,1,Yes
-97,DE,Germany,7,MM,Mamma Mia!,6,DE - MM - OPH - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1390,_N/A,Sit Down,1,Yes
-98,DE,Germany,7,MM,Mamma Mia!,12,DE - MM - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1831,_N/A,Sit Down,1,Yes
-99,DE,Germany,7,MM,Mamma Mia!,1,DE - MM - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1640,_N/A,Sit Down,1,Yes
-100,DE,Germany,7,MM,Mamma Mia!,10,DE - MM - TPP - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1750,_N/A,Sit Down,1,Yes
-101,DE,Germany,7,MM,Mamma Mia!,12,DE - MM - PAL - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1807,_N/A,Sit Down,1,Yes
-102,DE,Germany,7,MM,Mamma Mia!,9,DE - MM - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1568,_N/A,Sit Down,1,Yes
-103,DE,Germany,7,MM,Mamma Mia!,11,DE - MM - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1616,_N/A,Sit Down,1,Yes
-104,DE,Germany,12,SIA,Sister Act,6,DE - SIA - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1385,_N/A,Sit Down,1,Yes
-105,DE,Germany,12,SIA,Sister Act,2,DE - SIA - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1844,_N/A,Sit Down,1,Yes
-106,DE,Germany,12,SIA,Sister Act,11,DE - SIA - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1617,_N/A,Sit Down,1,Yes
-107,DE,Germany,12,SIA,Sister Act,9,DE - SIA - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
-109,ES,Spain,17,_N/A,_N/A,13,ES - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
-110,RU,Russia,18,_N/A,_N/A,14,RU - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
-111,FR,France,19,_N/A,_N/A,15,FR - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
-112,NL,Netherlands,20,_N/A,_N/A,16,NL - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
-113,DE,Germany,21,_N/A,_N/A,17,DE - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
-114,ES,Spain,22,_UNK,_Unknown,18,ES - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
-115,RU,Russia,23,_UNK,_Unknown,19,RU - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
-116,FR,France,24,_UNK,_Unknown,20,FR - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
-117,NL,Netherlands,25,_UNK,_Unknown,21,NL - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
-118,DE,Germany,26,_UNK,_Unknown,22,DE - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
-123,RU,Russia,53,POTO,Призрак Оперы,24,RU - POTO - MDM - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1582,_N/A,Sit Down,1,Yes
-124,RU,Russia,54,BB,Красавица и Чудовище,25,RU - BB - ROS - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1753,_N/A,Sit Down,1,Yes
-125,RU,Russia,55,SITR,Поющие под дождем,25,RU - SITR - ROS - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1753,_N/A,Sit Down,1,Yes
-126,RU,Russia,56,CIN,Золушка,25,RU - CIN - ROS - 1,00:00.0,00:00.0,00:00.0,,,0,1753,_N/A,Sit Down,0,No
-127,RU,Russia,57,TDV,Бал Вампиров,24,RU - TDV - MDM - 1,00:00.0,00:00.0,00:00.0,,,0,1808,_N/A,Sit Down,1,Yes
-128,FR,France,37,BDV,Le Bal des Vampires,23,FR - BDV - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-129,FR,France,38,BEB,La Belle et la Bête,23,FR - BEB - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-130,FR,France,39,CAT,Cats,23,FR - CAT - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-131,FR,France,40,FDO,Le Fantôme de l'Opéra,23,FR - FDO - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,0,No
-132,NL,Netherlands,41,TLK,Disney's The Lion King,26,NL - TLK - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1794,_N/A,Sit Down,1,Yes
-133,NL,Netherlands,42,TBG,The Bodyguard,27,NL - TBG - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1547,_N/A,Sit Down,1,Yes
-134,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,26,NL - BTB - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-135,NL,Netherlands,44,BE,Billy Elliot,26,NL - BE - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-136,NL,Netherlands,45,MOE,Moeder Ik Wil Bij De Revue,27,NL - MOE - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-137,ES,Spain,47,LMT,"Los Miserables, Tour II",28,ES - LMT - FBS - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,2167,_N/A,Tour,0,No
-138,ES,Spain,49,SAT,"Sister Act, Tour",28,ES - SAT - FBS - 1,00:00.0,,,00:00.0,00:00.0,1,2167,_N/A,Tour,0,No
-139,ES,Spain,52,MMT,Mamma Mía! Tour,28,ES - MMT - FBS - 1,00:00.0,,,00:00.0,00:00.0,1,2167,_N/A,Tour,0,No
-140,ES,Spain,49,SAT,"Sister Act, Tour",29,ES - SAT - AVV - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,,NULL,_UNK,0,No
-141,ES,Spain,52,MMT,Mamma Mía! Tour,30,ES - MMT - APM - 1,1899-12-31 00:00:00.000,,,1899-12-31 00:00:00.000,1899-12-31 00:00:00.000,0,1561,_N/A,Tour,0,No
-142,ES,Spain,49,SAT,"Sister Act, Tour",31,ES - SAT - CAEM - 1,00:00.0,,,00:00.0,00:00.0,1,1197,_N/A,Tour,0,No
-143,ES,Spain,52,MMT,Mamma Mía! Tour,31,ES - MMT - CAEM - 1,00:00.0,,,00:00.0,00:00.0,0,1197,_N/A,Tour,0,No
-144,ES,Spain,52,MMT,Mamma Mía! Tour,33,ES - MMT - GTC - 1,00:00.0,,,00:00.0,00:00.0,0,899,_N/A,Tour,0,No
-145,ES,Spain,50,SAM,"Sister Act, Madrid",34,ES - SAM - NTA - 1,00:00.0,,,00:00.0,00:00.0,1,1080,_N/A,Tour,0,No
-146,ES,Spain,52,MMT,Mamma Mía! Tour,35,ES - MMT - PEG - 1,00:00.0,,,00:00.0,00:00.0,1,1663,_N/A,Tour,0,No
-147,ES,Spain,52,MMT,Mamma Mía! Tour,36,ES - MMT - PDO - 1,00:00.0,,,00:00.0,00:00.0,0,1466,_N/A,Tour,0,No
-148,ES,Spain,52,MMT,Mamma Mía! Tour,37,ES - MMT - TPV - 1,00:00.0,,,00:00.0,00:00.0,0,906,_N/A,Tour,0,No
-149,ES,Spain,49,SAT,"Sister Act, Tour",37,ES - SAT - TPV - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,906,_N/A,Tour,0,No
-150,ES,Spain,51,MMB,Mamma Mía! Barcelona,38,ES - MMB - TTB - 1,00:00.0,,,00:00.0,00:00.0,1,1437,_N/A,Tour,0,No
-151,ES,Spain,48,SAB,"Sister Act, Barcelona",38,ES - SAB - TTB - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1437,_N/A,Tour,0,No
-152,ES,Spain,49,SAT,"Sister Act, Tour",39,ES - SAT - TCV - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,930,_N/A,Tour,0,No
-153,ES,Spain,52,MMT,Mamma Mía! Tour,39,ES - MMT - TCV - 1,00:00.0,,,00:00.0,00:00.0,0,930,_N/A,Tour,0,No
-154,ES,Spain,52,MMT,Mamma Mía! Tour,40,ES - MMT - TLL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,,NULL,_UNK,0,No
-155,ES,Spain,46,ERL,"El Rey León, el musical",41,ES - ERL - LDV - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1443,_N/A,Sit Down,1,Yes
-156,ES,Spain,52,MMT,Mamma Mía! Tour,35,ES - MMG - PEG - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1663,_N/A,Tour,0,No
-157,DE,Germany,59,GEF,Gefährten,9,DE - GEF - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1226,_N/A,Sit Down,1,Yes
-158,DE,Germany,60,3M,3 Musketiere,9,DE - 3M - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1600,_N/A,Sit Down,1,Yes
-159,DE,Germany,60,3M,3 Musketiere,2,DE - 3M - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1814,_N/A,Sit Down,1,Yes
-160,DE,Germany,61,WI,Wicked - Die Hexen von Oz,11,DE - WI - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1630,_N/A,Sit Down,1,Yes
-161,DE,Germany,61,WI,Wicked - Die Hexen von Oz,12,DE - WI - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1785,_N/A,Sit Down,1,Yes
-162,DE,Germany,62,WWR,We Will Rock You,2,DE - WWR - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1889,_N/A,Sit Down,1,Yes
-163,DE,Germany,62,WWR,We Will Rock You,9,DE - WWR - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1546,_N/A,Sit Down,1,Yes
-164,DE,Germany,63,ELI,Elisabeth,1,DE - ELI - COL - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1565,_N/A,Sit Down,1,Yes
-165,DE,Germany,63,ELI,Elisabeth,2,DE - ELI - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1808,_N/A,Sit Down,1,Yes
-166,DE,Germany,63,ELI,Elisabeth,9,DE - ELI - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1480,_N/A,Sit Down,1,Yes
-167,ES,Spain,52,MMT,Mamma Mía! Tour,152,ES - MMT - BAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1408,_N/A,Tour,0,No
-168,ES,Spain,52,MMT,Mamma Mía! Tour,42,ES - MMT - ARV - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,0,NULL,_UNK,0,No
-169,ES,Spain,49,SAT,"Sister Act, Tour",43,ES - SAT - SNY - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1768,_N/A,Tour,0,No
-170,ES,Spain,52,MMT,Mamma Mía! Tour,45,ES - MMT - TAR - 1,00:00.0,,,00:00.0,00:00.0,1,1100,_N/A,Tour,0,No
-171,ES,Spain,52,MMT,Mamma Mía! Tour,43,ES - MMT - SNY - 1,00:00.0,,,00:00.0,00:00.0,1,1768,_N/A,Tour,0,No
-174,ES,Spain,49,SAT,"Sister Act, Tour",152,ES - SAT - BAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1408,_N/A,Tour,0,No
-176,ES,Spain,73,MOLMBCN,El Hombre De La Mancha BCN,32,ES - MOLMBCN - GTL - 0,00:00.0,,,,,0,1873,It was cancelled,Tour,0,No
-177,ES,Spain,72,MOLMAD,EL Hombre De La Mancha MAD,34,ES - MOLMAD - NTA - 0,00:00.0,,,,,0,1080,It was cancelled,Tour,0,No
-178,DE,Germany,75,DD,Dirty Dancing,5,DE - DD - TNF - 1,00:00.0,00:00.0,,00:00.0,00:00.0,1,2000,_N/A,Sit Down,1,Yes
-179,DE,Germany,76,TITA,Titanic,5,DE - TITA - TNF - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1940,_N/A,Sit Down,1,Yes
-180,DE,Germany,75,DD,Dirty Dancing,10,DE - DD - TPP - 1,00:00.0,00:00.0,,00:00.0,00:00.0,1,1730,_N/A,Sit Down,1,Yes
-181,DE,Germany,75,DD,Dirty Dancing,11,DE - DD - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1620,_N/A,Sit Down,1,Yes
-182,ES,Spain,74,MMM,Mamma Mía! Madrid,47,ES - MMM - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1395,_N/A,Sit Down,1,Yes
-194,ES,Spain,89,CBR,El Cascanueces,41,ES - CBR - LDV - 1,00:00.0,,,00:00.0,00:00.0,0,1443,_N/A,Event,0,No
-195,NL,Netherlands,79,HZH15,Holland Zingt Hazes 2015,51,NL - HZH15 - ZIG - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
-196,NL,Netherlands,90,HZH17,Holland Zingt Hazes 2017,51,NL - HZH17 - ZIG - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
-197,NL,Netherlands,80,HZH16,Holland Zingt Hazes 2016,51,NL - HZH16 - ZIG - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
-198,NL,Netherlands,81,MIC15,Musicals In Concert 2015,51,NL - MIC15 - ZIG - 1,,,,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
-199,NL,Netherlands,82,MIC16,Musicals In Concert 2016,51,NL - MIC16 - ZIG - 1,,,,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
-200,ES,Spain,52,MMT,Mamma Mía! Tour,52,ES - MMT - MDV - 0,00:00.0,,,00:00.0,00:00.0,0,1391,_N/A,Tour,0,No
-201,ES,Spain,52,MMT,Mamma Mía! Tour,53,ES - MMT - LTJ - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,950,_N/A,Tour,0,No
-202,ES,Spain,91,TBG,The Bodyguard,47,ES - TBG - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1395,_N/A,Sit Down,1,Yes
-203,ES,Spain,92,CAN,Johann Strauss. Gran concierto de año nuevo,41,ES - CAN - LDV - 1,00:00.0,,,00:00.0,,0,1450,_N/A,Event,0,No
-204,NL,Netherlands,68,HAIR,HAIR,54,NL - HAIR - AGN - 1,,,,,,1,796,_N/A,Tour,0,No
-205,NL,Netherlands,78,GREA,Grease,54,NL - GREA - AGN - 1,,,,,,1,796,_N/A,Tour,0,No
-206,NL,Netherlands,78,GREA,Grease,55,NL - GREA - ALM - 1,,,,,,1,800,_N/A,Tour,0,No
-207,NL,Netherlands,83,RL,Robert Long,55,NL - RL - ALM - 1,,,,,,1,800,_N/A,Tour,0,No
-208,NL,Netherlands,84,SIM,Simone,55,NL - SIM - ALM - 1,,,,,,1,800,_N/A,Tour,0,No
-209,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,55,NL - BTB - ALM - 1,,,,,,1,800,_N/A,Tour,0,No
-210,NL,Netherlands,68,HAIR,HAIR,55,NL - HAIR - ALM - 1,,,,,,1,800,_N/A,Tour,0,No
-211,NL,Netherlands,83,RL,Robert Long,56,NL - RL - AMP - 1,,,,,,1,840,_N/A,Tour,0,No
-212,NL,Netherlands,84,SIM,Simone,56,NL - SIM - AMP - 1,,,,,,1,840,_N/A,Tour,0,No
-213,NL,Netherlands,78,GREA,Grease,56,NL - GREA - AMP - 1,,,,,,1,840,_N/A,Tour,0,No
-214,NL,Netherlands,78,GREA,Grease,57,NL - GREA - AMST - 1,,,,,,1,670,_N/A,Tour,0,No
-215,NL,Netherlands,83,RL,Robert Long,57,NL - RL - AMST - 1,,,,,,1,670,_N/A,Tour,0,No
-216,NL,Netherlands,83,RL,Robert Long,58,NL - RL - ARN - 1,,,,,,1,735,_N/A,Tour,0,No
-217,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,59,NL - MICOT - CARRE - 1,,,,,,1,1756,_N/A,Tour,0,No
-218,NL,Netherlands,86,TSOM,The Sound Of Music 2015,59,NL - TSOM - CARRE - 1,,,,,,1,1756,_N/A,Tour,0,No
-219,NL,Netherlands,68,HAIR,HAIR,60,NL - HAIR - CAST - 1,,,,,,1,750,_N/A,Tour,0,No
-220,NL,Netherlands,69,CDR,Ciske De Rat 2016,61,NL - CDR - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-221,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,61,NL - BTB - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-222,NL,Netherlands,68,HAIR,HAIR,61,NL - HAIR - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-223,NL,Netherlands,86,TSOM,The Sound Of Music 2015,61,NL - TSOM - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-224,NL,Netherlands,87,TWEE,De Tweeling,61,NL - TWEE - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-225,NL,Netherlands,84,SIM,Simone,61,NL - SIM - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-226,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,61,NL - MICOT - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-227,NL,Netherlands,78,GREA,Grease,61,NL - GREA - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-228,NL,Netherlands,84,SIM,Simone,62,NL - SIM - CROWN - 1,,,,,,1,820,_N/A,Tour,0,No
-229,NL,Netherlands,84,SIM,Simone,63,NL - SIM - DEV - 1,,,,,,1,750,_N/A,Tour,0,No
-230,NL,Netherlands,83,RL,Robert Long,63,NL - RL - DEV - 1,,,,,,1,750,_N/A,Tour,0,No
-231,NL,Netherlands,78,GREA,Grease,64,NL - GREA - FLINT - 1,,,,,,1,770,_N/A,Tour,0,No
-232,NL,Netherlands,83,RL,Robert Long,64,NL - RL - FLINT - 1,,00:00.0,00:00.0,,,1,770,_N/A,Tour,0,No
-233,NL,Netherlands,68,HAIR,HAIR,64,NL - HAIR - FLINT - 1,,,,,,1,770,_N/A,Tour,0,No
-234,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,65,NL - BTB - GOUDSE - 1,,,,,,1,813,_N/A,Tour,0,No
-235,NL,Netherlands,78,GREA,Grease,65,NL - GREA - GOUDSE - 1,,,,,,1,813,_N/A,Tour,0,No
-236,NL,Netherlands,83,RL,Robert Long,65,NL - RL - GOUDSE - 1,,,,,,1,813,_N/A,Tour,0,No
-237,NL,Netherlands,84,SIM,Simone,65,NL - SIM - GOUDSE - 1,,,,,,1,813,_N/A,Tour,0,No
-238,NL,Netherlands,84,SIM,Simone,66,NL - SIM - HAA - 1,,,,,,1,633,_N/A,Tour,0,No
-239,NL,Netherlands,83,RL,Robert Long,66,NL - RL - HAA - 1,,,,,,1,633,_N/A,Tour,0,No
-240,NL,Netherlands,78,GREA,Grease,67,NL - GREA - HARM - 1,,,,,,1,950,_N/A,Tour,0,No
-241,NL,Netherlands,69,CDR,Ciske De Rat 2016,67,NL - CDR - HARM - 1,,,,,,1,950,_N/A,Tour,0,No
-242,NL,Netherlands,68,HAIR,HAIR,67,NL - HAIR - HARM - 1,,,,,,1,950,_N/A,Tour,0,No
-243,NL,Netherlands,68,HAIR,HAIR,68,NL - HAIR - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-244,NL,Netherlands,69,CDR,Ciske De Rat 2016,68,NL - CDR - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-245,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,68,NL - BTB - HEER - 1,,00:00.0,00:00.0,,,1,1057,_N/A,Tour,0,No
-246,NL,Netherlands,78,GREA,Grease,68,NL - GREA - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-247,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,68,NL - MICOT - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-248,NL,Netherlands,83,RL,Robert Long,68,NL - RL - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-249,NL,Netherlands,87,TWEE,De Tweeling,68,NL - TWEE - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-250,NL,Netherlands,86,TSOM,The Sound Of Music 2015,68,NL - TSOM - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-251,NL,Netherlands,84,SIM,Simone,69,NL - SIM - ISALA - 1,,,,,,1,493,_N/A,Tour,0,No
-252,NL,Netherlands,83,RL,Robert Long,69,NL - RL - ISALA - 1,,,,,,1,493,_N/A,Tour,0,No
-253,NL,Netherlands,84,SIM,Simone,70,NL - SIM - KAF - 1,,,,,,1,987,_N/A,Tour,0,No
-254,NL,Netherlands,78,GREA,Grease,70,NL - GREA - KAF - 1,,,,,,1,987,_N/A,Tour,0,No
-255,NL,Netherlands,83,RL,Robert Long,70,NL - RL - KAF - 1,,,,,,1,987,_N/A,Tour,0,No
-256,NL,Netherlands,68,HAIR,HAIR,70,NL - HAIR - KAF - 1,,,,,,1,987,_N/A,Tour,0,No
-257,NL,Netherlands,84,SIM,Simone,71,NL - SIM - KEI - 1,,,,,,1,525,_N/A,Tour,0,No
-258,NL,Netherlands,84,SIM,Simone,72,NL - SIM - KENN - 1,,,,,,1,602,_N/A,Tour,0,No
-259,NL,Netherlands,83,RL,Robert Long,72,NL - RL - KENN - 1,,,,,,1,602,_N/A,Tour,0,No
-260,NL,Netherlands,83,RL,Robert Long,73,NL - RL - KOLK - 1,,,,,,1,811,_N/A,Tour,0,No
-261,NL,Netherlands,78,GREA,Grease,73,NL - GREA - KOLK - 1,,00:00.0,00:00.0,,,1,811,_N/A,Tour,0,No
-262,NL,Netherlands,78,GREA,Grease,74,NL - GREA - KOM - 1,,00:00.0,00:00.0,,,1,650,_N/A,Tour,0,No
-263,NL,Netherlands,68,HAIR,HAIR,74,NL - HAIR - KOM - 1,,,,,,1,650,_N/A,Tour,0,No
-264,NL,Netherlands,83,RL,Robert Long,75,NL - RL - KRING - 1,,,,,,1,850,_N/A,Tour,0,No
-265,NL,Netherlands,84,SIM,Simone,76,NL - SIM - KRUIS - 1,,,,,,1,495,_N/A,Tour,0,No
-266,NL,Netherlands,84,SIM,Simone,77,NL - SIM - LAMP - 1,,,,,,1,558,_N/A,Tour,0,No
-267,NL,Netherlands,84,SIM,Simone,78,NL - SIM - LEEST - 1,,,,,,1,500,_N/A,Tour,0,No
-268,NL,Netherlands,83,RL,Robert Long,79,NL - RL - LEI - 1,,,,,,1,539,_N/A,Tour,0,No
-269,NL,Netherlands,84,SIM,Simone,79,NL - SIM - LEI - 1,,,,,,1,539,_N/A,Tour,0,No
-270,NL,Netherlands,69,CDR,Ciske De Rat 2016,80,NL - CDR - MAAS - 1,,,,,,1,764,_N/A,Tour,0,No
-271,NL,Netherlands,68,HAIR,HAIR,80,NL - HAIR - MAAS - 1,,,,,,1,764,_N/A,Tour,0,No
-272,NL,Netherlands,84,SIM,Simone,81,NL - SIM - MARK - 1,,,,,,1,685,_N/A,Tour,0,No
-273,NL,Netherlands,86,TSOM,The Sound Of Music 2015,82,NL - TSOM - MART - 1,,,,,,1,1550,_N/A,Tour,0,No
-274,NL,Netherlands,87,TWEE,De Tweeling,82,NL - TWEE - MART - 1,,,,,,1,1550,_N/A,Tour,0,No
-275,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,82,NL - MICOT - MART - 1,,,,,,1,1550,_N/A,Tour,0,No
-276,NL,Netherlands,78,GREA,Grease,82,NL - GREA - MART - 1,,00:00.0,00:00.0,,,1,1550,_N/A,Tour,0,No
-277,NL,Netherlands,69,CDR,Ciske De Rat 2016,82,NL - CDR - MART - 1,,,,,,1,1550,_N/A,Tour,0,No
-278,NL,Netherlands,68,HAIR,HAIR,82,NL - HAIR - MART - 1,,,,,,1,1550,_N/A,Tour,0,No
-279,NL,Netherlands,83,RL,Robert Long,83,NL - RL - MEER - 1,,,,,,1,520,_N/A,Tour,0,No
-280,NL,Netherlands,84,SIM,Simone,83,NL - SIM - MEER - 1,,,,,,1,520,_N/A,Tour,0,No
-281,NL,Netherlands,83,RL,Robert Long,84,NL - RL - MRVT - 1,,,,,,1,800,_N/A,Tour,0,No
-282,NL,Netherlands,83,RL,Robert Long,85,NL - RL - NAALD - 1,,,,,,1,430,_N/A,Tour,0,No
-283,NL,Netherlands,78,GREA,Grease,86,NL - GREA - NIJ - 1,,,,,,1,920,_N/A,Tour,0,No
-284,NL,Netherlands,83,RL,Robert Long,86,NL - RL - NIJ - 1,,,,,,1,920,_N/A,Tour,0,No
-285,NL,Netherlands,84,SIM,Simone,86,NL - SIM - NIJ - 1,,,,,,1,920,_N/A,Tour,0,No
-286,NL,Netherlands,68,HAIR,HAIR,86,NL - HAIR - NIJ - 1,,,,,,1,920,_N/A,Tour,0,No
-287,NL,Netherlands,69,CDR,Ciske De Rat 2016,86,NL - CDR - NIJ - 1,,,,,,1,920,_N/A,Tour,0,No
-288,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,86,NL - BTB - NIJ - 1,,,,,,1,920,_N/A,Tour,0,No
-289,NL,Netherlands,69,CDR,Ciske De Rat 2016,87,NL - CDR - NLUX - 1,,,,,,1,1535,_N/A,Tour,0,No
-290,NL,Netherlands,68,HAIR,HAIR,87,NL - HAIR - NLUX - 1,,,,,,1,1535,_N/A,Tour,0,No
-291,NL,Netherlands,87,TWEE,De Tweeling,87,NL - TWEE - NLUX - 1,,,,,,1,1535,_N/A,Tour,0,No
-292,NL,Netherlands,86,TSOM,The Sound Of Music 2015,87,NL - TSOM - NLUX - 1,,,,,,1,1535,_N/A,Tour,0,No
-293,NL,Netherlands,78,GREA,Grease,87,NL - GREA - NLUX - 1,,,,,,1,1535,_N/A,Tour,0,No
-294,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,88,NL - MICOT - OLUX - 1,,,,,,1,909,_N/A,Tour,0,No
-295,NL,Netherlands,83,RL,Robert Long,88,NL - RL - OLUX - 1,,,,,,1,909,_N/A,Tour,0,No
-296,NL,Netherlands,84,SIM,Simone,88,NL - SIM - OLUX - 1,,,,,,1,909,_N/A,Tour,0,No
-297,NL,Netherlands,84,SIM,Simone,89,NL - SIM - ORAN - 1,,,,,,1,800,_N/A,Tour,0,No
-298,NL,Netherlands,84,SIM,Simone,90,NL - SIM - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-299,NL,Netherlands,86,TSOM,The Sound Of Music 2015,90,NL - TSOM - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-300,NL,Netherlands,87,TWEE,De Tweeling,90,NL - TWEE - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-301,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,90,NL - MICOT - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-302,NL,Netherlands,69,CDR,Ciske De Rat 2016,90,NL - CDR - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-303,NL,Netherlands,78,GREA,Grease,90,NL - GREA - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-304,NL,Netherlands,68,HAIR,HAIR,90,NL - HAIR - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-305,NL,Netherlands,68,HAIR,HAIR,91,NL - HAIR - PAR - 1,,,,,,1,879,_N/A,Tour,0,No
-306,NL,Netherlands,69,CDR,Ciske De Rat 2016,91,NL - CDR - PAR - 1,,,,,,1,879,_N/A,Tour,0,No
-307,NL,Netherlands,83,RL,Robert Long,91,NL - RL - PAR - 1,,,,,,1,879,_N/A,Tour,0,No
-308,NL,Netherlands,78,GREA,Grease,91,NL - GREA - PAR - 1,,,,,,1,879,_N/A,Tour,0,No
-309,NL,Netherlands,86,TSOM,The Sound Of Music 2015,91,NL - TSOM - PAR - 1,,,,,,1,879,_N/A,Tour,0,No
-310,NL,Netherlands,84,SIM,Simone,91,NL - SIM - PAR - 1,,,,,,1,879,_N/A,Tour,0,No
-311,NL,Netherlands,86,TSOM,The Sound Of Music 2015,92,NL - TSOM - PARKE - 1,,,,,,1,930,_N/A,Tour,0,No
-312,NL,Netherlands,87,TWEE,De Tweeling,92,NL - TWEE - PARKE - 1,,,,,,1,930,_N/A,Tour,0,No
-313,NL,Netherlands,84,SIM,Simone,92,NL - SIM - PARKE - 1,,,,,,1,930,_N/A,Tour,0,No
-314,NL,Netherlands,78,GREA,Grease,92,NL - GREA - PARKE - 1,,,,,,1,930,_N/A,Tour,0,No
-315,NL,Netherlands,83,RL,Robert Long,92,NL - RL - PARKE - 1,,,,,,1,930,_N/A,Tour,0,No
-316,NL,Netherlands,68,HAIR,HAIR,92,NL - HAIR - PARKE - 1,,,,,,1,930,_N/A,Tour,0,No
-317,NL,Netherlands,69,CDR,Ciske De Rat 2016,92,NL - CDR - PARKE - 1,,,,,,1,930,_N/A,Tour,0,No
-318,NL,Netherlands,69,CDR,Ciske De Rat 2016,93,NL - CDR - PARKH - 1,,,,,,1,875,_N/A,Tour,0,No
-319,NL,Netherlands,68,HAIR,HAIR,93,NL - HAIR - PARKH - 1,,,,,,1,875,_N/A,Tour,0,No
-320,NL,Netherlands,87,TWEE,De Tweeling,93,NL - TWEE - PARKH - 1,,,,,,1,875,_N/A,Tour,0,No
-321,NL,Netherlands,84,SIM,Simone,94,NL - SIM - PUR - 1,,,,,,1,516,_N/A,Tour,0,No
-322,NL,Netherlands,83,RL,Robert Long,94,NL - RL - PUR - 1,,,,,,1,516,_N/A,Tour,0,No
-323,NL,Netherlands,78,GREA,Grease,95,NL - GREA - RAI - 1,,,,,,1,1750,_N/A,Tour,0,No
-324,NL,Netherlands,84,SIM,Simone,96,NL - SIM - RIJS - 1,,,,,,1,688,_N/A,Tour,0,No
-325,NL,Netherlands,68,HAIR,HAIR,96,NL - HAIR - RIJS - 1,,,,,,1,688,_N/A,Tour,0,No
-326,NL,Netherlands,84,SIM,Simone,97,NL - SIM - SCHALM - 1,,,,,,1,480,_N/A,Tour,0,No
-327,NL,Netherlands,69,CDR,Ciske De Rat 2016,98,NL - CDR - SCHIE - 1,,,,,,1,702,_N/A,Tour,0,No
-328,NL,Netherlands,84,SIM,Simone,99,NL - SIM - SPANT - 1,,,,,,1,780,_N/A,Tour,0,No
-329,NL,Netherlands,83,RL,Robert Long,99,NL - RL - SPANT - 1,,,,,,1,780,_N/A,Tour,0,No
-330,NL,Netherlands,78,GREA,Grease,100,NL - GREA - SPIE - 1,,,,,,1,917,_N/A,Tour,0,No
-331,NL,Netherlands,69,CDR,Ciske De Rat 2016,100,NL - CDR - SPIE - 1,,,,,,1,917,_N/A,Tour,0,No
-332,NL,Netherlands,83,RL,Robert Long,100,NL - RL - SPIE - 1,,,,,,1,917,_N/A,Tour,0,No
-333,NL,Netherlands,87,TWEE,De Tweeling,100,NL - TWEE - SPIE - 1,,,,,,1,917,_N/A,Tour,0,No
-334,NL,Netherlands,86,TSOM,The Sound Of Music 2015,100,NL - TSOM - SPIE - 1,,,,,,1,917,_N/A,Tour,0,No
-335,NL,Netherlands,68,HAIR,HAIR,100,NL - HAIR - SPIE - 1,,,,,,1,917,_N/A,Tour,0,No
-336,NL,Netherlands,83,RL,Robert Long,101,NL - RL - TAM - 1,,,,,,1,800,_N/A,Tour,0,No
-337,NL,Netherlands,83,RL,Robert Long,102,NL - RL - TAQA - 1,,,,,,1,694,_N/A,Tour,0,No
-338,NL,Netherlands,84,SIM,Simone,102,NL - SIM - TAQA - 1,,,,,,1,694,_N/A,Tour,0,No
-339,NL,Netherlands,78,GREA,Grease,102,NL - GREA - TAQA - 1,,,,,,1,694,_N/A,Tour,0,No
-340,NL,Netherlands,68,HAIR,HAIR,102,NL - HAIR - TAQA - 1,,,,,,1,694,_N/A,Tour,0,No
-341,NL,Netherlands,69,CDR,Ciske De Rat 2016,102,NL - CDR - TAQA - 1,,,,,,1,694,_N/A,Tour,0,No
-342,NL,Netherlands,68,HAIR,HAIR,103,NL - HAIR - TIL - 1,,,,,,1,840,_N/A,Tour,0,No
-343,NL,Netherlands,83,RL,Robert Long,103,NL - RL - TIL - 1,,,,,,1,840,_N/A,Tour,0,No
-344,NL,Netherlands,69,CDR,Ciske De Rat 2016,103,NL - CDR - TIL - 1,,,,,,1,840,_N/A,Tour,0,No
-345,NL,Netherlands,78,GREA,Grease,103,NL - GREA - TIL - 1,,,,,,1,840,_N/A,Tour,0,No
-346,NL,Netherlands,84,SIM,Simone,103,NL - SIM - TIL - 1,,,,,,1,840,_N/A,Tour,0,No
-347,NL,Netherlands,84,SIM,Simone,104,NL - SIM - UTR - 1,,,,,,1,847,_N/A,Tour,0,No
-348,NL,Netherlands,83,RL,Robert Long,104,NL - RL - UTR - 1,,,,,,1,847,_N/A,Tour,0,No
-349,NL,Netherlands,78,GREA,Grease,104,NL - GREA - UTR - 1,,,,,,1,847,_N/A,Tour,0,No
-350,NL,Netherlands,69,CDR,Ciske De Rat 2016,104,NL - CDR - UTR - 1,,,,,,1,847,_N/A,Tour,0,No
-351,NL,Netherlands,68,HAIR,HAIR,104,NL - HAIR - UTR - 1,,,,,,1,847,_N/A,Tour,0,No
-352,NL,Netherlands,68,HAIR,HAIR,105,NL - HAIR - VEL - 1,,,,,,1,716,_N/A,Tour,0,No
-353,NL,Netherlands,78,GREA,Grease,105,NL - GREA - VEL - 1,,,,,,1,716,_N/A,Tour,0,No
-354,NL,Netherlands,84,SIM,Simone,105,NL - SIM - VEL - 1,,,,,,1,716,_N/A,Tour,0,No
-355,NL,Netherlands,83,RL,Robert Long,106,NL - RL - VEN - 1,,,,,,1,673,_N/A,Tour,0,No
-356,NL,Netherlands,84,SIM,Simone,107,NL - SIM - VEST - 1,,,,,,1,500,_N/A,Tour,0,No
-357,NL,Netherlands,84,SIM,Simone,108,NL - SIM - VRIJ - 1,,,,,,1,892,_N/A,Tour,0,No
-358,NL,Netherlands,83,RL,Robert Long,108,NL - RL - VRIJ - 1,,,,,,1,892,_N/A,Tour,0,No
-359,NL,Netherlands,78,GREA,Grease,108,NL - GREA - VRIJ - 1,,,,,,1,892,_N/A,Tour,0,No
-360,NL,Netherlands,68,HAIR,HAIR,108,NL - HAIR - VRIJ - 1,,,,,,1,892,_N/A,Tour,0,No
-361,NL,Netherlands,69,CDR,Ciske De Rat 2016,108,NL - CDR - VRIJ - 1,,,,,,1,892,_N/A,Tour,0,No
-362,NL,Netherlands,69,CDR,Ciske De Rat 2016,109,NL - CDR - WFT - 1,,,,,,1,1573,_N/A,Tour,0,No
-363,NL,Netherlands,78,GREA,Grease,110,NL - GREA - WIL - 1,,,,,,1,957,_N/A,Tour,0,No
-364,NL,Netherlands,86,TSOM,The Sound Of Music 2015,110,NL - TSOM - WIL - 1,,,,,,1,957,_N/A,Tour,0,No
-365,NL,Netherlands,87,TWEE,De Tweeling,110,NL - TWEE - WIL - 1,,,,,,1,957,_N/A,Tour,0,No
-366,NL,Netherlands,84,SIM,Simone,110,NL - SIM - WIL - 1,,,,,,1,957,_N/A,Tour,0,No
-367,NL,Netherlands,83,RL,Robert Long,110,NL - RL - WIL - 1,,,,,,1,957,_N/A,Tour,0,No
-368,NL,Netherlands,69,CDR,Ciske De Rat 2016,110,NL - CDR - WIL - 1,,,,,,1,957,_N/A,Tour,0,No
-369,NL,Netherlands,68,HAIR,HAIR,110,NL - HAIR - WIL - 1,,,,,,1,957,_N/A,Tour,0,No
-370,NL,Netherlands,68,HAIR,HAIR,111,NL - HAIR - ZAAN - 1,,,,,,1,879,_N/A,Tour,0,No
-371,NL,Netherlands,83,RL,Robert Long,111,NL - RL - ZAAN - 1,,,,,,1,879,_N/A,Tour,0,No
-372,NL,Netherlands,84,SIM,Simone,111,NL - SIM - ZAAN - 1,,,,,,1,879,_N/A,Tour,0,No
-373,NL,Netherlands,78,GREA,Grease,111,NL - GREA - ZAAN - 1,,,,,,1,879,_N/A,Tour,0,No
-374,NL,Netherlands,78,GREA,Grease,116,NL - GREA - ZOE - 1,,,,,,1,780,_N/A,Tour,0,No
-375,NL,Netherlands,83,RL,Robert Long,116,NL - RL - ZOE - 1,,,,,,1,780,_N/A,Tour,0,No
-376,NL,Netherlands,87,TWEE,De Tweeling,117,NL - TWEE - ZUID - 1,,00:00.0,00:00.0,,,1,996,_N/A,Tour,0,No
-377,NL,Netherlands,78,GREA,Grease,117,NL - GREA - ZUID - 1,,,,,,1,996,_N/A,Tour,0,No
-378,NL,Netherlands,68,HAIR,HAIR,117,NL - HAIR - ZUID - 1,,,,,,1,996,_N/A,Tour,0,No
-379,NL,Netherlands,84,SIM,Simone,27,NL - SIM - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1559,_N/A,Tour,0,No
-380,NL,Netherlands,93,OYF,On Your Feet,27,NL - OYF - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1559,_N/A,Sit Down,1,Yes
-381,NL,Netherlands,94,ELIIC,Elisabeth - In Concert,118,NL - ELIIC - LOO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,3984,_N/A,Sit Down,1,Yes
-382,NL,Netherlands,95,WICK,Wicked,26,NL - WICK - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-383,NL,Netherlands,96,TAR,Tarzan,26,NL - TAR - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-384,NL,Netherlands,97,TLK04,Disney's The Lion King 2004,26,NL - TLK04 - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-385,NL,Netherlands,98,ELI,Elisabeth,26,NL - ELI - ACT - 1,,00:00.0,,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-386,NL,Netherlands,99,SA,Sister Act,26,NL - SA - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1843,_N/A,Sit Down,1,Yes
-387,NL,Netherlands,100,MP,Mary Poppins,26,NL - MP - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-388,NL,Netherlands,101,TSOM03,The Sound Of Music 2002,26,NL - TSOM03 - ACT - 1,00:00.0,,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Tour,0,No
-389,NL,Netherlands,102,DD,Dirty Dancing,27,NL - DD - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-390,NL,Netherlands,103,MM,Mamma Mia 2003,27,NL - MM - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-391,NL,Netherlands,104,WWRY,We Will Rock You,27,NL - WWRY - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-392,NL,Netherlands,105,MM09,Mamma Mia 2009,27,NL - MM09 - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Tour,1,Yes
-393,NL,Netherlands,117,BTB05,Disney's Beauty And The Beast 2005,26,NL - BTB05 - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-394,NL,Netherlands,118,CDR07,Ciske De Rat 2007,26,NL - CDR07 - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Tour,0,No
-395,NL,Netherlands,106,AIDA,Aida 2001,26,NL - AIDA - ACT - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
-396,NL,Netherlands,107,EVITA,Evita,27,NL - EVITA - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Tour,1,Yes
-397,NL,Netherlands,108,GHOST,Ghost,27,NL - GHOST - BTU - 1,,,,,,1,1542,_N/A,Sit Down,1,Yes
-398,NL,Netherlands,110,JERSEY,Jersey Boys,27,NL - JERSEY - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1555,_N/A,Sit Down,1,Yes
-399,NL,Netherlands,111,SAIGON,Miss Saigon,27,NL - SAIGON - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-400,NL,Netherlands,112,SNF,Saturday Night Fever,27,NL - SNF - BTU - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-401,NL,Netherlands,113,WIZ,The Wiz,27,NL - WIZ - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-402,NL,Netherlands,115,JOSEPH,Joseph And The Amazing Technicolor Dreamcoat,27,NL - JOSEPH - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-404,NL,Netherlands,119,HZH13,Holland Zingt Hazes 2013,51,NL - HZH13 - ZIG - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
-405,NL,Netherlands,120,HZH14,Holland Zingt Hazes 2014,51,NL - HZH14 - ZIG - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
-406,NL,Netherlands,121,MIS,Les Miserables,59,NL - MIS - CARRE - 1,,,,,,1,1756,_N/A,Tour,0,No
-407,NL,Netherlands,122,WARHORSE,War Horse,59,NL - WARHORSE - CARRE - 1,,00:00.0,00:00.0,,,1,1756,_N/A,Tour,0,No
-408,NL,Netherlands,122,WARHORSE,War Horse,61,NL - WARHORSE - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-409,NL,Netherlands,122,WARHORSE,War Horse,68,NL - WARHORSE - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-410,NL,Netherlands,122,WARHORSE,War Horse,82,NL - WARHORSE - MART - 1,,,,,,1,1550,_N/A,Tour,0,No
-411,NL,Netherlands,121,MIS,Les Miserables,87,NL - MIS - NLUX - 1,,,,,,1,1535,_N/A,Tour,0,No
-412,NL,Netherlands,122,WARHORSE,War Horse,87,NL - WARHORSE - NLUX - 1,,,,,,1,1535,_N/A,Tour,0,No
-413,NL,Netherlands,122,WARHORSE,War Horse,90,NL - WARHORSE - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-414,NL,Netherlands,121,MIS,Les Miserables,93,NL - MIS - PARKH - 1,,,,,,1,875,_N/A,Tour,0,No
-415,NL,Netherlands,116,3M,3 Musketiers,87,NL - 3M - NLUX - 1,,,,00:00.0,00:00.0,1,1535,_N/A,Tour,0,No
-416,NL,Netherlands,109,HGIM,Hij Gelooft In Mij 2012,119,NL - HGIM - AGORA - 1,,,,00:00.0,00:00.0,1,750,_N/A,Tour,0,No
-417,NL,Netherlands,114,MERMAID,Disney's The Little Mermaid,27,NL - MERMAID - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
-418,DE,Germany,128,AIDA,Aida,1,DE - AIDA - COL - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1680,_N/A,Sit Down,1,Yes
-419,DE,Germany,129,IWS,Ich will Spaß,1,DE - IWS - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1630,_N/A,Sit Down,1,Yes
-420,DE,Germany,130,BUD,Buddy,1,DE - BUD - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1335,_N/A,Sit Down,1,Yes
-421,DE,Germany,131,42ND,42nd Street,2,DE - 42ND - APO - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1816,_N/A,Sit Down,1,Yes
-422,DE,Germany,125,GHO,Ghost,9,DE - GHO - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
-423,DE,Germany,126,LEM,Les Misérables,9,DE - LEM - TDW - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1670,_N/A,Sit Down,1,Yes
-424,DE,Germany,127,SDM,Der Schuh des Manitu,9,DE - SDM - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1530,_N/A,Sit Down,1,Yes
-425,DE,Germany,124,CAT,Cats,10,DE - CAT - TPP - 1,,00:00.0,00:00.0,00:00.0,00:00.0,1,1660,_N/A,Sit Down,1,Yes
-426,DE,Germany,123,SUB,Die Schöne und das Biest,10,DE - SUB - TPP - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1740,_N/A,Sit Down,1,Yes
-427,DE,Germany,123,SUB,Die Schöne und das Biest,11,DE - SUB - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1700,_N/A,Sit Down,1,Yes
-428,DE,Germany,132,REB,Rebecca,12,DE - REB - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1797,_N/A,Sit Down,1,Yes
-430,ES,Spain,49,SAT,"Sister Act, Tour",43,ES - SAT - APO - 1,00:00.0,,,00:00.0,00:00.0,1,1768,_N/A,Tour,0,No
-431,DE,Germany,134,KB,Kinky Boots,6,DE - KB - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1227,_N/A,Sit Down,1,Yes
-653,FR,France,159,GRS,Grease,23,FR - GRS - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-654,FR,France,156,LRL,Le Roi Lion,23,FR - LRL - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-655,FR,France,158,SIS,Sister Act,23,FR - SIS - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-656,FR,France,157,MAM,Mamma Mia!,23,FR - MAM - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-657,FR,France,155,CAB,Cabaret,147,FR - CAB - TMA - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,850,Théâtre Marigny,Sit Down,0,No
-658,FR,France,155,CAB,Cabaret,148,FR - CAB - FOL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1600,Folies Bergère,Sit Down,1,Yes
-659,DE,Germany,14,TDV,Tanz der Vampire,4,DE - TDV - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1850,_N/A,Sit Down,1,Yes
-660,RU,Russia,161,IAL,Ледниковый период LIVE!,149,RU - IAL - SCO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,10308,_N/A,Tour,0,No
-661,RU,Russia,160,ALD,Аладдин и повелитель огня,150,RU - ALD - LUZ - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,7400,_N/A,Tour,0,No
-662,RU,Russia,162,SINDBAD,Синдбад и принцесса Анна,150,RU - SINDBAD - LUZ - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,7400,_N/A,Tour,0,No
-664,DE,Germany,164,TBG,The Bodyguard,12,DE - TBG - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1788,_N/A,Sit Down,1,Yes
-665,FR,France,165,ZOR,Zorro,148,FR - ZOR - FOL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1600,Folies Bergère,Sit Down,1,Yes
-666,FR,France,157,MAM,Mamma Mia!,153,FR - MAM - PSP -,,,,,,1,0,_N/A,Tour,0,No
-668,NL,Netherlands,68,HAIR,HAIR,56,NL - HAIR - AMP - 1,,,,,,1,840,_N/A,Tour,0,No
-669,ES,Spain,167,TRR,Titanium - Rojas y Rodríguez,47,ES - TRR - COL - 1,00:00.0,,,,,0,1395,_N/A,Tour,0,No
-670,ES,Spain,168,MPV,Miguel Poveda,47,ES - MPV - COL - 1,00:00.0,,,,,0,1395,_N/A,Tour,0,No
-671,ES,Spain,169,RMT,Rocío Molina y La Tremendita - Afectos,47,ES - RMT - COL - 1,00:00.0,,,,,0,1395,_N/A,Tour,0,No
-672,DE,Germany,8,MP,Mary Poppins,4,DE - MP - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1874,_N/A,Sit Down,1,Yes
-673,NL,Netherlands,170,STP,Stage Theater Producties,26,NL - STP - ACT - 1,,,,,,1,1869,_N/A,STP Event,0,No
-674,NL,Netherlands,170,STP,Stage Theater Producties,27,NL - STP - BTU - 1,,,,,,1,1559,_N/A,STP Event,0,No
-675,FR,France,157,MAM,Mamma Mia!,153,FR - MAM - PSP - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,3400,Palais des Sports,Tour,0,No
-677,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",55,NL - ANNIEMG - ALM - 1,,,,,,1,820,_N/A,Tour,0,No
-678,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",61,NL - ANNIEMG - CHASSE - 1,,,,,,1,1400,_N/A,Tour,0,No
-679,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",68,NL - ANNIEMG - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-680,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",82,NL - ANNIEMG - MART - 1,,,,,,1,1550,_N/A,Tour,0,No
-681,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",86,NL - ANNIEMG - NIJ - 1,,,,,,1,920,_N/A,Tour,0,No
-682,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",87,NL - ANNIEMG - NLUX - 1,,,,,,1,1535,_N/A,Tour,0,No
-683,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",90,NL - ANNIEMG - ORP - 1,,,,,,1,1292,_N/A,Tour,0,No
-684,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",92,NL - ANNIEMG - PARKE - 1,,,,,,1,930,_N/A,Tour,0,No
-685,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",93,NL - ANNIEMG - PARKH - 1,,,,,,1,920,_N/A,Tour,0,No
-686,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",96,NL - ANNIEMG - RIJS - 1,,,,,,1,700,_N/A,Tour,0,No
-687,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",100,NL - ANNIEMG - SPIE - 1,,,,,,1,919,_N/A,Tour,0,No
-688,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",104,NL - ANNIEMG - UTR - 1,,,,,,1,847,_N/A,Tour,0,No
-689,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",108,NL - ANNIEMG - VRIJ - 1,,,,,,1,900,_N/A,Tour,0,No
-690,DE,Germany,4,GVN,Der Glöckner von Notre Dame,2,DE - GVN - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1735,_N/A,Sit Down,1,Yes
-691,RU,Russia,171,GHO,Привидение,24,RU - GHO - MDM - 1,00:00.0,00:00.0,,,,0,1808,_N/A,Sit Down,1,Yes
-692,DE,Germany,172,FJG,Fack Ju Göhte - Se Mjusicäl,154,DE - FJG - TIW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,692,_N/A,Sit Down,1,Yes
-693,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",117,NL - ANNIEMG - ZUID - 1,,,,,,1,996,_N/A,Tour,0,No
-694,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",98,NL - ANNIEMG - SCHIE - 1,,,,,,1,702,_N/A,Tour,0,No
-695,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",74,NL - ANNIEMG - KOM - 1,,,,,,1,650,_N/A,Tour,0,No
-696,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",83,NL - ANNIEMG - MEER - 1,,,,,,1,521,_N/A,Tour,0,No
-697,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",116,NL - ANNIEMG - ZOE - 1,,,,,,1,780,_N/A,Tour,0,No
-698,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",64,NL - ANNIEMG - FLINT - 1,,,,,,1,770,_N/A,Tour,0,No
-699,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",67,NL - ANNIEMG - HARM - 1,,,,,,1,950,_N/A,Tour,0,No
-700,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",110,NL - ANNIEMG - WIL - 1,,,,,,1,957,_N/A,Tour,0,No
-701,NL,Netherlands,173,MOT,Motown,27,NL - MOT - BTU - 1,,,,,,0,1563,_N/A,_N/A,0,No
-702,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",102,NL - ANNIEMG - TAQA - 1,,,,,,1,694,_N/A,Tour,0,No
-703,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",91,NL - ANNIEMG - PAR - 1,,,,,,1,879,_N/A,Tour,0,No
-704,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",103,NL - ANNIEMG - TIL - 1,,,,,,1,840,_N/A,Tour,0,No
-705,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",66,NL - ANNIEMG - HAA - 1,,,,,,1,633,_N/A,Tour,0,No
-706,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",155,NL - ANNIEMG - GOOI - 1,,,,,,1,744,_N/A,Tour,0,No
-707,NL,Netherlands,94,ELIIC,Elisabeth - In Concert,118,NL - ELIIC - LOO - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,3984,_N/A,Tour,0,No
-708,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",57,NL - ANNIEMG - AMST - 1,,,,,,1,670,_N/A,Tour,0,No
-709,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",63,NL - ANNIEMG - DEV - 1,,,,,,1,768,_N/A,Tour,0,No
-710,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",70,NL - ANNIEMG - KAF - 1,,,,,,1,987,_N/A,Tour,0,No
-711,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",80,NL - ANNIEMG - MAAS - 1,,,,,,1,764,_N/A,Tour,0,No
-712,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",156,NL - ANNIEMG - SNEEK - 1,,,,,,1,611,_N/A,Tour,0,No
-713,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",65,NL - ANNIEMG - GOUDSE - 1,,,,,,1,813,_N/A,Tour,0,No
-714,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",105,NL - ANNIEMG - VEL - 1,,,,,,1,764,_N/A,Tour,0,No
-715,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",111,NL - ANNIEMG - ZAAN - 1,,,,,,1,879,_N/A,Tour,0,No
-716,ES,Spain,174,STC,Stars in Concert,41,ES - STC - LDV - 1,00:00.0,,,,,0,1443,_N/A,Tour,0,No
-717,ES,Spain,47,LMT,"Los Miserables, Tour II",28,ES - LMT - FBS - 1,,00:00.0,00:00.0,,,0,2167,_N/A,Tour,0,No
-718,ES,Spain,47,LMT,"Los Miserables, Tour II",30,ES - LMT - APM - 1,,,,,,0,1561,_N/A,Tour,0,No
-719,ES,Spain,47,LMT,"Los Miserables, Tour II",31,ES - LMT - CAEM - 1,,,,,,0,1197,_N/A,Tour,0,No
-720,ES,Spain,47,LMT,"Los Miserables, Tour II",32,ES - LMT - GTL - 1,00:00.0,,,,,0,1873,It was cancelled,Tour,0,No
-721,ES,Spain,47,LMT,"Los Miserables, Tour II",35,ES - LMT - PEG - 1,,,,,,0,1663,_N/A,Tour,0,No
-722,ES,Spain,47,LMT,"Los Miserables, Tour II",39,ES - LMT - TCV - 1,,,,,,0,930,_N/A,Tour,0,No
-723,ES,Spain,47,LMT,"Los Miserables, Tour II",120,ES - LMT - TPG - 1,,00:00.0,00:00.0,,,0,1007,_N/A,Tour,0,No
-724,ES,Spain,47,LMT,"Los Miserables, Tour II",122,ES - LMT - RJF - 1,,,,,,0,1223,_N/A,Tour,0,No
-725,ES,Spain,47,LMT,"Los Miserables, Tour II",127,ES - LMT - PFC - 1,,,,,,0,0,_N/A,Tour,0,No
-726,ES,Spain,47,LMT,"Los Miserables, Tour II",134,ES - LMT - ATN - 1,,,,,,0,1616,_N/A,Tour,0,No
-727,ES,Spain,47,LMT,"Los Miserables, Tour II",138,ES - LMT - PEB - 1,,00:00.0,00:00.0,,,0,2164,_N/A,Tour,0,No
-728,ES,Spain,47,LMT,"Los Miserables, Tour II",139,ES - LMT - ARS - 1,,,,,,0,1481,_N/A,Tour,0,No
-729,ES,Spain,47,LMT,"Los Miserables, Tour II",141,ES - LMT - PAK - 1,,,,,,0,859,_N/A,Tour,0,No
-730,ES,Spain,49,SAT,"Sister Act, Tour",33,ES - SAT - GTC - 1,,,,,,0,899,_N/A,Tour,0,No
-731,ES,Spain,49,SAT,"Sister Act, Tour",46,ES - SAT - APB - 1,00:00.0,00:00.0,00:00.0,,,0,1231,It was Cancelled,Tour,0,No
-732,ES,Spain,49,SAT,"Sister Act, Tour",126,ES - SAT - TAB - 1,,,,,,0,1200,_N/A,Tour,0,No
-733,ES,Spain,49,SAT,"Sister Act, Tour",127,ES - SAT - PFC - 1,,,,,,0,0,_N/A,Tour,0,No
-734,ES,Spain,49,SAT,"Sister Act, Tour",132,ES - SAT - PGZ - 1,,00:00.0,00:00.0,,,0,1440,_N/A,Tour,0,No
-735,ES,Spain,52,MMT,Mamma Mía! Tour,126,ES - MMT - TAB - 1,,,,,,0,1200,_N/A,Tour,0,No
-736,ES,Spain,52,MMT,Mamma Mía! Tour,129,ES - MMT - PCV - 1,,,,,,0,1481,_N/A,Tour,0,No
-737,ES,Spain,52,MMT,Mamma Mía! Tour,132,ES - MMT - PGZ - 1,,,,,,0,1440,_N/A,Tour,0,No
-738,ES,Spain,52,MMT,Mamma Mía! Tour,141,ES - MMT - PAK - 1,,,,,,0,859,_N/A,Tour,0,No
-739,ES,Spain,52,MMT,Mamma Mía! Tour,146,ES - MMT - TLLL - 1,,,,,,0,1426,_N/A,Tour,0,No
-740,ES,Spain,135,FNM,Fiebre del sabado noche MAD,47,ES - FNM - COL - 1,,,,,,0,1395,_N/A,Sit Down,1,Yes
-741,ES,Spain,136,FNT,Fiebre del sabado noche Tour,124,ES - FNT - CARSED - 1,,,,,,0,0,_N/A,Tour,0,No
-742,ES,Spain,137,CBT,Cabaret Tour,124,ES - CBT - CARSED - 1,,00:00.0,00:00.0,,,0,0,_N/A,Tour,0,No
-743,ES,Spain,137,CBT,Cabaret Tour,126,ES - CBT - TAB - 1,,00:00.0,00:00.0,,,0,1200,_N/A,Tour,0,No
-744,ES,Spain,137,CBT,Cabaret Tour,128,ES - CBT - TCA - 1,,,,,,0,943,_N/A,Tour,0,No
-745,ES,Spain,137,CBT,Cabaret Tour,133,ES - CBT - ASP - 1,,00:00.0,00:00.0,,,0,0,_N/A,Tour,0,No
-746,ES,Spain,138,GSM,Grease MAD,34,ES - GSM - NTA - 1,,,,,,0,1080,_N/A,Tour,0,No
-747,ES,Spain,139,HSM,High School Musical Tour,30,ES - HSM - APM - 1,,,,,,0,1561,_N/A,Tour,0,No
-748,ES,Spain,139,HSM,High School Musical Tour,31,ES - HSM - CAEM - 1,,,,,,0,1197,_N/A,Tour,0,No
-749,ES,Spain,139,HSM,High School Musical Tour,38,ES - HSM - TTB - 1,,00:00.0,00:00.0,,,0,1437,_N/A,Tour,0,No
-750,ES,Spain,139,HSM,High School Musical Tour,39,ES - HSM - TCV - 1,,,,,,0,930,_N/A,Tour,0,No
-751,ES,Spain,139,HSM,High School Musical Tour,41,ES - HSM - LDV - 1,,,,,,0,1450,_N/A,Sit Down,1,Yes
-752,ES,Spain,139,HSM,High School Musical Tour,45,ES - HSM - TAR - 1,,,,,,0,1100,_N/A,Tour,0,No
-753,ES,Spain,139,HSM,High School Musical Tour,124,ES - HSM - CARSED - 1,,,,,,0,0,_N/A,Tour,0,No
-754,ES,Spain,139,HSM,High School Musical Tour,125,ES - HSM - TPA - 1,,,,,,0,1072,_N/A,Tour,0,No
-755,ES,Spain,139,HSM,High School Musical Tour,126,ES - HSM - TAB - 1,,,,,,0,1200,_N/A,Tour,0,No
-756,ES,Spain,139,HSM,High School Musical Tour,130,ES - HSM - TBH - 1,,00:00.0,00:00.0,,,0,700,_N/A,Tour,0,No
-757,ES,Spain,139,HSM,High School Musical Tour,131,ES - HSM - TVE - 1,,,,,,0,910,_N/A,Tour,0,No
-758,ES,Spain,139,HSM,High School Musical Tour,133,ES - HSM - ASP - 1,,,,,,0,0,_N/A,Tour,0,No
-759,ES,Spain,139,HSM,High School Musical Tour,140,ES - HSM - AS - 1,,,,,,0,0,_N/A,Tour,0,No
-760,ES,Spain,139,HSM,High School Musical Tour,142,ES - HSM - POA - 1,,,,,,0,1729,_N/A,Tour,0,No
-761,ES,Spain,139,HSM,High School Musical Tour,144,ES - HSM - TAV - 1,,,,,,0,1003,_N/A,Tour,0,No
-762,ES,Spain,139,HSM,High School Musical Tour,145,ES - HSM - TLA - 1,,00:00.0,00:00.0,,,0,800,_N/A,Tour,0,No
-763,ES,Spain,139,HSM,High School Musical Tour,152,ES - HSM - BAL - 1,,,,,,0,1408,_N/A,Tour,0,No
-764,ES,Spain,140,CBM,Cabaret MAD,34,ES - CBM - NTA - 1,,,,,,0,1080,_N/A,Tour,0,No
-765,ES,Spain,141,CBB,Cabaret BCN,135,ES - CBB - TNA - 1,,,,,,0,0,_N/A,Tour,0,No
-766,ES,Spain,142,LPM,Los Productores MAD,47,ES - LPM - COL - 1,,,,,,0,1395,_N/A,Sit Down,1,Yes
-767,ES,Spain,143,HBB,HOTEL LA BELLA Y LA BESTIA BARCELONA,137,ES - HBB - HB - 1,,,,,,0,0,_N/A,Tour,0,No
-768,ES,Spain,144,BBB,La Bella y la Bestia BCN,121,ES - BBB - BTM - 1,,,,,,0,6500,_N/A,Tour,0,No
-769,ES,Spain,145,BBT,La Bella y la Bestia Tour,28,ES - BBT - FBS - 1,,,,,,0,2167,_N/A,Tour,0,No
-770,ES,Spain,145,BBT,La Bella y la Bestia Tour,37,ES - BBT - TPV - 1,,,,,,0,906,_N/A,Tour,0,No
-771,ES,Spain,145,BBT,La Bella y la Bestia Tour,39,ES - BBT - TCV - 1,,1899-12-31 00:00:00.000,1899-12-31 00:00:00.000,,,0,930,_N/A,Tour,0,No
-772,ES,Spain,146,BBM,La Bella y la Bestia MAD,47,ES - BBM - COL - 1,,,,,,0,1395,_N/A,Sit Down,1,Yes
-773,ES,Spain,147,CCB,Chicago BCN,38,ES - CCB - TTB - 1,,,,,,0,1437,_N/A,Tour,0,No
-774,ES,Spain,148,CCT,Chicago Tour,35,ES - CCT - PEG - 1,,,,,,0,1663,_N/A,Tour,0,No
-775,ES,Spain,148,CCT,Chicago Tour,45,ES - CCT - TAR - 1,,00:00.0,00:00.0,,,0,1100,_N/A,Tour,0,No
-776,ES,Spain,148,CCT,Chicago Tour,136,ES - CCT - CC - 1,,,,,,0,0,_N/A,Tour,0,No
-777,ES,Spain,149,CCM,Chicado MAD,34,ES - CCM - NTA - 1,,,,,,0,1080,_N/A,Tour,0,No
-778,ES,Spain,150,CMM,Chicado MAD II,47,ES - CMM - COL - 1,,00:00.0,00:00.0,,,0,1395,_N/A,Sit Down,1,Yes
-779,ES,Spain,151,MMD,Mamma Mía! MAD 2005,41,ES - MMD - LDV - 1,,00:00.0,00:00.0,,,0,1450,_N/A,Sit Down,1,Yes
-780,ES,Spain,152,MBC,Mamma Mía! BCN 2008,121,ES - MBC - BTM - 1,,,,,,0,6500,_N/A,Tour,0,No
-781,ES,Spain,153,LMM,Los Miserables MAD,41,ES - LMM - LDV - 1,,,,,,0,1450,_N/A,Sit Down,1,Yes
-782,ES,Spain,154,LMB,Los Miserables BCN,121,ES - LMB - BTM - 1,,00:00.0,00:00.0,,,0,6500,_N/A,Tour,0,No
-783,RU,Russia,53,POTO,Призрак Оперы,157,RU - POTO - KRM - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,5662,_N/A,Sit Down,1,Yes
-784,NL,Netherlands,68,HAIR,HAIR,159,NL - HAIR - DLMWS - 1,00:00.0,,,00:00.0,00:00.0,1,949,_N/A,Tour,0,No
-785,NL,Netherlands,69,CDR,Ciske De Rat 2016,159,NL - CDR - DLMWS - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,949,_N/A,Tour,0,No
-786,NL,Netherlands,70,SIMRE,Simone - Reprise,158,NL - SIMRE - DLMMD - 1,,,,,,1,655,_N/A,Tour,0,No
-787,NL,Netherlands,77,DG,Dreamgirls,159,NL - DG - DLMWS - 1,00:00.0,,,00:00.0,00:00.0,1,949,_N/A,Tour,0,No
-788,NL,Netherlands,83,RL,Robert Long,158,NL - RL - DLMMD - 1,00:00.0,,,,,1,655,_N/A,Tour,0,No
-789,NL,Netherlands,84,SIM,Simone,158,NL - SIM - DLMMD - 1,,,,,,1,655,_N/A,Tour,0,No
-790,NL,Netherlands,85,SON,Sonneveld,159,NL - SON - DLMWS - 1,,,,,,1,655,_N/A,Tour,0,No
-791,NL,Netherlands,87,TWEE,De Tweeling,159,NL - TWEE - DLMWS - 1,00:00.0,,,,,1,949,_N/A,Tour,0,No
-792,NL,Netherlands,88,SIMRES,Simone - Reprise sep16,159,NL - SIMRES - DLMWS - 1,,,,,,1,949,_N/A,Tour,0,No
-793,NL,Netherlands,109,HGIM,Hij Gelooft In Mij 2012,159,NL - HGIM - DLMWS - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,949,_N/A,Tour,0,No
-794,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",159,NL - ANNIEMG - DLMWS - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,949,_N/A,Tour,1,Yes
-795,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",160,NL - ANNIEMG - HENG - 1,,,,,,1,880,_N/A,Tour,0,No
-796,NL,Netherlands,175,ELIIC,Elisabeth - In Concert 2018,161,NL - ELIIC18 - SOEST - 1,00:00.0,00:00.0,00:00.0,,,1,4109,_N/A,Sit Down,1,Yes
-797,FR,France,176,CHI,Chicago,23,FR - CHI - TMO - 0,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-798,ES,Spain,177,ANA,Anastasia,47,ES - ANA - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1396,_N/A,Sit Down,1,Yes
-799,NL,Netherlands,178,MM18,Mamma Mia,27,NL - MM18 - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1548,_N/A,Sit Down,1,Yes
-800,FR,France,176,CHI,Chicago,23,FR - CHI - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1596,Théâtre Mogador,Sit Down,1,Yes
-801,DE,Germany,179,AN,Anastasia,12,DE - AN - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1801,_N/A,Sit Down,1,Yes
-802,DE,Germany,125,GHO,Ghost,6,DE - GHO - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1376,_N/A,Sit Down,1,Yes
-803,DE,Germany,180,ALACON,Aladdin in Concert,5,DE - ALACON - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1880,_N/A,Event,0,No
-804,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,26,NL - ROMY - ACT - 1,,,,,,1,1869,_N/A,Tour,0,No
-805,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,27,NL - ROMY - BTU - 1,,,,,,1,1563,_N/A,Tour,0,No
-806,DE,Germany,14,TDV,Tanz der Vampire,9,DE - TDV - TDW - 4,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1609,_N/A,Sit Down,1,Yes
-807,DE,Germany,182,PAR,Paramour,5,DE - PAR - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1874,_N/A,Sit Down,1,Yes
-808,DE,Germany,183,BOH,Bat Out Of Hell,11,DE - BOH - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
-809,DE,Germany,1,ALA,Aladdin,2,DE - ALA - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1842,_N/A,Sit Down,1,Yes
-810,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,90,NL - ROMY - ORP - 1,,,,,,1,1563,_N/A,Tour,0,No
-811,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,77,NL - ROMY - LAMP - 1,,,,,,1,1563,_N/A,Tour,0,No
-812,DE,Germany,184,AME,Die fabelhafte Welt der Amélie,154,DE - AME - TIW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,674,_N/A,Sit Down,1,Yes
-813,DE,Germany,185,BAN,The Band,9,DE - BAN - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
-814,DE,Germany,186,TINA,Tina,6,DE - TINA - OPH - 1,,,,,,0,1314,_N/A,Sit Down,1,Yes
-815,NL,Netherlands,187,ANA,Anastasia,26,NL - ANA - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1863,_N/A,Sit Down,1,Yes
-816,NL,Netherlands,188,BREL,Brel,159,NL - BREL - DLMWS - 1,,,,,,0,949,_N/A,Sit Down,1,Yes
-817,NL,Netherlands,189,FLOD,Flodder,27,NL - FLOD - BTU - 1,,,,,,0,1560,_N/A,Sit Down,1,Yes
-818,NL,Netherlands,190,LAZ,Lazarus,159,NL - LAZ - DLMWS - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,949,_N/A,Sit Down,1,Yes
-819,NL,Netherlands,191,PW,Pretty Woman,27,NL - PW - BTU - 1,,,,,,0,1560,_N/A,Sit Down,1,Yes
-820,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,97,NL - ROMY - SCHALM - 1,,,,,,1,1563,_N/A,Tour,0,No
-821,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,55,NL - ROMY - ALM - 1,,,,,,1,820,_N/A,Tour,0,No
-822,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,64,NL - ROMY - FLINT - 1,,,,,,1,770,_N/A,Tour,0,No
-823,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,81,NL - ROMY - MARK - 1,,,,,,1,685,_N/A,Tour,0,No
-824,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,82,NL - ROMY - MART - 1,,,,,,1,1550,_N/A,Tour,0,No
-825,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,89,NL - ROMY - ORAN - 1,,,,,,1,800,_N/A,Tour,0,No
-826,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,102,NL - ROMY - TAQA - 1,,,,,,1,694,_N/A,Tour,0,No
-827,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,69,NL - ROMY - ISALA - 1,,,,,,1,493,_N/A,Tour,0,No
-828,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,80,NL - ROMY - MAAS - 1,,,,,,1,764,_N/A,Tour,0,No
-829,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,83,NL - ROMY - MEER - 1,,,,,,1,521,_N/A,Tour,0,No
-830,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,86,NL - ROMY - NIJ - 1,,,,,,1,920,_N/A,Tour,0,No
-831,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,93,NL - ROMY - PARKH - 1,,,,,,1,920,_N/A,Tour,0,No
-832,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,100,NL - ROMY - SPIE - 1,,,,,,1,919,_N/A,Tour,0,No
-833,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,162,NL - ROMY - DORDT - 1,,,,,,1,755,_N/A,Tour,0,No
-834,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,91,NL - ROMY - PAR - 1,,,,,,1,879,_N/A,Tour,0,No
-835,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,108,NL - ROMY - VRIJ - 1,,,,,,1,900,_N/A,Tour,0,No
-836,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,116,NL - ROMY - ZOE - 1,,,,,,1,780,_N/A,Tour,0,No
-837,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,61,NL - ROMY - CHASSE - 1,,,,,,1,1431,_N/A,Tour,0,No
-838,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,88,NL - ROMY - OLUX - 1,,,,,,1,909,_N/A,Tour,0,No
-839,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,103,NL - ROMY - TIL - 1,,,,,,1,840,_N/A,Tour,0,No
-840,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,92,NL - ROMY - PARKE - 1,,,,,,1,932,_N/A,Tour,0,No
-841,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,72,NL - ROMY - KENN - 1,,,,,,1,602,_N/A,Tour,0,No
-842,DE,Germany,192,TIN,TINA - Das Tina Turner Musical,6,DE - TIN - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1373,_N/A,Sit Down,1,Yes
-843,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,163,NL - ROMY - STOE - 1,,,,,,1,650,_N/A,Tour,0,No
-844,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,164,NL - ROMY - MAAG - 1,,,,,,1,0,_N/A,Tour,0,No
-845,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,165,NL - ROMY - ATL - 1,,,,,,1,822,_N/A,Tour,0,No
-846,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,67,NL - ROMY - HARM - 1,,,,,,1,950,_N/A,Tour,0,No
-847,NL,Netherlands,193,TINA,TINA,27,NL - TINA - BTU - 1,00:00.0,00:00.0,00:00.0,,,0,1561,_N/A,Sit Down,1,Yes
-848,UK,United Kingdom,194,_N/A,_N/A,166,UK - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
-849,UK,United Kingdom,195,_UNK,_Unknown,167,UK - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
-850,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,78,NL - ROMY - LEEST - 1,,,,,,1,500,_N/A,Tour,0,No
-851,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,111,NL - ROMY - ZAAN - 1,,,,,,1,879,_N/A,Tour,0,No
-852,DE,Germany,7,MM,Mamma Mia!,1,DE - MM - COL - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1486,_N/A,Tour,0,No
-853,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,68,NL - ROMY - HEER - 1,,,,,,1,1057,_N/A,Tour,0,No
-854,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,74,NL - ROMY - KOM - 1,,,,,,1,650,_N/A,Tour,0,No
-855,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,96,NL - ROMY - RIJS - 1,,,,,,1,700,_N/A,Tour,0,No
-856,DE,Germany,196,PW,Pretty Woman,4,DE - PW - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1887,_N/A,Sit Down,1,Yes
-857,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,105,NL - ROMY - VEL - 1,,,,,,1,764,_N/A,Tour,0,No
-858,NL,Netherlands,197,AIC,Aida - In Concert,168,NL - AIC - AUTO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,4109,_N/A,Sit Down,1,Yes
-859,UK,United Kingdom,198,TIN,TINA - The Tina Turner Musical,169,UK - TIN - ALD - 1,,,,,,0,1150,_N/A,Sit Down,1,Yes
-860,DE,Germany,7,MM,Mamma Mia!,9,DE - MM - TDW - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
-861,FR,France,199,GHO,Ghost,23,FR - GHO - TMO - 0,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1606,Théâtre Mogador,Sit Down,1,Yes
-862,FR,France,199,GHO,Ghost,23,FR - GHO - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1606,Théâtre Mogador,Sit Down,1,Yes
-863,DE,Germany,125,GHO,Ghost,12,DE - GHO - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1803,_N/A,Sit Down,1,Yes
-864,DE,Germany,14,TDV,Tanz der Vampire,11,DE - TDV - MET - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
-865,US,United States of America,200,_N/A,_N/A,170,US - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
-866,US,United States of America,201,_UNK,_Unknown,171,US - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
-867,US,United States of America,202,TIN,TINA - The Tina Turner Musical,172,US - TIN - LFT - 1,00:00.0,00:00.0,00:00.0,,,0,1500,_N/A,Sit Down,1,Yes
-868,NL,Netherlands,203,ALA,Disney's Aladdin,26,NL - ALA - ACT - 1,00:00.0,00:00.0,00:00.0,,,0,1863,_N/A,Sit Down,1,Yes
-869,ES,Spain,204,TINA,"Tina, el musical",47,ES - TINA - COL - 1,00:00.0,00:00.0,00:00.0,,,0,1396,_N/A,Sit Down,1,Yes
-870,DE,Germany,4,GVN,Der Glöckner von Notre Dame,11,DE - GVN - MET - 1,,,,,,1,1636,_N/A,Sit Down,1,Yes
-871,DE,Germany,9,NY,Ich war noch niemals in New York,9,DE - NY - TDW - 3,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
-872,DE,Germany,14,TDV,Tanz der Vampire,12,DE - TDV - PAL - 3,00:00.0,00:00.0,00:00.0,,,0,1770,_N/A,Sit Down,1,Yes
-873,DE,Germany,62,WWR,We Will Rock You,11,DE - WWR - MET - 1,,,,,,1,1636,_N/A,Sit Down,1,Yes
-874,DE,Germany,192,TIN,TINA - Das Tina Turner Musical,12,DE - TIN - PAL - 1,00:00.0,00:00.0,00:00.0,,,1,1809,_N/A,Sit Down,1,Yes
-875,DE,Germany,206,HA,Hamilton,6,DE - HA - OPH - 1,00:00.0,00:00.0,00:00.0,,,0,1382,_N/A,Sit Down,1,Yes
-876,DE,Germany,207,BST,Backstage Tour,173,DE - BST - BSTAPO - 1,,,,,,0,20,_N/A,_N/A,0,No
-877,DE,Germany,207,BST,Backstage Tour,176,DE - BST - BSTPAL - 1,,,,,,0,20,_N/A,_N/A,0,No
-878,DE,Germany,207,BST,Backstage Tour,175,DE - BST - BSTOPH - 1,,,,,,0,20,_N/A,_N/A,0,No
-879,DE,Germany,207,BST,Backstage Tour,177,DE - BST - BSTTAE - 1,,,,,,0,20,_N/A,_N/A,0,No
-880,DE,Germany,207,BST,Backstage Tour,178,DE - BST - BSTMET - 1,,,,,,0,20,_N/A,_N/A,0,No
-881,DE,Germany,207,BST,Backstage Tour,179,DE - BST - BSTTDW - 1,,,,,,0,20,_N/A,_N/A,0,No
-882,DE,Germany,207,BST,Backstage Tour,180,DE - BST - BSTTHH - 1,,,,,,0,30,_N/A,_N/A,0,No
-883,DE,Germany,207,BST,Backstage Tour,181,DE - BST - BSTTNF - 1,,,,,,0,30,_N/A,_N/A,0,No
-884,NL,Netherlands,77,DG,Dreamgirls,183,NL - DG - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-885,NL,Netherlands,86,TSOM,The Sound Of Music 2015,183,NL - TSOM - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-886,NL,Netherlands,105,MM09,Mamma Mia 2009,183,NL - MM09 - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-887,NL,Netherlands,107,EVITA,Evita,183,NL - EVITA - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-888,NL,Netherlands,112,SNF,Saturday Night Fever,183,NL - SNF - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-889,NL,Netherlands,114,MERMAID,Disney's The Little Mermaid,183,NL - MERMAID - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-890,NL,Netherlands,115,JOSEPH,Joseph And The Amazing Technicolor Dreamcoat,183,NL - JOSEPH - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-891,NL,Netherlands,208,AOL,Aspects Of Love,183,NL - AOL - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-892,NL,Netherlands,209,ASU,All Shook Up,183,NL - ASU - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-893,NL,Netherlands,210,BTBTOUR,Disney's Beauty And The Beast - Tour,183,NL - BTBTOUR - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-894,NL,Netherlands,211,CAGE,La Cage Aux Folles,183,NL - CAGE - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-895,NL,Netherlands,212,CATS,Cats,183,NL - CATS - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-896,NL,Netherlands,213,CDRTOUR,Ciske De Rat - Tour,183,NL - CDRTOUR - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-897,NL,Netherlands,214,COPA,Copacabana,183,NL - COPA - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-898,NL,Netherlands,215,CRAZY,Crazy For You,183,NL - CRAZY - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-899,NL,Netherlands,217,FOSSE,Fosse,183,NL - FOSSE - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-900,NL,Netherlands,218,HSM,Disney's High School Musical,183,NL - HSM - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-901,NL,Netherlands,219,JANTJES,De Jantjes,183,NL - JANTJES - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-902,NL,Netherlands,220,JESUS,Jesus Christ Superstar,183,NL - JESUS - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-903,NL,Netherlands,221,LS,Love Story,183,NL - LS - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-904,NL,Netherlands,222,MFL,My Fair Lady,183,NL - MFL - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-905,NL,Netherlands,223,NTT,Next To Normal,183,NL - NTT - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-906,NL,Netherlands,224,PETTI,Petticoat,183,NL - PETTI - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-907,NL,Netherlands,225,SUNSET,Sunset Boulevard,183,NL - SUNSET - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-908,NL,Netherlands,226,TITANIC,Titanic,183,NL - TITANIC - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-909,NL,Netherlands,227,TSOM03,The Sound Of Music 2003 - Tour,183,NL - TSOM03TOUR - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-910,NL,Netherlands,228,URINE,Urinetown,183,NL - URINE - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-911,NL,Netherlands,230,ZORRO,Zorro,183,NL - ZORRO - TOURNL - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,0,_N/A,Tour,0,No
-912,NL,Netherlands,101,TSOM03,The Sound Of Music 2002,183,NL - TSOM03 - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-913,NL,Netherlands,118,CDR07,Ciske De Rat 2007,183,NL - CDR07 - TOURNL - 1,,,,,,1,0,_N/A,Tour,0,No
-914,DE,Germany,7,MM,Mamma Mia!,6,DE - MM - OPH - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1382,_N/A,Sit Down,1,Yes
-915,DE,Germany,61,WI,Wicked - Die Hexen von Oz,5,DE - WI - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1883,_N/A,Sit Down,1,Yes
-916,FR,France,156,LRL,Le Roi Lion,23,FR - LRL - TMO - 0,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
-917,DE,Germany,231,EIS,Die Eiskönigin,4,DE - EIS - TAE - 1,00:00.0,00:00.0,00:00.0,,,0,1743,_N/A,Sit Down,1,Yes
-918,FR,France,156,LRL,Le Roi Lion,23,FR - LRL - TMO - 2,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1598,Théâtre Mogador,Sit Down,1,Yes
-919,US,United States of America,202,TIN,TINA - The Tina Turner Musical,184,US - TIN - LUFO - 1,00:00.0,00:00.0,00:00.0,,,0,1500,_N/A,Sit Down,1,Yes
-920,NL,Netherlands,190,LAZ,Lazarus,68,NL - LAZ - HEER - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1053,_N/A,Tour,0,No
-921,NL,Netherlands,190,LAZ,Lazarus,82,NL - LAZ - MART - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1584,_N/A,Tour,0,No
-922,NL,Netherlands,190,LAZ,Lazarus,88,NL - LAZ - OLUX - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,895,_N/A,Tour,0,No
-923,DE,Germany,7,MM,Mamma Mia!,5,DE - MM - TNF - 1,00:00.0,00:00.0,00:00.0,,,0,1883,_N/A,Sit Down,1,Yes
-924,DE,Germany,7,MM,Mamma Mia!,9,DE - MM - TDW - 3,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
-925,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,59,NL - HGIM22 - CARRE - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1756,_N/A,Tour,0,No
-926,DE,Germany,7,MM,Mamma Mia!,5,DE - MM - TNF - 2,00:00.0,00:00.0,00:00.0,,,0,1883,_N/A,Sit Down,1,Yes
-927,NL,Netherlands,233,TSOM21,The Sound of Music,26,NL - TSOM21 - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,1,1034,_N/A,Tour,1,Yes
-928,NL,Netherlands,233,TSOM21,The Sound of Music,54,NL - TSOM21 - AGN - 1,00:00.0,,,,,1,800,_N/A,Tour,0,No
-929,NL,Netherlands,233,TSOM21,The Sound of Music,56,NL - TSOM21 - AMP - 1,00:00.0,,,,,1,850,_N/A,Tour,0,No
-930,NL,Netherlands,233,TSOM21,The Sound of Music,61,NL - TSOM21 - CHASSE - 1,00:00.0,,,,,1,1431,_N/A,Tour,0,No
-931,NL,Netherlands,233,TSOM21,The Sound of Music,67,NL - TSOM21 - HARM - 1,00:00.0,,,,,1,950,_N/A,Tour,0,No
-932,NL,Netherlands,233,TSOM21,The Sound of Music,82,NL - TSOM21 - MART - 1,00:00.0,,,,,1,1550,_N/A,Tour,0,No
-933,NL,Netherlands,233,TSOM21,The Sound of Music,87,NL - TSOM21 - NLUX - 1,00:00.0,,,,,1,1491,_N/A,Tour,0,No
-934,NL,Netherlands,233,TSOM21,The Sound of Music,90,NL - TSOM21 - ORP - 1,00:00.0,,,,,1,1284,_N/A,Tour,0,No
-935,NL,Netherlands,233,TSOM21,The Sound of Music,92,NL - TSOM21 - PARKE - 1,00:00.0,,,,,1,936,_N/A,Tour,0,No
-936,NL,Netherlands,233,TSOM21,The Sound of Music,93,NL - TSOM21 - PARKH - 1,00:00.0,,,,,1,920,_N/A,Tour,0,No
-937,NL,Netherlands,233,TSOM21,The Sound of Music,100,NL - TSOM21 - SPIE - 1,00:00.0,,,,,1,927,_N/A,Tour,0,No
-938,NL,Netherlands,233,TSOM21,The Sound of Music,108,NL - TSOM21 - VRIJ - 1,00:00.0,,,,,1,894,_N/A,Tour,0,No
-939,NL,Netherlands,233,TSOM21,The Sound of Music,185,NL - TSOM21 - MAINDB - 1,00:00.0,,,,,1,1350,_N/A,Tour,0,No
-940,DE,Germany,234,KD,Ku'damm 56,9,DE - KD - TDW - 1,00:00.0,00:00.0,00:00.0,,,0,1653,_N/A,Sit Down,1,Yes
-941,NL,Netherlands,233,TSOM21,The Sound of Music,70,NL - TSOM21 - KAF - 1,00:00.0,,,,,1,987,_N/A,Tour,0,No
-942,NL,Netherlands,233,TSOM21,The Sound of Music,165,NL - TSOM21 - ATL - 1,00:00.0,,,,,1,822,_N/A,Tour,0,No
-943,NL,Netherlands,233,TSOM21,The Sound of Music,68,NL - TSOM21 - HEER - 1,00:00.0,,,,,1,1057,_N/A,Tour,0,No
-944,NL,Netherlands,233,TSOM21,The Sound of Music,110,NL - TSOM21 - WIL - 1,00:00.0,,,,,1,970,_N/A,Tour,0,No
-945,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,65,NL - HGIM22 - GOUDSE - 1,,,,,,0,813,_N/A,Tour,0,No
-946,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,67,NL - HGIM22 - HARM - 1,,,,,,0,950,_N/A,Tour,0,No
-947,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,86,NL - HGIM22 - NIJ - 1,,,,,,0,920,_N/A,Tour,0,No
-948,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,87,NL - HGIM22 - NLUX - 1,,,,,,0,1535,_N/A,Tour,0,No
-949,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,92,NL - HGIM22 - PARKE - 1,,,,,,0,932,_N/A,Tour,0,No
-950,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,93,NL - HGIM22 - PARKH - 1,,,,,,0,920,_N/A,Tour,0,No
-951,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,108,NL - HGIM22 - VRIJ - 1,,,,,,0,900,_N/A,Tour,0,No
-952,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,165,NL - HGIM22 - ATL - 1,,,,,,0,822,_N/A,Tour,0,No
-953,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,186,NL - HGIM22 - AMARED - 1,,,,,,0,1300,_N/A,Tour,0,No
-954,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,56,NL - HGIM22 - AMP - 1,,,,,,0,849,_N/A,Tour,0,No
-955,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,82,NL - HGIM22 - MART - 1,,,,,,0,1550,_N/A,Tour,0,No
-956,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,90,NL - HGIM22 - ORP - 1,,,,,,0,1292,_N/A,Tour,0,No
-957,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,55,NL - HGIM22 - ALM - 1,,,,,,0,825,_N/A,Tour,0,No
-958,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,80,NL - HGIM22 - MAAS - 1,,,,,,0,764,_N/A,Tour,0,No
-959,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,104,NL - HGIM22 - UTR - 1,,,,,,0,847,_N/A,Tour,0,No
-960,DE,Germany,61,WI,Wicked - Die Hexen von Oz,2,DE - WI - APO - 1,,,,,,1,1875,_N/A,_N/A,0,No
-961,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,61,NL - HGIM22 - CHASSE - 1,,,,,,0,1431,_N/A,Tour,0,No
-962,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,100,NL - HGIM22 - SPIE - 1,,,,,,0,919,_N/A,Tour,0,No
-963,NL,Netherlands,235,AIDA23,Aida,26,NL - AIDA23 - ACT - 1,,,,,,0,1863,_N/A,Sit Down,1,Yes
-964,FR,France,236,PRO,Les Producteurs,187,FR - PRO - TDP - 1,00:00.0,00:00.0,00:00.0,00:00.0,00:00.0,0,1046,Théâtre de Paris,Sit Down,1,Yes
-965,DE,Germany,237,OB,Open Bar,188,DE - OB - OBTHH - 1,,,,,,0,2046,_N/A,F&B,0,No
-966,DE,Germany,192,TIN,TINA - Das Tina Turner Musical,2,DE - TIN - APO - 1,00:00.0,00:00.0,00:00.0,,,0,1842,_N/A,Sit Down,1,Yes
+﻿dim_production_location_id,country_code,country_name,dim_production_id,production_code,production_name,dim_auditorium_id,production_location_id,sales_start_date,production_location_premiere_date,production_location_start_date,production_location_end_date,is_expired,production_location_capacity,production_location_description,production_location_type,show_in_group_sales_reporting,show_in_group_salesreporting_name
+60,DE,Germany,5,KDL,Der König der Löwen,3,DE - KDL - THH - 1,,00:00.0,00:00.0,00:00.0,0,2045,_N/A,Sit Down,1,Yes
+61,DE,Germany,11,ROC,Rocky,6,DE - ROC - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1341,_N/A,Sit Down,1,Yes
+62,DE,Germany,11,ROC,Rocky,12,DE - ROC - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1815,_N/A,Sit Down,1,Yes
+63,DE,Germany,2,BMG,Blue Man Group,8,DE - BMG - BMX - 1,00:00.0,00:00.0,00:00.0,,0,612,_N/A,Sit Down,1,Yes
+64,DE,Germany,2,BMG,Blue Man Group,10,DE - BMG - TPP - 1,,00:00.0,00:00.0,00:00.0,1,1740,_N/A,Sit Down,1,Yes
+65,DE,Germany,2,BMG,Blue Man Group,11,DE - BMG - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1790,_N/A,Sit Down,1,Yes
+66,DE,Germany,2,BMG,Blue Man Group,2,DE - BMG - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1575,_N/A,Sit Down,1,Yes
+67,DE,Germany,14,TDV,Tanz der Vampire,2,DE - TDV - APO - 1,,00:00.0,,00:00.0,1,1786,_N/A,Sit Down,1,Yes
+68,DE,Germany,14,TDV,Tanz der Vampire,5,DE - TDV - TNF - 1,,00:00.0,00:00.0,30:00.0,1,1960,_N/A,Sit Down,1,Yes
+69,DE,Germany,14,TDV,Tanz der Vampire,9,DE - TDV - TDW - 1,00:00.0,00:00.0,00:00.0,30:00.0,1,1660,_N/A,Sit Down,1,Yes
+70,DE,Germany,14,TDV,Tanz der Vampire,11,DE - TDV - MET - 1,00:00.0,00:00.0,00:00.0,30:00.0,1,1615,_N/A,Sit Down,1,Yes
+71,DE,Germany,14,TDV,Tanz der Vampire,12,DE - TDV - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1767,_N/A,Sit Down,1,Yes
+72,DE,Germany,14,TDV,Tanz der Vampire,9,DE - TDV - TDW - 2,00:00.0,00:00.0,00:00.0,30:00.0,1,1617,_N/A,Sit Down,1,Yes
+73,DE,Germany,14,TDV,Tanz der Vampire,9,DE - TDV - TDW - 3,00:00.0,00:00.0,30:00.0,00:00.0,1,1620,_N/A,Sit Down,1,Yes
+74,DE,Germany,14,TDV,Tanz der Vampire,12,DE - TDV - PAL - 2,00:00.0,00:00.0,00:00.0,00:00.0,1,1737,_N/A,Sit Down,1,Yes
+75,DE,Germany,15,UDO,Hinterm Horizont,10,DE - UDO - TPP - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1750,_N/A,Sit Down,1,Yes
+76,DE,Germany,15,UDO,Hinterm Horizont,6,DE - UDO - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1314,_N/A,Sit Down,1,Yes
+77,DE,Germany,8,MP,Mary Poppins,2,DE - MP - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1739,_N/A,Sit Down,1,Yes
+78,DE,Germany,9,NY,Ich war noch niemals in New York,6,DE - NY - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1385,_N/A,Sit Down,1,Yes
+79,DE,Germany,9,NY,Ich war noch niemals in New York,2,DE - NY - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1844,_N/A,Sit Down,1,Yes
+80,DE,Germany,9,NY,Ich war noch niemals in New York,11,DE - NY - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1616,_N/A,Sit Down,1,Yes
+81,DE,Germany,9,NY,Ich war noch niemals in New York,9,DE - NY - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
+82,DE,Germany,9,NY,Ich war noch niemals in New York,9,DE - NY - TDW - 2,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
+83,DE,Germany,9,NY,Ich war noch niemals in New York,4,DE - NY - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1880,_N/A,Sit Down,1,Yes
+84,DE,Germany,13,TAR,Tarzan,5,DE - TAR - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1870,_N/A,Sit Down,1,Yes
+85,DE,Germany,13,TAR,Tarzan,2,DE - TAR - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1743,_N/A,Sit Down,1,Yes
+86,DE,Germany,13,TAR,Tarzan,11,DE - TAR - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1648,_N/A,Sit Down,1,Yes
+87,DE,Germany,1,ALA,Aladdin,5,DE - ALA - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1880,_N/A,Sit Down,1,Yes
+88,DE,Germany,4,GVN,Der Glöckner von Notre Dame,9,DE - GVN - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
+89,DE,Germany,16,WVB,Das Wunder von Bern,4,DE - WVB - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1850,_N/A,Sit Down,1,Yes
+90,DE,Germany,10,PDO,Das Phantom der Oper,12,DE - PDO - PAL - 1,,00:00.0,00:00.0,00:00.0,1,1754,_N/A,Sit Down,1,Yes
+91,DE,Germany,10,PDO,Das Phantom der Oper,1,DE - PDO - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1640,_N/A,Sit Down,1,Yes
+92,DE,Germany,10,PDO,Das Phantom der Oper,5,DE - PDO - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1860,_N/A,Sit Down,1,Yes
+93,DE,Germany,10,PDO,Das Phantom der Oper,11,DE - PDO - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1616,_N/A,Sit Down,1,Yes
+94,DE,Germany,3,CHI,Chicago,12,DE - CHI - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1832,_N/A,Sit Down,1,Yes
+95,DE,Germany,3,CHI,Chicago,9,DE - CHI - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
+96,DE,Germany,6,LSN,Liebe stirbt nie,6,DE - LSN - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1381,_N/A,Sit Down,1,Yes
+97,DE,Germany,7,MM,Mamma Mia!,6,DE - MM - OPH - 1,,00:00.0,00:00.0,00:00.0,1,1390,_N/A,Sit Down,1,Yes
+98,DE,Germany,7,MM,Mamma Mia!,12,DE - MM - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1831,_N/A,Sit Down,1,Yes
+99,DE,Germany,7,MM,Mamma Mia!,1,DE - MM - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1640,_N/A,Sit Down,1,Yes
+100,DE,Germany,7,MM,Mamma Mia!,10,DE - MM - TPP - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1750,_N/A,Sit Down,1,Yes
+101,DE,Germany,7,MM,Mamma Mia!,12,DE - MM - PAL - 2,00:00.0,00:00.0,00:00.0,00:00.0,1,1807,_N/A,Sit Down,1,Yes
+102,DE,Germany,7,MM,Mamma Mia!,9,DE - MM - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1568,_N/A,Sit Down,1,Yes
+103,DE,Germany,7,MM,Mamma Mia!,11,DE - MM - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1616,_N/A,Sit Down,1,Yes
+104,DE,Germany,12,SIA,Sister Act,6,DE - SIA - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1385,_N/A,Sit Down,1,Yes
+105,DE,Germany,12,SIA,Sister Act,2,DE - SIA - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1844,_N/A,Sit Down,1,Yes
+106,DE,Germany,12,SIA,Sister Act,11,DE - SIA - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1617,_N/A,Sit Down,1,Yes
+107,DE,Germany,12,SIA,Sister Act,9,DE - SIA - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
+109,ES,Spain,17,_N/A,_N/A,13,ES - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
+110,RU,Russia,18,_N/A,_N/A,14,RU - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
+111,FR,France,19,_N/A,_N/A,15,FR - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
+112,NL,Netherlands,20,_N/A,_N/A,16,NL - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
+113,DE,Germany,21,_N/A,_N/A,17,DE - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
+114,ES,Spain,22,_UNK,_Unknown,18,ES - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
+115,RU,Russia,23,_UNK,_Unknown,19,RU - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
+116,FR,France,24,_UNK,_Unknown,20,FR - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
+117,NL,Netherlands,25,_UNK,_Unknown,21,NL - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
+118,DE,Germany,26,_UNK,_Unknown,22,DE - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
+123,RU,Russia,53,POTO,Призрак Оперы,24,RU - POTO - MDM - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1582,_N/A,Sit Down,1,Yes
+124,RU,Russia,54,BB,Красавица и Чудовище,25,RU - BB - ROS - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1753,_N/A,Sit Down,1,Yes
+125,RU,Russia,55,SITR,Поющие под дождем,25,RU - SITR - ROS - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1753,_N/A,Sit Down,1,Yes
+126,RU,Russia,56,CIN,Золушка,25,RU - CIN - ROS - 1,00:00.0,00:00.0,00:00.0,,0,1753,_N/A,Sit Down,0,No
+127,RU,Russia,57,TDV,Бал Вампиров,24,RU - TDV - MDM - 1,00:00.0,00:00.0,00:00.0,,0,1808,_N/A,Sit Down,1,Yes
+128,FR,France,37,BDV,Le Bal des Vampires,23,FR - BDV - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+129,FR,France,38,BEB,La Belle et la Bête,23,FR - BEB - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+130,FR,France,39,CAT,Cats,23,FR - CAT - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+131,FR,France,40,FDO,Le Fantôme de l'Opéra,23,FR - FDO - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,0,No
+132,NL,Netherlands,41,TLK,Disney's The Lion King,26,NL - TLK - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1794,_N/A,Sit Down,1,Yes
+133,NL,Netherlands,42,TBG,The Bodyguard,27,NL - TBG - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1547,_N/A,Sit Down,1,Yes
+134,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,26,NL - BTB - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+135,NL,Netherlands,44,BE,Billy Elliot,26,NL - BE - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+136,NL,Netherlands,45,MOE,Moeder Ik Wil Bij De Revue,27,NL - MOE - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+137,ES,Spain,47,LMT,"Los Miserables, Tour II",28,ES - LMT - FBS - 2,00:00.0,00:00.0,00:00.0,00:00.0,1,2167,_N/A,Tour,0,No
+138,ES,Spain,49,SAT,"Sister Act, Tour",28,ES - SAT - FBS - 1,00:00.0,,,00:00.0,1,2167,_N/A,Tour,0,No
+139,ES,Spain,52,MMT,Mamma Mía! Tour,28,ES - MMT - FBS - 1,00:00.0,,,00:00.0,1,2167,_N/A,Tour,0,No
+140,ES,Spain,49,SAT,"Sister Act, Tour",29,ES - SAT - AVV - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,,NULL,_UNK,0,No
+141,ES,Spain,52,MMT,Mamma Mía! Tour,30,ES - MMT - APM - 1,1899-12-31 00:00:00.000,,,1899-12-31 00:00:00.000,0,1561,_N/A,Tour,0,No
+142,ES,Spain,49,SAT,"Sister Act, Tour",31,ES - SAT - CAEM - 1,00:00.0,,,00:00.0,1,1197,_N/A,Tour,0,No
+143,ES,Spain,52,MMT,Mamma Mía! Tour,31,ES - MMT - CAEM - 1,00:00.0,,,00:00.0,0,1197,_N/A,Tour,0,No
+144,ES,Spain,52,MMT,Mamma Mía! Tour,33,ES - MMT - GTC - 1,00:00.0,,,00:00.0,0,899,_N/A,Tour,0,No
+145,ES,Spain,50,SAM,"Sister Act, Madrid",34,ES - SAM - NTA - 1,00:00.0,,,00:00.0,1,1080,_N/A,Tour,0,No
+146,ES,Spain,52,MMT,Mamma Mía! Tour,35,ES - MMT - PEG - 1,00:00.0,,,00:00.0,1,1663,_N/A,Tour,0,No
+147,ES,Spain,52,MMT,Mamma Mía! Tour,36,ES - MMT - PDO - 1,00:00.0,,,00:00.0,0,1466,_N/A,Tour,0,No
+148,ES,Spain,52,MMT,Mamma Mía! Tour,37,ES - MMT - TPV - 1,00:00.0,,,00:00.0,0,906,_N/A,Tour,0,No
+149,ES,Spain,49,SAT,"Sister Act, Tour",37,ES - SAT - TPV - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,906,_N/A,Tour,0,No
+150,ES,Spain,51,MMB,Mamma Mía! Barcelona,38,ES - MMB - TTB - 1,00:00.0,,,00:00.0,1,1437,_N/A,Tour,0,No
+151,ES,Spain,48,SAB,"Sister Act, Barcelona",38,ES - SAB - TTB - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1437,_N/A,Tour,0,No
+152,ES,Spain,49,SAT,"Sister Act, Tour",39,ES - SAT - TCV - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,930,_N/A,Tour,0,No
+153,ES,Spain,52,MMT,Mamma Mía! Tour,39,ES - MMT - TCV - 1,00:00.0,,,00:00.0,0,930,_N/A,Tour,0,No
+154,ES,Spain,52,MMT,Mamma Mía! Tour,40,ES - MMT - TLL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,,NULL,_UNK,0,No
+155,ES,Spain,46,ERL,"El Rey León, el musical",41,ES - ERL - LDV - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1443,_N/A,Sit Down,1,Yes
+156,ES,Spain,52,MMT,Mamma Mía! Tour,35,ES - MMG - PEG - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1663,_N/A,Tour,0,No
+157,DE,Germany,59,GEF,Gefährten,9,DE - GEF - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1226,_N/A,Sit Down,1,Yes
+158,DE,Germany,60,3M,3 Musketiere,9,DE - 3M - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1600,_N/A,Sit Down,1,Yes
+159,DE,Germany,60,3M,3 Musketiere,2,DE - 3M - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1814,_N/A,Sit Down,1,Yes
+160,DE,Germany,61,WI,Wicked - Die Hexen von Oz,11,DE - WI - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1630,_N/A,Sit Down,1,Yes
+161,DE,Germany,61,WI,Wicked - Die Hexen von Oz,12,DE - WI - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1785,_N/A,Sit Down,1,Yes
+162,DE,Germany,62,WWR,We Will Rock You,2,DE - WWR - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1889,_N/A,Sit Down,1,Yes
+163,DE,Germany,62,WWR,We Will Rock You,9,DE - WWR - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1546,_N/A,Sit Down,1,Yes
+164,DE,Germany,63,ELI,Elisabeth,1,DE - ELI - COL - 1,,00:00.0,00:00.0,00:00.0,1,1565,_N/A,Sit Down,1,Yes
+165,DE,Germany,63,ELI,Elisabeth,2,DE - ELI - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1808,_N/A,Sit Down,1,Yes
+166,DE,Germany,63,ELI,Elisabeth,9,DE - ELI - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1480,_N/A,Sit Down,1,Yes
+167,ES,Spain,52,MMT,Mamma Mía! Tour,152,ES - MMT - BAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1408,_N/A,Tour,0,No
+168,ES,Spain,52,MMT,Mamma Mía! Tour,42,ES - MMT - ARV - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,0,NULL,_UNK,0,No
+169,ES,Spain,49,SAT,"Sister Act, Tour",43,ES - SAT - SNY - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1768,_N/A,Tour,0,No
+170,ES,Spain,52,MMT,Mamma Mía! Tour,45,ES - MMT - TAR - 1,00:00.0,,,00:00.0,1,1100,_N/A,Tour,0,No
+171,ES,Spain,52,MMT,Mamma Mía! Tour,43,ES - MMT - SNY - 1,00:00.0,,,00:00.0,1,1768,_N/A,Tour,0,No
+174,ES,Spain,49,SAT,"Sister Act, Tour",152,ES - SAT - BAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1408,_N/A,Tour,0,No
+176,ES,Spain,73,MOLMBCN,El Hombre De La Mancha BCN,32,ES - MOLMBCN - GTL - 0,00:00.0,,,,0,1873,It was cancelled,Tour,0,No
+177,ES,Spain,72,MOLMAD,EL Hombre De La Mancha MAD,34,ES - MOLMAD - NTA - 0,00:00.0,,,,0,1080,It was cancelled,Tour,0,No
+178,DE,Germany,75,DD,Dirty Dancing,5,DE - DD - TNF - 1,00:00.0,00:00.0,,00:00.0,1,2000,_N/A,Sit Down,1,Yes
+179,DE,Germany,76,TITA,Titanic,5,DE - TITA - TNF - 1,,00:00.0,00:00.0,00:00.0,1,1940,_N/A,Sit Down,1,Yes
+180,DE,Germany,75,DD,Dirty Dancing,10,DE - DD - TPP - 1,00:00.0,00:00.0,,00:00.0,1,1730,_N/A,Sit Down,1,Yes
+181,DE,Germany,75,DD,Dirty Dancing,11,DE - DD - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1620,_N/A,Sit Down,1,Yes
+182,ES,Spain,74,MMM,Mamma Mía! Madrid,47,ES - MMM - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1395,_N/A,Sit Down,1,Yes
+194,ES,Spain,89,CBR,El Cascanueces,41,ES - CBR - LDV - 1,00:00.0,,,00:00.0,0,1443,_N/A,Event,0,No
+195,NL,Netherlands,79,HZH15,Holland Zingt Hazes 2015,51,NL - HZH15 - ZIG - 1,,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
+196,NL,Netherlands,90,HZH17,Holland Zingt Hazes 2017,51,NL - HZH17 - ZIG - 1,,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
+197,NL,Netherlands,80,HZH16,Holland Zingt Hazes 2016,51,NL - HZH16 - ZIG - 1,,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
+198,NL,Netherlands,81,MIC15,Musicals In Concert 2015,51,NL - MIC15 - ZIG - 1,,,,00:00.0,1,17000,_N/A,Event,0,No
+199,NL,Netherlands,82,MIC16,Musicals In Concert 2016,51,NL - MIC16 - ZIG - 1,,,,00:00.0,1,17000,_N/A,Event,0,No
+200,ES,Spain,52,MMT,Mamma Mía! Tour,52,ES - MMT - MDV - 0,00:00.0,,,00:00.0,0,1391,_N/A,Tour,0,No
+201,ES,Spain,52,MMT,Mamma Mía! Tour,53,ES - MMT - LTJ - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,950,_N/A,Tour,0,No
+202,ES,Spain,91,TBG,The Bodyguard,47,ES - TBG - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1395,_N/A,Sit Down,1,Yes
+203,ES,Spain,92,CAN,Johann Strauss. Gran concierto de año nuevo,41,ES - CAN - LDV - 1,00:00.0,,,00:00.0,0,1450,_N/A,Event,0,No
+204,NL,Netherlands,68,HAIR,HAIR,54,NL - HAIR - AGN - 1,,,,,1,796,_N/A,Tour,0,No
+205,NL,Netherlands,78,GREA,Grease,54,NL - GREA - AGN - 1,,,,,1,796,_N/A,Tour,0,No
+206,NL,Netherlands,78,GREA,Grease,55,NL - GREA - ALM - 1,,,,,1,800,_N/A,Tour,0,No
+207,NL,Netherlands,83,RL,Robert Long,55,NL - RL - ALM - 1,,,,,1,800,_N/A,Tour,0,No
+208,NL,Netherlands,84,SIM,Simone,55,NL - SIM - ALM - 1,,,,,1,800,_N/A,Tour,0,No
+209,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,55,NL - BTB - ALM - 1,,,,,1,800,_N/A,Tour,0,No
+210,NL,Netherlands,68,HAIR,HAIR,55,NL - HAIR - ALM - 1,,,,,1,800,_N/A,Tour,0,No
+211,NL,Netherlands,83,RL,Robert Long,56,NL - RL - AMP - 1,,,,,1,840,_N/A,Tour,0,No
+212,NL,Netherlands,84,SIM,Simone,56,NL - SIM - AMP - 1,,,,,1,840,_N/A,Tour,0,No
+213,NL,Netherlands,78,GREA,Grease,56,NL - GREA - AMP - 1,,,,,1,840,_N/A,Tour,0,No
+214,NL,Netherlands,78,GREA,Grease,57,NL - GREA - AMST - 1,,,,,1,670,_N/A,Tour,0,No
+215,NL,Netherlands,83,RL,Robert Long,57,NL - RL - AMST - 1,,,,,1,670,_N/A,Tour,0,No
+216,NL,Netherlands,83,RL,Robert Long,58,NL - RL - ARN - 1,,,,,1,735,_N/A,Tour,0,No
+217,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,59,NL - MICOT - CARRE - 1,,,,,1,1756,_N/A,Tour,0,No
+218,NL,Netherlands,86,TSOM,The Sound Of Music 2015,59,NL - TSOM - CARRE - 1,,,,,1,1756,_N/A,Tour,0,No
+219,NL,Netherlands,68,HAIR,HAIR,60,NL - HAIR - CAST - 1,,,,,1,750,_N/A,Tour,0,No
+220,NL,Netherlands,69,CDR,Ciske De Rat 2016,61,NL - CDR - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+221,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,61,NL - BTB - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+222,NL,Netherlands,68,HAIR,HAIR,61,NL - HAIR - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+223,NL,Netherlands,86,TSOM,The Sound Of Music 2015,61,NL - TSOM - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+224,NL,Netherlands,87,TWEE,De Tweeling,61,NL - TWEE - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+225,NL,Netherlands,84,SIM,Simone,61,NL - SIM - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+226,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,61,NL - MICOT - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+227,NL,Netherlands,78,GREA,Grease,61,NL - GREA - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+228,NL,Netherlands,84,SIM,Simone,62,NL - SIM - CROWN - 1,,,,,1,820,_N/A,Tour,0,No
+229,NL,Netherlands,84,SIM,Simone,63,NL - SIM - DEV - 1,,,,,1,750,_N/A,Tour,0,No
+230,NL,Netherlands,83,RL,Robert Long,63,NL - RL - DEV - 1,,,,,1,750,_N/A,Tour,0,No
+231,NL,Netherlands,78,GREA,Grease,64,NL - GREA - FLINT - 1,,,,,1,770,_N/A,Tour,0,No
+232,NL,Netherlands,83,RL,Robert Long,64,NL - RL - FLINT - 1,,00:00.0,00:00.0,,1,770,_N/A,Tour,0,No
+233,NL,Netherlands,68,HAIR,HAIR,64,NL - HAIR - FLINT - 1,,,,,1,770,_N/A,Tour,0,No
+234,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,65,NL - BTB - GOUDSE - 1,,,,,1,813,_N/A,Tour,0,No
+235,NL,Netherlands,78,GREA,Grease,65,NL - GREA - GOUDSE - 1,,,,,1,813,_N/A,Tour,0,No
+236,NL,Netherlands,83,RL,Robert Long,65,NL - RL - GOUDSE - 1,,,,,1,813,_N/A,Tour,0,No
+237,NL,Netherlands,84,SIM,Simone,65,NL - SIM - GOUDSE - 1,,,,,1,813,_N/A,Tour,0,No
+238,NL,Netherlands,84,SIM,Simone,66,NL - SIM - HAA - 1,,,,,1,633,_N/A,Tour,0,No
+239,NL,Netherlands,83,RL,Robert Long,66,NL - RL - HAA - 1,,,,,1,633,_N/A,Tour,0,No
+240,NL,Netherlands,78,GREA,Grease,67,NL - GREA - HARM - 1,,,,,1,950,_N/A,Tour,0,No
+241,NL,Netherlands,69,CDR,Ciske De Rat 2016,67,NL - CDR - HARM - 1,,,,,1,950,_N/A,Tour,0,No
+242,NL,Netherlands,68,HAIR,HAIR,67,NL - HAIR - HARM - 1,,,,,1,950,_N/A,Tour,0,No
+243,NL,Netherlands,68,HAIR,HAIR,68,NL - HAIR - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+244,NL,Netherlands,69,CDR,Ciske De Rat 2016,68,NL - CDR - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+245,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,68,NL - BTB - HEER - 1,,00:00.0,00:00.0,,1,1057,_N/A,Tour,0,No
+246,NL,Netherlands,78,GREA,Grease,68,NL - GREA - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+247,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,68,NL - MICOT - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+248,NL,Netherlands,83,RL,Robert Long,68,NL - RL - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+249,NL,Netherlands,87,TWEE,De Tweeling,68,NL - TWEE - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+250,NL,Netherlands,86,TSOM,The Sound Of Music 2015,68,NL - TSOM - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+251,NL,Netherlands,84,SIM,Simone,69,NL - SIM - ISALA - 1,,,,,1,493,_N/A,Tour,0,No
+252,NL,Netherlands,83,RL,Robert Long,69,NL - RL - ISALA - 1,,,,,1,493,_N/A,Tour,0,No
+253,NL,Netherlands,84,SIM,Simone,70,NL - SIM - KAF - 1,,,,,1,987,_N/A,Tour,0,No
+254,NL,Netherlands,78,GREA,Grease,70,NL - GREA - KAF - 1,,,,,1,987,_N/A,Tour,0,No
+255,NL,Netherlands,83,RL,Robert Long,70,NL - RL - KAF - 1,,,,,1,987,_N/A,Tour,0,No
+256,NL,Netherlands,68,HAIR,HAIR,70,NL - HAIR - KAF - 1,,,,,1,987,_N/A,Tour,0,No
+257,NL,Netherlands,84,SIM,Simone,71,NL - SIM - KEI - 1,,,,,1,525,_N/A,Tour,0,No
+258,NL,Netherlands,84,SIM,Simone,72,NL - SIM - KENN - 1,,,,,1,602,_N/A,Tour,0,No
+259,NL,Netherlands,83,RL,Robert Long,72,NL - RL - KENN - 1,,,,,1,602,_N/A,Tour,0,No
+260,NL,Netherlands,83,RL,Robert Long,73,NL - RL - KOLK - 1,,,,,1,811,_N/A,Tour,0,No
+261,NL,Netherlands,78,GREA,Grease,73,NL - GREA - KOLK - 1,,00:00.0,00:00.0,,1,811,_N/A,Tour,0,No
+262,NL,Netherlands,78,GREA,Grease,74,NL - GREA - KOM - 1,,00:00.0,00:00.0,,1,650,_N/A,Tour,0,No
+263,NL,Netherlands,68,HAIR,HAIR,74,NL - HAIR - KOM - 1,,,,,1,650,_N/A,Tour,0,No
+264,NL,Netherlands,83,RL,Robert Long,75,NL - RL - KRING - 1,,,,,1,850,_N/A,Tour,0,No
+265,NL,Netherlands,84,SIM,Simone,76,NL - SIM - KRUIS - 1,,,,,1,495,_N/A,Tour,0,No
+266,NL,Netherlands,84,SIM,Simone,77,NL - SIM - LAMP - 1,,,,,1,558,_N/A,Tour,0,No
+267,NL,Netherlands,84,SIM,Simone,78,NL - SIM - LEEST - 1,,,,,1,500,_N/A,Tour,0,No
+268,NL,Netherlands,83,RL,Robert Long,79,NL - RL - LEI - 1,,,,,1,539,_N/A,Tour,0,No
+269,NL,Netherlands,84,SIM,Simone,79,NL - SIM - LEI - 1,,,,,1,539,_N/A,Tour,0,No
+270,NL,Netherlands,69,CDR,Ciske De Rat 2016,80,NL - CDR - MAAS - 1,,,,,1,764,_N/A,Tour,0,No
+271,NL,Netherlands,68,HAIR,HAIR,80,NL - HAIR - MAAS - 1,,,,,1,764,_N/A,Tour,0,No
+272,NL,Netherlands,84,SIM,Simone,81,NL - SIM - MARK - 1,,,,,1,685,_N/A,Tour,0,No
+273,NL,Netherlands,86,TSOM,The Sound Of Music 2015,82,NL - TSOM - MART - 1,,,,,1,1550,_N/A,Tour,0,No
+274,NL,Netherlands,87,TWEE,De Tweeling,82,NL - TWEE - MART - 1,,,,,1,1550,_N/A,Tour,0,No
+275,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,82,NL - MICOT - MART - 1,,,,,1,1550,_N/A,Tour,0,No
+276,NL,Netherlands,78,GREA,Grease,82,NL - GREA - MART - 1,,00:00.0,00:00.0,,1,1550,_N/A,Tour,0,No
+277,NL,Netherlands,69,CDR,Ciske De Rat 2016,82,NL - CDR - MART - 1,,,,,1,1550,_N/A,Tour,0,No
+278,NL,Netherlands,68,HAIR,HAIR,82,NL - HAIR - MART - 1,,,,,1,1550,_N/A,Tour,0,No
+279,NL,Netherlands,83,RL,Robert Long,83,NL - RL - MEER - 1,,,,,1,520,_N/A,Tour,0,No
+280,NL,Netherlands,84,SIM,Simone,83,NL - SIM - MEER - 1,,,,,1,520,_N/A,Tour,0,No
+281,NL,Netherlands,83,RL,Robert Long,84,NL - RL - MRVT - 1,,,,,1,800,_N/A,Tour,0,No
+282,NL,Netherlands,83,RL,Robert Long,85,NL - RL - NAALD - 1,,,,,1,430,_N/A,Tour,0,No
+283,NL,Netherlands,78,GREA,Grease,86,NL - GREA - NIJ - 1,,,,,1,920,_N/A,Tour,0,No
+284,NL,Netherlands,83,RL,Robert Long,86,NL - RL - NIJ - 1,,,,,1,920,_N/A,Tour,0,No
+285,NL,Netherlands,84,SIM,Simone,86,NL - SIM - NIJ - 1,,,,,1,920,_N/A,Tour,0,No
+286,NL,Netherlands,68,HAIR,HAIR,86,NL - HAIR - NIJ - 1,,,,,1,920,_N/A,Tour,0,No
+287,NL,Netherlands,69,CDR,Ciske De Rat 2016,86,NL - CDR - NIJ - 1,,,,,1,920,_N/A,Tour,0,No
+288,NL,Netherlands,43,BTB,Disney's Beauty And The Beast,86,NL - BTB - NIJ - 1,,,,,1,920,_N/A,Tour,0,No
+289,NL,Netherlands,69,CDR,Ciske De Rat 2016,87,NL - CDR - NLUX - 1,,,,,1,1535,_N/A,Tour,0,No
+290,NL,Netherlands,68,HAIR,HAIR,87,NL - HAIR - NLUX - 1,,,,,1,1535,_N/A,Tour,0,No
+291,NL,Netherlands,87,TWEE,De Tweeling,87,NL - TWEE - NLUX - 1,,,,,1,1535,_N/A,Tour,0,No
+292,NL,Netherlands,86,TSOM,The Sound Of Music 2015,87,NL - TSOM - NLUX - 1,,,,,1,1535,_N/A,Tour,0,No
+293,NL,Netherlands,78,GREA,Grease,87,NL - GREA - NLUX - 1,,,,,1,1535,_N/A,Tour,0,No
+294,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,88,NL - MICOT - OLUX - 1,,,,,1,909,_N/A,Tour,0,No
+295,NL,Netherlands,83,RL,Robert Long,88,NL - RL - OLUX - 1,,,,,1,909,_N/A,Tour,0,No
+296,NL,Netherlands,84,SIM,Simone,88,NL - SIM - OLUX - 1,,,,,1,909,_N/A,Tour,0,No
+297,NL,Netherlands,84,SIM,Simone,89,NL - SIM - ORAN - 1,,,,,1,800,_N/A,Tour,0,No
+298,NL,Netherlands,84,SIM,Simone,90,NL - SIM - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+299,NL,Netherlands,86,TSOM,The Sound Of Music 2015,90,NL - TSOM - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+300,NL,Netherlands,87,TWEE,De Tweeling,90,NL - TWEE - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+301,NL,Netherlands,71,MICOT,Musicals In Concert - Live On Tour,90,NL - MICOT - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+302,NL,Netherlands,69,CDR,Ciske De Rat 2016,90,NL - CDR - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+303,NL,Netherlands,78,GREA,Grease,90,NL - GREA - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+304,NL,Netherlands,68,HAIR,HAIR,90,NL - HAIR - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+305,NL,Netherlands,68,HAIR,HAIR,91,NL - HAIR - PAR - 1,,,,,1,879,_N/A,Tour,0,No
+306,NL,Netherlands,69,CDR,Ciske De Rat 2016,91,NL - CDR - PAR - 1,,,,,1,879,_N/A,Tour,0,No
+307,NL,Netherlands,83,RL,Robert Long,91,NL - RL - PAR - 1,,,,,1,879,_N/A,Tour,0,No
+308,NL,Netherlands,78,GREA,Grease,91,NL - GREA - PAR - 1,,,,,1,879,_N/A,Tour,0,No
+309,NL,Netherlands,86,TSOM,The Sound Of Music 2015,91,NL - TSOM - PAR - 1,,,,,1,879,_N/A,Tour,0,No
+310,NL,Netherlands,84,SIM,Simone,91,NL - SIM - PAR - 1,,,,,1,879,_N/A,Tour,0,No
+311,NL,Netherlands,86,TSOM,The Sound Of Music 2015,92,NL - TSOM - PARKE - 1,,,,,1,930,_N/A,Tour,0,No
+312,NL,Netherlands,87,TWEE,De Tweeling,92,NL - TWEE - PARKE - 1,,,,,1,930,_N/A,Tour,0,No
+313,NL,Netherlands,84,SIM,Simone,92,NL - SIM - PARKE - 1,,,,,1,930,_N/A,Tour,0,No
+314,NL,Netherlands,78,GREA,Grease,92,NL - GREA - PARKE - 1,,,,,1,930,_N/A,Tour,0,No
+315,NL,Netherlands,83,RL,Robert Long,92,NL - RL - PARKE - 1,,,,,1,930,_N/A,Tour,0,No
+316,NL,Netherlands,68,HAIR,HAIR,92,NL - HAIR - PARKE - 1,,,,,1,930,_N/A,Tour,0,No
+317,NL,Netherlands,69,CDR,Ciske De Rat 2016,92,NL - CDR - PARKE - 1,,,,,1,930,_N/A,Tour,0,No
+318,NL,Netherlands,69,CDR,Ciske De Rat 2016,93,NL - CDR - PARKH - 1,,,,,1,875,_N/A,Tour,0,No
+319,NL,Netherlands,68,HAIR,HAIR,93,NL - HAIR - PARKH - 1,,,,,1,875,_N/A,Tour,0,No
+320,NL,Netherlands,87,TWEE,De Tweeling,93,NL - TWEE - PARKH - 1,,,,,1,875,_N/A,Tour,0,No
+321,NL,Netherlands,84,SIM,Simone,94,NL - SIM - PUR - 1,,,,,1,516,_N/A,Tour,0,No
+322,NL,Netherlands,83,RL,Robert Long,94,NL - RL - PUR - 1,,,,,1,516,_N/A,Tour,0,No
+323,NL,Netherlands,78,GREA,Grease,95,NL - GREA - RAI - 1,,,,,1,1750,_N/A,Tour,0,No
+324,NL,Netherlands,84,SIM,Simone,96,NL - SIM - RIJS - 1,,,,,1,688,_N/A,Tour,0,No
+325,NL,Netherlands,68,HAIR,HAIR,96,NL - HAIR - RIJS - 1,,,,,1,688,_N/A,Tour,0,No
+326,NL,Netherlands,84,SIM,Simone,97,NL - SIM - SCHALM - 1,,,,,1,480,_N/A,Tour,0,No
+327,NL,Netherlands,69,CDR,Ciske De Rat 2016,98,NL - CDR - SCHIE - 1,,,,,1,702,_N/A,Tour,0,No
+328,NL,Netherlands,84,SIM,Simone,99,NL - SIM - SPANT - 1,,,,,1,780,_N/A,Tour,0,No
+329,NL,Netherlands,83,RL,Robert Long,99,NL - RL - SPANT - 1,,,,,1,780,_N/A,Tour,0,No
+330,NL,Netherlands,78,GREA,Grease,100,NL - GREA - SPIE - 1,,,,,1,917,_N/A,Tour,0,No
+331,NL,Netherlands,69,CDR,Ciske De Rat 2016,100,NL - CDR - SPIE - 1,,,,,1,917,_N/A,Tour,0,No
+332,NL,Netherlands,83,RL,Robert Long,100,NL - RL - SPIE - 1,,,,,1,917,_N/A,Tour,0,No
+333,NL,Netherlands,87,TWEE,De Tweeling,100,NL - TWEE - SPIE - 1,,,,,1,917,_N/A,Tour,0,No
+334,NL,Netherlands,86,TSOM,The Sound Of Music 2015,100,NL - TSOM - SPIE - 1,,,,,1,917,_N/A,Tour,0,No
+335,NL,Netherlands,68,HAIR,HAIR,100,NL - HAIR - SPIE - 1,,,,,1,917,_N/A,Tour,0,No
+336,NL,Netherlands,83,RL,Robert Long,101,NL - RL - TAM - 1,,,,,1,800,_N/A,Tour,0,No
+337,NL,Netherlands,83,RL,Robert Long,102,NL - RL - TAQA - 1,,,,,1,694,_N/A,Tour,0,No
+338,NL,Netherlands,84,SIM,Simone,102,NL - SIM - TAQA - 1,,,,,1,694,_N/A,Tour,0,No
+339,NL,Netherlands,78,GREA,Grease,102,NL - GREA - TAQA - 1,,,,,1,694,_N/A,Tour,0,No
+340,NL,Netherlands,68,HAIR,HAIR,102,NL - HAIR - TAQA - 1,,,,,1,694,_N/A,Tour,0,No
+341,NL,Netherlands,69,CDR,Ciske De Rat 2016,102,NL - CDR - TAQA - 1,,,,,1,694,_N/A,Tour,0,No
+342,NL,Netherlands,68,HAIR,HAIR,103,NL - HAIR - TIL - 1,,,,,1,840,_N/A,Tour,0,No
+343,NL,Netherlands,83,RL,Robert Long,103,NL - RL - TIL - 1,,,,,1,840,_N/A,Tour,0,No
+344,NL,Netherlands,69,CDR,Ciske De Rat 2016,103,NL - CDR - TIL - 1,,,,,1,840,_N/A,Tour,0,No
+345,NL,Netherlands,78,GREA,Grease,103,NL - GREA - TIL - 1,,,,,1,840,_N/A,Tour,0,No
+346,NL,Netherlands,84,SIM,Simone,103,NL - SIM - TIL - 1,,,,,1,840,_N/A,Tour,0,No
+347,NL,Netherlands,84,SIM,Simone,104,NL - SIM - UTR - 1,,,,,1,847,_N/A,Tour,0,No
+348,NL,Netherlands,83,RL,Robert Long,104,NL - RL - UTR - 1,,,,,1,847,_N/A,Tour,0,No
+349,NL,Netherlands,78,GREA,Grease,104,NL - GREA - UTR - 1,,,,,1,847,_N/A,Tour,0,No
+350,NL,Netherlands,69,CDR,Ciske De Rat 2016,104,NL - CDR - UTR - 1,,,,,1,847,_N/A,Tour,0,No
+351,NL,Netherlands,68,HAIR,HAIR,104,NL - HAIR - UTR - 1,,,,,1,847,_N/A,Tour,0,No
+352,NL,Netherlands,68,HAIR,HAIR,105,NL - HAIR - VEL - 1,,,,,1,716,_N/A,Tour,0,No
+353,NL,Netherlands,78,GREA,Grease,105,NL - GREA - VEL - 1,,,,,1,716,_N/A,Tour,0,No
+354,NL,Netherlands,84,SIM,Simone,105,NL - SIM - VEL - 1,,,,,1,716,_N/A,Tour,0,No
+355,NL,Netherlands,83,RL,Robert Long,106,NL - RL - VEN - 1,,,,,1,673,_N/A,Tour,0,No
+356,NL,Netherlands,84,SIM,Simone,107,NL - SIM - VEST - 1,,,,,1,500,_N/A,Tour,0,No
+357,NL,Netherlands,84,SIM,Simone,108,NL - SIM - VRIJ - 1,,,,,1,892,_N/A,Tour,0,No
+358,NL,Netherlands,83,RL,Robert Long,108,NL - RL - VRIJ - 1,,,,,1,892,_N/A,Tour,0,No
+359,NL,Netherlands,78,GREA,Grease,108,NL - GREA - VRIJ - 1,,,,,1,892,_N/A,Tour,0,No
+360,NL,Netherlands,68,HAIR,HAIR,108,NL - HAIR - VRIJ - 1,,,,,1,892,_N/A,Tour,0,No
+361,NL,Netherlands,69,CDR,Ciske De Rat 2016,108,NL - CDR - VRIJ - 1,,,,,1,892,_N/A,Tour,0,No
+362,NL,Netherlands,69,CDR,Ciske De Rat 2016,109,NL - CDR - WFT - 1,,,,,1,1573,_N/A,Tour,0,No
+363,NL,Netherlands,78,GREA,Grease,110,NL - GREA - WIL - 1,,,,,1,957,_N/A,Tour,0,No
+364,NL,Netherlands,86,TSOM,The Sound Of Music 2015,110,NL - TSOM - WIL - 1,,,,,1,957,_N/A,Tour,0,No
+365,NL,Netherlands,87,TWEE,De Tweeling,110,NL - TWEE - WIL - 1,,,,,1,957,_N/A,Tour,0,No
+366,NL,Netherlands,84,SIM,Simone,110,NL - SIM - WIL - 1,,,,,1,957,_N/A,Tour,0,No
+367,NL,Netherlands,83,RL,Robert Long,110,NL - RL - WIL - 1,,,,,1,957,_N/A,Tour,0,No
+368,NL,Netherlands,69,CDR,Ciske De Rat 2016,110,NL - CDR - WIL - 1,,,,,1,957,_N/A,Tour,0,No
+369,NL,Netherlands,68,HAIR,HAIR,110,NL - HAIR - WIL - 1,,,,,1,957,_N/A,Tour,0,No
+370,NL,Netherlands,68,HAIR,HAIR,111,NL - HAIR - ZAAN - 1,,,,,1,879,_N/A,Tour,0,No
+371,NL,Netherlands,83,RL,Robert Long,111,NL - RL - ZAAN - 1,,,,,1,879,_N/A,Tour,0,No
+372,NL,Netherlands,84,SIM,Simone,111,NL - SIM - ZAAN - 1,,,,,1,879,_N/A,Tour,0,No
+373,NL,Netherlands,78,GREA,Grease,111,NL - GREA - ZAAN - 1,,,,,1,879,_N/A,Tour,0,No
+374,NL,Netherlands,78,GREA,Grease,116,NL - GREA - ZOE - 1,,,,,1,780,_N/A,Tour,0,No
+375,NL,Netherlands,83,RL,Robert Long,116,NL - RL - ZOE - 1,,,,,1,780,_N/A,Tour,0,No
+376,NL,Netherlands,87,TWEE,De Tweeling,117,NL - TWEE - ZUID - 1,,00:00.0,00:00.0,,1,996,_N/A,Tour,0,No
+377,NL,Netherlands,78,GREA,Grease,117,NL - GREA - ZUID - 1,,,,,1,996,_N/A,Tour,0,No
+378,NL,Netherlands,68,HAIR,HAIR,117,NL - HAIR - ZUID - 1,,,,,1,996,_N/A,Tour,0,No
+379,NL,Netherlands,84,SIM,Simone,27,NL - SIM - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1559,_N/A,Tour,0,No
+380,NL,Netherlands,93,OYF,On Your Feet,27,NL - OYF - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1559,_N/A,Sit Down,1,Yes
+381,NL,Netherlands,94,ELIIC,Elisabeth - In Concert,118,NL - ELIIC - LOO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,3984,_N/A,Sit Down,1,Yes
+382,NL,Netherlands,95,WICK,Wicked,26,NL - WICK - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+383,NL,Netherlands,96,TAR,Tarzan,26,NL - TAR - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+384,NL,Netherlands,97,TLK04,Disney's The Lion King 2004,26,NL - TLK04 - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+385,NL,Netherlands,98,ELI,Elisabeth,26,NL - ELI - ACT - 1,,00:00.0,,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+386,NL,Netherlands,99,SA,Sister Act,26,NL - SA - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1843,_N/A,Sit Down,1,Yes
+387,NL,Netherlands,100,MP,Mary Poppins,26,NL - MP - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+388,NL,Netherlands,101,TSOM03,The Sound Of Music 2002,26,NL - TSOM03 - ACT - 1,00:00.0,,00:00.0,00:00.0,1,1869,_N/A,Tour,0,No
+389,NL,Netherlands,102,DD,Dirty Dancing,27,NL - DD - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+390,NL,Netherlands,103,MM,Mamma Mia 2003,27,NL - MM - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+391,NL,Netherlands,104,WWRY,We Will Rock You,27,NL - WWRY - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+392,NL,Netherlands,105,MM09,Mamma Mia 2009,27,NL - MM09 - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Tour,1,Yes
+393,NL,Netherlands,117,BTB05,Disney's Beauty And The Beast 2005,26,NL - BTB05 - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+394,NL,Netherlands,118,CDR07,Ciske De Rat 2007,26,NL - CDR07 - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Tour,0,No
+395,NL,Netherlands,106,AIDA,Aida 2001,26,NL - AIDA - ACT - 1,,00:00.0,00:00.0,00:00.0,1,1869,_N/A,Sit Down,1,Yes
+396,NL,Netherlands,107,EVITA,Evita,27,NL - EVITA - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Tour,1,Yes
+397,NL,Netherlands,108,GHOST,Ghost,27,NL - GHOST - BTU - 1,,,,,1,1542,_N/A,Sit Down,1,Yes
+398,NL,Netherlands,110,JERSEY,Jersey Boys,27,NL - JERSEY - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1555,_N/A,Sit Down,1,Yes
+399,NL,Netherlands,111,SAIGON,Miss Saigon,27,NL - SAIGON - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+400,NL,Netherlands,112,SNF,Saturday Night Fever,27,NL - SNF - BTU - 1,,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+401,NL,Netherlands,113,WIZ,The Wiz,27,NL - WIZ - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+402,NL,Netherlands,115,JOSEPH,Joseph And The Amazing Technicolor Dreamcoat,27,NL - JOSEPH - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+404,NL,Netherlands,119,HZH13,Holland Zingt Hazes 2013,51,NL - HZH13 - ZIG - 1,,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
+405,NL,Netherlands,120,HZH14,Holland Zingt Hazes 2014,51,NL - HZH14 - ZIG - 1,,00:00.0,00:00.0,00:00.0,1,17000,_N/A,Event,0,No
+406,NL,Netherlands,121,MIS,Les Miserables,59,NL - MIS - CARRE - 1,,,,,1,1756,_N/A,Tour,0,No
+407,NL,Netherlands,122,WARHORSE,War Horse,59,NL - WARHORSE - CARRE - 1,,00:00.0,00:00.0,,1,1756,_N/A,Tour,0,No
+408,NL,Netherlands,122,WARHORSE,War Horse,61,NL - WARHORSE - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+409,NL,Netherlands,122,WARHORSE,War Horse,68,NL - WARHORSE - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+410,NL,Netherlands,122,WARHORSE,War Horse,82,NL - WARHORSE - MART - 1,,,,,1,1550,_N/A,Tour,0,No
+411,NL,Netherlands,121,MIS,Les Miserables,87,NL - MIS - NLUX - 1,,,,,1,1535,_N/A,Tour,0,No
+412,NL,Netherlands,122,WARHORSE,War Horse,87,NL - WARHORSE - NLUX - 1,,,,,1,1535,_N/A,Tour,0,No
+413,NL,Netherlands,122,WARHORSE,War Horse,90,NL - WARHORSE - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+414,NL,Netherlands,121,MIS,Les Miserables,93,NL - MIS - PARKH - 1,,,,,1,875,_N/A,Tour,0,No
+415,NL,Netherlands,116,3M,3 Musketiers,87,NL - 3M - NLUX - 1,,,,00:00.0,1,1535,_N/A,Tour,0,No
+416,NL,Netherlands,109,HGIM,Hij Gelooft In Mij 2012,119,NL - HGIM - AGORA - 1,,,,00:00.0,1,750,_N/A,Tour,0,No
+417,NL,Netherlands,114,MERMAID,Disney's The Little Mermaid,27,NL - MERMAID - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1542,_N/A,Sit Down,1,Yes
+418,DE,Germany,128,AIDA,Aida,1,DE - AIDA - COL - 1,,00:00.0,00:00.0,00:00.0,1,1680,_N/A,Sit Down,1,Yes
+419,DE,Germany,129,IWS,Ich will Spaß,1,DE - IWS - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1630,_N/A,Sit Down,1,Yes
+420,DE,Germany,130,BUD,Buddy,1,DE - BUD - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1335,_N/A,Sit Down,1,Yes
+421,DE,Germany,131,42ND,42nd Street,2,DE - 42ND - APO - 1,,00:00.0,00:00.0,00:00.0,1,1816,_N/A,Sit Down,1,Yes
+422,DE,Germany,125,GHO,Ghost,9,DE - GHO - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
+423,DE,Germany,126,LEM,Les Misérables,9,DE - LEM - TDW - 1,,00:00.0,00:00.0,00:00.0,1,1670,_N/A,Sit Down,1,Yes
+424,DE,Germany,127,SDM,Der Schuh des Manitu,9,DE - SDM - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1530,_N/A,Sit Down,1,Yes
+425,DE,Germany,124,CAT,Cats,10,DE - CAT - TPP - 1,,00:00.0,00:00.0,00:00.0,1,1660,_N/A,Sit Down,1,Yes
+426,DE,Germany,123,SUB,Die Schöne und das Biest,10,DE - SUB - TPP - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1740,_N/A,Sit Down,1,Yes
+427,DE,Germany,123,SUB,Die Schöne und das Biest,11,DE - SUB - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1700,_N/A,Sit Down,1,Yes
+428,DE,Germany,132,REB,Rebecca,12,DE - REB - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1797,_N/A,Sit Down,1,Yes
+430,ES,Spain,49,SAT,"Sister Act, Tour",43,ES - SAT - APO - 1,00:00.0,,,00:00.0,1,1768,_N/A,Tour,0,No
+431,DE,Germany,134,KB,Kinky Boots,6,DE - KB - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1227,_N/A,Sit Down,1,Yes
+653,FR,France,159,GRS,Grease,23,FR - GRS - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+654,FR,France,156,LRL,Le Roi Lion,23,FR - LRL - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+655,FR,France,158,SIS,Sister Act,23,FR - SIS - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+656,FR,France,157,MAM,Mamma Mia!,23,FR - MAM - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+657,FR,France,155,CAB,Cabaret,147,FR - CAB - TMA - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,850,Théâtre Marigny,Sit Down,0,No
+658,FR,France,155,CAB,Cabaret,148,FR - CAB - FOL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1600,Folies Bergère,Sit Down,1,Yes
+659,DE,Germany,14,TDV,Tanz der Vampire,4,DE - TDV - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1850,_N/A,Sit Down,1,Yes
+660,RU,Russia,161,IAL,Ледниковый период LIVE!,149,RU - IAL - SCO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,10308,_N/A,Tour,0,No
+661,RU,Russia,160,ALD,Аладдин и повелитель огня,150,RU - ALD - LUZ - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,7400,_N/A,Tour,0,No
+662,RU,Russia,162,SINDBAD,Синдбад и принцесса Анна,150,RU - SINDBAD - LUZ - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,7400,_N/A,Tour,0,No
+664,DE,Germany,164,TBG,The Bodyguard,12,DE - TBG - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1788,_N/A,Sit Down,1,Yes
+665,FR,France,165,ZOR,Zorro,148,FR - ZOR - FOL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1600,Folies Bergère,Sit Down,1,Yes
+666,FR,France,157,MAM,Mamma Mia!,153,FR - MAM - PSP -,,,,,1,0,_N/A,Tour,0,No
+668,NL,Netherlands,68,HAIR,HAIR,56,NL - HAIR - AMP - 1,,,,,1,840,_N/A,Tour,0,No
+669,ES,Spain,167,TRR,Titanium - Rojas y Rodríguez,47,ES - TRR - COL - 1,00:00.0,,,,0,1395,_N/A,Tour,0,No
+670,ES,Spain,168,MPV,Miguel Poveda,47,ES - MPV - COL - 1,00:00.0,,,,0,1395,_N/A,Tour,0,No
+671,ES,Spain,169,RMT,Rocío Molina y La Tremendita - Afectos,47,ES - RMT - COL - 1,00:00.0,,,,0,1395,_N/A,Tour,0,No
+672,DE,Germany,8,MP,Mary Poppins,4,DE - MP - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1874,_N/A,Sit Down,1,Yes
+673,NL,Netherlands,170,STP,Stage Theater Producties,26,NL - STP - ACT - 1,,,,,1,1869,_N/A,STP Event,0,No
+674,NL,Netherlands,170,STP,Stage Theater Producties,27,NL - STP - BTU - 1,,,,,1,1559,_N/A,STP Event,0,No
+675,FR,France,157,MAM,Mamma Mia!,153,FR - MAM - PSP - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,3400,Palais des Sports,Tour,0,No
+677,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",55,NL - ANNIEMG - ALM - 1,,,,,1,820,_N/A,Tour,0,No
+678,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",61,NL - ANNIEMG - CHASSE - 1,,,,,1,1400,_N/A,Tour,0,No
+679,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",68,NL - ANNIEMG - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+680,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",82,NL - ANNIEMG - MART - 1,,,,,1,1550,_N/A,Tour,0,No
+681,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",86,NL - ANNIEMG - NIJ - 1,,,,,1,920,_N/A,Tour,0,No
+682,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",87,NL - ANNIEMG - NLUX - 1,,,,,1,1535,_N/A,Tour,0,No
+683,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",90,NL - ANNIEMG - ORP - 1,,,,,1,1292,_N/A,Tour,0,No
+684,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",92,NL - ANNIEMG - PARKE - 1,,,,,1,930,_N/A,Tour,0,No
+685,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",93,NL - ANNIEMG - PARKH - 1,,,,,1,920,_N/A,Tour,0,No
+686,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",96,NL - ANNIEMG - RIJS - 1,,,,,1,700,_N/A,Tour,0,No
+687,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",100,NL - ANNIEMG - SPIE - 1,,,,,1,919,_N/A,Tour,0,No
+688,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",104,NL - ANNIEMG - UTR - 1,,,,,1,847,_N/A,Tour,0,No
+689,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",108,NL - ANNIEMG - VRIJ - 1,,,,,1,900,_N/A,Tour,0,No
+690,DE,Germany,4,GVN,Der Glöckner von Notre Dame,2,DE - GVN - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1735,_N/A,Sit Down,1,Yes
+691,RU,Russia,171,GHO,Привидение,24,RU - GHO - MDM - 1,00:00.0,00:00.0,,,0,1808,_N/A,Sit Down,1,Yes
+692,DE,Germany,172,FJG,Fack Ju Göhte - Se Mjusicäl,154,DE - FJG - TIW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,692,_N/A,Sit Down,1,Yes
+693,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",117,NL - ANNIEMG - ZUID - 1,,,,,1,996,_N/A,Tour,0,No
+694,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",98,NL - ANNIEMG - SCHIE - 1,,,,,1,702,_N/A,Tour,0,No
+695,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",74,NL - ANNIEMG - KOM - 1,,,,,1,650,_N/A,Tour,0,No
+696,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",83,NL - ANNIEMG - MEER - 1,,,,,1,521,_N/A,Tour,0,No
+697,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",116,NL - ANNIEMG - ZOE - 1,,,,,1,780,_N/A,Tour,0,No
+698,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",64,NL - ANNIEMG - FLINT - 1,,,,,1,770,_N/A,Tour,0,No
+699,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",67,NL - ANNIEMG - HARM - 1,,,,,1,950,_N/A,Tour,0,No
+700,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",110,NL - ANNIEMG - WIL - 1,,,,,1,957,_N/A,Tour,0,No
+701,NL,Netherlands,173,MOT,Motown,27,NL - MOT - BTU - 1,,,,,0,1563,_N/A,_N/A,0,No
+702,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",102,NL - ANNIEMG - TAQA - 1,,,,,1,694,_N/A,Tour,0,No
+703,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",91,NL - ANNIEMG - PAR - 1,,,,,1,879,_N/A,Tour,0,No
+704,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",103,NL - ANNIEMG - TIL - 1,,,,,1,840,_N/A,Tour,0,No
+705,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",66,NL - ANNIEMG - HAA - 1,,,,,1,633,_N/A,Tour,0,No
+706,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",155,NL - ANNIEMG - GOOI - 1,,,,,1,744,_N/A,Tour,0,No
+707,NL,Netherlands,94,ELIIC,Elisabeth - In Concert,118,NL - ELIIC - LOO - 2,00:00.0,00:00.0,00:00.0,00:00.0,0,3984,_N/A,Tour,0,No
+708,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",57,NL - ANNIEMG - AMST - 1,,,,,1,670,_N/A,Tour,0,No
+709,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",63,NL - ANNIEMG - DEV - 1,,,,,1,768,_N/A,Tour,0,No
+710,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",70,NL - ANNIEMG - KAF - 1,,,,,1,987,_N/A,Tour,0,No
+711,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",80,NL - ANNIEMG - MAAS - 1,,,,,1,764,_N/A,Tour,0,No
+712,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",156,NL - ANNIEMG - SNEEK - 1,,,,,1,611,_N/A,Tour,0,No
+713,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",65,NL - ANNIEMG - GOUDSE - 1,,,,,1,813,_N/A,Tour,0,No
+714,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",105,NL - ANNIEMG - VEL - 1,,,,,1,764,_N/A,Tour,0,No
+715,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",111,NL - ANNIEMG - ZAAN - 1,,,,,1,879,_N/A,Tour,0,No
+716,ES,Spain,174,STC,Stars in Concert,41,ES - STC - LDV - 1,00:00.0,,,,0,1443,_N/A,Tour,0,No
+717,ES,Spain,47,LMT,"Los Miserables, Tour II",28,ES - LMT - FBS - 1,,00:00.0,00:00.0,,0,2167,_N/A,Tour,0,No
+718,ES,Spain,47,LMT,"Los Miserables, Tour II",30,ES - LMT - APM - 1,,,,,0,1561,_N/A,Tour,0,No
+719,ES,Spain,47,LMT,"Los Miserables, Tour II",31,ES - LMT - CAEM - 1,,,,,0,1197,_N/A,Tour,0,No
+720,ES,Spain,47,LMT,"Los Miserables, Tour II",32,ES - LMT - GTL - 1,00:00.0,,,,0,1873,It was cancelled,Tour,0,No
+721,ES,Spain,47,LMT,"Los Miserables, Tour II",35,ES - LMT - PEG - 1,,,,,0,1663,_N/A,Tour,0,No
+722,ES,Spain,47,LMT,"Los Miserables, Tour II",39,ES - LMT - TCV - 1,,,,,0,930,_N/A,Tour,0,No
+723,ES,Spain,47,LMT,"Los Miserables, Tour II",120,ES - LMT - TPG - 1,,00:00.0,00:00.0,,0,1007,_N/A,Tour,0,No
+724,ES,Spain,47,LMT,"Los Miserables, Tour II",122,ES - LMT - RJF - 1,,,,,0,1223,_N/A,Tour,0,No
+725,ES,Spain,47,LMT,"Los Miserables, Tour II",127,ES - LMT - PFC - 1,,,,,0,0,_N/A,Tour,0,No
+726,ES,Spain,47,LMT,"Los Miserables, Tour II",134,ES - LMT - ATN - 1,,,,,0,1616,_N/A,Tour,0,No
+727,ES,Spain,47,LMT,"Los Miserables, Tour II",138,ES - LMT - PEB - 1,,00:00.0,00:00.0,,0,2164,_N/A,Tour,0,No
+728,ES,Spain,47,LMT,"Los Miserables, Tour II",139,ES - LMT - ARS - 1,,,,,0,1481,_N/A,Tour,0,No
+729,ES,Spain,47,LMT,"Los Miserables, Tour II",141,ES - LMT - PAK - 1,,,,,0,859,_N/A,Tour,0,No
+730,ES,Spain,49,SAT,"Sister Act, Tour",33,ES - SAT - GTC - 1,,,,,0,899,_N/A,Tour,0,No
+731,ES,Spain,49,SAT,"Sister Act, Tour",46,ES - SAT - APB - 1,00:00.0,00:00.0,00:00.0,,0,1231,It was Cancelled,Tour,0,No
+732,ES,Spain,49,SAT,"Sister Act, Tour",126,ES - SAT - TAB - 1,,,,,0,1200,_N/A,Tour,0,No
+733,ES,Spain,49,SAT,"Sister Act, Tour",127,ES - SAT - PFC - 1,,,,,0,0,_N/A,Tour,0,No
+734,ES,Spain,49,SAT,"Sister Act, Tour",132,ES - SAT - PGZ - 1,,00:00.0,00:00.0,,0,1440,_N/A,Tour,0,No
+735,ES,Spain,52,MMT,Mamma Mía! Tour,126,ES - MMT - TAB - 1,,,,,0,1200,_N/A,Tour,0,No
+736,ES,Spain,52,MMT,Mamma Mía! Tour,129,ES - MMT - PCV - 1,,,,,0,1481,_N/A,Tour,0,No
+737,ES,Spain,52,MMT,Mamma Mía! Tour,132,ES - MMT - PGZ - 1,,,,,0,1440,_N/A,Tour,0,No
+738,ES,Spain,52,MMT,Mamma Mía! Tour,141,ES - MMT - PAK - 1,,,,,0,859,_N/A,Tour,0,No
+739,ES,Spain,52,MMT,Mamma Mía! Tour,146,ES - MMT - TLLL - 1,,,,,0,1426,_N/A,Tour,0,No
+740,ES,Spain,135,FNM,Fiebre del sabado noche MAD,47,ES - FNM - COL - 1,,,,,0,1395,_N/A,Sit Down,1,Yes
+741,ES,Spain,136,FNT,Fiebre del sabado noche Tour,124,ES - FNT - CARSED - 1,,,,,0,0,_N/A,Tour,0,No
+742,ES,Spain,137,CBT,Cabaret Tour,124,ES - CBT - CARSED - 1,,00:00.0,00:00.0,,0,0,_N/A,Tour,0,No
+743,ES,Spain,137,CBT,Cabaret Tour,126,ES - CBT - TAB - 1,,00:00.0,00:00.0,,0,1200,_N/A,Tour,0,No
+744,ES,Spain,137,CBT,Cabaret Tour,128,ES - CBT - TCA - 1,,,,,0,943,_N/A,Tour,0,No
+745,ES,Spain,137,CBT,Cabaret Tour,133,ES - CBT - ASP - 1,,00:00.0,00:00.0,,0,0,_N/A,Tour,0,No
+746,ES,Spain,138,GSM,Grease MAD,34,ES - GSM - NTA - 1,,,,,0,1080,_N/A,Tour,0,No
+747,ES,Spain,139,HSM,High School Musical Tour,30,ES - HSM - APM - 1,,,,,0,1561,_N/A,Tour,0,No
+748,ES,Spain,139,HSM,High School Musical Tour,31,ES - HSM - CAEM - 1,,,,,0,1197,_N/A,Tour,0,No
+749,ES,Spain,139,HSM,High School Musical Tour,38,ES - HSM - TTB - 1,,00:00.0,00:00.0,,0,1437,_N/A,Tour,0,No
+750,ES,Spain,139,HSM,High School Musical Tour,39,ES - HSM - TCV - 1,,,,,0,930,_N/A,Tour,0,No
+751,ES,Spain,139,HSM,High School Musical Tour,41,ES - HSM - LDV - 1,,,,,0,1450,_N/A,Sit Down,1,Yes
+752,ES,Spain,139,HSM,High School Musical Tour,45,ES - HSM - TAR - 1,,,,,0,1100,_N/A,Tour,0,No
+753,ES,Spain,139,HSM,High School Musical Tour,124,ES - HSM - CARSED - 1,,,,,0,0,_N/A,Tour,0,No
+754,ES,Spain,139,HSM,High School Musical Tour,125,ES - HSM - TPA - 1,,,,,0,1072,_N/A,Tour,0,No
+755,ES,Spain,139,HSM,High School Musical Tour,126,ES - HSM - TAB - 1,,,,,0,1200,_N/A,Tour,0,No
+756,ES,Spain,139,HSM,High School Musical Tour,130,ES - HSM - TBH - 1,,00:00.0,00:00.0,,0,700,_N/A,Tour,0,No
+757,ES,Spain,139,HSM,High School Musical Tour,131,ES - HSM - TVE - 1,,,,,0,910,_N/A,Tour,0,No
+758,ES,Spain,139,HSM,High School Musical Tour,133,ES - HSM - ASP - 1,,,,,0,0,_N/A,Tour,0,No
+759,ES,Spain,139,HSM,High School Musical Tour,140,ES - HSM - AS - 1,,,,,0,0,_N/A,Tour,0,No
+760,ES,Spain,139,HSM,High School Musical Tour,142,ES - HSM - POA - 1,,,,,0,1729,_N/A,Tour,0,No
+761,ES,Spain,139,HSM,High School Musical Tour,144,ES - HSM - TAV - 1,,,,,0,1003,_N/A,Tour,0,No
+762,ES,Spain,139,HSM,High School Musical Tour,145,ES - HSM - TLA - 1,,00:00.0,00:00.0,,0,800,_N/A,Tour,0,No
+763,ES,Spain,139,HSM,High School Musical Tour,152,ES - HSM - BAL - 1,,,,,0,1408,_N/A,Tour,0,No
+764,ES,Spain,140,CBM,Cabaret MAD,34,ES - CBM - NTA - 1,,,,,0,1080,_N/A,Tour,0,No
+765,ES,Spain,141,CBB,Cabaret BCN,135,ES - CBB - TNA - 1,,,,,0,0,_N/A,Tour,0,No
+766,ES,Spain,142,LPM,Los Productores MAD,47,ES - LPM - COL - 1,,,,,0,1395,_N/A,Sit Down,1,Yes
+767,ES,Spain,143,HBB,HOTEL LA BELLA Y LA BESTIA BARCELONA,137,ES - HBB - HB - 1,,,,,0,0,_N/A,Tour,0,No
+768,ES,Spain,144,BBB,La Bella y la Bestia BCN,121,ES - BBB - BTM - 1,,,,,0,6500,_N/A,Tour,0,No
+769,ES,Spain,145,BBT,La Bella y la Bestia Tour,28,ES - BBT - FBS - 1,,,,,0,2167,_N/A,Tour,0,No
+770,ES,Spain,145,BBT,La Bella y la Bestia Tour,37,ES - BBT - TPV - 1,,,,,0,906,_N/A,Tour,0,No
+771,ES,Spain,145,BBT,La Bella y la Bestia Tour,39,ES - BBT - TCV - 1,,1899-12-31 00:00:00.000,1899-12-31 00:00:00.000,,0,930,_N/A,Tour,0,No
+772,ES,Spain,146,BBM,La Bella y la Bestia MAD,47,ES - BBM - COL - 1,,,,,0,1395,_N/A,Sit Down,1,Yes
+773,ES,Spain,147,CCB,Chicago BCN,38,ES - CCB - TTB - 1,,,,,0,1437,_N/A,Tour,0,No
+774,ES,Spain,148,CCT,Chicago Tour,35,ES - CCT - PEG - 1,,,,,0,1663,_N/A,Tour,0,No
+775,ES,Spain,148,CCT,Chicago Tour,45,ES - CCT - TAR - 1,,00:00.0,00:00.0,,0,1100,_N/A,Tour,0,No
+776,ES,Spain,148,CCT,Chicago Tour,136,ES - CCT - CC - 1,,,,,0,0,_N/A,Tour,0,No
+777,ES,Spain,149,CCM,Chicado MAD,34,ES - CCM - NTA - 1,,,,,0,1080,_N/A,Tour,0,No
+778,ES,Spain,150,CMM,Chicado MAD II,47,ES - CMM - COL - 1,,00:00.0,00:00.0,,0,1395,_N/A,Sit Down,1,Yes
+779,ES,Spain,151,MMD,Mamma Mía! MAD 2005,41,ES - MMD - LDV - 1,,00:00.0,00:00.0,,0,1450,_N/A,Sit Down,1,Yes
+780,ES,Spain,152,MBC,Mamma Mía! BCN 2008,121,ES - MBC - BTM - 1,,,,,0,6500,_N/A,Tour,0,No
+781,ES,Spain,153,LMM,Los Miserables MAD,41,ES - LMM - LDV - 1,,,,,0,1450,_N/A,Sit Down,1,Yes
+782,ES,Spain,154,LMB,Los Miserables BCN,121,ES - LMB - BTM - 1,,00:00.0,00:00.0,,0,6500,_N/A,Tour,0,No
+783,RU,Russia,53,POTO,Призрак Оперы,157,RU - POTO - KRM - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,5662,_N/A,Sit Down,1,Yes
+784,NL,Netherlands,68,HAIR,HAIR,159,NL - HAIR - DLMWS - 1,00:00.0,,,00:00.0,1,949,_N/A,Tour,0,No
+785,NL,Netherlands,69,CDR,Ciske De Rat 2016,159,NL - CDR - DLMWS - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,949,_N/A,Tour,0,No
+786,NL,Netherlands,70,SIMRE,Simone - Reprise,158,NL - SIMRE - DLMMD - 1,,,,,1,655,_N/A,Tour,0,No
+787,NL,Netherlands,77,DG,Dreamgirls,159,NL - DG - DLMWS - 1,00:00.0,,,00:00.0,1,949,_N/A,Tour,0,No
+788,NL,Netherlands,83,RL,Robert Long,158,NL - RL - DLMMD - 1,00:00.0,,,,1,655,_N/A,Tour,0,No
+789,NL,Netherlands,84,SIM,Simone,158,NL - SIM - DLMMD - 1,,,,,1,655,_N/A,Tour,0,No
+790,NL,Netherlands,85,SON,Sonneveld,159,NL - SON - DLMWS - 1,,,,,1,655,_N/A,Tour,0,No
+791,NL,Netherlands,87,TWEE,De Tweeling,159,NL - TWEE - DLMWS - 1,00:00.0,,,,1,949,_N/A,Tour,0,No
+792,NL,Netherlands,88,SIMRES,Simone - Reprise sep16,159,NL - SIMRES - DLMWS - 1,,,,,1,949,_N/A,Tour,0,No
+793,NL,Netherlands,109,HGIM,Hij Gelooft In Mij 2012,159,NL - HGIM - DLMWS - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,949,_N/A,Tour,0,No
+794,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",159,NL - ANNIEMG - DLMWS - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,949,_N/A,Tour,1,Yes
+795,NL,Netherlands,166,ANNIEMG,"Was getekend, Annie M.G. Schmidt",160,NL - ANNIEMG - HENG - 1,,,,,1,880,_N/A,Tour,0,No
+796,NL,Netherlands,175,ELIIC,Elisabeth - In Concert 2018,161,NL - ELIIC18 - SOEST - 1,00:00.0,00:00.0,00:00.0,,1,4109,_N/A,Sit Down,1,Yes
+797,FR,France,176,CHI,Chicago,23,FR - CHI - TMO - 0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+798,ES,Spain,177,ANA,Anastasia,47,ES - ANA - COL - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1396,_N/A,Sit Down,1,Yes
+799,NL,Netherlands,178,MM18,Mamma Mia,27,NL - MM18 - BTU - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1548,_N/A,Sit Down,1,Yes
+800,FR,France,176,CHI,Chicago,23,FR - CHI - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1596,Théâtre Mogador,Sit Down,1,Yes
+801,DE,Germany,179,AN,Anastasia,12,DE - AN - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1801,_N/A,Sit Down,1,Yes
+802,DE,Germany,125,GHO,Ghost,6,DE - GHO - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1376,_N/A,Sit Down,1,Yes
+803,DE,Germany,180,ALACON,Aladdin in Concert,5,DE - ALACON - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1880,_N/A,Event,0,No
+804,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,26,NL - ROMY - ACT - 1,,,,,1,1869,_N/A,Tour,0,No
+805,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,27,NL - ROMY - BTU - 1,,,,,1,1563,_N/A,Tour,0,No
+806,DE,Germany,14,TDV,Tanz der Vampire,9,DE - TDV - TDW - 4,00:00.0,00:00.0,00:00.0,00:00.0,1,1609,_N/A,Sit Down,1,Yes
+807,DE,Germany,182,PAR,Paramour,5,DE - PAR - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1874,_N/A,Sit Down,1,Yes
+808,DE,Germany,183,BOH,Bat Out Of Hell,11,DE - BOH - MET - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
+809,DE,Germany,1,ALA,Aladdin,2,DE - ALA - APO - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1842,_N/A,Sit Down,1,Yes
+810,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,90,NL - ROMY - ORP - 1,,,,,1,1563,_N/A,Tour,0,No
+811,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,77,NL - ROMY - LAMP - 1,,,,,1,1563,_N/A,Tour,0,No
+812,DE,Germany,184,AME,Die fabelhafte Welt der Amélie,154,DE - AME - TIW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,674,_N/A,Sit Down,1,Yes
+813,DE,Germany,185,BAN,The Band,9,DE - BAN - TDW - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
+814,DE,Germany,186,TINA,Tina,6,DE - TINA - OPH - 1,,,,,0,1314,_N/A,Sit Down,1,Yes
+815,NL,Netherlands,187,ANA,Anastasia,26,NL - ANA - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1863,_N/A,Sit Down,1,Yes
+816,NL,Netherlands,188,BREL,Brel,159,NL - BREL - DLMWS - 1,,,,,0,949,_N/A,Sit Down,1,Yes
+817,NL,Netherlands,189,FLOD,Flodder,27,NL - FLOD - BTU - 1,,,,,0,1560,_N/A,Sit Down,1,Yes
+818,NL,Netherlands,190,LAZ,Lazarus,159,NL - LAZ - DLMWS - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,949,_N/A,Sit Down,1,Yes
+819,NL,Netherlands,191,PW,Pretty Woman,27,NL - PW - BTU - 1,,,,,0,1560,_N/A,Sit Down,1,Yes
+820,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,97,NL - ROMY - SCHALM - 1,,,,,1,1563,_N/A,Tour,0,No
+821,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,55,NL - ROMY - ALM - 1,,,,,1,820,_N/A,Tour,0,No
+822,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,64,NL - ROMY - FLINT - 1,,,,,1,770,_N/A,Tour,0,No
+823,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,81,NL - ROMY - MARK - 1,,,,,1,685,_N/A,Tour,0,No
+824,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,82,NL - ROMY - MART - 1,,,,,1,1550,_N/A,Tour,0,No
+825,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,89,NL - ROMY - ORAN - 1,,,,,1,800,_N/A,Tour,0,No
+826,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,102,NL - ROMY - TAQA - 1,,,,,1,694,_N/A,Tour,0,No
+827,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,69,NL - ROMY - ISALA - 1,,,,,1,493,_N/A,Tour,0,No
+828,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,80,NL - ROMY - MAAS - 1,,,,,1,764,_N/A,Tour,0,No
+829,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,83,NL - ROMY - MEER - 1,,,,,1,521,_N/A,Tour,0,No
+830,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,86,NL - ROMY - NIJ - 1,,,,,1,920,_N/A,Tour,0,No
+831,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,93,NL - ROMY - PARKH - 1,,,,,1,920,_N/A,Tour,0,No
+832,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,100,NL - ROMY - SPIE - 1,,,,,1,919,_N/A,Tour,0,No
+833,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,162,NL - ROMY - DORDT - 1,,,,,1,755,_N/A,Tour,0,No
+834,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,91,NL - ROMY - PAR - 1,,,,,1,879,_N/A,Tour,0,No
+835,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,108,NL - ROMY - VRIJ - 1,,,,,1,900,_N/A,Tour,0,No
+836,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,116,NL - ROMY - ZOE - 1,,,,,1,780,_N/A,Tour,0,No
+837,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,61,NL - ROMY - CHASSE - 1,,,,,1,1431,_N/A,Tour,0,No
+838,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,88,NL - ROMY - OLUX - 1,,,,,1,909,_N/A,Tour,0,No
+839,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,103,NL - ROMY - TIL - 1,,,,,1,840,_N/A,Tour,0,No
+840,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,92,NL - ROMY - PARKE - 1,,,,,1,932,_N/A,Tour,0,No
+841,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,72,NL - ROMY - KENN - 1,,,,,1,602,_N/A,Tour,0,No
+842,DE,Germany,192,TIN,TINA - Das Tina Turner Musical,6,DE - TIN - OPH - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1373,_N/A,Sit Down,1,Yes
+843,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,163,NL - ROMY - STOE - 1,,,,,1,650,_N/A,Tour,0,No
+844,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,164,NL - ROMY - MAAG - 1,,,,,1,0,_N/A,Tour,0,No
+845,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,165,NL - ROMY - ATL - 1,,,,,1,822,_N/A,Tour,0,No
+846,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,67,NL - ROMY - HARM - 1,,,,,1,950,_N/A,Tour,0,No
+847,NL,Netherlands,193,TINA,TINA,27,NL - TINA - BTU - 1,00:00.0,00:00.0,00:00.0,,0,1561,_N/A,Sit Down,1,Yes
+848,UK,United Kingdom,194,_N/A,_N/A,166,UK - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
+849,UK,United Kingdom,195,_UNK,_Unknown,167,UK - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
+850,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,78,NL - ROMY - LEEST - 1,,,,,1,500,_N/A,Tour,0,No
+851,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,111,NL - ROMY - ZAAN - 1,,,,,1,879,_N/A,Tour,0,No
+852,DE,Germany,7,MM,Mamma Mia!,1,DE - MM - COL - 2,00:00.0,00:00.0,00:00.0,00:00.0,1,1486,_N/A,Tour,0,No
+853,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,68,NL - ROMY - HEER - 1,,,,,1,1057,_N/A,Tour,0,No
+854,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,74,NL - ROMY - KOM - 1,,,,,1,650,_N/A,Tour,0,No
+855,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,96,NL - ROMY - RIJS - 1,,,,,1,700,_N/A,Tour,0,No
+856,DE,Germany,196,PW,Pretty Woman,4,DE - PW - TAE - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1887,_N/A,Sit Down,1,Yes
+857,NL,Netherlands,181,ROMY,Romy Monteiro - All At Once,105,NL - ROMY - VEL - 1,,,,,1,764,_N/A,Tour,0,No
+858,NL,Netherlands,197,AIC,Aida - In Concert,168,NL - AIC - AUTO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,4109,_N/A,Sit Down,1,Yes
+859,UK,United Kingdom,198,TIN,TINA - The Tina Turner Musical,169,UK - TIN - ALD - 1,,,,,0,1150,_N/A,Sit Down,1,Yes
+860,DE,Germany,7,MM,Mamma Mia!,9,DE - MM - TDW - 2,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
+861,FR,France,199,GHO,Ghost,23,FR - GHO - TMO - 0,00:00.0,00:00.0,00:00.0,00:00.0,0,1606,Théâtre Mogador,Sit Down,1,Yes
+862,FR,France,199,GHO,Ghost,23,FR - GHO - TMO - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1606,Théâtre Mogador,Sit Down,1,Yes
+863,DE,Germany,125,GHO,Ghost,12,DE - GHO - PAL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1803,_N/A,Sit Down,1,Yes
+864,DE,Germany,14,TDV,Tanz der Vampire,11,DE - TDV - MET - 2,00:00.0,00:00.0,00:00.0,00:00.0,1,1647,_N/A,Sit Down,1,Yes
+865,US,United States of America,200,_N/A,_N/A,170,US - _N/A,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_N/A,_N/A,0,No
+866,US,United States of America,201,_UNK,_Unknown,171,US - _UNK,00:00.0,00:00.0,00:00.0,00:00.0,0,0,_UNK,_UNK,0,No
+867,US,United States of America,202,TIN,TINA - The Tina Turner Musical,172,US - TIN - LFT - 1,00:00.0,00:00.0,00:00.0,,0,1500,_N/A,Sit Down,1,Yes
+868,NL,Netherlands,203,ALA,Disney's Aladdin,26,NL - ALA - ACT - 1,00:00.0,00:00.0,00:00.0,,0,1863,_N/A,Sit Down,1,Yes
+869,ES,Spain,204,TINA,"Tina, el musical",47,ES - TINA - COL - 1,00:00.0,00:00.0,00:00.0,,0,1396,_N/A,Sit Down,1,Yes
+870,DE,Germany,4,GVN,Der Glöckner von Notre Dame,11,DE - GVN - MET - 1,,,,,1,1636,_N/A,Sit Down,1,Yes
+871,DE,Germany,9,NY,Ich war noch niemals in New York,9,DE - NY - TDW - 3,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
+872,DE,Germany,14,TDV,Tanz der Vampire,12,DE - TDV - PAL - 3,00:00.0,00:00.0,00:00.0,,0,1770,_N/A,Sit Down,1,Yes
+873,DE,Germany,62,WWR,We Will Rock You,11,DE - WWR - MET - 1,,,,,1,1636,_N/A,Sit Down,1,Yes
+874,DE,Germany,192,TIN,TINA - Das Tina Turner Musical,12,DE - TIN - PAL - 1,00:00.0,00:00.0,00:00.0,,1,1809,_N/A,Sit Down,1,Yes
+875,DE,Germany,206,HA,Hamilton,6,DE - HA - OPH - 1,00:00.0,00:00.0,00:00.0,,0,1382,_N/A,Sit Down,1,Yes
+876,DE,Germany,207,BST,Backstage Tour,173,DE - BST - BSTAPO - 1,,,,,0,20,_N/A,_N/A,0,No
+877,DE,Germany,207,BST,Backstage Tour,176,DE - BST - BSTPAL - 1,,,,,0,20,_N/A,_N/A,0,No
+878,DE,Germany,207,BST,Backstage Tour,175,DE - BST - BSTOPH - 1,,,,,0,20,_N/A,_N/A,0,No
+879,DE,Germany,207,BST,Backstage Tour,177,DE - BST - BSTTAE - 1,,,,,0,20,_N/A,_N/A,0,No
+880,DE,Germany,207,BST,Backstage Tour,178,DE - BST - BSTMET - 1,,,,,0,20,_N/A,_N/A,0,No
+881,DE,Germany,207,BST,Backstage Tour,179,DE - BST - BSTTDW - 1,,,,,0,20,_N/A,_N/A,0,No
+882,DE,Germany,207,BST,Backstage Tour,180,DE - BST - BSTTHH - 1,,,,,0,30,_N/A,_N/A,0,No
+883,DE,Germany,207,BST,Backstage Tour,181,DE - BST - BSTTNF - 1,,,,,0,30,_N/A,_N/A,0,No
+884,NL,Netherlands,77,DG,Dreamgirls,183,NL - DG - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+885,NL,Netherlands,86,TSOM,The Sound Of Music 2015,183,NL - TSOM - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+886,NL,Netherlands,105,MM09,Mamma Mia 2009,183,NL - MM09 - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+887,NL,Netherlands,107,EVITA,Evita,183,NL - EVITA - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+888,NL,Netherlands,112,SNF,Saturday Night Fever,183,NL - SNF - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+889,NL,Netherlands,114,MERMAID,Disney's The Little Mermaid,183,NL - MERMAID - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+890,NL,Netherlands,115,JOSEPH,Joseph And The Amazing Technicolor Dreamcoat,183,NL - JOSEPH - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+891,NL,Netherlands,208,AOL,Aspects Of Love,183,NL - AOL - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+892,NL,Netherlands,209,ASU,All Shook Up,183,NL - ASU - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+893,NL,Netherlands,210,BTBTOUR,Disney's Beauty And The Beast - Tour,183,NL - BTBTOUR - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+894,NL,Netherlands,211,CAGE,La Cage Aux Folles,183,NL - CAGE - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+895,NL,Netherlands,212,CATS,Cats,183,NL - CATS - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+896,NL,Netherlands,213,CDRTOUR,Ciske De Rat - Tour,183,NL - CDRTOUR - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+897,NL,Netherlands,214,COPA,Copacabana,183,NL - COPA - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+898,NL,Netherlands,215,CRAZY,Crazy For You,183,NL - CRAZY - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+899,NL,Netherlands,217,FOSSE,Fosse,183,NL - FOSSE - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+900,NL,Netherlands,218,HSM,Disney's High School Musical,183,NL - HSM - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+901,NL,Netherlands,219,JANTJES,De Jantjes,183,NL - JANTJES - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+902,NL,Netherlands,220,JESUS,Jesus Christ Superstar,183,NL - JESUS - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+903,NL,Netherlands,221,LS,Love Story,183,NL - LS - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+904,NL,Netherlands,222,MFL,My Fair Lady,183,NL - MFL - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+905,NL,Netherlands,223,NTT,Next To Normal,183,NL - NTT - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+906,NL,Netherlands,224,PETTI,Petticoat,183,NL - PETTI - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+907,NL,Netherlands,225,SUNSET,Sunset Boulevard,183,NL - SUNSET - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+908,NL,Netherlands,226,TITANIC,Titanic,183,NL - TITANIC - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+909,NL,Netherlands,227,TSOM03,The Sound Of Music 2003 - Tour,183,NL - TSOM03TOUR - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+910,NL,Netherlands,228,URINE,Urinetown,183,NL - URINE - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+911,NL,Netherlands,230,ZORRO,Zorro,183,NL - ZORRO - TOURNL - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,0,_N/A,Tour,0,No
+912,NL,Netherlands,101,TSOM03,The Sound Of Music 2002,183,NL - TSOM03 - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+913,NL,Netherlands,118,CDR07,Ciske De Rat 2007,183,NL - CDR07 - TOURNL - 1,,,,,1,0,_N/A,Tour,0,No
+914,DE,Germany,7,MM,Mamma Mia!,6,DE - MM - OPH - 2,00:00.0,00:00.0,00:00.0,00:00.0,1,1382,_N/A,Sit Down,1,Yes
+915,DE,Germany,61,WI,Wicked - Die Hexen von Oz,5,DE - WI - TNF - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1883,_N/A,Sit Down,1,Yes
+916,FR,France,156,LRL,Le Roi Lion,23,FR - LRL - TMO - 0,00:00.0,00:00.0,00:00.0,00:00.0,1,1596,Théâtre Mogador,Sit Down,1,Yes
+917,DE,Germany,231,EIS,Die Eiskönigin,4,DE - EIS - TAE - 1,00:00.0,00:00.0,00:00.0,,0,1743,_N/A,Sit Down,1,Yes
+918,FR,France,156,LRL,Le Roi Lion,23,FR - LRL - TMO - 2,00:00.0,00:00.0,00:00.0,00:00.0,0,1598,Théâtre Mogador,Sit Down,1,Yes
+919,US,United States of America,202,TIN,TINA - The Tina Turner Musical,184,US - TIN - LUFO - 1,00:00.0,00:00.0,00:00.0,,0,1500,_N/A,Sit Down,1,Yes
+920,NL,Netherlands,190,LAZ,Lazarus,68,NL - LAZ - HEER - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1053,_N/A,Tour,0,No
+921,NL,Netherlands,190,LAZ,Lazarus,82,NL - LAZ - MART - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1584,_N/A,Tour,0,No
+922,NL,Netherlands,190,LAZ,Lazarus,88,NL - LAZ - OLUX - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,895,_N/A,Tour,0,No
+923,DE,Germany,7,MM,Mamma Mia!,5,DE - MM - TNF - 1,00:00.0,00:00.0,00:00.0,,0,1883,_N/A,Sit Down,1,Yes
+924,DE,Germany,7,MM,Mamma Mia!,9,DE - MM - TDW - 3,00:00.0,00:00.0,00:00.0,00:00.0,1,1653,_N/A,Sit Down,1,Yes
+925,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,59,NL - HGIM22 - CARRE - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1756,_N/A,Tour,0,No
+926,DE,Germany,7,MM,Mamma Mia!,5,DE - MM - TNF - 2,00:00.0,00:00.0,00:00.0,,0,1883,_N/A,Sit Down,1,Yes
+927,NL,Netherlands,233,TSOM21,The Sound of Music,26,NL - TSOM21 - ACT - 1,00:00.0,00:00.0,00:00.0,00:00.0,1,1034,_N/A,Tour,1,Yes
+928,NL,Netherlands,233,TSOM21,The Sound of Music,54,NL - TSOM21 - AGN - 1,00:00.0,,,,1,800,_N/A,Tour,0,No
+929,NL,Netherlands,233,TSOM21,The Sound of Music,56,NL - TSOM21 - AMP - 1,00:00.0,,,,1,850,_N/A,Tour,0,No
+930,NL,Netherlands,233,TSOM21,The Sound of Music,61,NL - TSOM21 - CHASSE - 1,00:00.0,,,,1,1431,_N/A,Tour,0,No
+931,NL,Netherlands,233,TSOM21,The Sound of Music,67,NL - TSOM21 - HARM - 1,00:00.0,,,,1,950,_N/A,Tour,0,No
+932,NL,Netherlands,233,TSOM21,The Sound of Music,82,NL - TSOM21 - MART - 1,00:00.0,,,,1,1550,_N/A,Tour,0,No
+933,NL,Netherlands,233,TSOM21,The Sound of Music,87,NL - TSOM21 - NLUX - 1,00:00.0,,,,1,1491,_N/A,Tour,0,No
+934,NL,Netherlands,233,TSOM21,The Sound of Music,90,NL - TSOM21 - ORP - 1,00:00.0,,,,1,1284,_N/A,Tour,0,No
+935,NL,Netherlands,233,TSOM21,The Sound of Music,92,NL - TSOM21 - PARKE - 1,00:00.0,,,,1,936,_N/A,Tour,0,No
+936,NL,Netherlands,233,TSOM21,The Sound of Music,93,NL - TSOM21 - PARKH - 1,00:00.0,,,,1,920,_N/A,Tour,0,No
+937,NL,Netherlands,233,TSOM21,The Sound of Music,100,NL - TSOM21 - SPIE - 1,00:00.0,,,,1,927,_N/A,Tour,0,No
+938,NL,Netherlands,233,TSOM21,The Sound of Music,108,NL - TSOM21 - VRIJ - 1,00:00.0,,,,1,894,_N/A,Tour,0,No
+939,NL,Netherlands,233,TSOM21,The Sound of Music,185,NL - TSOM21 - MAINDB - 1,00:00.0,,,,1,1350,_N/A,Tour,0,No
+940,DE,Germany,234,KD,Ku'damm 56,9,DE - KD - TDW - 1,00:00.0,00:00.0,00:00.0,,0,1653,_N/A,Sit Down,1,Yes
+941,NL,Netherlands,233,TSOM21,The Sound of Music,70,NL - TSOM21 - KAF - 1,00:00.0,,,,1,987,_N/A,Tour,0,No
+942,NL,Netherlands,233,TSOM21,The Sound of Music,165,NL - TSOM21 - ATL - 1,00:00.0,,,,1,822,_N/A,Tour,0,No
+943,NL,Netherlands,233,TSOM21,The Sound of Music,68,NL - TSOM21 - HEER - 1,00:00.0,,,,1,1057,_N/A,Tour,0,No
+944,NL,Netherlands,233,TSOM21,The Sound of Music,110,NL - TSOM21 - WIL - 1,00:00.0,,,,1,970,_N/A,Tour,0,No
+945,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,65,NL - HGIM22 - GOUDSE - 1,,,,,0,813,_N/A,Tour,0,No
+946,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,67,NL - HGIM22 - HARM - 1,,,,,0,950,_N/A,Tour,0,No
+947,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,86,NL - HGIM22 - NIJ - 1,,,,,0,920,_N/A,Tour,0,No
+948,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,87,NL - HGIM22 - NLUX - 1,,,,,0,1535,_N/A,Tour,0,No
+949,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,92,NL - HGIM22 - PARKE - 1,,,,,0,932,_N/A,Tour,0,No
+950,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,93,NL - HGIM22 - PARKH - 1,,,,,0,920,_N/A,Tour,0,No
+951,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,108,NL - HGIM22 - VRIJ - 1,,,,,0,900,_N/A,Tour,0,No
+952,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,165,NL - HGIM22 - ATL - 1,,,,,0,822,_N/A,Tour,0,No
+953,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,186,NL - HGIM22 - AMARED - 1,,,,,0,1300,_N/A,Tour,0,No
+954,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,56,NL - HGIM22 - AMP - 1,,,,,0,849,_N/A,Tour,0,No
+955,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,82,NL - HGIM22 - MART - 1,,,,,0,1550,_N/A,Tour,0,No
+956,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,90,NL - HGIM22 - ORP - 1,,,,,0,1292,_N/A,Tour,0,No
+957,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,55,NL - HGIM22 - ALM - 1,,,,,0,825,_N/A,Tour,0,No
+958,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,80,NL - HGIM22 - MAAS - 1,,,,,0,764,_N/A,Tour,0,No
+959,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,104,NL - HGIM22 - UTR - 1,,,,,0,847,_N/A,Tour,0,No
+960,DE,Germany,61,WI,Wicked - Die Hexen von Oz,2,DE - WI - APO - 1,,,,,1,1875,_N/A,_N/A,0,No
+961,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,61,NL - HGIM22 - CHASSE - 1,,,,,0,1431,_N/A,Tour,0,No
+962,NL,Netherlands,232,HGIM22,Hij Gelooft In Mij,100,NL - HGIM22 - SPIE - 1,,,,,0,919,_N/A,Tour,0,No
+963,NL,Netherlands,235,AIDA23,Aida,26,NL - AIDA23 - ACT - 1,,,,,0,1863,_N/A,Sit Down,1,Yes
+964,FR,France,236,PRO,Les Producteurs,187,FR - PRO - TDP - 1,00:00.0,00:00.0,00:00.0,00:00.0,0,1046,Théâtre de Paris,Sit Down,1,Yes
+965,DE,Germany,237,OB,Open Bar,188,DE - OB - OBTHH - 1,,,,,0,2046,_N/A,F&B,0,No
+966,DE,Germany,192,TIN,TINA - Das Tina Turner Musical,2,DE - TIN - APO - 1,00:00.0,00:00.0,00:00.0,,0,1842,_N/A,Sit Down,1,Yes

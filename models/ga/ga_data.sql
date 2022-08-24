@@ -36,7 +36,7 @@ with
     {{ fix_google_value ('hits.TRANSACTION.transactionRevenue') }} as revenue,
     hits.TRANSACTION.affiliation as  affiliation,
     hits.sourcePropertyInfo.sourcePropertyTrackingId as source_property_tracking_id,
-    TIMESTAMP_SECONDS(visitStartTime + hits.time) AS hits_timestampe,
+    TIMESTAMP_SECONDS(visitStartTime + cast (hits.time/1000 as int64)) AS hits_timestampe,
     hits.time as  time ,
     hits.hitNumber as hit_number,
     hits.isInteraction as is_interaction,

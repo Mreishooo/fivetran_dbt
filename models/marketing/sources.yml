@@ -48,4 +48,12 @@ sources:
         freshness: 
           warn_after: {count: 7, period: day}
           error_after: {count: 355, period: day}
+
+  - name: 'ft_abintus'
+    description:  Google Ads data for more info visit  https://cloud.google.com/bigquery-transfer/docs/adwords-transformation 
+    database: stage-landing
+    tables:
+      - name: abintus_hq
+        description: Abintue HQ marketing data  - Data collected by abintus uploaded to GCP bucket
+
        

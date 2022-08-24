@@ -1,4 +1,4 @@
-﻿DimArticleTypeId,ArticleTypeCode,ArticleTypeName
+﻿dim_article_type_id,article_type_code,article_type_name
 3,RESTO,Restaurant
 7,MERCH,Merchandising
 8,_N/A,_N/A

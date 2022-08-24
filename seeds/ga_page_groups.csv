@@ -1,32 +1,32 @@
-page_group,is_show,group_desc
-Indirekt offer links,FALSE,Informational 
-ticketonline/tickets,FALSE,Informational
-Musicals shows,FALSE,Musicals shows
-other,FALSE,Others
-Vampire,TRUE,Musicals shows
-FAQ,FALSE,Informational
-Abour Us,FALSE,Informational
-Mamma-Mia,TRUE,Musicals shows
-Calendar Pages,FALSE,Checkout
-Corporate Benefits,FALSE,Informational
-Cast Page,FALSE,Informational
-Frozen,TRUE,Musicals shows
-Service,FALSE,Informational
-Press,FALSE,Informational
-Tina,TRUE,Musicals shows
-Checkout page,FALSE,Checkout
-The Lion King,TRUE,Musicals shows
-404 Error,FALSE,error
-Stage Theater,FALSE,Informational
-Kudamm 56,TRUE,Musicals shows
-For Company,FALSE,Informational
-Blue Man Group,TRUE,Musicals shows
-Aladdin,TRUE,Musicals shows
-Tina-Stuttgart,TRUE,Musicals shows
-Summer Shows,FALSE,Musicals shows
-Home Page,FALSE,Musicals shows
-Promotion,FALSE,Informational
-Disney Musicals,FALSE,Musicals shows
-Tina-Hamburg,TRUE,Musicals shows
-Hamilton,TRUE,Musicals shows
-Wicked,TRUE,Musicals shows
+page_group,page_group1,is_show,group_desc
+Indirekt offer links,Indirekt offer links,FALSE,Informational 
+ticketonline/tickets,ticketonline/tickets,FALSE,Informational
+Musicals shows,Musicals shows,FALSE,Musicals shows
+other,other,FALSE,Others
+DE - TDV - PAL - 3,Vampire,TRUE,Musicals shows
+FAQ,FAQ,FALSE,Informational
+Abour Us,Abour Us,FALSE,Informational
+DE - MM - TNF - 2,Mamma-Mia,TRUE,Musicals shows
+Calendar Pages,Calendar Pages,FALSE,Checkout
+Corporate Benefits,Corporate Benefits,FALSE,Informational
+Cast Page,Cast Page,FALSE,Informational
+DE - EIS - TAE - 1,Frozen,TRUE,Musicals shows
+Service,Service,FALSE,Informational
+Press,Press,FALSE,Informational
+Tina,Tina,TRUE,Musicals shows
+Checkout page,Checkout page,FALSE,Checkout
+DE - KDL - THH - 1,The Lion King,TRUE,Musicals shows
+404 Error,404 Error,FALSE,error
+Stage Theater,Stage Theater,FALSE,Informational
+DE - KD - TDW - 1,Kudamm 56,TRUE,Musicals shows
+For Company,For Company,FALSE,Informational
+DE - BMG - BMX - 1,Blue Man Group,TRUE,Musicals shows
+DE - ALA - APO - 1,Aladdin,TRUE,Musicals shows
+DE - TIN - APO - 1,Tina-Stuttgart,TRUE,Musicals shows
+Summer Shows,Summer Shows,FALSE,Musicals shows
+Home Page,Home Page,FALSE,Musicals shows
+Promotion,Promotion,FALSE,Informational
+Disney Musicals,Disney Musicals,FALSE,Musicals shows
+DE - TINA - OPH - 1,Tina-Hamburg,TRUE,Musicals shows
+DE - HA - OPH - 1,Hamilton,TRUE,Musicals shows
+DE - WI - TNF - 1,Wicked,TRUE,Musicals shows

@@ -16,22 +16,30 @@
     incremental_strategy = 'insert_overwrite',
 )}}
 
-with ga_data as ( select * FROM {{ ref('ga_data' ) }} )
+with ga_data as 
+( select * FROM {{ ref('ga_data' ) }} ),
+
+
+mpl AS ( 
+    select *
+    FROM {{ ref('mdb_production_location') }})
 
 SELECT date,
 country,
 page_group,
 group_desc,
 is_show, 
+mpl.production_name ,
 count(distinct  concat (full_visitor_id , visit_id )) visitors ,
 count(distinct full_visitor_id ) unique_visitors ,
 COUNT(DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
 count(*) impressions 
 FROM ga_data
-join unnest  (hits)  hits     
+join unnest  (hits)  hits  
+left join mpl on  page_group = Production_Location_Id   
 where true 
     {% if is_incremental() %}
       and   date >=  current_date() - 2
     {% endif %}
 and hits.hits_type = 'PAGE' 
-group by 1 , 2 , 3 , 4 ,5 
+group by 1 , 2 , 3 , 4 ,5 ,6
