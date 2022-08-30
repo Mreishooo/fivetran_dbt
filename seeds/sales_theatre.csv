@@ -1,0 +1,243 @@
+﻿dim_theatre_id,country_code,country_name,theatre_id,theatre_code,theatre_name,address,postcode,city_code,city,owner,max_capacity,is_theatre_owned_by_stage
+1,DE,Germany,DE - COL,COL,Colosseum Theater,Altendorfstraße 1,45127,ESS,Essen,Stage Entertainment,1644,1
+2,DE,Germany,DE - APO,APO,Stage Apollo Theater,Plieninger Straße 102,70567,STU,Stuttgart,Stage Entertainment,1875,1
+3,DE,Germany,DE - THH,THH,Stage Theater im Hafen,Norderelbstraße 6,20457,HAM,Hamburg,Stage Entertainment,2046,1
+4,DE,Germany,DE - TAE,TAE,Stage Theater an der Elbe,Norderelbstraße 8,20457,HAM,Hamburg,Stage Entertainment,1902,1
+5,DE,Germany,DE - TNF,TNF,Stage Theater Neue Flora,Stresemannstraße 163,22769,HAM,Hamburg,Stage Entertainment,1881,1
+6,DE,Germany,DE - OPH,OPH,Stage Operettenhaus,Spielbudenplatz 1,20359,HAM,Hamburg,Stage Entertainment,1383,1
+7,DE,Germany,DE - KEH,KEH,Theater Kehrwieder,Kehrwieder 6,20457,HAM,Hamburg,Stage Entertainment,320,1
+8,DE,Germany,DE - BMX,BMX,Stage Bluemax Theater,Marlene-Dietrich-Platz 4,10785,BER,Berlin,Stage Entertainment,618,1
+9,DE,Germany,DE - TDW,TDW,Stage Theater des Westens,Kantstraße 12,10623,BER,Berlin,Stage Entertainment,1653,1
+10,DE,Germany,DE - TPP,TPP,Stage Theater am Potsdamer Platz,Marlene-Dietrich-Platz 1,10785,BER,Berlin,Stage Entertainment,2000,1
+11,DE,Germany,DE - MET,MET,Stage Metronom Theater,Musikweg 1,46047,OBE,Oberhausen,Stage Entertainment,1636,1
+12,DE,Germany,DE - PAL,PAL,Stage Palladium Theater,Plieninger Straße 109,70567,STU,Stuttgart,Stage Entertainment,1807,1
+13,ES,Spain,ES - _N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,-1,0
+14,RU,Russia,RU - _N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,-1,0
+15,FR,France,FR - _N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,-1,0
+16,NL,Netherlands,NL - _N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,-1,0
+17,DE,Germany,DE - _N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,-1,0
+18,ES,Spain,ES - _UNK,_UNK,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,-1,0
+19,RU,Russia,RU - _UNK,_UNK,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,-1,0
+20,FR,France,FR - _UNK,_UNK,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,-1,0
+21,NL,Netherlands,NL - _UNK,_UNK,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,-1,0
+22,DE,Germany,DE - _UNK,_UNK,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,-1,0
+23,FR,France,FR - TMO,TMO,Théâtre Mogador,25 Rue de Mogador,75009,PAR,Paris,Stage Entertainment,1610,1
+24,RU,Russia,RU - MDM,MDM,MDM Theater,"Komsomolsky prospect, 28",119146,MSK,Moscow,Stage Entertainment,1808,1
+25,RU,Russia,RU - ROS,ROS,Rossia Theater,"Pushkinskaya square, 2",127006,MSK,Moscow,Stage Entertainment,1753,1
+26,ES,Spain,ES - FBS,FBS,Auditorio FIBES Sevilla,"Av. Alcalde Luis Uruñuela, 1",41020,SVQ,Sevilla,Ayuntamiento de Sevilla,2167,0
+27,ES,Spain,ES - AVV,AVV,Auditorio y centro de congresos Victor Villegas,"Av Primero Mayo, s/n",30007,MJV,Murcia,Región de Murcia,1768,0
+28,ES,Spain,ES - APM,APM,Auditorio Palma de Mallorca,"Paseo Marítimo, 18",7014,N/A,Palma de Mallorca,Auditorio Palma de Mallorca,1561,0
+29,ES,Spain,ES - CAEM,CAEM,Centro de las Artes Escénicas y de la Música (CAEM),"Av de las Artes, 45-55",37003,SLM,Salamanca,Ayuntamiento Salamanca,1197,0
+30,ES,Spain,ES - GTL,GTL,Gran Teatre del Liceu,"La Rambla, 51-59",8002,BCN,Barcelona,Fundación,1873,0
+31,ES,Spain,ES - GTC,GTC,Gran Teatro de Córdoba,"Avenida del Gran Capitán, 3",14008,ODB,Córdoba,Ayuntamiento de Córdoba,899,0
+32,ES,Spain,ES - FBS2,FBS2,Nuevo Auditorio FIBES Sevilla,"Av. Alcalde Luis Uruñuela, 1",41020,SVQ,Sevilla,Ayuntamiento de Sevilla,2167,0
+33,ES,Spain,ES - NTA,NTA,Nuevo Teatro Alcalá,"Calle de Jorge Juan, 62",28009,MAD,Madrid,Alejandro Romay,1080,0
+34,ES,Spain,ES - PEG,PEG,Palacio de Exposiciones y Congresos de Granada,"Paseo del Violón, S/N",18006,GRX,Granada,FCC y el Grupo RCK,1663,0
+35,ES,Spain,ES - PDO,PDO,Palacio de la Ópera,"Glorieta América, s/n",15004,LCG,A Coruña,-,1466,0
+36,ES,Spain,ES - TPV,TPV,Teatre Principal de Valencia,"Carrer de les Barques, 15",46002,VLC,Valencia,Comunidad Valenciana,906,0
+37,ES,Spain,ES - TTB,TTB,Teatre Tívoli,"Carrer de Casp, 8",8010,BCN,Barcelona,Grupo Balaña,1437,0
+38,ES,Spain,ES - TCV,TCV,Teatro Calderón,"Calle de las Angustias, 1",47003,VLL,Valladolid,Ayuntamiento Valladolid,930,0
+39,ES,Spain,ES - TLL,TLL,Teatro de la Llotja,"Avinguda de Tortosa, 4",25005,LER,Lleida,Ayuntamiento de Lleida,950,0
+40,ES,Spain,ES - LDV,LDV,Teatro Lope de Vega,"Gran Vía, 57",28013,MAD,Madrid,Stage Entertainment,1456,1
+41,NL,Netherlands,NL - ACT,ACT,AFAS Circustheater,Circusstraat 4,2586 CW,SCH,Scheveningen,Stage Entertainment,1869,1
+42,NL,Netherlands,NL - BTU,BTU,Beatrix Theater,Jaarbeursplein 6a,3521 AL,UTR,Utrecht,Stage Entertainment,1563,1
+43,ES,Spain,ES - PCL,PCL,PALACIO DE CONGRESOS DE LLEIDA,"Av. Tortosa, 4",25005,_N/A,Lleida,"La Llotja de Lleida, SA",1000,0
+44,ES,Spain,ES - PCB,PCB,Baluarte Palacio de Congresos y Auditorio de Navarra,Plaza del Baluarte,31002,_N/A,Pamplona,_N/A,1408,0
+45,ES,Spain,ES - TAR,TAR,Teatro Auditorio Roquetas de Mar,"Av. Reino de España, s/n",4740,_N/A,Roquetas de Mar,_N/A,1100,0
+46,ES,Spain,ES - APB,APB,Auditorio y Palacio de Congresos de Burgos,Paseo Sierra de Atapuerca,9002,_N/A,BURGOS,_N/A,1231,0
+47,ES,Spain,ES - COL,COL,Teatro Coliseum Madrid,"Calle Gran Vía, 78",28013,MAD,Madrid,Stage Entertainment,1444,1
+48,NL,Netherlands,NL - DLM,DLM,DeLaMar Theater,Marnixstraat 402,1017 PL,AMS,Amsterdam,_N/A,949,0
+51,NL,Netherlands,NL - ZIG,ZIG,Ziggo Dome,De Passage 100,1101 AX,AMS,Amsterdam,Black Box Real Estate,17000,0
+52,ES,Spain,ES - MDV,MDV,Palacio de Congresos Mar de Vigo,"Avenida de Beiramar, 59",36202,VGO,Vigo,_N/A,1438,0
+53,NL,Netherlands,NL - CHASSE,CHASSE,Chasse Theater,Claudius Prinsenlaan 8,4811 DK,_N/A,Breda,_N/A,1431,0
+54,NL,Netherlands,NL - CROWN,CROWN,Crown Theater,Van Cleeffkade 15,1431 BA,_N/A,Aalsmeer,_N/A,820,0
+55,NL,Netherlands,NL - FLINT,FLINT,De Flint,Coninckstraat 60,3811 WK,_N/A,Amersfoort,_N/A,770,0
+56,NL,Netherlands,NL - GOUDSE,GOUDSE,De Goudse Schouwburg,Boelekade 67,2806 AE,_N/A,Gouda,_N/A,813,0
+57,NL,Netherlands,NL - LAMP,LAMP,De Lampegiet,Kerkewijk 10,3901 EG,_N/A,Veenendaal,_N/A,558,0
+58,NL,Netherlands,NL - MRVT,MRVT,De Meervaart,Meer en Vaart 300,1068 LE,AMS,Amsterdam,_N/A,800,0
+59,NL,Netherlands,NL - KOLK,KOLK,De Nieuwe Kolk,Weiersstraat 1,9401 ET,_N/A,Assen,_N/A,848,0
+60,NL,Netherlands,NL - DEV,DEV,Deventer Schouwburg,Leeuwenbrug 2,7411 TJ,_N/A,Deventer,_N/A,768,0
+61,NL,Netherlands,NL - ISALA,ISALA,Isala Theater,Stadsplein 5,2900 AE,_N/A,Capelle a/d IJssel,_N/A,493,0
+62,NL,Netherlands,NL - KENN,KENN,Kennemer Theater,Kerkplein 1,1941 HD,_N/A,Beverwijk,_N/A,602,0
+63,NL,Netherlands,NL - CARRE,CARRE,Koninklijk Theater Carré,Amstel 115-125,1018 EM,_N/A,Amsterdam,_N/A,1756,0
+64,NL,Netherlands,NL - KAF,KAF,Kunstlinie Almere Flevoland,Esplanade 10,1315 TA,_N/A,Almere,_N/A,987,0
+65,NL,Netherlands,NL - LEI,LEI,Leidse Schouwburg,Oude Vest 43,2312 XS,_N/A,Leiden,_N/A,539,0
+66,NL,Netherlands,NL - MART,MART,Martiniplaza,Leonard Springerlaan 2,9727 KB,_N/A,Groningen,_N/A,1550,0
+67,NL,Netherlands,NL - NLUX,NLUX,Nieuwe Luxor Theater,Posthumalaan 1,3072 AG,_N/A,Rotterdam,_N/A,1535,0
+68,NL,Netherlands,NL - OLUX,OLUX,Oude Luxor Theater,Kruiskade 10,3012 EH,_N/A,Rotterdam,_N/A,909,0
+69,NL,Netherlands,NL - PARKE,PARKE,Parktheater,Theaterpad 1,5615 EN,_N/A,Eindhoven,_N/A,932,0
+70,NL,Netherlands,NL - RAI,RAI,RAI Theater,Europaplein,1078 GZ,AMS,Amsterdam,_N/A,1750,0
+71,NL,Netherlands,NL - RIJS,RIJS,Rijswijkse Schouwburg,Generaal Spoorlaan 10,2283 GM,_N/A,Rijswijk,_N/A,700,0
+72,NL,Netherlands,NL - AGN,AGN,Schouwburg Agnietenhof,Agnietenstraat 2,4001 NB,_N/A,Tiel,_N/A,796,0
+73,NL,Netherlands,NL - AMP,AMP,Schouwburg Amphion,Hofstraat 159,7001 JD,_N/A,Doetinchem,_N/A,849,0
+74,NL,Netherlands,NL - AMST,AMST,Schouwburg Amstelveen,Stadsplein 100,1181 ZM,_N/A,Amstelveen,_N/A,670,0
+75,NL,Netherlands,NL - KRING,KRING,Schouwburg de Kring,Kerkstraat 1,4701 HT,_N/A,Roosendaal,_N/A,880,0
+76,NL,Netherlands,NL - MEER,MEER,Schouwburg de Meerse,Raadhuisplein 3,2132 TZ,_N/A,Hoofddorp,_N/A,521,0
+77,NL,Netherlands,NL - PARKH,PARKH,Schouwburg het Park,Westerdijk 4,1621 LE,_N/A,Hoorn,_N/A,920,0
+78,NL,Netherlands,NL - VEN,VEN,Schouwburg Venray,Schouwburgplein 1,5801 BV,_N/A,Venray,_N/A,673,0
+79,NL,Netherlands,NL - SPANT,SPANT,Spant,Dr. A. Kuyperlaan 3,1402 SB,_N/A,Bussum,_N/A,780,0
+80,NL,Netherlands,NL - HARM,HARM,Stadsschouwburg De Harmonie,Ruiterskwartier 4,8911 BP,_N/A,Leeuwarden,_N/A,950,0
+81,NL,Netherlands,NL - HAA,HAA,Stadsschouwburg Haarlem,Wilsonplein 23,2011 VG,_N/A,Haarlem,_N/A,633,0
+82,NL,Netherlands,NL - NIJ,NIJ,Stadsschouwburg Nijmegen,Keizer Karelplein 32H,6511 NH,_N/A,Nijmegen,_N/A,920,0
+83,NL,Netherlands,NL - UTR,UTR,Stadsschouwburg Utrecht,Lucas Bolwerk 24,3512 EJ,_N/A,Utrecht,_N/A,847,0
+84,NL,Netherlands,NL - VEL,VEL,Stadsschouwburg Velsen IJmuiden,Groeneweg 71,1971 NS,_N/A,IJmuiden,_N/A,764,0
+85,NL,Netherlands,NL - ARN,ARN,Stadstheater Arnhem,Koningsplein 12,6811 BV,_N/A,Arnhem,_N/A,735,0
+86,NL,Netherlands,NL - KOM,KOM,Stadstheater De Kom,Stadsplein 6,3431 LZ,_N/A,Nieuwegein,_N/A,650,0
+87,NL,Netherlands,NL - ZOE,ZOE,Stadstheater Zoetermeer,Theaterplein 10,2711 EK,_N/A,Zoetermeer,_N/A,780,0
+88,NL,Netherlands,NL - TAQA,TAQA,TAQA Theater de Vest,Canadaplein 2,1811 KE,_N/A,Alkmaar,_N/A,694,0
+89,NL,Netherlands,NL - PAR,PAR,Theater aan de Parade,Parade 23,5211 KL,_N/A,Den Bosch,_N/A,879,0
+90,NL,Netherlands,NL - SCHIE,SCHIE,Theater aan de Schie,Stadserf 1,3112 DZ,_N/A,Schiedam,_N/A,702,0
+91,NL,Netherlands,NL - VRIJ,VRIJ,Theater aan het Vrijthof,Vrijthof 47,6211 LE,_N/A,Maastricht,_N/A,900,0
+92,NL,Netherlands,NL - CAST,CAST,Theater Castellum,Rijnplein 1-3,2405 DB,_N/A,Alphen a/d Rijn,_N/A,750,0
+93,NL,Netherlands,NL - KEI,KEI,Theater De Blauwe Kei,Stadhuisplein 7,5461 KN,_N/A,Veghel,_N/A,525,0
+94,NL,Netherlands,NL - LEEST,LEEST,Theater de Leest,Vredesplein 12,5142 RA,_N/A,Waalwijk,_N/A,500,0
+95,NL,Netherlands,NL - MAAS,MAAS,Theater de Maaspoort,Oude Markt 30,5911 HH,_N/A,Venlo,_N/A,764,0
+96,NL,Netherlands,NL - PUR,PUR,Theater de Purmaryn,Waagplein 1,1441 BR,_N/A,Purmerend,_N/A,516,0
+97,NL,Netherlands,NL - SCHALM,SCHALM,Theater de Schalm,Meiveld 3,5501 KA,_N/A,Veldhoven,_N/A,480,0
+98,NL,Netherlands,NL - SPIE,SPIE,Theater de Spiegel,Spinhuisplein 14,8011 ZZ,_N/A,Zwolle,_N/A,919,0
+99,NL,Netherlands,NL - TAM,TAM,Theater de Tamboer,Hoofdstraat 17,7902 EA,_N/A,Hoogeveen,_N/A,800,0
+100,NL,Netherlands,NL - VEST,VEST,Theater de Veste,Asvest 1,2611 PK,_N/A,Delft,_N/A,500,0
+101,NL,Netherlands,NL - HEER,HEER,Theater Heerlen,Burg. Van Grunsvenplein 145,6411 AS,_N/A,Heerlen,_N/A,1057,0
+102,NL,Netherlands,NL - KRUIS,KRUIS,Theater het Kruispunt,Middenbaan 111,2991 CS,_N/A,Barendrecht,_N/A,495,0
+103,NL,Netherlands,NL - MARK,MARK,Theater Markant,Markt 32,5401 GP,_N/A,Uden,_N/A,685,0
+104,NL,Netherlands,NL - ORP,ORP,Theater Orpheus,Churchillplein 1,7314 BZ,_N/A,Apeldoorn,_N/A,1292,0
+105,NL,Netherlands,NL - ALM,ALM,Theaterhotel Almelo,Schouwburgplein 1,7607 AE,_N/A,Almelo,_N/A,825,0
+106,NL,Netherlands,NL - ORAN,ORAN,Theaterhotel de Oranjerie,Kloosterwandplein 12-16,6041 JA,_N/A,Roermond,_N/A,800,0
+107,NL,Netherlands,NL - TIL,TIL,Theaters Tilburg,L. Bouwmeesterplein 1,5038 TN,_N/A,Tilburg,_N/A,840,0
+108,NL,Netherlands,NL - NAALD,NAALD,Westlandtheater De Naald,Stokdijkkade 3,2671 GW,_N/A,Naaldwijk,_N/A,430,0
+109,NL,Netherlands,NL - WIL,WIL,Wilminktheater,Wenninkgaarde 40-42,7511 PH,_N/A,Enschede,_N/A,957,0
+110,NL,Netherlands,NL - WFT,WFT,World Forum Theater,"Churchillplein 10,",2517 JW,_N/A,Den Haag,_N/A,1573,0
+111,NL,Netherlands,NL - ZAAN,ZAAN,Zaantheater,Nicolaasstraat 3,1506 WL,_N/A,Zaandam,_N/A,879,0
+112,NL,Netherlands,NL - ZUID,ZUID,Zuiderstrandtheater,Kranenburgweg 211,2583 ER,_N/A,Den Haag,_N/A,996,0
+113,NL,Netherlands,NL - LOO,LOO,Paleis Het Loo,Koninklijk Park 1,7315 JA,_N/A,Apeldoorn,_N/A,3984,0
+114,NL,Netherlands,NL - AGORA,AGORA,Agora Theater,Agorabaan 12,8224 JS,_N/A,Lelystad,_N/A,750,0
+139,ES,Spain,ES - TPG,TPG,Teatro Pérez Galdós,"Plaza Stagno, 1",35002,LPA,Las Palmas de Gran Canaria,_N/A,1007,0
+140,ES,Spain,ES - BTM,BTM,Barcelona Teatre Musical,"Carrer de la Guàrdia Urbana, 7",8004,BCN,Barcelona,_N/A,6500,0
+141,ES,Spain,ES - RJF,RJF,Riojaforum,"Calle San Millán, 23 - 25",26004,_N/A,Logroño,_N/A,1223,0
+142,ES,Spain,ES - CARS,CARS,Edificio Olympia,"Carrer de Sant Vicent Màrtir, 44",46001,VLC,Valencia,_N/A,0,0
+143,ES,Spain,ES - TPA,TPA,Teatro Principal Alicante,"Plaza Ruperto Chapí, s/n",3001,_N/A,Alicante,_N/A,1072,0
+144,ES,Spain,ES - TAB,TAB,Teatro Arriaga,"Arriaga Plaza, 1",48005,_N/A,Bilbao,_N/A,1200,0
+145,ES,Spain,ES - CALG,CALG,Palacio de Festivales de Cantabria,"Calle Gamazo, s/n",39004,_N/A,Santander,_N/A,0,0
+146,ES,Spain,ES - TCA,TCA,Teatro Circo de Albacete,"Calle Isaac Peral, s/n",2001,_N/A,Albacete,_N/A,943,0
+147,ES,Spain,ES - PCV,PCV,Palacio de Congresos de Valencia,"Avinguda de les Corts Valencianes, 60",46015,VLC,Valencia,_N/A,1481,0
+148,ES,Spain,ES - TBH,TBH,Teatro Bretón de los Herreros,"Calle Bretón de los Herreros, 11",26001,_N/A,Logroño,_N/A,700,0
+149,ES,Spain,ES - TVE,TVE,Teatro Victoria Eugenia,"Argentinar Errepublika, 2",20004,SS,San Sebastián,_N/A,910,0
+150,ES,Spain,ES - PGZ,PGZ,Palacio de Congresos de Zaragoza,"Plaza Lucas Miret Rodriguez, 1",50018,_N/A,Zaragoza,_N/A,1440,0
+151,ES,Spain,ES - ASP,ASP,Auditorio Centro Social Pontevedra,"Augusto González Besada, 2",36001,_N/A,Pontevedra,_N/A,0,0
+152,ES,Spain,ES - ATN,ATN,Auditorio de Tenerife,"Av de la Constitucion, 1",38003,_N/A,Santa Cruz de Tenerife,_N/A,1616,0
+153,ES,Spain,ES - TNA,TNA,Teatro Nuevo Apolo,Plaza Tirso de Molina,28012,_N/A,Madrid,_N/A,0,0
+154,ES,Spain,ES - CC,CC,Casa Colon,"c/ Vázquez López, 13",21001,_N/A,Huelva,_N/A,0,0
+155,ES,Spain,ES - HB,HB,Hotel Barcelona,_N/A,_N/A,_N/A,_N/A,_N/A,0,0
+156,ES,Spain,ES - PEB,PEB,Palacio Euskalduna,"Abandoibarra Etorb., 4",48011,_N/A,Bilbao,_N/A,2164,0
+157,ES,Spain,ES - ARS,ARS,Palacio de las Artes Reina Sofía,"Avenida del Professor López Piñero, 1",46013,_N/A,Valencia,_N/A,1481,0
+158,ES,Spain,ES - AS,AS,Auditorio de Santander,"Avenida Reina Victoria, s/n",39005,_N/A,Santander,_N/A,0,0
+159,ES,Spain,ES - PAK,PAK,Palacio de Congresos y Auditorio Kursaal,"Av. de Zurriola, 1",20002,SS,San Sebastián,_N/A,859,0
+160,ES,Spain,ES - POA,POA,Palacio de la Ópera de A Coruña,"Glorieta América, s/n",15004,_N/A,La Coruña,_N/A,1729,0
+161,ES,Spain,ES - PCN,PCN,Palacio de Congresos y Auditorio de Navarra,Plaza del Baluarte s/n,31002,_N/A,Pamplona,_N/A,1568,0
+162,ES,Spain,ES - TAV,TAV,Teatro Auditorio Buero Vallejo,"Calle de Cifuentes, 30",19003,_N/A,Guadalajara,_N/A,1003,0
+163,ES,Spain,ES - TLA,TLA,Teatro López de Ayala,"Plaza Minayo, s/n",6002,_N/A,Badajoz,_N/A,800,0
+164,ES,Spain,ES - TLLL,TLLL,Teatro de la Laboral,"Calle Luis Moya Blanco, 261",33203,_N/A,Gijón,_N/A,1426,0
+165,FR,France,FR - TMA,TMA,Théâtre Marigny,Carré Marigny,75008,PAR,Paris,Unknown,1024,0
+166,FR,France,FR - FOL,FOL,Folies Bergère,32 rue Richer,75009,PAR,Paris,Unknown,1600,0
+167,RU,Russia,RU - SCO,SCO,"SK ""Olimpiiskii""","Olimpiisky prospect, 28",129090,MSK,Moscow,_N/A,10308,0
+168,RU,Russia,RU - LUZ,LUZ,Luzhniki Palace of Sports,"Luzhniki 24, building 2",119270,MSK,Moscow,_N/A,7400,0
+203,FR,France,FR - AMP,AMP,AMPHITEA 4000, Route de Paris, 49480,ANG,Angers,_N/A,1200,0
+204,FR,France,FR - ANT,ANT,ANTARES,2 Avenue Antares,72100,MAN,LE MANS,_N/A,5220,0
+205,FR,France,FR - AXM,AXM,AXONE DE MONTBELLIARD,6 Rue du Commandant Pierre Rossel,25200,MON,Montbéliard,_N/A,6400,0
+206,FR,France,FR - GAL,GAL,GALAXIE,"Parc de Coulange, Rue de l'Europe",53360,AMN,Amnéville,_N/A,5400,0
+207,FR,France,FR - HTG,HTG,HALLE TONY GARNIER,Place Docteurs Charles et Christophe Mérieux,69007 ,LYO,Lyon,_N/A,5496,0
+208,FR,France,FR - DOM,DOM,LE DOME DE MARSEILLE,48 Avenue de Saint-Just,13004 ,MAR,Marseille,_N/A,8500,0
+209,FR,France,FR - LIB,LIB,LE LIBERTE,1 Espl. Charles de Gaulle,35000,REN,Rennes,_N/A,3300,0
+210,FR,France,FR - PAL,PAL,LE PALIO,"Espace Agora, Rue de Soci",24750,BOU,Boulazac,_N/A,4900,0
+211,FR,France,FR - PHA,PHA,LE PHARE,32 bis Route de Tarbes,31170,TAR,TOURNEFEUILLE,_N/A,3495,0
+212,FR,France,FR - SCA,SCA,LE SCARABEE,Rue du Marclet,42153,RIO,Riorges,_N/A,3300,0
+213,FR,France,FR - SUM,SUM,LE SUMMUM,Rue Henri Barbusse,38100,GRE,Grenoble,_N/A,5000,0
+214,FR,France,FR - PSP,PSP,PALAIS DES SPORTS,34 boulevard Victor,75015,PAR,Paris,_N/A,4000,0
+215,FR,France,FR - NIK,NIK,PALAIS NIKAIA,163 Bd du Mercantour,06200 ,NIC,Nice,_N/A,6000,0
+216,FR,France,FR - ARE,ARE,PALAIS OMNISPORTS LES ARE,5 Avenue Louis le Débonnaire,57000,MET,METZ,_N/A,4525,0
+217,FR,France,FR - PEG,PEG,PARC DES EXPOS GRAND HALL,23 Boulevard Rabatau,13008,MAR,Marseille,_N/A,0,0
+218,FR,France,FR - PEN,PEN,PARC DES EXPOSITIONS PENF,37 Rue de la Rive,29820,GUI,GUILERS,_N/A,2500,0
+219,FR,France,FR - PMB,PMB,PATINOIRE MERIADECK BORDE,95 Cours Maréchal Juin,33000,BOR,Bordeaux,_N/A,4500,0
+220,FR,France,FR - LEM,LEM,THEATRE DU LEMAN - SALLE,Quai du Mont-Blanc 19,1201,GEN,"Genève, Switzerland",_N/A,1323,0
+221,FR,France,FR - ARL,ARL,ZENITH ARENA DE  LILLE,1 Boulevard des Cités Unies,59777,LIL,Lille,_N/A,4500,0
+222,FR,France,FR - ZAM,ZAM,ZENITH D'AMIENS,Avenue de l'Hippodrome,80000,AMI,Amiens,_N/A,6000,0
+223,FR,France,FR - ZCA,ZCA,ZENITH DE CAEN,6 Rue Joseph Philippon,14000,CAE,Caens,_N/A,6990,0
+224,FR,France,FR - ZCF,ZCF,ZENITH DE CLERMONT FERRAN,Rue de Sarliève,63800,CDA,Cournon-d'Auvergne,_N/A,6600,0
+225,FR,France,FR - ZDI,ZDI,ZENITH DE DIJON,"Parc de la Toison d'Or, Rue de Colchide",21000,DIJ,Dijon,_N/A,5237,0
+226,FR,France,FR - ZLI,ZLI,ZENITH DE LIMOGES,16 Avenue Jean Monnet,87100,LIM,Limoges,_N/A,4513,0
+227,FR,France,FR - ZNA,ZNA,ZENITH DE NANCY,Rue du Zénith,54320,MAX,Maxéville,_N/A,4710,0
+228,FR,France,FR - ZNM,ZNM,ZENITH DE NANTES METROPOL,"ZAC d'Ar Mor, Boulevard du Zénith",44800,SHE,Saint-Herblain,_N/A,4900,0
+229,FR,France,FR - ZPA,ZPA,ZENITH DE PAU,Rue Suzanne Bacarisse,64000 ,PAU,Pau,_N/A,4418,0
+230,FR,France,FR - ZRO,ZRO,ZENITH DE ROUEN,44 Avenue des Canadiens,76120,LGQ,Le Grand-Quevilly,_N/A,0,0
+231,FR,France,FR - ZSE,ZSE,ZENITH DE SAINT ETIENNE,Rue Scheurer Kestner,42000,SET,Saint-Étienne,_N/A,5400,0
+232,FR,France,FR - ZTO,ZTO,ZENITH DE TOULOUSE,11 Avenue Raymond Badiou,31300,TOU,Toulouse,_N/A,6900,0
+233,FR,France,FR - ZOR,ZOR,ZENITH D'ORLEANS,1 Rue du Président Robert Schuman,45100,ORL,Orléans,_N/A,5000,0
+234,FR,France,FR - ZES,ZES,ZENITH EUROPE  DE STRASBOURG,1 allée du Zénith,67000,STR,Strasbourg,_N/A,7862,0
+235,FR,France,FR - ZOT,ZOT,ZENITH OMEGA DE TOULON,Boulevard Commandant Nicolas,83000,TOU,Toulon,_N/A,6316,0
+236,FR,France,FR - ZSM,ZSM,ZENITH SUD MONTPELLIER,2733 Avenue Albert Einstein,34000,MON,Montpellier,_N/A,4398,0
+237,NL,Netherlands,NL - AHOY,AHOY,Ahoy,Ahoyweg 10,3084 BA,_N/A,Rotterdam,_N/A,25000,0
+238,NL,Netherlands,NL - ANTWRP,ANTWRP,Stadsschouwburg Antwerpen,Nieuwstad 1,2000,_N/A,Antwerpen,_N/A,2000,0
+239,NL,Netherlands,NL - BEURSE,BEURSE,Beursgebouw Eindhoven,Lardinoisstraat 8,5611 ZZ,_N/A,Eindhoven,_N/A,8000,0
+240,NL,Netherlands,NL - COMP,COMP,Compagnietheater,Kloveniersburgwal 50,1012 CX,AMS,Amsterdam,_N/A,1000,0
+241,NL,Netherlands,NL - DHELDER,DHELDER,Sporthal Sportlaan Den Helder,Sportlaan 58,1782 ND,_N/A,Den Helder,_N/A,748,0
+242,NL,Netherlands,NL - DHLUC,DHLUC,Lucent Danstheater,Schedeldoekshaven 60,2511 EN,DNH,Den Haag,_N/A,1001,0
+243,NL,Netherlands,NL - DHSCHOU,DHSCHOU,Koninklijke Schouwburg Den Haag,Korte Voorhout 3,2511 CW,_N/A,Den Haag,_N/A,992,0
+244,NL,Netherlands,NL - DORDT,DORDT,Schouwburg Kunstmin,Sint Jorisweg 76,3311 PL,_N/A,Dordrecht,_N/A,755,0
+245,NL,Netherlands,NL - DRACHT,DRACHT,De Lawei,Laweiplein 1,9203 KL,_N/A,Drachten,_N/A,905,0
+246,NL,Netherlands,NL - EFTELING,EFTELING,Efteling Theater,Europalaan 1,5171 KW,_N/A,Kaatsheuvel,_N/A,1200,0
+247,NL,Netherlands,NL - EVENTCNTR,EVENTCNTR,Event Centre Aalsmeer,Van Cleeffkade 15,1431 BA,_N/A,Aalsmeer,_N/A,0,0
+248,NL,Netherlands,NL - GARAGE,GARAGE,Le Garage,Ruysdaelstraat 54-56,1071 XE,AMS,Amsterdam,_N/A,0,0
+249,NL,Netherlands,NL - GOOI,GOOI,Theater Gooiland,Emmastraat 2,1211 NG,_N/A,Hilversum,_N/A,744,0
+250,NL,Netherlands,NL - GRNGNSCHOU,GRNGNSCHOU,Stadsschouwburg Groningen,Turfsingel 86,9711 VX,_N/A,Groningen,_N/A,775,0
+251,NL,Netherlands,NL - GROEN,GROEN,Groenoordhallen,Willem de Zwijgerlaan 2,2316 GB,_N/A,Leiden,_N/A,0,0
+252,NL,Netherlands,NL - HANGAAR,HANGAAR,Theaterhangaar,De Mientlaan 75,2223 LA ,_N/A,Katwijk,_N/A,1130,0
+253,NL,Netherlands,NL - HANZEHOF,HANZEHOF,Theater en concertcentrum Hanzehof,Coehoornsingel 1,7201 AA,_N/A,Zutphen,_N/A,550,0
+254,NL,Netherlands,NL - HMH,HMH,AFAS Live,ArenA Boulevard 590,1101 DS,AMS,Amsterdam,_N/A,6000,0
+255,NL,Netherlands,NL - KERKRADE,KERKRADE,Theater Kerkrade,Theaterpassage 2,6461 DR,_N/A,Kerkrade,_N/A,633,0
+256,NL,Netherlands,NL - KWARTIERE,KWARTIERE,Muziekkwartier Enschede,_N/A,_N/A,_N/A,Enschede,_N/A,0,0
+257,NL,Netherlands,NL - LIEVEKAMP,LIEVEKAMP,Theater De Lievekamp,Raadhuislaan 14,5341 GM,_N/A,Oss,_N/A,673,0
+258,NL,Netherlands,NL - LUKKIEN,LUKKIEN,Lukkien,Coperniscuslaan 15,6716 BM,_N/A,Ede,_N/A,0,0
+259,NL,Netherlands,NL - MECC,MECC,MECC,Forum 100,6229 GV,_N/A,Maastricht,_N/A,1700,0
+260,NL,Netherlands,NL - MEERPAAL,MEERPAAL,De Meerpaal,De Rede 80,8251 EX,_N/A,Dronten,_N/A,660,0
+261,NL,Netherlands,NL - MIDDELB,MIDDELB,Stadsschouwburg Middelburg,Molenwater 99,4331 SG ,_N/A,Middelburg,_N/A,550,0
+262,NL,Netherlands,NL - RDAMSCHOU,RDAMSCHOU,Rotterdamse Schouwburg,Schouwburgplein 25,3012 CL,_N/A,Rotterdam,_N/A,877,0
+263,NL,Netherlands,NL - REEHORST,REEHORST,De Reehorst,Bennekomseweg 24,6717 LM,_N/A,Ede,_N/A,600,0
+264,NL,Netherlands,NL - SPEELHUIS,SPEELHUIS,Theater 't Speelhuis,Kromme Steenweg 29,5707 BS,_N/A,Helmond,_N/A,430,0
+265,NL,Netherlands,NL - THIALF,THIALF,THIALF,Pim Mulierlaan 1,8443 DA ,_N/A,Heerenveen,_N/A,12500,0
+266,NL,Netherlands,NL - THTRFCTRY,THTRFCTRY,Theater Factory,Czaar Peterstraat 213,1018 PL,AMS,Amsterdam,_N/A,1000,0
+267,NL,Netherlands,NL - TWENTE,TWENTE,Muziekcentrum Enschede,Noorderhagen 27,7511 EK,_N/A,Enschede,_N/A,2000,0
+268,NL,Netherlands,NL - TWENTEPO,TWENTEPO,Podium Twente,_N/A,_N/A,_N/A,Enschede,_N/A,0,0
+269,NL,Netherlands,NL - VLAARD,VLAARD,Stadsgehoorzaal van Vlaardigen,Schiedamseweg 51,3134 BB,_N/A,Vlaardingen,_N/A,650,0
+270,NL,Netherlands,NL - WFORUM,WFORUM,World Forum,Churchillplein 10,2517 JW,_N/A,Den Haag,_N/A,2161,0
+271,NL,Netherlands,NL - ZUIDPLEIN,ZUIDPLEIN,Theater Zuidplein,Zuidplein 60-64,3083 CW,_N/A,Rotterdam,_N/A,580,0
+272,NL,Netherlands,NL - MUZEVAL,MUZEVAL,De Muzeval,Boermarkeweg 43,7822 HM,_N/A,Emmen,_N/A,800,0
+273,NL,Netherlands,NL - MZKTHTR,MZKTHTR,Het Muziektheater Amsterdam,Amstel 3,1011 PN,AMS,Amsterdam,_N/A,1633,0
+274,NL,Netherlands,NL - NOBELAER,NOBELAER,Theater De Nobelaer,Anna van Berchemlaan 2,4872 XE,_N/A,Etten-Leur,_N/A,610,0
+275,NL,Netherlands,NL - ODEON,ODEON,Theater Odeon,Blijmarkt 25,8011 ND,_N/A,Zwolle,_N/A,919,0
+276,NL,Netherlands,NL - PEPSI,PEPSI,Pepsi Stage,ArenA Boulevard 584,1101,AMS,Amsterdam,_N/A,800,0
+277,NL,Netherlands,NL - RABO,RABO,Schouwburg Hengelo,Beursstraat 44,7551 HV,_N/A,Hengelo,_N/A,880,0
+278,DE,Germany,DE - TIW,TIW,WERK7 - Theater im Werksviertel,Friedrichstraße 14,81671,MUC,München,Stage Entertainment,692,1
+279,NL,Netherlands,NL - COOL,COOL,Cool Kunst en Cultuur,Coolplein 1,1703 XC,_N/A,Heerhugowaard,_N/A,565,0
+280,NL,Netherlands,NL - CUIJK,CUIJK,Schouwburg Cuijk,Grotestraat 62,5431 DL,_N/A,Cuijk,_N/A,630,0
+281,NL,Netherlands,NL - JUNUS,JUNUS,Theater Junushoff,Plantsoen 3,6701 AS,_N/A,Wageningen,_N/A,716,0
+282,NL,Netherlands,NL - KLINKER,KLINKER,Theater de Klinker,"Meester D.U. Stikkerlaan 41,",9675 DG,_N/A,Winschoten,_N/A,630,0
+283,NL,Netherlands,NL - MEENTHE,MEENTHE,De Meenthe,Stationsplein 1,8333 GM,_N/A,Steenwijk,_N/A,612,0
+284,NL,Netherlands,NL - SCHELDE,SCHELDE,Schelde Theater,Westkolkstraat 16,4531 AW,_N/A,Terneuzen,_N/A,770,0
+285,NL,Netherlands,NL - SNEEK,SNEEK,Theater Sneek,Westersingel 28,8601 GR,_N/A,Sneek,_N/A,611,0
+286,NL,Netherlands,NL - STOEP,STOEP,Theater de Stoep,Theaterplein 1,3201 DH,_N/A,Spijkenisse,_N/A,650,0
+287,RU,Russia,RU - KRM,KRM,Kremlin Palace,"Kremlin, Moscow",103132,MSK,Moscow,_N/A,5662,0
+288,NL,Netherlands,NL - SOEST,SOEST,Paleis Soestdijk,Amsterdamsestraatweg 1,3744 AA,_N/A,Baarn,_N/A,4109,0
+289,NL,Netherlands,NL - MAAG,MAAG,Theater de Maagd,Grote Markt 32,4611 NT,_N/A,Bergen op Zoom,_N/A,0,0
+290,NL,Netherlands,NL - ATL,ATL,Atlas Theater,Raadhuisplein 100,7811 AP,_N/A,Emmen,_N/A,822,0
+291,UK,United Kingdom,UK - _N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,-1,0
+292,UK,United Kingdom,UK - _UNK,_UNK,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,-1,0
+293,NL,Netherlands,NL - AUTO,AUTO,Autotron ’s-Hertogenbosch,Graafsebaan 133,5248 NL,_N/A,Rosmalen,_N/A,4109,0
+294,UK,United Kingdom,UK - ALD,ALD,Aldwych Theatre,49 Aldwych,WC2B 4DF,_N/A,London,_N/A,1150,0
+295,US,United States of America,US - _N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,_N/A,-1,0
+296,US,United States of America,US - _UNK,_UNK,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,_Unknown,-1,0
+297,US,United States of America,US - LFT,LFT,Lunt-Fontanne Theatre,205 W 46th St,10036,NY,New York,_N/A,1500,0
+298,NL,Netherlands,NL - TOURNL,TOURNL,TOUR NL,Dummy for touring shows NL,_N/A,_N/A,_N/A,_N/A,0,0
+299,US,United States of America,US - LUFO,LUFO,Lunt-Fontanne Theatre,205 W 46th St,10036,NY,New York,_N/A,1500,0
+300,NL,Netherlands,NL - MAINDB,MAINDB,Mainstage Den Bosch,Oude Engelenseweg 1,5222 AA,_N/A,Den Bosch,_N/A,1350,0
+301,NL,Netherlands,NL - AMARE,AMARE,Amare,Spuiplein 150,2511 DG,_N/A,Den Haag,_N/A,1300,0
+302,FR,France,FR - TDP,TDP,THEATRE DE PARIS,15 rue Blanche,75009,PAR,PARIS,_N/A,1048,0

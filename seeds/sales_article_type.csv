@@ -1,0 +1,15 @@
+﻿dim_article_type_id,article_type_code,article_type_name
+3,RESTO,Restaurant
+7,MERCH,Merchandising
+8,_N/A,_N/A
+20,_UNK,_Unknown
+23,F&B,Food & Beverage
+24,VOUCHER,Voucher
+25,FEE,Fee
+26,TICKET,Ticket
+27,TEST,Test
+29,SERVICE,Service
+30,TOUR,Guided Tour
+31,KIDS,Kids Academy
+32,HOTEL,Hotel
+33,DUMMY,Dummy Tickets

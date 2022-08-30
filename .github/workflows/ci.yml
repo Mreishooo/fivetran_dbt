@@ -40,8 +40,14 @@ jobs:
       - name: Install dbt
         run: pip install dbt-bigquery
       
-      - name: run dbt deps
+      - name: Run dbt deps
         run: dbt deps --profiles-dir .
+
+      - name: Run dbt build - playground
+        run: dbt build
+
+      - name: Run dbt build - prod 
+        run: dbt build --target prod
 
       - name: Generate Documentation
         run: dbt docs generate --profiles-dir . --target prod
@@ -50,3 +56,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: target
+
+ 

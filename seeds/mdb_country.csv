@@ -1,8 +1,0 @@
-﻿dim_country_id,country_code,country_name,currency_code,ticket_price_adjustment_factor
-1,ES,Spain,EUR,0.909090
-2,RU,Russia,RUB,1.099000
-3,FR,France,EUR,1.000000
-4,NL,Netherlands,EUR,1.000000
-5,DE,Germany,EUR,0.896500
-6,UK,United Kingdom,GBP,1.000000
-7,US,United States of America,USD,1.000000

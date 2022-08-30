@@ -16,19 +16,6 @@ jobs:
      - name: test models
        command: dbt test --models marketing   # This example will run all your tests.
 
-
- - name: Refresh_Seeds_Ondemand 
-   schedule: 1 1 1 1 1 
-   steps:
-     - name: seeds
-       command: dbt seeds
-
- - name:  Build_All_Models_Ondemand 
-   schedule: 1 1 1 1 1 
-   steps:
-     - name: build
-       command: dbt build
-
  - name: Check_Sources_Freshness_Daily 
    schedule: 10 1 * * * 
    steps:
@@ -36,7 +23,16 @@ jobs:
        command: dbt source freshness
 
  - name: Ga_Models_Daily 
-   schedule: 1 10 * * * 
+   schedule: 13 10 * * * 
+   steps:
+     - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
+       command: dbt run --models ga # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.
+     
+     - name: test models
+       command: dbt test --models ga   # This example will run all your tests.
+
+ - name: Sales_Models_Daily 
+   schedule: 6 10 * * * 
    steps:
      - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
        command: dbt run --models ga # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.

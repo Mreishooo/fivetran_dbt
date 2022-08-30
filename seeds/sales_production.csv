@@ -1,0 +1,228 @@
+﻿dim_production_id,country_code,country_name,production_code,production_name,is_expired,license_name,licensor,license_type,production_id,license_classification
+1,DE,Germany,ALA,Aladdin,0,Aladdin,Disney Theatrical Productions Ltd.,Musical,DE - ALA,Child
+2,DE,Germany,BMG,Blue Man Group,0,Blue Man Group,Blue Man Productions Inc.,Musical,DE - BMG,Drama
+3,DE,Germany,CHI,Chicago,1,Chicago,National Artists Management Company,Musical,DE - CHI,Drama
+4,DE,Germany,GVN,Der Glöckner von Notre Dame,1,The Hunchback Of Notre Dame,Disney Theatrical Productions Ltd.,Musical,DE - GVN,Child
+5,DE,Germany,KDL,Der König der Löwen,0,Lion King,Disney Theatrical Productions Ltd.,Musical,DE - KDL,Child
+6,DE,Germany,LSN,Liebe stirbt nie,1,Love Never Dies,Really Useful Group Ltd.,Musical,DE - LSN,SingThrough
+7,DE,Germany,MM,Mamma Mia!,0,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,DE - MM,Jukebox
+8,DE,Germany,MP,Mary Poppins,1,Mary Poppins,Cameron Mackintosh Ltd. / Disney Theatrical Productions Ltd.,Musical,DE - MP,Child
+9,DE,Germany,NY,Ich war noch niemals in New York,0,Ich war noch niemals in New York,Stage Entertainment GmbH,Musical,DE - NY,Drama
+10,DE,Germany,PDO,Das Phantom der Oper,1,Phantom Of The Opera,Really Useful Group Ltd.,Musical,DE - PDO,SingThrough
+11,DE,Germany,ROC,Rocky,1,Rocky,Stage Entertainment GmbH,Musical,DE - ROC,Film
+12,DE,Germany,SIA,Sister Act,1,Sister Act,Stage Entertainment GmbH,Musical,DE - SIA,Film
+13,DE,Germany,TAR,Tarzan,1,Tarzan,Disney Theatrical Productions Ltd.,Musical,DE - TAR,Child
+14,DE,Germany,TDV,Tanz der Vampire,0,Tanz der Vampire,VBW Vereinigte Bühnen Wien GmbH,Musical,DE - TDV,SingThrough
+15,DE,Germany,UDO,Hinterm Horizont,1,Hinterm Horizont,Stage Entertainment GmbH,Musical,DE - UDO,Drama
+16,DE,Germany,WVB,Das Wunder von Bern,1,Das Wunder von Bern,Stage Entertainment GmbH,Musical,DE - WVB,Other
+17,ES,Spain,_N/A,_N/A,0,_N/A,_N/A,_N/A,ES - _N/A,_N//A
+18,RU,Russia,_N/A,_N/A,0,_N/A,_N/A,_N/A,RU - _N/A,_N//A
+19,FR,France,_N/A,_N/A,0,_N/A,_N/A,_N/A,FR - _N/A,_N//A
+20,NL,Netherlands,_N/A,_N/A,0,_N/A,_N/A,_N/A,NL - _N/A,_N//A
+21,DE,Germany,_N/A,_N/A,0,_N/A,_N/A,_N/A,DE - _N/A,_N//A
+22,ES,Spain,_UNK,_Unknown,0,_Unknown,_Unknown,_Unknown,ES - _UNK,_Unknown
+23,RU,Russia,_UNK,_Unknown,0,_Unknown,_Unknown,_Unknown,RU - _UNK,_Unknown
+24,FR,France,_UNK,_Unknown,0,_Unknown,_Unknown,_Unknown,FR - _UNK,_Unknown
+25,NL,Netherlands,_UNK,_Unknown,0,_Unknown,_Unknown,_Unknown,NL - _UNK,_Unknown
+26,DE,Germany,_UNK,_Unknown,0,_Unknown,_Unknown,_Unknown,DE - _UNK,_Unknown
+37,FR,France,BDV,Le Bal des Vampires,1,Tanz der Vampire,VBW Vereinigte Bühnen Wien GmbH,Musical,FR - BDV,SingThrough
+38,FR,France,BEB,La Belle et la Bête,1,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,FR - BEB,Child
+39,FR,France,CAT,Cats,1,Cats,Really Useful Group Ltd.,Musical,FR - CAT,SingThrough
+40,FR,France,FDO,Le Fantôme de l'Opéra,1,Phantom Of The Opera,Really Useful Group Ltd.,Musical,FR - FDO,SingThrough
+41,NL,Netherlands,TLK,Disney's The Lion King,1,Lion King,Disney Theatrical Productions Ltd.,Musical,NL - TLK,Child
+42,NL,Netherlands,TBG,The Bodyguard,1,The Bodyguard,_N/A,Musical,NL - TBG,Jukebox
+43,NL,Netherlands,BTB,Disney's Beauty And The Beast,1,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,NL - BTB,Child
+44,NL,Netherlands,BE,Billy Elliot,1,Billy Elliot,Working Title,Musical,NL - BE,Drama
+45,NL,Netherlands,MOE,Moeder Ik Wil Bij De Revue,1,Moeder Ik Wil Bij De Revue,Stage Entertainment,Musical,NL - MOE,SingThrough
+46,ES,Spain,ERL,"El Rey León, el musical",0,Lion King,Disney Theatrical Productions Ltd.,Musical,ES - ERL,Child
+47,ES,Spain,LMT,"Los Miserables, Tour II",1,Les Miserables,Cameron Mackintosh Ltd.,Musical,ES - LMT,SingThrough
+48,ES,Spain,SAB,"Sister Act, Barcelona",1,Sister Act,Stage Entertainment GmbH,Musical,ES - SAB,Film
+49,ES,Spain,SAT,"Sister Act, Tour",1,Sister Act,Stage Entertainment GmbH,Musical,ES - SAT,Film
+50,ES,Spain,SAM,"Sister Act, Madrid",1,Sister Act,Stage Entertainment GmbH,Musical,ES - SAM,Film
+51,ES,Spain,MMB,Mamma Mía! Barcelona,1,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,ES - MMB,Jukebox
+52,ES,Spain,MMT,Mamma Mía! Tour,0,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,ES - MMT,Jukebox
+53,RU,Russia,POTO,Призрак Оперы,1,Phantom Of The Opera,Really Useful Group Ltd.,Musical,RU - POTO,SingThrough
+54,RU,Russia,BB,Красавица и Чудовище,1,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,RU - BB,Child
+55,RU,Russia,SITR,Поющие под дождем,1,The Singing in the Rain,"Singing in the Rain Co., LP",Musical,RU - SITR,Film
+56,RU,Russia,CIN,Золушка,0,Cinderella,Rodgers & Hammerstein Theatricals Europe Ltd.,Musical,RU - CIN,Child
+57,RU,Russia,TDV,Бал Вампиров,0,Tanz der Vampire,VBW Vereinigte Bühnen Wien GmbH,Musical,RU - TDV,SingThrough
+58,ES,Spain,MMG,Mamma MÃ­a! El Musical en Granada,0,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,ES - MMG,NULL
+59,DE,Germany,GEF,Gefährten,1,War Horse,_N/A,Musical,DE - GEF,Film
+60,DE,Germany,3M,3 Musketiere,1,"3 Musketiers, de Musical",_N/A,Musical,DE - 3M,Drama
+61,DE,Germany,WI,Wicked - Die Hexen von Oz,0,Wicked - The Untold Story Of The Witches Of Oz,Universal Stage Productions,Musical,DE - WI,Child
+62,DE,Germany,WWR,We Will Rock You,1,We Will Rock You,_N/A,Musical,DE - WWR,Jukebox
+63,DE,Germany,ELI,Elisabeth,1,Elisabeth,VBW Vereinigte Bühnen Wien GmbH,Musical,DE - ELI,Drama
+64,NL,Netherlands,ALG,ALGEMEEN,1,ALGEMEEN,Unknown,Unknown,NL - ALG,NULL
+65,DE,Germany,DREIT,3THEATER,1,3 THEATER,Unknown,Unknown,DE - DREIT,NULL
+66,DE,Germany,MMHH,MUSICAL METROPOLE HH,1,MUSICAL METROPOLE HH,Unknown,Unknown,DE - MMHH,NULL
+67,DE,Germany,DIG,DIGITAL,1,DIGITAL,Unknown,Unknown,DE - DIG,NULL
+68,NL,Netherlands,HAIR,HAIR,1,HAIR,Gallissas,Musical,NL - HAIR,Film
+69,NL,Netherlands,CDR,Ciske De Rat 2016,1,Ciske de Rat,Stage Entertainment,Musical,NL - CDR,Child
+70,NL,Netherlands,SIMRE,Simone - Reprise,1,Simone,Stage Entertainment,Musical,NL - SIMRE,Other
+71,NL,Netherlands,MICOT,Musicals In Concert - Live On Tour,1,Musicals In Concert,_N/A,Concert,NL - MICOT,Concert
+72,ES,Spain,MOLMAD,EL Hombre De La Mancha MAD,1,El Hombre De La Mancha,Stage Entertainment,Musical,ES - MOLMAD,Drama
+73,ES,Spain,MOLMBCN,El Hombre De La Mancha BCN,1,El Hombre De La Mancha,Stage Entertainment,Musical,ES - MOLMBCN,Drama
+74,ES,Spain,MMM,Mamma Mía! Madrid,0,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,ES - MMM,Jukebox
+75,DE,Germany,DD,Dirty Dancing,1,Dirty Dancing,_N/A,Musical,DE - DD,Film
+76,DE,Germany,TITA,Titanic,1,Titanic,_N/A,Musical,DE - TITA,Film
+77,NL,Netherlands,DG,Dreamgirls,1,Dreamgirls,John F. Breglio,Musical,NL - DG,Drama
+78,NL,Netherlands,GREA,Grease,1,Grease,Almo,Musical,NL - GREA,Film
+79,NL,Netherlands,HZH15,Holland Zingt Hazes 2015,1,Holland Zingt Hazes,_N/A,Concert,NL - HZH15,Concert
+80,NL,Netherlands,HZH16,Holland Zingt Hazes 2016,1,Holland Zingt Hazes,_N/A,Concert,NL - HZH16,Concert
+81,NL,Netherlands,MIC15,Musicals In Concert 2015,1,Musicals In Concert,_N/A,Concert,NL - MIC15,Concert
+82,NL,Netherlands,MIC16,Musicals In Concert 2016,1,Musicals In Concert,_N/A,Concert,NL - MIC16,Concert
+83,NL,Netherlands,RL,Robert Long,1,Robert Long,Kristof Rutsaert,Musical,NL - RL,Jukebox
+84,NL,Netherlands,SIM,Simone,1,Simone,Stage Entertainment,Musical,NL - SIM,Other
+85,NL,Netherlands,SON,Sonneveld,1,Sonneveld,Hans van der Woude,Musical,NL - SON,Jukebox
+86,NL,Netherlands,TSOM,The Sound Of Music 2015,1,The Sound Of Music,Rodgers & Hammerstein Theatricals Europe Ltd.,Musical,NL - TSOM,Film
+87,NL,Netherlands,TWEE,De Tweeling,1,De Tweeling,Theater Alliantie,Musical,NL - TWEE,Drama
+88,NL,Netherlands,SIMRES,Simone - Reprise sep16,1,Simone,Stage Entertainment,Musical,NL - SIMRES,Other
+89,ES,Spain,CBR,El Cascanueces,0,Imperial Russian Ballet,Imperial Russian Ballet,Ballet,ES - CBR,Other
+90,NL,Netherlands,HZH17,Holland Zingt Hazes 2017,1,Holland Zingt Hazes,_N/A,Concert,NL - HZH17,Concert
+91,ES,Spain,TBG,The Bodyguard,0,The Bodyguard,_N/A,Musical,ES - TBG,Jukebox
+92,ES,Spain,CAN,Johann Strauss. Gran concierto de año nuevo,0,Johann Strauss. Gran concierto de año nuevo,_N/A,Concert,ES - CAN,Concert
+93,NL,Netherlands,OYF,On Your Feet,1,On Your Feet,The Nederlander,Musical,NL - OYF,Jukebox
+94,NL,Netherlands,ELIIC,Elisabeth - In Concert,1,Elisabeth,VBW Vereinigte Bühnen Wien GmbH,Musical,NL - ELIIC,Drama
+95,NL,Netherlands,WICK,Wicked,1,Wicked - The Untold Story Of The Witches Of Oz,Universal Stage Productions,Musical,NL - WICK,Child
+96,NL,Netherlands,TAR,Tarzan,1,Tarzan,Disney Theatrical Productions Ltd.,Musical,NL - TAR,Child
+97,NL,Netherlands,TLK04,Disney's The Lion King 2004,1,Lion King,Disney Theatrical Productions Ltd.,Musical,NL - TLK04,Child
+98,NL,Netherlands,ELI,Elisabeth,1,Elisabeth,VBW Vereinigte Bühnen Wien GmbH,Musical,NL - ELI,Drama
+99,NL,Netherlands,SA,Sister Act,1,Sister Act,Stage Entertainment GmbH,Musical,NL - SA,Film
+100,NL,Netherlands,MP,Mary Poppins,1,Mary Poppins,Cameron Mackintosh Ltd. / Disney Theatrical Productions Ltd.,Musical,NL - MP,Child
+101,NL,Netherlands,TSOM03,The Sound Of Music 2002,1,The Sound Of Music,Rodgers & Hammerstein Theatricals Europe Ltd.,Musical,NL - TSOM03,Film
+102,NL,Netherlands,DD,Dirty Dancing,1,Dirty Dancing,_N/A,Musical,NL - DD,Film
+103,NL,Netherlands,MM,Mamma Mia 2003,1,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,NL - MM,Jukebox
+104,NL,Netherlands,WWRY,We Will Rock You,1,We Will Rock You,_N/A,Musical,NL - WWRY,Jukebox
+105,NL,Netherlands,MM09,Mamma Mia 2009,1,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,NL - MM09,Jukebox
+106,NL,Netherlands,AIDA,Aida 2001,1,Aida,Disney Theatrical Productions Ltd.,Musical,NL - AIDA,SingThrough
+107,NL,Netherlands,EVITA,Evita,1,Evita,_N/A,Musical,NL - EVITA,SingThrough
+108,NL,Netherlands,GHOST,Ghost,1,Ghost,_N/A,Musical,NL - GHOST,Film
+109,NL,Netherlands,HGIM,Hij Gelooft In Mij 2012,1,Hij Gelooft In Mij,_N/A,Musical,NL - HGIM,Jukebox
+110,NL,Netherlands,JERSEY,Jersey Boys,1,Jersey Boys,_N/A,Musical,NL - JERSEY,Jukebox
+111,NL,Netherlands,SAIGON,Miss Saigon,1,Miss Saigon,_N/A,Musical,NL - SAIGON,SingThrough
+112,NL,Netherlands,SNF,Saturday Night Fever,1,Saturday Night Fever,_N/A,Musical,NL - SNF,Film
+113,NL,Netherlands,WIZ,The Wiz,1,The Wiz,_N/A,Musical,NL - WIZ,Child
+114,NL,Netherlands,MERMAID,Disney's The Little Mermaid,1,The Little Mermaid,Disney Theatrical Productions Ltd.,Musical,NL - MERMAID,Child
+115,NL,Netherlands,JOSEPH,Joseph And The Amazing Technicolor Dreamcoat,1,Joseph And The Amazing Technicolor Dreamcoat,_N/A,Musical,NL - JOSEPH,Drama
+116,NL,Netherlands,3M,3 Musketiers,1,"3 Musketiers, de Musical",_N/A,Musical,NL - 3M,Drama
+117,NL,Netherlands,BTB05,Disney's Beauty And The Beast 2005,1,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,NL - BTB05,Child
+118,NL,Netherlands,CDR07,Ciske De Rat 2007,1,Ciske de Rat,Stage Entertainment,Musical,NL - CDR07,Child
+119,NL,Netherlands,HZH13,Holland Zingt Hazes 2013,1,Holland Zingt Hazes,_N/A,Concert,NL - HZH13,Concert
+120,NL,Netherlands,HZH14,Holland Zingt Hazes 2014,1,Holland Zingt Hazes,_N/A,Concert,NL - HZH14,Concert
+121,NL,Netherlands,MIS,Les Miserables,1,Les Miserables,Cameron Mackintosh Ltd.,Musical,NL - MIS,SingThrough
+122,NL,Netherlands,WARHORSE,War Horse,1,War Horse,_N/A,Musical,NL - WARHORSE,Film
+123,DE,Germany,SUB,Die Schöne und das Biest,1,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,DE - SUB,Child
+124,DE,Germany,CAT,Cats,1,Cats,Really Useful Group Ltd.,Musical,DE - CAT,SingThrough
+125,DE,Germany,GHO,Ghost,1,Ghost,_N/A,Musical,DE - GHO,Film
+126,DE,Germany,LEM,Les Misérables,1,Les Miserables,Cameron Mackintosh Ltd.,Musical,DE - LEM,SingThrough
+127,DE,Germany,SDM,Der Schuh des Manitu,1,Der Schuh des Manitu,_N/A,Musical,DE - SDM,Film
+128,DE,Germany,AIDA,Aida,1,Aida,Disney Theatrical Productions Ltd.,Musical,DE - AIDA,SingThrough
+129,DE,Germany,IWS,Ich will Spaß,1,Ich will Spaß!,_N/A,Musical,DE - IWS,Drama
+130,DE,Germany,BUD,Buddy,1,Buddy,_N/A,Musical,DE - BUD,Jukebox
+131,DE,Germany,42ND,42nd Street,1,42nd Street,_N/A,Musical,DE - 42ND,Drama
+132,DE,Germany,REB,Rebecca,1,Rebecca,_N/A,Musical,DE - REB,Drama
+133,FR,France,GREA,Grease,0,Grease,Almo,Musical,FR - GREA,NULL
+134,DE,Germany,KB,Kinky Boots,1,Kinky Boots,_N/A,Musical,DE - KB,Drama
+135,ES,Spain,FNM,Fiebre del sabado noche MAD,0,Saturday Night Fever,_N/A,Musical,ES - FNM,Film
+136,ES,Spain,FNT,Fiebre del sabado noche Tour,0,Saturday Night Fever,_N/A,Musical,ES - FNT,Film
+137,ES,Spain,CBT,Cabaret Tour,0,Cabaret,_N/A,Musical,ES - CBT,Other
+138,ES,Spain,GSM,Grease MAD,0,Grease,Almo,Musical,ES - GSM,Film
+139,ES,Spain,HSM,High School Musical Tour,0,Disney's High School Musical,_N/A,Musical,ES - HSM,SingThrough
+140,ES,Spain,CBM,Cabaret MAD,0,Cabaret,_N/A,Musical,ES - CBM,Other
+141,ES,Spain,CBB,Cabaret BCN,0,Cabaret,_N/A,Musical,ES - CBB,Other
+142,ES,Spain,LPM,Los Productores MAD,0,The producers,_N/A,Musical,ES - LPM,Film
+143,ES,Spain,HBB,HOTEL LA BELLA Y LA BESTIA BARCELONA,0,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,ES - HBB,Child
+144,ES,Spain,BBB,La Bella y la Bestia BCN,0,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,ES - BBB,Child
+145,ES,Spain,BBT,La Bella y la Bestia Tour,0,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,ES - BBT,Child
+146,ES,Spain,BBM,La Bella y la Bestia MAD,0,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,ES - BBM,Child
+147,ES,Spain,CCB,Chicago BCN,0,Chicago,National Artists Management Company,Musical,ES - CCB,Drama
+148,ES,Spain,CCT,Chicago Tour,0,Chicago,National Artists Management Company,Musical,ES - CCT,Drama
+149,ES,Spain,CCM,Chicado MAD,0,Chicago,National Artists Management Company,Musical,ES - CCM,Drama
+150,ES,Spain,CMM,Chicado MAD II,0,Chicago,National Artists Management Company,Musical,ES - CMM,Drama
+151,ES,Spain,MMD,Mamma Mía! MAD 2005,0,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,ES - MMD,Jukebox
+152,ES,Spain,MBC,Mamma Mía! BCN 2008,0,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,ES - MBC,Jukebox
+153,ES,Spain,LMM,Los Miserables MAD,0,Les Miserables,Cameron Mackintosh Ltd.,Musical,ES - LMM,SingThrough
+154,ES,Spain,LMB,Los Miserables BCN,0,Les Miserables,Cameron Mackintosh Ltd.,Musical,ES - LMB,SingThrough
+155,FR,France,CAB,Cabaret,1,Cabaret,_N/A,Musical,FR - CAB,Other
+156,FR,France,LRL,Le Roi Lion,0,Lion King,Disney Theatrical Productions Ltd.,Musical,FR - LRL,Child
+157,FR,France,MAM,Mamma Mia!,1,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,FR - MAM,Jukebox
+158,FR,France,SIS,Sister Act,1,Sister Act,Stage Entertainment GmbH,Musical,FR - SIS,Film
+159,FR,France,GRS,Grease,1,Grease,Almo,Musical,FR - GRS,Film
+160,RU,Russia,ALD,Аладдин и повелитель огня,1,Aladdin and Master of Fire,Stage Entertainment Russia,IceShow,RU - ALD,Child
+161,RU,Russia,IAL,Ледниковый период LIVE!,1,ICE AGE LIVE!,Stage Entertainment Touring Production,IceShow,RU - IAL,Child
+162,RU,Russia,SINDBAD,Синдбад и принцесса Анна,1,Sindbad and Princess Anna,Stage Entertainment Russia,IceShow,RU - SINDBAD,Child
+163,ES,Spain,TBG,El Guardaespaldas,0,The Body Guard,_N/A,Musical,56,NULL
+164,DE,Germany,TBG,The Bodyguard,1,The Bodyguard,_N/A,Musical,DE - TBG,Jukebox
+165,FR,France,ZOR,Zorro,1,Zorro,_N/A,Musical,FR - ZOR,Child
+166,NL,Netherlands,ANNIEMG,"Was getekend, Annie M.G. Schmidt",1,"Was getekend, Annie M.G. Schmidt",_N/A,Musical,NL - ANNIEMG,Drama
+167,ES,Spain,TRR,Titanium - Rojas y Rodríguez,0,Titanium - Rojas y Rodríguez,_N/A,Ballet,ES - TRR,Other
+168,ES,Spain,MPV,Miguel Poveda,0,Miguel Poveda,_N/A,Concert,ES - MPV,Concert
+169,ES,Spain,RMT,Rocío Molina y La Tremendita - Afectos,0,Rocío Molina y La Tremendita - Afectos,_N/A,Concert,ES - RMT,Drama
+170,NL,Netherlands,STP,Stage Theater Producties,1,Stage Theater Producties,_N/A,Event,NL - STP,Other
+171,RU,Russia,GHO,Привидение,0,Ghost,_N/A,Musical,RU - GHO,Film
+172,DE,Germany,FJG,Fack Ju Göhte - Se Mjusicäl,1,Fack Ju Göhte - Se Mjusicäl,Constantin Film AG,Musical,DE - FJG,Film
+173,NL,Netherlands,MOT,Motown,0,Motown,_N/A,Musical,NL - MOT,Jukebox
+174,ES,Spain,STC,Stars in Concert,0,_N/A,_N/A,_N/A,ES - STC,_N/A
+175,NL,Netherlands,ELIIC,Elisabeth - In Concert 2018,1,Elisabeth,VBW Vereinigte Bühnen Wien GmbH,Musical,NL - ELIIC18,Drama
+176,FR,France,CHI,Chicago,1,Chicago,National Artists Management Company,Musical,FR - CHI,Drama
+177,ES,Spain,ANA,Anastasia,0,Anastasia,Stage Entertainment,Musical,ES - ANA,Film
+178,NL,Netherlands,MM18,Mamma Mia,1,Mamma Mia!,Littlestar Media Production Ltd. / Andrew Treagus Associates Ltd.,Musical,NL - MM18,Jukebox
+179,DE,Germany,AN,Anastasia,1,Anastasia,Stage Entertainment,Musical,DE - AN,Film
+180,DE,Germany,ALACON,Aladdin in Concert,1,Aladdin in Concert,Disney Theatrical Productions Ltd.,Concert,DE - ALACON,Child
+181,NL,Netherlands,ROMY,Romy Monteiro - All At Once,1,Romy Monteiro - All At Once,Stage Entertainment,Concert,NL - ROMY,concert
+182,DE,Germany,PAR,Paramour,0,Paramour,Cirque du Soleil,Musical,DE - PAR,_N/A
+183,DE,Germany,BOH,Bat Out Of Hell,1,Bat Out Of Hell,_N/A,Musical,DE - BOH,_N/A
+184,DE,Germany,AME,Die fabelhafte Welt der Amélie,1,Amelie,_N/A,Musical,DE - AME,Film
+185,DE,Germany,BAN,The Band,1,The Band,_N/A,Musical,DE - BAN,Jukebox
+186,DE,Germany,TINA,Tina,0,Tina,Stage Entertainment GmbH,Musical,DE - TINA,Jukebox
+187,NL,Netherlands,ANA,Anastasia,1,Anastasia,Stage Entertainment,Musical,NL - ANA,Film
+188,NL,Netherlands,BREL,Brel,0,Brel,_N/A,Musical,NL - BREL,Drama
+189,NL,Netherlands,FLOD,Flodder,0,Flodder,_N/A,Musical,NL - FLOD,Film
+190,NL,Netherlands,LAZ,Lazarus,1,Lazarus,_N/A,Musical,NL - LAZ,Drama
+191,NL,Netherlands,PW,Pretty Woman,0,Pretty Woman,_N/A,Musical,NL - PW,Film
+192,DE,Germany,TIN,TINA - Das Tina Turner Musical,0,Tina,Stage Entertainment GmbH,Musical,DE - TIN,Jukebox
+193,NL,Netherlands,TINA,TINA,0,Tina,Stage Entertainment GmbH,Musical,NL - TINA,Jukebox
+194,UK,United Kingdom,_N/A,_N/A,0,_N/A,_N/A,_N/A,UK - _N/A,_N//A
+195,UK,United Kingdom,_UNK,_Unknown,0,_Unknown,_Unknown,_Unknown,UK - _UNK,_Unknown
+196,DE,Germany,PW,Pretty Woman,0,Pretty Woman,_N/A,Musical,DE - PW,Film
+197,NL,Netherlands,AIC,Aida - In Concert,1,Aida,Disney Theatrical Productions Ltd.,Musical,NL - AIC,SingThrough
+198,UK,United Kingdom,TIN,TINA - The Tina Turner Musical,0,Tina,Stage Entertainment GmbH,Musical,UK - TIN,Jukebox
+199,FR,France,GHO,Ghost,1,Ghost,_N/A,Musical,FR - GHO,Film
+200,US,United States of America,_N/A,_N/A,0,_N/A,_N/A,_N/A,US - _N/A,_N//A
+201,US,United States of America,_UNK,_Unknown,0,_Unknown,_Unknown,_Unknown,US - _UNK,_Unknown
+202,US,United States of America,TIN,TINA - The Tina Turner Musical,0,Tina,Stage Entertainment GmbH,Musical,US - TIN,Jukebox
+203,NL,Netherlands,ALA,Disney's Aladdin,0,Aladdin,Disney Theatrical Productions Ltd.,Musical,NL - ALA,Child
+204,ES,Spain,TINA,"Tina, el musical",0,Tina,Stage Entertainment GmbH,Musical,ES - TINA,Jukebox
+205,NL,Netherlands,MSIC,Miss Saigon - In Concert,0,Miss Saigon,_N/A,Musical,NL - MSIC,SingThrough
+206,DE,Germany,HA,Hamilton,0,Hamilton ,_N/A,Musical,DE - HA,_N/A
+207,DE,Germany,BST,Backstage Tour,0,_N/A,_N/A,_N/A,DE - BST,_N/A
+208,NL,Netherlands,AOL,Aspects Of Love,1,Aspects Of Love,_N/A,Musical,NL - AOL,_N/A
+209,NL,Netherlands,ASU,All Shook Up,1,All Shook Up,_N/A,Musical,NL - ASU,_N/A
+210,NL,Netherlands,BTBTOUR,Disney's Beauty And The Beast - Tour,1,Beauty and the Beast,Disney Theatrical Productions Ltd.,Musical,NL - BTBTOUR,Child
+211,NL,Netherlands,CAGE,La Cage Aux Folles,1,La Cage Aux Folles,_N/A,Musical,NL - CAGE,_N/A
+212,NL,Netherlands,CATS,Cats,1,Cats,Really Useful Group Ltd.,Musical,NL - CATS,SingThrough
+213,NL,Netherlands,CDRTOUR,Ciske De Rat - Tour,1,Ciske de Rat,Stage Entertainment,Musical,NL - CDRTOUR,Child
+214,NL,Netherlands,COPA,Copacabana,1,Copacabana,_N/A,Musical,NL - COPA,_N/A
+215,NL,Netherlands,CRAZY,Crazy For You,1,Crazy For You,_N/A,Musical,NL - CRAZY,_N/A
+216,NL,Netherlands,DROOM,Droomvlucht,1,Droomvlucht,_N/A,Musical,NL - DROOM,_N/A
+217,NL,Netherlands,FOSSE,Fosse,1,Fosse,_N/A,Musical,NL - FOSSE,_N/A
+218,NL,Netherlands,HSM,Disney's High School Musical,1,Disney's High School Musical,_N/A,Musical,NL - HSM,SingThrough
+219,NL,Netherlands,JANTJES,De Jantjes,1,De Jantjes,_N/A,Musical,NL - JANTJES,_N/A
+220,NL,Netherlands,JESUS,Jesus Christ Superstar,1,Jesus Christ Superstar,_N/A,Musical,NL - JESUS,_N/A
+221,NL,Netherlands,LS,Love Story,1,Love Story,_N/A,Musical,NL - LS,_N/A
+222,NL,Netherlands,MFL,My Fair Lady,1,My Fair Lady,_N/A,Musical,NL - MFL,_N/A
+223,NL,Netherlands,NTT,Next To Normal,1,Next To Normal,_N/A,Musical,NL - NTT,_N/A
+224,NL,Netherlands,PETTI,Petticoat,1,Petticoat,_N/A,Musical,NL - PETTI,_N/A
+225,NL,Netherlands,SUNSET,Sunset Boulevard,1,Sunset Boulevard,_N/A,Musical,NL - SUNSET,_N/A
+226,NL,Netherlands,TITANIC,Titanic,1,Titanic,_N/A,Musical,NL - TITANIC,Film
+227,NL,Netherlands,TSOM03,The Sound Of Music 2003 - Tour,1,The Sound Of Music,Rodgers & Hammerstein Theatricals Europe Ltd.,Musical,NL - TSOM03TOUR,Film
+228,NL,Netherlands,URINE,Urinetown,1,Urinetown,_N/A,Musical,NL - URINE,_N/A
+229,NL,Netherlands,WSS,West Side Story,1,West Side Story,_N/A,Musical,NL - WSS,_N/A
+230,NL,Netherlands,ZORRO,Zorro,1,Zorro,_N/A,Musical,NL - ZORRO,Child
+231,DE,Germany,EIS,Die Eiskönigin,0,Frozen,Disney Theatrical Productions Ltd.,Musical,DE - EIS,Child
+232,NL,Netherlands,HGIM22,Hij Gelooft In Mij,0,Hij Gelooft In Mij,_N/A,Musical,NL - HGIM22,Jukebox
+233,NL,Netherlands,TSOM21,The Sound of Music,1,The Sound Of Music,Rodgers & Hammerstein Theatricals Europe Ltd.,Musical,NL - TSOM21,Film
+234,DE,Germany,KD,Ku'damm 56,0,Ku'damm 56,BMG PopOut,Musical,DE - KD,Film
+235,NL,Netherlands,AIDA23,Aida,0,Aida,Disney Theatrical Productions Ltd.,Musical,NL - AIDA23,SingThrough
+236,FR,France,PRO,Les Producteurs,0,The producers,_N/A,Musical,FR - PRO,Film
+237,DE,Germany,OB,Open Bar,0,_N/A,_N/A,_N/A,DE - OB,_N/A

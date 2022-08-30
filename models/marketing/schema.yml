@@ -92,6 +92,8 @@ models:
     columns:
       - name: platform
         description: marketing platforms, as in FB Ads, Google Ads, Google DV360
+        tests:
+          - unique
       - name: account_name
         description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
       - name: date

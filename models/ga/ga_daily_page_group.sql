@@ -22,7 +22,7 @@ with ga_data as
 
 mpl AS ( 
     select *
-    FROM {{ ref('mdb_production_location') }})
+    FROM {{ ref('sales_production_location') }})
 
 SELECT date,
 country,
