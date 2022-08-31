@@ -8,36 +8,36 @@ models:
 
     columns:
       - name: _line
-        description:  ""
+        description:  "metaData for the line on the csv file"
       - name:  fecha_compra
-        description:  ""
+        description:  "date of purchase"
       - name:  musical
-        description:  ""
+        description:  "show"
       - name:  fecha_check_in
-        description:  ""
+        description:  "check in date"
       - name:  fecha_check_out
-        description:  ""
+        description:  "check out date"
       - name:  numero_de_entradas
-        description:  ""
+        description:  "number of tickets"
       - name: fecha_sesion
-        description:  ""
+        description:  "performance date"
       - name:  sesion
-        description: ""
+        description: "performance"
       - name:  hotel
-        description:  ""
+        description:  "hotel"
       - name:  referencia
-        description: "" 
+        description: "reference" 
       - name:  importe_total
-        description:  "" 
+        description:  "total value" 
       - name:  importe_entradas
-        description:  "" 
+        description:  "tickets value" 
       - name:  importe_hotel
-        description: ""
+        description: "hotel value"
       - name:  comision_a_stage_iva_incluido
-        description:  ""
+        description:  "commission for Stage – VAT included"
       - name:  hotel_cancelado
-        description:  ""
+        description:  "hotel cancelled"
       - name:  factura
-        description:   ""
+        description:   "bill"
       - name:  pagado
-        description:   ""
+        description:   "paid"

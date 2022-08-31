@@ -2,9 +2,34 @@
 version: 2
  
 models:
-
   - name: gcp_logs
-    description:  Table containes bigQuery queries and jobs
-
-
-
+    description: bigquery logs
+    columns:
+      - name: project_id
+        description: gcp project id
+      - name: user_email
+        description: email who run the query
+      - name: query
+        description: query test
+      - name: statement_type
+        description: query statment type
+      - name: state
+        description: job\query state
+      - name: create_time
+        description: timestampe when the job\query created 
+      - name: start_time
+        description: timestampe when the job\query started 
+      - name: end_time
+        description: timestampe when the job\query ended
+      - name: total_processed_gb
+        description: total processed data in GB by query\job 
+      - name: total_billed_gb
+        description: total billing data in GB by query\job 
+      - name: total_slot_ms
+        description: total slot job\query used 
+      - name: referenced_tables
+        description: tables the query\job used \ scan 
+      - name: total_tables_processed
+        description: number of tables scaned by the query\job 
+      - name: row_count
+        description: result count rows of query\jo  

@@ -111,165 +111,156 @@ models:
       - name: interactions
         description: "" 
 
-  - name: ft_abintus
-    description: ""
-    database: stage-landing
-    tables:
-      - name: abintus_hq
+  - name: abintus_hq
+    description: "media consultancy"
+    columns:
+      - name: _30_ta_cpp
+        description: net costs divided by 30 ta grps
+        tests:
+          - unique
+      - name: _30_ta_grps_20_in_spain_
+        description: 'The total number of GRPs on a 30" equivalent (20" TA  GRPs for Spain)'
+      - name: ad_serving_tracking_costs_if_applicable_
+        description: "For digital only, any ad serving and tracking costs if applicable"
+      - name: added_value_eur_
+        description: "Any value offered as free of charge / Value of the Barter Deal"
+      - name: affinity_index_targeting_
+        description: "Index between total target audience GRPs over total GRPs against All Adults"
+      - name: agency_client
+        description: "name of the agency or the client for direct buys"
+      - name: agency_commission_
+        description: "Standard media agency commission discount, usually 15%, but can vary for your market"
+      - name: agency_fees_
+        description: "Total base fees as a percentage of the net media cost if you are remunerated on commission"
+      - name: agency_fees_local_currency_
+        description: " Total base fees as a money value in local currency "
+      - name: average_grp_spot
+        description: "30 ta grps divided by number of spots bough"
+      - name: booked_media_cost_in_000_
+        description: "Cost according to your booking system at current month of the report "
+      - name: campaign
+        description: "Name of the Campaign "
+      - name: click_through_rate
+        description: "total number of clicks divided by total number of impressions"
+      - name: copy_length
+        description: " The length of the creative copy used in seconds "
+      - name: cost_per_cinema_site
+        description: "net costs divided by number of cinemas_sites"
+      - name: cost_per_click
+        description: "net costs divided by total number of clicks"
+      - name: cost_per_insertion
+        description: "net costs divided by total number of insertions"
+      - name: cost_per_screen
+        description: "net costs divided by total number of screens"
+      - name: cost_per_site_panel
+        description: " net costs divided by total number of sites_panels "
+      - name: country
+        description: "Country of Marketing "
+      - name: cpm
+        description: "net costs times 1000 and divided number of impressions"
+      - name: direct_buy_y_n
+        description: "Yes = Direct Buy; No = Agency Buy "
+      - name: end_date
+        description: "End date of campaign "
+      - name: engagement_rate
         description: ""
-        columns:
-          - name: _file
-            description: ""
-          - name: _line
-            description: ""
-          - name: _30_ta_cpp
-            description: ""
-          - name: _30_ta_grps_20_in_spain_
-            description: ""
-          - name: _fivetran_synced
-            description: ""
-          - name: _modified
-            description: ""
-          - name: ad_serving_tracking_costs_if_applicable_
-            description: ""
-          - name: added_value_eur_
-            description: ""
-          - name: affinity_index_targeting_
-            description: ""
-          - name: agency_client
-            description: ""
-          - name: agency_commission_
-            description: ""
-          - name: agency_fees_
-            description: ""
-          - name: agency_fees_local_currency_
-            description: ""
-          - name: average_grp_spot
-            description: ""
-          - name: booked_media_cost_in_000_
-            description: ""
-          - name: campaign
-            description: ""
-          - name: click_through_rate
-            description: ""
-          - name: copy_length
-            description: ""
-          - name: cost_per_cinema_site
-            description: ""
-          - name: cost_per_click
-            description: ""
-          - name: cost_per_insertion
-            description: ""
-          - name: cost_per_screen
-            description: ""
-          - name: cost_per_site_panel
-            description: ""
-          - name: country
-            description: ""
-          - name: cpm
-            description: ""
-          - name: direct_buy_y_n
-            description: ""
-          - name: end_date
-            description: ""
-          - name: engagement_rate
-            description: ""
-          - name: final_cost_to_client
-            description: ""
-          - name: final_cpm
-            description: ""
-          - name: final_gross_contacts_overall_in_mio_tg_a_14_
-            description: ""
-          - name: final_net_media_cost_in_000_
-            description: ""
-          - name: final_net_reach_in_mio_within_planned_tg_
-            description: ""
-          - name: frequency_ots
-            description: ""
-          - name: gross_negotiated_net_cost
-            description: ""
-          - name: impressions
-            description: ""
-          - name: local_currency
-            description: ""
-          - name: market_region
-            description: ""
-          - name: media_channel_level_1
-            description: ""
-          - name: media_channel_level_2
-            description: ""
-          - name: negotiated_media_discount_
-            description: ""
-          - name: net_cost_net_net_cost
-            description: ""
-          - name: no_of_days
-            description: ""
-          - name: number_of_clicks
-            description: ""
-          - name: number_of_comments
-            description: ""
-          - name: number_of_insertions
-            description: ""
-          - name: number_of_likes
-            description: ""
-          - name: number_of_screens
-            description: ""
-          - name: number_of_shares
-            description: ""
-          - name: number_of_sites_cinemas
-            description: ""
-          - name: number_of_sites_panels
-            description: ""
-          - name: number_of_spots_bought
-            description: ""
-          - name: planned_actual
-            description: ""
-          - name: planned_gross_contacts_overall_in_mio_tg_a_14_
-            description: ""
-          - name: planned_net_media_cost_in_000_
-            description: ""
-          - name: planned_net_reach_in_mio_planned_tg_
-            description: ""
-          - name: planned_target_group
-            description: ""
-          - name: premium_position_definitions
-            description: ""
-          - name: prime_time_drive_time_definition
-            description: ""
-          - name: production
-            description: ""
-          - name: production_costs_if_applicable_
-            description: ""
-          - name: ratecard_gross_cost
-            description: ""
-          - name: reach_
-            description: ""
-          - name: remarks_comments
-            description: ""
-          - name: share_of_digital
-            description: ""
-          - name: share_of_drive_time_from_ratings_
-            description: ""
-          - name: share_of_premium_positions_from_ratings_
-            description: ""
-          - name: share_of_prime_peak_time_from_ratings_
-            description: ""
-          - name: share_of_right_hand_side
-            description: ""
-          - name: start_date
-            description: ""
-          - name: ta_grps
-            description: ""
-          - name: ta_universe
-          - name: taxes_
-            description: ""
-          - name: view_through_rate
-            description: ""
-          - name: viewability_definition
-            description: ""
-          - name: viewability_rate
-            description: ""
-          - name: viewable_impressions
-            description: ""
-            description: ""
-          - name: views
+      - name: final_cost_to_client
+        description: "Net cost + Agency fees + Taxes + Production Costs + Ad Serving/Tracking Costs "
+      - name: final_cpm
+        description: "Net Media cost/Actual Reach Overall (Gross contacts)"
+      - name: final_gross_contacts_overall_in_mio_tg_a_14_
+        description: " The actual number of contacts overall. Doesn't matter if one person has been reached several times or once. The basis are all adults in the country (e.g. Germany: A 14+) "
+      - name: final_net_media_cost_in_000_
+        description: "Media costs excluding commissions / Tracking, production, handling or adserving costs "
+      - name: final_net_reach_in_mio_within_planned_tg_
+        description: " The actual number of people/housholds within the planned target group reached once within the campaign within this media channel as far as available. Multiple contacts of a person are not taken into account. "
+      - name: frequency_ots
+        description: "Average frequency or Opportunity To See (OTS) "
+      - name: gross_negotiated_net_cost
+        description: "Total gross negotiated or net cost of the media expenditure (Ratecard less media discounts) "
+      - name: impressions
+        description: "Total number of impressions "
+      - name: local_currency
+        description: "The official currency used in the Country of Marketing "
+      - name: market_region
+        description: "Region (within country) of Marketing "
+      - name: media_channel_level_1
+        description: "Media Channel Category "
+      - name: media_channel_level_2
+        description: "Media Channel Subcategory "
+      - name: negotiated_media_discount_
+        description: "Percentage of all negotiated media discounts, excluding agency commission"
+      - name: net_cost_net_net_cost
+        description: " Total net cost or net net cost of the media expenditure (Gross Negotiated less Agency Commission) "
+      - name: no_of_days
+        description: " Amount of days of the whole campaign "
+      - name: number_of_clicks
+        description: " Total number of Clicks "
+      - name: number_of_comments
+        description: " Total number of Comments "
+      - name: number_of_insertions
+        description: " Total number of insertions "
+      - name: number_of_likes
+        description: " Total number of Likes "
+      - name: number_of_screens
+        description: " Total number of Screens "
+      - name: number_of_shares
+        description: " Total number of Shares "
+      - name: number_of_sites_cinemas
+        description: " Total number of Sites / Cinemas "
+      - name: number_of_sites_panels
+        description: " Total number of panels or sites "
+      - name: number_of_spots_bought
+        description: " Total number of spots bought, included added Value Free Spot "
+      - name: planned_actual
+        description: " Indicate whether the information provided is Planned (approved plan); Booked (ongoing campaign where final costs are not yet known) or Actual (finalised actual costs as reported in your post campaign report) "
+      - name: planned_gross_contacts_overall_in_mio_tg_a_14_
+        description: " The actual number of contacts overall. Doesn't matter if one person has been reached several times or once. The basis are all adults in the country (e.g. Germany: A 14+). "
+      - name: planned_net_media_cost_in_000_
+        description: " Media cost in n/n (after all discounts, before adding commissions/fees) All figures should exclude commissions/production/handling/adserving/tracking costs "
+      - name: planned_net_reach_in_mio_planned_tg_
+        description: " The planned number of people/housholds within the planned target group reached at least once within the campaign within this media channel as far as available. Multiple contacts of one person are not taken into account. "
+      - name: planned_target_group
+        description: " Target Audience or Buying Audience related to the GRPs "
+      - name: premium_position_definitions
+        description: "Definition of Premium Positions, i.e. First, Second, Second Last, and Last"
+      - name: prime_time_drive_time_definition
+        description: " Definition of the Prime Time daypart, i.e. 18.00 - 23.00 "
+      - name: production
+        description: " Name of the Production "
+      - name: production_costs_if_applicable_
+        description: " Any production costs in local currency if applicable "
+      - name: ratecard_gross_cost
+        description: " Total ratecard or gross value of the media expenditure "
+      - name: reach_
+        description: " Total reach or coverage as a percentage of the target audience universe"
+      - name: remarks_comments
+        description: " Please use this space to note any comments, that help to clarify e.g. status of the campaign, non-availablity due to a specific reason, direct buy comments or any other additional information, e.g. why data is not available, and what 'Other' media channel is exactly, etc. "
+      - name: share_of_digital
+        description: " Share of digital panels/sites as a percentage of the total number of panels/sites "
+      - name: share_of_drive_time_from_ratings_
+        description: " Share of total GRPs in the Drive Time daypart as a percentage "
+      - name: share_of_premium_positions_from_ratings_
+        description: " Share of the total GRPs in Premium Positions as a percentage "
+      - name: share_of_prime_peak_time_from_ratings_
+        description: " Share of total GRPs in the Prime Time daypart as a percentage "
+      - name: share_of_right_hand_side
+        description: " Share of right hand side insertions as a percentage of the total number of insertions "
+      - name: start_date
+        description: " Start date of campaign "
+      - name: ta_grps
+        description: " Total number of target audience / buying audience Gross Rating Points"
+      - name: ta_universe
+        description: " The total number of people associated with the target audience or buying audience "
+      - name: taxes_
+        description: " Any applicable taxes as a percentage of the Net cost + Agency fees"
+      - name: view_through_rate
+        description: "total number of views divided by total impressions"
+      - name: viewability_definition
+        description: " Definition for viewability, ie 75% for 3 seconds"
+      - name: viewability_rate
+        description: " total number of viewable impressions divided by total impressions "
+      - name: viewable_impressions
+        description: " Total number of viewable impressions"
+      - name: views
+        description: " Total number of Views"
