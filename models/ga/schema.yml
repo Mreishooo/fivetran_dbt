@@ -227,7 +227,7 @@ models:
       - name: date
         description: The date of the session
       - name: country
-        description: country of the hit bases on hostname 
+        description: country of ga view 
       - name: page_group
         description: hit page group based on page path - incase of a show its Production Location Id
       - name: group_desc 
@@ -244,3 +244,29 @@ models:
         description: count of new visitor on the page
       - name: impressions
         description: count of the hits on the page 
+
+
+  - name: ga_daily_transactions
+    description: table contains ga transactions linked to MDB data 
+    columns:
+      - name: date
+        description: The date of the session when transaction happened  
+      - name: country
+        description: country of ga view 
+      - name: full_visitor_id
+        description: The unique visitor ID
+      - name: hostname
+        description:  The hostname of the URL
+        tests:
+          - unique
+      - name: web_order_id
+        description: transaction id
+        tests:
+          - unique
+          - not_null
+      - name: revenue
+        description: revenue of the transaction 
+      - name: affiliation
+        description:  The affiliate information passed to the ecommerce tracking code
+      - name: ticket_sales
+        description: linked data from MDB - Linked Transaction id = order_web_id 

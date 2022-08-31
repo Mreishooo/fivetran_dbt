@@ -1,0 +1,10 @@
+
+version: 2
+ 
+models:
+
+  - name: gcp_logs
+    description:  Table containes bigQuery queries and jobs
+
+
+

@@ -43,6 +43,7 @@ and  hit.web_order_id  is not null
       and   date >=  current_date() - 2
     {% endif %}
 group by date,country, full_visitor_id,hit.hostname,hit.web_order_id , hit.revenue	, hit.affiliation 
+QUALIFY row_number() OVER (PARTITION BY  web_order_id ORDER BY date DESC)  = 1
 ) 
 
 , mdb_orders as
