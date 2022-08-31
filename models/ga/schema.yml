@@ -257,8 +257,6 @@ models:
         description: The unique visitor ID
       - name: hostname
         description:  The hostname of the URL
-        tests:
-          - unique
       - name: web_order_id
         description: transaction id
         tests:
