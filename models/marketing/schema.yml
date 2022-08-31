@@ -116,8 +116,6 @@ models:
     columns:
       - name: _30_ta_cpp
         description: net costs divided by 30 ta grps
-        tests:
-          - unique
       - name: _30_ta_grps_20_in_spain_
         description: 'The total number of GRPs on a 30" equivalent (20" TA  GRPs for Spain)'
       - name: ad_serving_tracking_costs_if_applicable_
