@@ -40,3 +40,10 @@ jobs:
      - name: test models
        command: dbt test --models ga   # This example will run all your tests.
 
+ - name: Sales_Models_Daily 
+   schedule: 1 1 1 1 1 
+   steps:
+     - name: run version # Give each step in your job a name. This will enable you to track the steps in the logs.
+       command: dbt --version # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.
+     
+ 
