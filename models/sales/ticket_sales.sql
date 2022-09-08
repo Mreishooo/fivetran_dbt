@@ -107,6 +107,7 @@ SELECT
       ,dpl.production_location_id
 	  ,fts.dim_production_location_id
       ,dp.production_name
+      ,dp.license_name production_license_name
       ,dpf.performance_status
       ,DATE_DIFF(fts.booking_date,fts.performance_date, day) lead_days_perfomance 
       --,DATE_DIFF(fts.booking_date, date(sales_start_date), day) lead_day_sales_start
