@@ -2,7 +2,8 @@ USE [DWH]
 GO
 
 delete from [SE].[fact_ticket_sales_bq]
-where  DimBookingDateId  >= ( select  max (DimBookingDateId) - 31  FROM [dbo].[FactTicketSales] )
+where  DimBookingDateId  >= ( select  CONVERT(varchar(20),   DATEADD(day, -31,CONVERT(date,CONVERT(varchar(8),max(DimBookingDateId)), 112))
+  , 112)  FROM [dbo].[FactTicketSales] )
 
 set identity_insert [SE].[fact_ticket_sales_bq] on 
 
@@ -367,7 +368,8 @@ INSERT INTO [SE].[fact_ticket_sales_bq]
            ,[SwitchToPromoterVoucher]
            ,[DimPromoterVoucherId]
 		FROM dbo.FactTicketSales
-where  DimBookingDateId  >= ( select  max (DimBookingDateId) - 31  FROM dbo.FactTicketSales) 
+where  DimBookingDateId  >= ( select  CONVERT(varchar(20),   DATEADD(day, -31 ,CONVERT(date,CONVERT(varchar(8),max(DimBookingDateId)), 112))
+  , 112)  FROM [dbo].[FactTicketSales] )
  
 GO
 

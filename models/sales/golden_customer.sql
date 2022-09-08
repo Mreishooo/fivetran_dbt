@@ -7,7 +7,7 @@
 with  
   golden_customer AS (
    SELECT *  
-   FROM {{ source( 'ft_mdb2_dbo','dimgoldencustomer') }}
+   FROM {{ source( 'ft_mdb3_dbo','dimgoldencustomer') }}
    where {{ ft_filter('DimGoldenCustomerId') }} 
   )
 

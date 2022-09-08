@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: 'ft_mdb2_se'
+  - name: 'ft_mdb3_se'
     description:  MDB database 
     database: stage-landing
     tables:
@@ -12,7 +12,7 @@ sources:
           warn_after: {count: 2, period: day}
           error_after: {count: 7, period: day}  
 
-  - name: 'ft_mdb2_dbo'
+  - name: 'ft_mdb3_dbo'
     description:  export data from 3rd party for hotel and ticket in spain 
     database: stage-landing
     tables:
