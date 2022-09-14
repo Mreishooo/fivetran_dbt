@@ -52,7 +52,20 @@ models:
       - name: spend
         description: money spent on digital Ads
       - name: interactions
-        description: ""    
+        description: count of  interactions
+      - name: adset_name
+        description: "" 
+      - name: ad_name
+        description: "" 
+      - name: view_content
+        description: "" 
+      - name: add_to_cart
+        description: "" 
+      - name: add_to_cart_value
+        description: ""   
+
+
+        adset_name, ad_name, view_content, add_to_cart, add_to_cart_value
 
 
   - name: google_dv360
@@ -80,7 +93,7 @@ models:
       - name: interactions
         description: "" 
   
-  - name: performance
+  - name: online_ads_performance
     description: Marketing perfomance table 
     tests:
       - dbt_utils.unique_combination_of_columns:
