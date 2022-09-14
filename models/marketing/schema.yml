@@ -65,9 +65,6 @@ models:
         description: ""   
 
 
-        adset_name, ad_name, view_content, add_to_cart, add_to_cart_value
-
-
   - name: google_dv360
     description: Table containes data from google dv360 
 

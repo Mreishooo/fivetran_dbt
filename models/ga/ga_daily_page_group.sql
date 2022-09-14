@@ -1,19 +1,18 @@
-{% set partitions_to_replace = [
+/*{% set partitions_to_replace = [
   'timestamp(current_date)',
   'timestamp(date_sub(current_date, interval 1 day))',
   'timestamp(date_sub(current_date, interval 2 day))'
-] %}
+] %}*/
 
 {{ config(
-    materialized='incremental',
+    materialized='table',
     on_schema_change='fail',
     partition_by={
       "field": "date",
       "data_type": "date",
       "granularity": "day"
     },
-    labels = {'source': 'enriched_table', 'refresh': 'daily','connection':'ga_link','type':'mart'},
-    incremental_strategy = 'insert_overwrite',
+    labels = {'source': 'enriched_table', 'refresh': 'daily','connection':'ga_link','type':'mart'}
 )}}
 
 with ga_data as 
@@ -38,8 +37,5 @@ FROM ga_data
 join unnest  (hits)  hits  
 left join mpl on  page_group = Production_Location_Id   
 where true 
-    {% if is_incremental() %}
-      and   date >=  current_date() - 2
-    {% endif %}
 and hits.hits_type = 'PAGE' 
 group by 1 , 2 , 3 , 4 ,5 ,6

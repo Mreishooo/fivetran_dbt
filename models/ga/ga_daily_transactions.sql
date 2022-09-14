@@ -1,19 +1,18 @@
-{% set partitions_to_replace = [
+/*{% set partitions_to_replace = [
   'timestamp(current_date)',
   'timestamp(date_sub(current_date, interval 1 day))',
   'timestamp(date_sub(current_date, interval 2 day))'
-] %}
+] %}*/
 
 {{ config(
-    materialized='incremental',
+    materialized='table',
     on_schema_change='fail',
     partition_by={
       "field": "date",
       "data_type": "date",
       "granularity": "day"
     },
-    labels = {'source': 'ga', 'refresh': 'daily','connection':'ga_link','type':'mart'},
-    incremental_strategy = 'insert_overwrite',
+    labels = {'source': 'ga', 'refresh': 'daily','connection':'ga_link','type':'mart'}
 )}}
 
 with ga_data AS (
@@ -39,9 +38,6 @@ from ga_data
  , unnest ( hits) hit
  where true 
 and  hit.web_order_id  is not null
-    {% if is_incremental() %}
-      and   date >=  current_date() - 2
-    {% endif %}
 group by date,country, full_visitor_id,hit.hostname,hit.web_order_id , hit.revenue	, hit.affiliation 
 QUALIFY row_number() OVER (PARTITION BY  web_order_id ORDER BY date DESC)  = 1
 ) 
