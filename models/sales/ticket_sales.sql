@@ -168,6 +168,8 @@ SELECT
     ,fts.ticket_price_value_eur
     ,fts.customer_price_value_eur
     ,fts.tpt_de_value_eur
+    ,fts.euro_paid_price
+    ,fts.euro_customer_face_value
 
 FROM  fts
 left join  dpl  using (dim_production_location_id)

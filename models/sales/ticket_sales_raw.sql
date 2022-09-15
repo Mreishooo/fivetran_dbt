@@ -77,6 +77,8 @@ SELECT
 	  ,fts.SourcePriceTypeName source_price_type_name
     --sums
     ,fts.ArticleCount article_count
+    ,fts.eurpaidprice  euro_paid_price
+    ,fts.eurcustomerfacevalue euro_customer_face_value
     ,fts.EURNetPriceOld net_price_value_eur
     ,fts.EURNetNetPriceOld net_net_price_value_eur
     ,fts.EURTicketPriceOld ticket_price_value_eur
