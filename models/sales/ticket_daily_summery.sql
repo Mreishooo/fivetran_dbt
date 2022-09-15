@@ -28,7 +28,7 @@ sum(euro_paid_price) / sum(article_count) avg_article_price ,
 round (sum(euro_paid_price) / sum(article_count) ) avg_face_article_price
 
  FROM ticket_sales
- group by 1
+ group by 1 , 2 
 
 
 
