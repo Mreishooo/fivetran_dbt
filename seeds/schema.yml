@@ -32,7 +32,7 @@ seeds:
           - name: event_types
             description: ga event types - as optin , ecommerce or newsletter 
 
-      - name: ga_event_types
+      - name: dc_media_budget 
         description: digital commerce media budget  
         columns:
           - name: month
