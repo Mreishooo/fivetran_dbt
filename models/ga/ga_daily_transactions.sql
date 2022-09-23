@@ -34,12 +34,13 @@ hit.hostname,
 cast (hit.web_order_id as int64) web_order_id ,  
 hit.revenue	,		
 hit.affiliation ,
+traffic_source.campaign campaign,
 from ga_data
  , unnest ( hits) hit
  where true 
 and  hit.web_order_id  is not null
-group by date,country, full_visitor_id,hit.hostname,hit.web_order_id , hit.revenue	, hit.affiliation 
-QUALIFY row_number() OVER (PARTITION BY  web_order_id ORDER BY date DESC)  = 1
+group by date,country, full_visitor_id,hit.hostname,hit.web_order_id , hit.revenue	, hit.affiliation , traffic_source.campaign  
+QUALIFY row_number() OVER (PARTITION BY  web_order_id ORDER BY date )  = 1
 ) 
 
 , mdb_orders as
@@ -64,7 +65,8 @@ select
   full_visitor_id , 
   hostname,
   web_order_id ,  
-  revenue	,		
+  revenue	,
+  campaign,
   affiliation ,
   ARRAY_AGG( struct (
     web_order_number
@@ -79,5 +81,5 @@ select
     ,ticket_price_value_eur	 	
     ,customer_price_value_eur 
     ,article_count)) as ticket_sales
- from ga_transaction left join mdb_orders on web_order_id = web_order_number
- group by 1,2,3,4,5,6,7
+ from ga_transaction left join mdb_orders on web_order_id = ifnull(web_order_number,web_order_id)
+ group by 1,2,3,4,5,6,7,8

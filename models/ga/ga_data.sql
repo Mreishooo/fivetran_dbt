@@ -115,7 +115,8 @@ SELECT
   TIMESTAMP_SECONDS(visitStartTime) AS visit_start_time,
   (
   SELECT
-    AS STRUCT trafficSource.campaign campaign,
+    AS STRUCT  
+    trafficSource.campaign campaign,
     trafficSource.medium medium,
     trafficSource.source  source,
     trafficSource.adwordsClickInfo.adNetworkType ad_network_type ) traffic_source,
