@@ -31,7 +31,17 @@ seeds:
             description: 	The event category
           - name: event_types
             description: ga event types - as optin , ecommerce or newsletter 
-    
+
+      - name: ga_event_types
+        description: digital commerce media budget  
+        columns:
+          - name: month
+            description: 	month as yyyy-mm
+          - name: month_date
+            description: month as first day of the month trunctae
+          - name: digital_commerce_media_budget
+            description: media_ udget
+
       - name: sales_age
         description: ""
         columns:
