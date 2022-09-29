@@ -26,7 +26,7 @@ with
   ),
 
  hits_data as (  
-  SELECT distinct fullVisitorId , 
+  SELECT  fullVisitorId , 
     visitId ,
     hits.type as hits_type,
     hits.eventInfo.eventAction as event_action,
@@ -45,6 +45,7 @@ with
     hits.page.pageTitle as page_title,
     {{ get_production_name('hits.page.pagePath') }} as page_group,
     appInfo.screenName as screen_name,
+    hits.experiment
   FROM ga_source
 LEFT JOIN UNNEST (hits) hits
   --where  fullVisitorId = '3190936853180529794'
@@ -62,7 +63,7 @@ hit_data_enr_agg as (
 SELECT fullVisitorId , 
     visitId , 
     country,
-    ARRAY_AGG( STRUCT (  hits_type,
+    ARRAY_AGG( STRUCT (   hits_type,
         event_action,
         event_category,
         event_label,
@@ -80,10 +81,23 @@ SELECT fullVisitorId ,
         page_group,	
         is_show,	
         group_desc,
-        screen_name)) hits
+        screen_name
+        )) hits
 from hit_data_enr
 group by 1 , 2 , 3
 ),
+
+hits_data_experiment
+as (
+SELECT fullVisitorId , 
+    visitId , 
+    ARRAY_AGG( STRUCT (  ex.experimentid as experiment_id,
+    ex.experimentvariant as experiment_variant))  experiment
+from hit_data_enr , unnest ( experiment ) ex
+group by 1 , 2
+--qualify  row_number() OVER (PARTITION BY fullVisitorId ,visitId   ORDER BY  time DESC NULLS first )  = 1  
+),
+
 
 ga_optin_sessions as (
   select distinct fullVisitorId ,visitId ,true optin
@@ -146,11 +160,15 @@ SELECT
     ifnull( optin, false) optin ,
     ifnull( newsletter, false)  newsletter ,
     ifnull( ecommerce, false)  ecommerce ,
-  hdea.hits hits
+  hdea.hits hits,
+  experiment
+  --experiment_id,
+  --experiment_variant
 FROM ga_source
 LEFT JOIN hit_data_enr_agg hdea using (fullVisitorId,visitId )
 left join ga_optin_sessions using (fullVisitorId,visitId )
 left join ga_newsletter_sessions using (fullVisitorId,visitId )
 left join ga_ecommerce_sessions using (fullVisitorId,visitId )
+left join hits_data_experiment using  (fullVisitorId,visitId )
 
  -- where  fullVisitorId = '3190936853180529794'

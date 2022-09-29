@@ -1,0 +1,176 @@
+version: 2
+ 
+models:
+  - name: ticket_sales
+    description: Tables conatins Ticket sales information 
+    columns:
+      - name: fact_ticket_sales_id
+        description: The unique id for tickets 
+        test:
+          - not_null
+          - unqiue 
+      - name: country_id
+        description: ""
+      - name: country_code
+        description: ""
+      - name: source_code
+        description: ""
+      - name: web_order_number
+        description: ""
+      - name: main_order_number
+        description: ""
+      - name: sub_order_number
+        description: ""
+      - name: bar_code
+        description: ""
+      - name: transaction_type
+        description: ""
+      - name: cancellation_status
+        description: ""
+      - name: is_replaced
+        description: ""
+      - name: is_replacement
+        description: ""
+      - name: replacement_type
+        description: ""
+      - name: is_replaced_cancellation
+        description: ""
+      - name: dim_booking_date_id
+        description: ""
+      - name: booking_date
+        description: ""
+      - name: booking_date_struct
+        description: ""
+      - name: dim_performance_date_id
+        description: ""
+      - name: performance_date
+        description: ""
+      - name: performance_date_struct
+        description: ""
+      - name: dim_performance_time_id
+        description: ""
+      - name: performance_date_time
+        description: ""
+      - name: performance_weekday_time
+        description: ""
+      - name: production_location_premiere_date
+        description: ""
+      - name: sales_start_date
+        description: ""
+      - name: dim_production_id
+        description: ""
+      - name: dim_article_type_id
+        description: ""
+      - name: article_type_code
+        description: ""
+      - name: production_location_id
+        description: ""
+      - name: dim_production_location_id
+        description: ""
+      - name: production_name
+        description: ""
+      - name: production_license_name
+        description: ""
+      - name: performance_status
+        description: ""
+      - name: lead_days_perfomance
+        description: ""
+      - name: dim_theatre_id
+        description: ""
+      - name: theatre_code
+        description: ""
+      - name: theatre_name
+        description: ""
+      - name: theatre_city_code
+        description: ""
+      - name: theatre_city
+        description: ""
+      - name: source_distribution_channel
+        description: ""
+      - name: source_distribution_channel_name
+        description: ""
+      - name: source_client_id
+        description: ""
+      - name: source_sales_partner
+        description: ""
+      - name: local_sales_channel_1
+        description: ""
+      - name: local_sales_channel_2
+        description: ""
+      - name: distribution_owner
+        description: ""
+      - name: distribution_point
+        description: ""
+      - name: source_promotion_id
+        description: ""
+      - name: source_promotion_name
+        description: ""
+      - name: source_promotion_code
+        description: ""
+      - name: source_promotion_advertising_partner_id
+        description: ""
+      - name: source_customer_code
+        description: ""
+      - name: dim_golden_customer_id
+        description: ""
+      - name: golden_customer_current_age
+        description: ""
+      - name: golden_customer_gender
+        description: ""
+      - name: golden_customer_country_code
+        description: ""
+      - name: golden_customer_postal_code
+        description: ""
+      - name: golden_customer_postalcodelength
+        description: ""
+      - name: dim_golden_customer_age_at_booking_id
+        description: ""
+      - name: golden_customer_age_bin_a
+        description: ""
+      - name: golden_customer_age_bin_b
+        description: ""
+      - name: golden_customer_age_bin_c
+        description: ""
+      - name: golden_customer_age_bin_d
+        description: ""
+      - name: golden_customer_age_decenia_bin_code
+        description: ""
+      - name: golden_customer_age_decenia_bin_name
+        description: ""
+      - name: source_seat
+        description: ""
+      - name: source_seat_row
+        description: ""
+      - name: source_seat_number
+        description: ""
+      - name: source_price_category_id
+        description: ""
+      - name: price_category_name
+        description: ""
+      - name: price_category_group
+        description: ""
+      - name: price_category_sort_code
+        description: ""
+      - name: source_price_type_name
+        description: ""
+      - name: price_type_name
+        description: ""
+      - name: price_type_group
+        description: ""
+      - name: article_count
+        description: ""
+      - name: net_price_value_eur
+        description: ""
+      - name: net_net_price_value_eur
+        description: ""
+      - name: ticket_price_value_eur
+        description: ""
+      - name: customer_price_value_eur
+        description: ""
+      - name: tpt_de_value_eur
+        description: ""
+      - name: euro_paid_price
+        description: ""
+      - name: euro_customer_face_value
+        description: ""
+

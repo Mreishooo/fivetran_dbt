@@ -31,7 +31,7 @@ is_show,
 mpl.production_name ,
 count(distinct  concat (full_visitor_id , visit_id )) visitors ,
 count(distinct full_visitor_id ) unique_visitors ,
-COUNT(DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
+count(DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
 count(*) impressions 
 FROM ga_data
 join unnest  (hits)  hits  
