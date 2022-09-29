@@ -21,7 +21,7 @@ https://hub.getdbt.com/dbt-labs/codegen/latest/
  dbt run-operation generate_source --args 'schema_name: ga'
 
  # for multiple arguments, use the dict syntax
- dbt run-operation generate_source --args "{schema_name: seed_data, database_name: stage-landing, include_descriptions: true,generate_columns: true, table_names: [temp]   }"
+ dbt run-operation generate_source --args "{schema_name: sales, database_name: stage-commercial, include_descriptions: true,generate_columns: true, table_names: [ticket_sales]   }"
 
  dbt run-operation generate_source --args "{schema_name: ft_abintus, database_name: stage-landing, include_descriptions: true,generate_columns: true, table_names: [abintus_hq]   }"
 

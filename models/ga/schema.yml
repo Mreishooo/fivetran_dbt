@@ -4,13 +4,13 @@ version: 2
 models:
 
   - name: ga_data
-    description: Baisc report conatins Google Analytic Roll-up view data 
+    description: table contains ga data per sessiion - each row contains data or a full session 
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
             - full_visitor_id
             - visit_id
-            - date
+            
             
     columns:
       - name: date
@@ -27,11 +27,7 @@ models:
       - name: country
         description: County of the GA
         tests:
-          - not_null:
-              config:
-                severity: error
-                error_if: ">10000"
-                warn_if: ">6000"  
+          - not_null
 
       - name: visit_start_time
         description: Visit timestamp
@@ -170,10 +166,13 @@ models:
         description: boolean show if the session has an newsletter event
       - name: ecommerce
         description: boolean show if the session has an ecommerce event
+      
+      - name:   experiment_id
+        description: contains latest ( not null) id for ab test base on session 
 
 
   - name: ga_daily_sessions
-    description: ga data aggragded on counrty and page group level 
+    description: ga data sessions aggragded per on day - country 
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
@@ -186,11 +185,13 @@ models:
       - name: country
         description: country of the the first hit in the session bases on hostname 
       - name: visitors
-        description: count of the visits on that date 
+        description: count of the visits / sessions on that date 
       - name: unique_visitors
         description: count of unique vistors on that date
       - name: new_vistor
         description: count of new visitor on that date
+      - name: bounces
+        description: count of bounces session on that date
       - name: pageviews
         description: count of the pages views  on that date
       - name: transactions
@@ -212,17 +213,24 @@ models:
   - name: ga_daily_page_group
     description: ga data aggragded on counrty and page group level 
     tests:
-      - dbt_utils.expression_is_true:
-          expression: impressions = 0 and page_group = 'Others' 
-          config:
-              severity: error
-              error_if: ">15000"
-              warn_if: ">10000"
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
             - date
             - country
             - page_group
+      - dbt_utils.expression_is_true:
+          expression: page_group = 'Error'  
+          config:
+              severity: error
+              error_if: ">10000"
+              warn_if: ">8000"
+      - dbt_utils.expression_is_true:
+          expression: page_group = 'Others'  
+          config:
+              severity: error
+              error_if: ">15000"
+              warn_if: ">10000"
+
     columns:
       - name: date
         description: The date of the session
