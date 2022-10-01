@@ -6,7 +6,7 @@ models:
     columns:
       - name: fact_ticket_sales_id
         description: The unique id for tickets 
-        test:
+        tests:
           - not_null
           - unqiue 
       - name: country_id
@@ -179,7 +179,7 @@ models:
     columns:
       - name: booking_date
         description: booking data 
-        test:
+        tests:
           - unique 
       - name: iso_week
         description: iso week of the booking date 

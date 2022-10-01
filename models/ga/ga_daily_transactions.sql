@@ -81,5 +81,5 @@ select
     ,ticket_price_value_eur	 	
     ,customer_price_value_eur 
     ,article_count)) as ticket_sales
- from ga_transaction left join mdb_orders on web_order_id = ifnull(web_order_number,web_order_id)
+ from ga_transaction left join mdb_orders on web_order_id = web_order_number
  group by 1,2,3,4,5,6,7,8
