@@ -8,7 +8,7 @@ models:
         description: The unique id for tickets 
         tests:
           - not_null
-          - unqiue 
+          - unique 
       - name: country_id
         description: ""
       - name: country_code
