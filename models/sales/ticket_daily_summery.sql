@@ -17,6 +17,7 @@ with
 
 
 SELECT booking_date, 
+cast( FORMAT_DATE("%Y-%m-%d", booking_date) as string ) booking_date_string,
 booking_date_struct.week	iso_week,
 sum(article_count) articles , 
 sum(if (article_type_code= 'TICKET',  article_count , 0 )) tickets,
@@ -28,7 +29,7 @@ sum(euro_paid_price) / sum(article_count) avg_article_price ,
 round (sum(euro_paid_price) / sum(article_count) ) avg_face_article_price
 
  FROM ticket_sales
- group by 1 , 2 
+ group by 1 , 2 ,3
 
 
 
