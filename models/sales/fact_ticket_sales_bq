@@ -1,12 +1,20 @@
 USE [DWH]
 GO
 
+-- Delete 10 days back 
 delete from [SE].[fact_ticket_sales_bq]
-where  DimBookingDateId  >= ( select  CONVERT(varchar(20),   DATEADD(day, -31,CONVERT(date,CONVERT(varchar(8),max(DimBookingDateId)), 112))
+where  DimBookingDateId  >= ( select  CONVERT(varchar(20),   DATEADD(day, -10,CONVERT(date,CONVERT(varchar(8),max(DimBookingDateId)), 112))
   , 112)  FROM [dbo].[FactTicketSales] )
+
+  -- Delete any rows include in SE.fact_ticket_sales_bq and not availble in [dbo].[FactTicketSales]
+delete FROM SE.fact_ticket_sales_bq
+where DimBookingDateId >= 20210101
+and FactTicketSalesId not in (select FactTicketSalesId from [dbo].[FactTicketSales])
+
 
 set identity_insert [SE].[fact_ticket_sales_bq] on 
 
+-- insert data for 10 days back again + new data ( 
 INSERT INTO [SE].[fact_ticket_sales_bq]
            ([FactTicketSalesId]
 		   ,[DimPerformanceDateId]
@@ -368,8 +376,8 @@ INSERT INTO [SE].[fact_ticket_sales_bq]
            ,[SwitchToPromoterVoucher]
            ,[DimPromoterVoucherId]
 		FROM dbo.FactTicketSales
-where  DimBookingDateId  >= ( select  CONVERT(varchar(20),   DATEADD(day, -31 ,CONVERT(date,CONVERT(varchar(8),max(DimBookingDateId)), 112))
-  , 112)  FROM [dbo].[FactTicketSales] )
+ where DimBookingDateId >= 20210101
+  and FactTicketSalesId not in (select FactTicketSalesId from SE.fact_ticket_sales_bq where DimBookingDateId >= 20210101)
  
 GO
 

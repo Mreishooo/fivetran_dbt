@@ -39,6 +39,7 @@ seeds:
 
 models:
   fivetran_dbt: # this matches the `name:`` config
+    docs_background_color: 10C3C3
     +persist_docs:
       relation: true
       columns: true

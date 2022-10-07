@@ -14,6 +14,11 @@ with
    SELECT *  
    FROM {{ source( 'ft_mdb3_se','fact_ticket_sales_bq') }}
    where {{ ft_filter('FactTicketSalesId') }} 
+   union all
+   SELECT *  
+   FROM {{ source( 'ft_mdb_dbo','factticketsales') }}
+   where {{ ft_filter('FactTicketSalesId') }} 
+   and dimbookingdateid between 20180101 and 20201231
   )
 
 
