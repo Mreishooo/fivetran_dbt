@@ -63,6 +63,11 @@ with
   dpc AS ( 
     SELECT *
     FROM {{ ref('sales_price_category') }}
+  ),
+
+  c AS ( 
+    SELECT *
+    FROM {{ ref('sales_country') }}
   )
 
 
@@ -71,6 +76,7 @@ SELECT
     fts.fact_ticket_sales_id
 	  ,fts.country_id
     ,fts.country_code
+      ,c.country_name
     ,fts.source_code
     ,fts.web_order_number
     ,fts.main_order_number
@@ -91,6 +97,8 @@ SELECT
     --Performance Date
     ,fts.dim_performance_date_id
     ,fts.performance_date
+       ,dpf.performance_time 
+       ,dpf.show  
     ,fts.performance_date_struct 
  	  ,fts.dim_performance_time_id
       ,dpf.performance_date_time
@@ -172,6 +180,7 @@ SELECT
     ,fts.euro_customer_face_value
 
 FROM  fts
+left join  c using (country_code)
 left join  dpl  using (dim_production_location_id)
 left join  dat using (dim_article_Type_Id )
 left join  dp on (dp.dim_production_id=fts.dim_production_id )
