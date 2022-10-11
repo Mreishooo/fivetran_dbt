@@ -123,10 +123,10 @@ qualify  row_number() OVER (PARTITION BY _line ORDER BY _modified DESC)  = 1
   FROM abintus_data_latest  
 ) 
 
-SELECT  _line
+SELECT  _line,
       start_date ,
       end_date,
-      days
+      days,
       day,
       campaign
           , _30_ta_cpp
