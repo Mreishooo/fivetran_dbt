@@ -38,7 +38,7 @@ jobs:
         run: echo '${{secrets.DBT_COMMERCIAL_KEY}}' > ./fivetran-dbt-sa.json
           
       - name: Install dbt
-        run: pip install dbt-bigquery
+        run: pip install dbt-bigquery==1.2.0
       
       - name: Run dbt deps
         run: dbt deps --profiles-dir .
