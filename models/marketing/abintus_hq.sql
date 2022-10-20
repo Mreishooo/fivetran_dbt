@@ -38,7 +38,7 @@ with abintus as
 abintus_data_latest 
 as 
 ( 
-SELECT _line
+SELECT _file,_line 
           , _30_ta_cpp 
           , _30_ta_grps_20_in_spain_ _30_ta_grps_20_in_spain
           , ad_serving_tracking_costs_if_applicable_ ad_serving_tracking_costs_if_applicable
@@ -49,7 +49,7 @@ SELECT _line
           , agency_fees_ agency_fees
           , agency_fees_local_currency_ agency_fees_local_currency
           , average_grp_spot
-          , booked_media_cost_in_000_ booked_media_cost_in_000
+          , safe_cast (booked_media_cost_in_000_ as float64) booked_media_cost_in_000
           , campaign
           , click_through_rate
           , copy_length
@@ -66,17 +66,17 @@ SELECT _line
           , final_cost_to_client
           , final_cpm
           , final_gross_contacts_overall_in_mio_tg_a_14_ final_gross_contacts_overall_in_mio_tg_a_14
-          , final_net_media_cost_in_000_ final_net_media_cost_in_000
+          , safe_cast (final_net_media_cost_in_000_ as float64) final_net_media_cost_in_000
           , final_net_reach_in_mio_within_planned_tg_ final_net_reach_in_mio_within_planned_tg
           , frequency_ots
-          , gross_negotiated_net_cost
+          , safe_cast (gross_negotiated_net_cost as float64) gross_negotiated_net_cost
           , impressions
           , local_currency
           , market_region
           , media_channel_level_1
           , media_channel_level_2
           , negotiated_media_discount_ negotiated_media_discount
-          , net_cost_net_net_cost
+          , safe_cast (net_cost_net_net_cost as float64)  net_cost_net_net_cost
           , no_of_days
           , number_of_clicks
           , number_of_comments
@@ -89,14 +89,14 @@ SELECT _line
           , number_of_spots_bought
           , planned_actual
           , planned_gross_contacts_overall_in_mio_tg_a_14_ planned_gross_contacts_overall_in_mio_tg_a_14
-          , planned_net_media_cost_in_000_ planned_net_media_cost_in_000
+          , safe_cast (planned_net_media_cost_in_000_ as float64)  planned_net_media_cost_in_000
           , planned_net_reach_in_mio_planned_tg_ planned_net_reach_in_mio_planned_tg
           , planned_target_group
           , premium_position_definitions
           , prime_time_drive_time_definition
           , production
           , production_costs_if_applicable_ production_costs_if_applicable
-          , ratecard_gross_cost
+          , safe_cast ( ratecard_gross_cost as float64)  ratecard_gross_cost
           , reach_
           , remarks_comments
           , share_of_digital
@@ -113,6 +113,7 @@ SELECT _line
           , viewability_rate
           , viewable_impressions
           , views
+          , impacts
 FROM  abintus
 qualify  row_number() OVER (PARTITION BY _line ORDER BY _modified DESC)  = 1 
 )
@@ -123,7 +124,7 @@ qualify  row_number() OVER (PARTITION BY _line ORDER BY _modified DESC)  = 1
   FROM abintus_data_latest  
 ) 
 
-SELECT  _line,
+SELECT  _file,_line,
       start_date ,
       end_date,
       days,
@@ -200,6 +201,7 @@ SELECT  _line,
           , viewability_rate
           , viewable_impressions
           , views
+          , impacts
 {% for kpi in kpis %}
     ,SAFE_DIVIDE( {{kpi}} , days ) as {{kpi}}_per_day
 {% endfor %}

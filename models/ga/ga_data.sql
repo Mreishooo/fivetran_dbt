@@ -11,12 +11,15 @@
 
 with  
   ga_source AS (
-   SELECT *  
+   SELECT 'Germany' as country , *  
    FROM {{ source( '75566045','ga_sessions_2022*') }}
+   union all 
+   SELECT 'Netherland' as country , *  
+   FROM {{ source( '97634084','ga_sessions_2022*') }}
   ),
 
   ga_page_groups AS ( 
-    SELECT page_group,	is_show,	group_desc
+    SELECT *
     FROM {{ ref('ga_page_groups') }}
   ),
 
@@ -26,7 +29,8 @@ with
   ),
 
  hits_data as (  
-  SELECT  fullVisitorId , 
+  SELECT  country,
+    fullVisitorId , 
     visitId ,
     hits.type as hits_type,
     hits.eventInfo.eventAction as event_action,
@@ -43,7 +47,7 @@ with
     hits.page.pagePath as page_path,
     hits.page.hostname as  hostname,
     hits.page.pageTitle as page_title,
-    {{ get_production_name('hits.page.pagePath') }} as page_group,
+    {{ get_production_name('country','hits.page.pagePath') }} as page_group,
     appInfo.screenName as screen_name,
     hits.experiment
   FROM ga_source
@@ -52,15 +56,15 @@ LEFT JOIN UNNEST (hits) hits
  ),
 
 hit_data_enr as (
-SELECT  *,
-'Germany' as country
+SELECT  *
 FROM hits_data
     --left join ga_hostnames using (hostname)
     left join ga_page_groups using (page_group)
 ),
 
 hit_data_enr_agg as (
-SELECT fullVisitorId , 
+SELECT  
+    fullVisitorId , 
     visitId , 
     country,
     ARRAY_AGG( STRUCT (   hits_type,
@@ -80,41 +84,57 @@ SELECT fullVisitorId ,
         page_title,
         page_group,	
         is_show,	
-        group_desc,
+        page_group_desc,
+        page_group_type,
         screen_name
         )) hits
 from hit_data_enr
 group by 1 , 2 , 3
 ),
 
+landing_page as (
+SELECT  distinct
+    fullVisitorId , 
+    visitId , 
+    country,
+    page_path landing_page_path,
+    page_group landing_page_group,
+    page_group_desc landing_page_group_desc,
+    page_group_type landing_page_group_type
+    from hit_data_enr
+    where hit_number = 1 
+    
+),
+
 hits_data_experiment
 as (
-SELECT fullVisitorId , 
+SELECT country,
+    fullVisitorId , 
     visitId , 
     ARRAY_AGG( STRUCT (  ex.experimentid as experiment_id,
     ex.experimentvariant as experiment_variant))  experiment
 from hit_data_enr , unnest ( experiment ) ex
-group by 1 , 2
+group by 1 , 2 ,3
 --qualify  row_number() OVER (PARTITION BY fullVisitorId ,visitId   ORDER BY  time DESC NULLS first )  = 1  
 ),
 
 
 ga_optin_sessions as (
-  select distinct fullVisitorId ,visitId ,true optin
+  select distinct country , fullVisitorId ,visitId ,true optin
   from hits_data
   join ga_event_type using ( event_category)
 WHERE  hits_type = 'EVENT' and event_type ='optin'
 ),
 
 ga_newsletter_sessions as (
-  select distinct fullVisitorId, visitId  ,true newsletter
+  select distinct country , fullVisitorId, visitId  ,true newsletter
   from hits_data 
   join ga_event_type using ( event_category)
 WHERE  hits_type = 'EVENT' and event_type ='newsletter'
 ),
 
 ga_ecommerce_sessions as (
-  select distinct fullVisitorId ,visitId ,true ecommerce
+  select distinct country , fullVisitorId ,visitId ,true ecommerce
   from hits_data
   join ga_event_type using ( event_category)
 WHERE  hits_type = 'EVENT' and event_type ='ecommerce'
@@ -161,14 +181,21 @@ SELECT
     ifnull( newsletter, false)  newsletter ,
     ifnull( ecommerce, false)  ecommerce ,
   hdea.hits hits,
-  experiment
+  experiment,
   --experiment_id,
   --experiment_variant
+  ( SELECT
+    AS STRUCT
+    landing_page_path,
+    landing_page_group,
+    landing_page_group_desc,
+    landing_page_group_type
+  ) landing_page
 FROM ga_source
-LEFT JOIN hit_data_enr_agg hdea using (fullVisitorId,visitId )
-left join ga_optin_sessions using (fullVisitorId,visitId )
-left join ga_newsletter_sessions using (fullVisitorId,visitId )
-left join ga_ecommerce_sessions using (fullVisitorId,visitId )
-left join hits_data_experiment using  (fullVisitorId,visitId )
-
+LEFT JOIN hit_data_enr_agg hdea using (country , fullVisitorId,visitId )
+left join ga_optin_sessions using (country , fullVisitorId,visitId )
+left join ga_newsletter_sessions using (country , fullVisitorId,visitId )
+left join ga_ecommerce_sessions using (country , fullVisitorId,visitId )
+left join hits_data_experiment using  (country , fullVisitorId,visitId )
+left join Landing_page using  (country , fullVisitorId,visitId )
  -- where  fullVisitorId = '3190936853180529794'

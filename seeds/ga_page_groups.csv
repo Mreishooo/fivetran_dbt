@@ -1,9 +1,9 @@
-page_group,page_group1,is_show,group_desc
+page_group,page_group_desc,is_show,page_group_type
 Indirekt offer links,Indirekt offer links,FALSE,Informational
 ticketonline/tickets,ticketonline/tickets,FALSE,Informational
 Musicals shows,Musicals shows,FALSE,Musicals shows
 other,other,FALSE,Others
-DE - TDV - PAL - 3,Vampire,TRUE,Musicals shows
+DE - TDV - PAL - 3,Dance of the Vampires,TRUE,Musicals shows
 FAQ,FAQ,FALSE,Informational
 Abour Us,Abour Us,FALSE,Informational
 DE - MM - TNF - 2,Mamma-Mia,TRUE,Musicals shows
@@ -27,6 +27,6 @@ Summer Shows,Summer Shows,FALSE,Musicals shows
 Home Page,Home Page,FALSE,Musicals shows
 Promotion,Promotion,FALSE,Informational
 Disney Musicals,Disney Musicals,FALSE,Musicals shows
-DE - TINA - OPH - 1,Tina-Hamburg,TRUE,Musicals shows
+DE - TIN - OPH - 1,Tina-Hamburg,TRUE,Musicals shows
 DE - HA - OPH - 1,Hamilton,TRUE,Musicals shows
 DE - WI - TNF - 1,Wicked,TRUE,Musicals shows

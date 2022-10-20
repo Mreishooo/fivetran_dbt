@@ -26,7 +26,7 @@ mpl AS (
 SELECT date,
 country,
 page_group,
-group_desc,
+page_group_desc,
 is_show, 
 mpl.production_name ,
 count(distinct  concat (full_visitor_id , visit_id )) visitors ,

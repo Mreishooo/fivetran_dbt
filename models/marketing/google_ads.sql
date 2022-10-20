@@ -16,11 +16,18 @@ google_campaign as
 (
   select *  FROM {{ source('GoogleAd', 'Campaign_9940526481') }} 
   where  _LATEST_DATE = _DATA_DATE
+) ,
+
+google_group_ads as 
+(
+  select *  FROM {{ source('GoogleAd', 'AdGroup_9940526481') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) 
 
 SELECT 'google_ads' platform ,
 AdvertisingChannelType account_name ,
 CampaignName campaign_name,
+AdGroupName ad_group_name,
 date , 
 clicks clicks ,
 impressions impressions , 
@@ -30,5 +37,6 @@ conversionValue conversions_value,
 interactions interactions
 FROM google_ad_basic 
 left join  google_campaign   using ( CampaignId)
+left join  google_group_ads  using ( AdGroupId)
 --where date >='2022-05-22'
  

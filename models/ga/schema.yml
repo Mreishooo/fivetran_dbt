@@ -11,6 +11,7 @@ models:
             - full_visitor_id
             - visit_id
             - date
+            - country
             
             
     columns:
@@ -223,14 +224,14 @@ models:
           expression: page_group = 'Error'  
           config:
               severity: error
-              error_if: ">10000"
-              warn_if: ">8000"
+              error_if: ">100000"
+              warn_if: ">80000"
       - dbt_utils.expression_is_true:
           expression: page_group = 'Others'  
           config:
               severity: error
-              error_if: ">15000"
-              warn_if: ">10000"
+              error_if: ">150000"
+              warn_if: ">100000"
 
     columns:
       - name: date

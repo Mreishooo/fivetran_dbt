@@ -15,6 +15,9 @@ sources:
       - name: Campaign_9940526481
         description: Google ads campaigns data
 
+      - name: AdGroup_9940526481
+        description: Google ads group name data
+
 
 
   - name: 'ft_facebook_ads'
