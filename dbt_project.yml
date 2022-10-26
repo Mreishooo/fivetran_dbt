@@ -50,6 +50,9 @@ models:
     marketing:
       +schema: marketing # this applies to all models in the `marts/marketing/`` directory
       description: dataset contains marketing  data
+    marketing_offline:
+      +schema: marketing # this applies to all models in the `marts/marketing_offline/`` directory
+      description: dataset contains marketing  data
     crm:
       +schema: crm # this applies to all models in the `marts/crm/`` directory
       description: dataset contains crm  data

@@ -1,7 +1,7 @@
 {% macro get_production_name( country,  page_path ) %}
    CASE
       WHEN ( LOWER(  {{ page_path }}) LIKE '%hamilton%') THEN 'DE - HA - OPH - 1'
-      WHEN ( LOWER(  {{ page_path }}) LIKE '%mamma%') THEN 'DE - MM - TNF - 2'
+      WHEN ( LOWER(  {{ page_path }}) LIKE '%mamma%') THEN 'DE - MM - TNF - 1'
       WHEN ( LOWER(  {{ page_path }}) LIKE '%der%koenig%' 
 				OR LOWER(  {{ page_path }}) LIKE '%der%köenig%' 
 				OR LOWER(  {{ page_path }}) LIKE '%der%könig%' ) THEN 'DE - KDL - THH - 1'
