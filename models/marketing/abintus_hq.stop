@@ -45,8 +45,8 @@ SELECT _file,_line
           , added_value_eur_ added_value_eur
           , affinity_index_targeting_ affinity_index_targeting
           , agency_client
-          , agency_commission_ agency_commission
-          , agency_fees_ agency_fees
+          , {{fix_md_valye('agency_commission_')}} agency_commission
+          , {{fix_md_valye('agency_fees_')}} agency_fees
           , agency_fees_local_currency_ agency_fees_local_currency
           , average_grp_spot
           , safe_cast (booked_media_cost_in_000_ as float64) booked_media_cost_in_000
@@ -75,7 +75,7 @@ SELECT _file,_line
           , market_region
           , media_channel_level_1
           , media_channel_level_2
-          , negotiated_media_discount_ negotiated_media_discount
+          , {{fix_md_valye('negotiated_media_discount_')}} negotiated_media_discount
           , safe_cast (net_cost_net_net_cost as float64)  net_cost_net_net_cost
           , no_of_days
           , number_of_clicks
