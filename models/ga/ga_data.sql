@@ -14,7 +14,7 @@ with
    SELECT 'Germany' as country , *  
    FROM {{ source( '75566045','ga_sessions_202*') }}
    union all 
-   SELECT 'Netherland' as country , *  
+   SELECT 'Netherlands' as country , *  
    FROM {{ source( '97634084','ga_sessions_2022*') }}
   ),
 
