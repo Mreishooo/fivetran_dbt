@@ -23,7 +23,7 @@
       WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%tina%' ) THEN 'NL - TINA - BTU - 1'
       WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%aladdin%') THEN 'NL - ALA - ACT - 1'
       WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%gelooft%') THEN 'NL - HGIM22'
-      WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%aida%') THEN 'NL - ALA - ACT - 1'
+      WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%aida%') THEN 'NL - AIDA23 - ACT - 1'
     
     -- for all sites 
       WHEN (LOWER({{ page_path }}) LIKE '%checkout%') THEN 'Checkout page'
