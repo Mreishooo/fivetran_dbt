@@ -23,6 +23,7 @@
       WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%tina%' ) THEN 'NL - TINA - BTU - 1'
       WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%aladdin%') THEN 'NL - ALA - ACT - 1'
       WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%gelooft%') THEN 'NL - HGIM22'
+      WHEN ({{country}} = 'Netherlands' AND LOWER({{ page_path }}) LIKE '%aida%') THEN 'NL - ALA - ACT - 1'
     
     -- for all sites 
       WHEN (LOWER({{ page_path }}) LIKE '%checkout%') THEN 'Checkout page'
@@ -30,7 +31,7 @@
       WHEN (LOWER({{ page_path }}) LIKE '%veelgestelde-vragen%') THEN 'FAQ'
 
       
-      WHEN (LOWER({{ page_path }}) = '%/tickets.html%')THEN 'ticketonline/tickets'
+      
       WHEN (LOWER({{ page_path }}) LIKE '%cast%')THEN 'Cast Page'
       WHEN (LOWER({{ page_path }}) LIKE '%/musicals-shows/%')THEN 'Musicals shows'
       WHEN (LOWER({{ page_path }}) LIKE '%/musical/%')THEN 'Musicals shows'
@@ -65,6 +66,8 @@
       WHEN (LOWER({{ page_path }}) LIKE '%/musicals-in-hamburg') THEN 'Musicals in Hamburg'
       WHEN (LOWER({{ page_path }}) LIKE '%/afas%') THEN 'Musicals in AFAS'
       WHEN (LOWER({{ page_path }}) LIKE '%/beatrix%') THEN 'Musicals in Beatrix'
+
+      WHEN (LOWER({{ page_path }}) LIKE '%/tickets.html%')THEN 'Checkout'
     ELSE
     'other'
   END
