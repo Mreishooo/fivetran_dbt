@@ -61,7 +61,7 @@ SELECT _file,_line
           , country
           , cpm
           , direct_buy_y_n
-          , PARSE_DATE("%m/%d/%Y" , end_date ) end_date
+          , PARSE_DATE("%d/%m/%Y" , end_date ) end_date
           , engagement_rate
           , final_cost_to_client
           , final_cpm
@@ -104,7 +104,7 @@ SELECT _file,_line
           , share_of_premium_positions_from_ratings_ share_of_premium_positions_from_ratings
           , share_of_prime_peak_time_from_ratings_ share_of_prime_peak_time_from_ratings
           , share_of_right_hand_side
-          , PARSE_DATE("%m/%d/%Y" , start_date )start_date
+          , PARSE_DATE("%d/%m/%Y" , start_date )start_date
           , ta_grps
           , ta_universe
           , taxes_ taxes
