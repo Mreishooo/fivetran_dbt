@@ -47,6 +47,9 @@ models:
     ga:
       +schema: ga # this applies to all models in the `marts/ga/`` directory
       description: dataset contains google analystic data
+    ga4:
+      +schema: ga4 # this applies to all models in the `marts/ga/`` directory
+      description: dataset contains google analystic 4 data
     marketing:
       +schema: marketing # this applies to all models in the `marts/marketing/`` directory
       description: dataset contains marketing  data

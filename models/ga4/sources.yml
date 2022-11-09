@@ -1,0 +1,15 @@
+version: 2
+
+
+sources:
+  - name: 'analytics_272653220'
+    description:  Google Analytic 4 row data, linked with DE - Germeny 
+    database: stage-landing
+    tables:
+      - name: events_202210*
+        description:  Each row within a table corresponds to a event in GA4
+        loaded_at_field: timestamp(PARSE_DATE("%Y%m%d",event_date))
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}  
+ 

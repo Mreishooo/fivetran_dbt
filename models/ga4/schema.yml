@@ -1,0 +1,8 @@
+
+version: 2
+ 
+models:
+
+  - name: ga4_data
+    description: table contains ga4 data per event 
+  
