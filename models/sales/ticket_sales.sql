@@ -42,7 +42,9 @@ with
   
   dpf AS ( 
     SELECT *
-    FROM {{ ref('sales_performance') }}
+    --FROM {{ ref('sales_performance') }}
+    FROM {{ source( 'ft_mdb4_dbo','dimperformance') }}
+     
   ),
   
   ddis AS ( 
@@ -97,12 +99,12 @@ SELECT
     --Performance Date
     ,fts.dim_performance_date_id
     ,fts.performance_date
-       ,dpf.performance_time 
-       ,dpf.show  
+       ,dpf.performancetime performance_time 
+       ,dpf.show show  
     ,fts.performance_date_struct 
  	  ,fts.dim_performance_time_id
-      ,dpf.performance_date_time
-      ,dpf.performance_weekday_time
+      ,dpf.performancedatetime performance_date_time
+      ,dpf.performanceweekdaytime performance_weekday_time
   -- ,.  AS lead_weeks_performance_number
   -- ,fts.LeadDaysPerformanceNumber   AS lead_days_performance_number
     -- additional dates and times
@@ -116,7 +118,7 @@ SELECT
 	  ,fts.dim_production_location_id
       ,dp.production_name
       ,dp.license_name production_license_name
-      ,dpf.performance_status
+      ,dpf.performancestatus performance_status
       ,DATE_DIFF(fts.booking_date,fts.performance_date, day) lead_days_perfomance 
       --,DATE_DIFF(fts.booking_date, date(sales_start_date), day) lead_day_sales_start
 	  ,fts.dim_theatre_id
@@ -186,7 +188,7 @@ left join  dat using (dim_article_Type_Id )
 left join  dp on (dp.dim_production_id=fts.dim_production_id )
 left join  dt using (dim_theatre_id) 
 left join  da  on (da.dim_age_id = fts.dim_golden_customer_age_at_booking_id)
-left join  dpf on (dpf.dim_Performance_id =fts.dim_Performance_id )
+left join  dpf on (dpf.dimPerformanceid =fts.dim_Performance_id )
 left join  ddis using (dim_distribution_id)
 left join  dgc using (dim_golden_customer_id)
 left join  dpt using (dim_price_type_id)
