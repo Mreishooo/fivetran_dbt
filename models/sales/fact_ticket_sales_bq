@@ -1,384 +1,398 @@
-USE [DWH]
+USE  DWH 
 GO
 
--- Delete 10 days back 
-delete from [SE].[fact_ticket_sales_bq]
-where  DimBookingDateId  >= ( select  CONVERT(varchar(20),   DATEADD(day, -10,CONVERT(date,CONVERT(varchar(8),max(DimBookingDateId)), 112))
-  , 112)  FROM [dbo].[FactTicketSales] )
+-- Delete the updated data
+delete a
+from   SE.fact_ticket_sales_bq   a
+  join   DWH.dbo.FactTicketSales  b on  a.FactTicketSalesId = b.FactTicketSalesId   
+where b.DimBookingDateId >= 20190101 and
+(a.TicketPrice <> b.TicketPrice
+or a.DimProductionLocationId <>b.DimProductionLocationId 
+or a.DimDistributionId <>b.DimDistributionId
+or a.eurcustomerfacevalue <> b.eurcustomerfacevalue
+or a.CancellationStatus <> b.CancellationStatus
+or a.TransactionType <> b.TransactionType
+or a.EURNetPriceOld  <> b.EURNetPriceOld
+or a.EURNetNetPriceOld  <> b.EURNetNetPriceOld
+or a.EURTicketPriceOld <> b.EURTicketPriceOld
+or a.EURCustomerPriceOld  <> b.EURCustomerPriceOld 
+)
 
-  -- Delete any rows include in SE.fact_ticket_sales_bq and not availble in [dbo].[FactTicketSales]
+  -- Delete any rows include in SE.fact_ticket_sales_bq and not availble in  dbo . FactTicketSales 
 delete FROM SE.fact_ticket_sales_bq
-where DimBookingDateId >= 20210101
-and FactTicketSalesId not in (select FactTicketSalesId from [dbo].[FactTicketSales])
+where DimBookingDateId >= 20190101
+and FactTicketSalesId not in (select FactTicketSalesId from  dbo.FactTicketSales  where DimBookingDateId >= '20190101')
 
 
-set identity_insert [SE].[fact_ticket_sales_bq] on 
+set identity_insert  SE.fact_ticket_sales_bq  on 
 
--- insert data for 10 days back again + new data ( 
-INSERT INTO [SE].[fact_ticket_sales_bq]
-           ([FactTicketSalesId]
-		   ,[DimPerformanceDateId]
-           ,[DimCountryId]
-           ,[DimProductionId]
-           ,[DimAuditoriumId]
-           ,[DimProductionLocationId]
-           ,[DimGoldenCustomerId]
-           ,[DimCustomerId]
-           ,[DimTheatreId]
-           ,[DimReservationDateId]
-           ,[DimBookingDateId]
-           ,[DimCancellationDateId]
-           ,[DimSeatId]
-           ,[DimSourceId]
-           ,[DimFileId]
-           ,[DimArticleTypeId]
-           ,[DimPerformanceTimeId]
-           ,[DimBookingTimeId]
-           ,[DimLeadDayRelationsPerformanceId]
-           ,[BarCode]
-           ,[SubOrderNumber]
-           ,[WebOrderNumber]
-           ,[TicketPrice]
-           ,[SourceProduction]
-           ,[SourceLocation]
-           ,[SourcePriceCategoryId]
-           ,[DimDistributionId]
-           ,[TransactionType]
-           ,[CancellationStatus]
-           ,[SourcePromotionId]
-           ,[SourcePromotionName]
-           ,[SourcePriceTypeId]
-           ,[SourcePriceTypeName]
-           ,[SourceReferer]
-           ,[SourceDistributionPointId]
-           ,[SourceDistributionPoint]
-           ,[DimLeadDayRelationsPremiereId]
-           ,[DimPerformanceId]
-           ,[ArticleCount]
-           ,[SourceSeat]
-           ,[SourceSeatRow]
-           ,[SourceSeatNumber]
-           ,[SourceCountryCode]
-           ,[SourceCode]
-           ,[SourceDistributionChannel]
-           ,[IsTicketFree]
-           ,[FreeTicketReason]
-           ,[DimPriceCategoryId]
-           ,[DimPriceTypeId]
-           ,[CustomerPriceOld]
-           ,[PaidPrice]
-           ,[NetPriceOld]
-           ,[NetNetPriceOld]
-           ,[InitialStandardPrice]
-           ,[InitialPrice]
-           ,[ReferencePrice]
-           ,[FullPrice]
-           ,[FullPriceReduction]
-           ,[ReferencePriceReduction]
-           ,[EURInitialStandardPrice]
-           ,[EURInitialPrice]
-           ,[EURReferencePrice]
-           ,[EURFullPrice]
-           ,[EURTicketPrice]
-           ,[EURCustomerPriceOld]
-           ,[EURNetPriceOld]
-           ,[EURPaidPrice]
-           ,[EURNetNetPriceOld]
-           ,[EURFullPriceReduction]
-           ,[EURReferencePriceReduction]
-           ,[MainOrderNumber]
-           ,[PerformanceYearProdLoc]
-           ,[PerformanceFiscalYearProdLoc]
-           ,[BookingYearProdLoc]
-           ,[BookingFiscalYearProdLoc]
-           ,[LeadDaysPerformanceMonthGT180]
-           ,[KickbackPercentage]
-           ,[CommissionPercentage]
-           ,[Distributionid]
-           ,[VatPercentage]
-           ,[PaidPricePreCommission]
-           ,[SourceCampaignCode]
-           ,[SourceCustomerId]
-           ,[SourceClientId]
-           ,[SourceSubClientId]
-           ,[SourceCustomerCode]
-           ,[LeadDaysPerformanceMonthGT120]
-           ,[DimSalesPromotionId]
-           ,[DimZipCodeId]
-           ,[InsertDate]
-           ,[DimDrivingDistanceId]
-           ,[DimDrivingDurationId]
-           ,[OutsideCommissions]
-           ,[InsideCommissions]
-           ,[CustomerFaceValue]
-           ,[GBORNet]
-           ,[Deductions]
-           ,[NBOR]
-           ,[EUROutsideCommissions]
-           ,[EURInsideCommissions]
-           ,[EURCustomerFaceValue]
-           ,[EURGBORNet]
-           ,[EURDeductions]
-           ,[EURNBOR]
-           ,[InsideCommissionsPreESSystemFee]
-           ,[PaidPriceOld]
-           ,[TicketPriceOld]
-           ,[FullPriceReductionOld]
-           ,[ReferencePriceReductionOld]
-           ,[EURPaidPriceOld]
-           ,[EURTicketPriceOld]
-           ,[EURFullPriceReductionOld]
-           ,[EURReferencePriceReductionOld]
-           ,[PaidPricePreCommissionOld]
-           ,[InsideCommissionsResellers]
-           ,[InsideCommissionsCTS]
-           ,[InsideCommissionsCTSSystemFee]
-           ,[VAT]
-           ,[FiscalTax]
-           ,[Kickbacks]
-           ,[Turnover]
-           ,[EURInsideCommissionsResellers]
-           ,[EURInsideCommissionsCTS]
-           ,[EURInsideCommissionsCTSSystemFee]
-           ,[EURVAT]
-           ,[EURFiscalTax]
-           ,[EURKickbacks]
-           ,[EURTurnover]
-           ,[DimOriginalBookingDateId]
-           ,[DimGoldenCustomerAgeAtBookingId]
-           ,[GoldenCustomerDaysSinceLastBooking]
-           ,[DiscountPercentage]
-           ,[GoldenCustomerXOrder]
-           ,[IsReturningGoldenCustomer]
-           ,[IsReturningGoldenCustomer18Month]
-           ,[ProdLocPerformanceYear]
-           ,[ProdLocPerformanceFiscalYear]
-           ,[ProdLocBookingYear]
-           ,[ProdLocBookingFiscalYear]
-           ,[IsManualTicketSalesInput]
-           ,[CustomerFaceValue_Computed]
-           ,[TicketPrice_Computed]
-           ,[FiscalTax_Computed]
-           ,[Kickbacks_Computed]
-           ,[GborNet_Computed]
-           ,[Nbor_Computed]
-           ,[Turnover_Computed]
-           ,[DimOriginalRelocatedPerformanceId]
-           ,[DimInflowId]
-           ,[SourcePromotionCode]
-           ,[OutsideCommissionsSource]
-           ,[SourceCancellationReason]
-           ,[SourcePaymentStatusId]
-           ,[SourcePrintStatusId]
-           ,[SourceDeliveryMethod]
-           ,[DeltaReservationBooking]
-           ,[SourcePaymentMethod]
-           ,[DimPaymentMethodId]
-           ,[SourceAgencyId]
-           ,[SourceDeviceType]
-           ,[SourcePackageID]
-           ,[SourceSalesPartner]
-           ,[SourceSalesPartnerClass]
-           ,[SourceSalesPartnerClassId]
-           ,[SubClient]
-           ,[SourceDistributionChannelName]
-           ,[TicketsPerOrder]
-           ,[DimLeadDayRelationsStartSalesId]
-           ,[DimCommissionModelId]
-           ,[Rebate]
-           ,[NetCommission]
-           ,[GrossCommission]
-           ,[LastUpdateDate]
-           ,[SourcePromotionAdvertisingPartnerId]
-           ,[Rebooked]
-           ,[Replacement]
-           ,[ReplacementType]
-           ,[SwitchToPromoterVoucher]
-           ,[DimPromoterVoucherId])
+
+-- insert messing data deleted data again + new data ( 
+INSERT INTO  SE.fact_ticket_sales_bq 
+           ( FactTicketSalesId 
+		   , DimPerformanceDateId 
+           , DimCountryId 
+           , DimProductionId 
+           , DimAuditoriumId 
+           , DimProductionLocationId 
+           , DimGoldenCustomerId 
+           , DimCustomerId 
+           , DimTheatreId 
+           , DimReservationDateId 
+           , DimBookingDateId 
+           , DimCancellationDateId 
+           , DimSeatId 
+           , DimSourceId 
+           , DimFileId 
+           , DimArticleTypeId 
+           , DimPerformanceTimeId 
+           , DimBookingTimeId 
+           , DimLeadDayRelationsPerformanceId 
+           , BarCode 
+           , SubOrderNumber 
+           , WebOrderNumber 
+           , TicketPrice 
+           , SourceProduction 
+           , SourceLocation 
+           , SourcePriceCategoryId 
+           , DimDistributionId 
+           , TransactionType 
+           , CancellationStatus 
+           , SourcePromotionId 
+           , SourcePromotionName 
+           , SourcePriceTypeId 
+           , SourcePriceTypeName 
+           , SourceReferer 
+           , SourceDistributionPointId 
+           , SourceDistributionPoint 
+           , DimLeadDayRelationsPremiereId 
+           , DimPerformanceId 
+           , ArticleCount 
+           , SourceSeat 
+           , SourceSeatRow 
+           , SourceSeatNumber 
+           , SourceCountryCode 
+           , SourceCode 
+           , SourceDistributionChannel 
+           , IsTicketFree 
+           , FreeTicketReason 
+           , DimPriceCategoryId 
+           , DimPriceTypeId 
+           , CustomerPriceOld 
+           , PaidPrice 
+           , NetPriceOld 
+           , NetNetPriceOld 
+           , InitialStandardPrice 
+           , InitialPrice 
+           , ReferencePrice 
+           , FullPrice 
+           , FullPriceReduction 
+           , ReferencePriceReduction 
+           , EURInitialStandardPrice 
+           , EURInitialPrice 
+           , EURReferencePrice 
+           , EURFullPrice 
+           , EURTicketPrice 
+           , EURCustomerPriceOld 
+           , EURNetPriceOld 
+           , EURPaidPrice 
+           , EURNetNetPriceOld 
+           , EURFullPriceReduction 
+           , EURReferencePriceReduction 
+           , MainOrderNumber 
+           , PerformanceYearProdLoc 
+           , PerformanceFiscalYearProdLoc 
+           , BookingYearProdLoc 
+           , BookingFiscalYearProdLoc 
+           , LeadDaysPerformanceMonthGT180 
+           , KickbackPercentage 
+           , CommissionPercentage 
+           , Distributionid 
+           , VatPercentage 
+           , PaidPricePreCommission 
+           , SourceCampaignCode 
+           , SourceCustomerId 
+           , SourceClientId 
+           , SourceSubClientId 
+           , SourceCustomerCode 
+           , LeadDaysPerformanceMonthGT120 
+           , DimSalesPromotionId 
+           , DimZipCodeId 
+           , InsertDate 
+           , DimDrivingDistanceId 
+           , DimDrivingDurationId 
+           , OutsideCommissions 
+           , InsideCommissions 
+           , CustomerFaceValue 
+           , GBORNet 
+           , Deductions 
+           , NBOR 
+           , EUROutsideCommissions 
+           , EURInsideCommissions 
+           , EURCustomerFaceValue 
+           , EURGBORNet 
+           , EURDeductions 
+           , EURNBOR 
+           , InsideCommissionsPreESSystemFee 
+           , PaidPriceOld 
+           , TicketPriceOld 
+           , FullPriceReductionOld 
+           , ReferencePriceReductionOld 
+           , EURPaidPriceOld 
+           , EURTicketPriceOld 
+           , EURFullPriceReductionOld 
+           , EURReferencePriceReductionOld 
+           , PaidPricePreCommissionOld 
+           , InsideCommissionsResellers 
+           , InsideCommissionsCTS 
+           , InsideCommissionsCTSSystemFee 
+           , VAT 
+           , FiscalTax 
+           , Kickbacks 
+           , Turnover 
+           , EURInsideCommissionsResellers 
+           , EURInsideCommissionsCTS 
+           , EURInsideCommissionsCTSSystemFee 
+           , EURVAT 
+           , EURFiscalTax 
+           , EURKickbacks 
+           , EURTurnover 
+           , DimOriginalBookingDateId 
+           , DimGoldenCustomerAgeAtBookingId 
+           , GoldenCustomerDaysSinceLastBooking 
+           , DiscountPercentage 
+           , GoldenCustomerXOrder 
+           , IsReturningGoldenCustomer 
+           , IsReturningGoldenCustomer18Month 
+           , ProdLocPerformanceYear 
+           , ProdLocPerformanceFiscalYear 
+           , ProdLocBookingYear 
+           , ProdLocBookingFiscalYear 
+           , IsManualTicketSalesInput 
+           , CustomerFaceValue_Computed 
+           , TicketPrice_Computed 
+           , FiscalTax_Computed 
+           , Kickbacks_Computed 
+           , GborNet_Computed 
+           , Nbor_Computed 
+           , Turnover_Computed 
+           , DimOriginalRelocatedPerformanceId 
+           , DimInflowId 
+           , SourcePromotionCode 
+           , OutsideCommissionsSource 
+           , SourceCancellationReason 
+           , SourcePaymentStatusId 
+           , SourcePrintStatusId 
+           , SourceDeliveryMethod 
+           , DeltaReservationBooking 
+           , SourcePaymentMethod 
+           , DimPaymentMethodId 
+           , SourceAgencyId 
+           , SourceDeviceType 
+           , SourcePackageID 
+           , SourceSalesPartner 
+           , SourceSalesPartnerClass 
+           , SourceSalesPartnerClassId 
+           , SubClient 
+           , SourceDistributionChannelName 
+           , TicketsPerOrder 
+           , DimLeadDayRelationsStartSalesId 
+           , DimCommissionModelId 
+           , Rebate 
+           , NetCommission 
+           , GrossCommission 
+           , LastUpdateDate 
+           , SourcePromotionAdvertisingPartnerId 
+           , Rebooked 
+           , Replacement 
+           , ReplacementType 
+           , SwitchToPromoterVoucher 
+           , DimPromoterVoucherId )
      select 
-           [FactTicketSalesId]
-		   ,[DimPerformanceDateId]
-           ,[DimCountryId]
-           ,[DimProductionId]
-           ,[DimAuditoriumId]
-           ,[DimProductionLocationId]
-           ,[DimGoldenCustomerId]
-           ,[DimCustomerId]
-           ,[DimTheatreId]
-           ,[DimReservationDateId]
-           ,[DimBookingDateId]
-           ,[DimCancellationDateId]
-           ,[DimSeatId]
-           ,[DimSourceId]
-           ,[DimFileId]
-           ,[DimArticleTypeId]
-           ,[DimPerformanceTimeId]
-           ,[DimBookingTimeId]
-           ,[DimLeadDayRelationsPerformanceId]
-           ,[BarCode]
-           ,[SubOrderNumber]
-           ,[WebOrderNumber]
-           ,[TicketPrice]
-           ,[SourceProduction]
-           ,[SourceLocation]
-           ,[SourcePriceCategoryId]
-           ,[DimDistributionId]
-           ,[TransactionType]
-           ,[CancellationStatus]
-           ,[SourcePromotionId]
-           ,[SourcePromotionName]
-           ,[SourcePriceTypeId]
-           ,[SourcePriceTypeName]
-           ,[SourceReferer]
-           ,[SourceDistributionPointId]
-           ,[SourceDistributionPoint]
-           ,[DimLeadDayRelationsPremiereId]
-           ,[DimPerformanceId]
-           ,[ArticleCount]
-           ,[SourceSeat]
-           ,[SourceSeatRow]
-           ,[SourceSeatNumber]
-           ,[SourceCountryCode]
-           ,[SourceCode]
-           ,[SourceDistributionChannel]
-           ,[IsTicketFree]
-           ,[FreeTicketReason]
-           ,[DimPriceCategoryId]
-           ,[DimPriceTypeId]
-           ,[CustomerPriceOld]
-           ,[PaidPrice]
-           ,[NetPriceOld]
-           ,[NetNetPriceOld]
-           ,[InitialStandardPrice]
-           ,[InitialPrice]
-           ,[ReferencePrice]
-           ,[FullPrice]
-           ,[FullPriceReduction]
-           ,[ReferencePriceReduction]
-           ,[EURInitialStandardPrice]
-           ,[EURInitialPrice]
-           ,[EURReferencePrice]
-           ,[EURFullPrice]
-           ,[EURTicketPrice]
-           ,[EURCustomerPriceOld]
-           ,[EURNetPriceOld]
-           ,[EURPaidPrice]
-           ,[EURNetNetPriceOld]
-           ,[EURFullPriceReduction]
-           ,[EURReferencePriceReduction]
-           ,[MainOrderNumber]
-           ,[PerformanceYearProdLoc]
-           ,[PerformanceFiscalYearProdLoc]
-           ,[BookingYearProdLoc]
-           ,[BookingFiscalYearProdLoc]
-           ,[LeadDaysPerformanceMonthGT180]
-           ,[KickbackPercentage]
-           ,[CommissionPercentage]
-           ,[Distributionid]
-           ,[VatPercentage]
-           ,[PaidPricePreCommission]
-           ,[SourceCampaignCode]
-           ,[SourceCustomerId]
-           ,[SourceClientId]
-           ,[SourceSubClientId]
-           ,[SourceCustomerCode]
-           ,[LeadDaysPerformanceMonthGT120]
-           ,[DimSalesPromotionId]
-           ,[DimZipCodeId]
-           ,[InsertDate]
-           ,[DimDrivingDistanceId]
-           ,[DimDrivingDurationId]
-           ,[OutsideCommissions]
-           ,[InsideCommissions]
-           ,[CustomerFaceValue]
-           ,[GBORNet]
-           ,[Deductions]
-           ,[NBOR]
-           ,[EUROutsideCommissions]
-           ,[EURInsideCommissions]
-           ,[EURCustomerFaceValue]
-           ,[EURGBORNet]
-           ,[EURDeductions]
-           ,[EURNBOR]
-           ,[InsideCommissionsPreESSystemFee]
-           ,[PaidPriceOld]
-           ,[TicketPriceOld]
-           ,[FullPriceReductionOld]
-           ,[ReferencePriceReductionOld]
-           ,[EURPaidPriceOld]
-           ,[EURTicketPriceOld]
-           ,[EURFullPriceReductionOld]
-           ,[EURReferencePriceReductionOld]
-           ,[PaidPricePreCommissionOld]
-           ,[InsideCommissionsResellers]
-           ,[InsideCommissionsCTS]
-           ,[InsideCommissionsCTSSystemFee]
-           ,[VAT]
-           ,[FiscalTax]
-           ,[Kickbacks]
-           ,[Turnover]
-           ,[EURInsideCommissionsResellers]
-           ,[EURInsideCommissionsCTS]
-           ,[EURInsideCommissionsCTSSystemFee]
-           ,[EURVAT]
-           ,[EURFiscalTax]
-           ,[EURKickbacks]
-           ,[EURTurnover]
-           ,[DimOriginalBookingDateId]
-           ,[DimGoldenCustomerAgeAtBookingId]
-           ,[GoldenCustomerDaysSinceLastBooking]
-           ,[DiscountPercentage]
-           ,[GoldenCustomerXOrder]
-           ,[IsReturningGoldenCustomer]
-           ,[IsReturningGoldenCustomer18Month]
-           ,[ProdLocPerformanceYear]
-           ,[ProdLocPerformanceFiscalYear]
-           ,[ProdLocBookingYear]
-           ,[ProdLocBookingFiscalYear]
-           ,[IsManualTicketSalesInput]
-           ,[CustomerFaceValue_Computed]
-           ,[TicketPrice_Computed]
-           ,[FiscalTax_Computed]
-           ,[Kickbacks_Computed]
-           ,[GborNet_Computed]
-           ,[Nbor_Computed]
-           ,[Turnover_Computed]
-           ,[DimOriginalRelocatedPerformanceId]
-           ,[DimInflowId]
-           ,[SourcePromotionCode]
-           ,[OutsideCommissionsSource]
-           ,[SourceCancellationReason]
-           ,[SourcePaymentStatusId]
-           ,[SourcePrintStatusId]
-           ,[SourceDeliveryMethod]
-           ,[DeltaReservationBooking]
-           ,[SourcePaymentMethod]
-           ,[DimPaymentMethodId]
-           ,[SourceAgencyId]
-           ,[SourceDeviceType]
-           ,[SourcePackageID]
-           ,[SourceSalesPartner]
-           ,[SourceSalesPartnerClass]
-           ,[SourceSalesPartnerClassId]
-           ,[SubClient]
-           ,[SourceDistributionChannelName]
-           ,[TicketsPerOrder]
-           ,[DimLeadDayRelationsStartSalesId]
-           ,[DimCommissionModelId]
-           ,[Rebate]
-           ,[NetCommission]
-           ,[GrossCommission]
-           ,[LastUpdateDate]
-           ,[SourcePromotionAdvertisingPartnerId]
-           ,[Rebooked]
-           ,[Replacement]
-           ,[ReplacementType]
-           ,[SwitchToPromoterVoucher]
-           ,[DimPromoterVoucherId]
-		FROM dbo.FactTicketSales
- where DimBookingDateId >= 20210101
-  and FactTicketSalesId not in (select FactTicketSalesId from SE.fact_ticket_sales_bq where DimBookingDateId >= 20210101)
- 
+            a.FactTicketSalesId 
+		   , a.DimPerformanceDateId 
+           , a.DimCountryId 
+           , a.DimProductionId 
+           , a.DimAuditoriumId 
+           , a.DimProductionLocationId 
+           , a.DimGoldenCustomerId 
+           , a.DimCustomerId 
+           , a.DimTheatreId 
+           , a.DimReservationDateId 
+           , a.DimBookingDateId 
+           , a.DimCancellationDateId 
+           , a.DimSeatId 
+           , a.DimSourceId 
+           , a.DimFileId 
+           , a.DimArticleTypeId 
+           , a.DimPerformanceTimeId 
+           , a.DimBookingTimeId 
+           , a.DimLeadDayRelationsPerformanceId 
+           , a.BarCode 
+           , a.SubOrderNumber 
+           , a.WebOrderNumber 
+           , a.TicketPrice 
+           , a.SourceProduction 
+           , a.SourceLocation 
+           , a.SourcePriceCategoryId 
+           , a.DimDistributionId 
+           , a.TransactionType 
+           , a.CancellationStatus 
+           , a.SourcePromotionId 
+           , a.SourcePromotionName 
+           , a.SourcePriceTypeId 
+           , a.SourcePriceTypeName 
+           , a.SourceReferer 
+           , a.SourceDistributionPointId 
+           , a.SourceDistributionPoint 
+           , a.DimLeadDayRelationsPremiereId 
+           , a.DimPerformanceId 
+           , a.ArticleCount 
+           , a.SourceSeat 
+           , a.SourceSeatRow 
+           , a.SourceSeatNumber 
+           , a.SourceCountryCode 
+           , a.SourceCode 
+           , a.SourceDistributionChannel 
+           , a.IsTicketFree 
+           , a.FreeTicketReason 
+           , a.DimPriceCategoryId 
+           , a.DimPriceTypeId 
+           , a.CustomerPriceOld 
+           , a.PaidPrice 
+           , a.NetPriceOld 
+           , a.NetNetPriceOld 
+           , a.InitialStandardPrice 
+           , a.InitialPrice 
+           , a.ReferencePrice 
+           , a.FullPrice 
+           , a.FullPriceReduction 
+           , a.ReferencePriceReduction 
+           , a.EURInitialStandardPrice 
+           , a.EURInitialPrice 
+           , a.EURReferencePrice 
+           , a.EURFullPrice 
+           , a.EURTicketPrice 
+           , a.EURCustomerPriceOld 
+           , a.EURNetPriceOld 
+           , a.EURPaidPrice 
+           , a.EURNetNetPriceOld 
+           , a.EURFullPriceReduction 
+           , a.EURReferencePriceReduction 
+           , a.MainOrderNumber 
+           , a.PerformanceYearProdLoc 
+           , a.PerformanceFiscalYearProdLoc 
+           , a.BookingYearProdLoc 
+           , a.BookingFiscalYearProdLoc 
+           , a.LeadDaysPerformanceMonthGT180 
+           , a.KickbackPercentage 
+           , a.CommissionPercentage 
+           , a.Distributionid 
+           , a.VatPercentage 
+           , a.PaidPricePreCommission 
+           , a.SourceCampaignCode 
+           , a.SourceCustomerId 
+           , a.SourceClientId 
+           , a.SourceSubClientId 
+           , a.SourceCustomerCode 
+           , a.LeadDaysPerformanceMonthGT120 
+           , a.DimSalesPromotionId 
+           , a.DimZipCodeId 
+           , a.InsertDate 
+           , a.DimDrivingDistanceId 
+           , a.DimDrivingDurationId 
+           , a.OutsideCommissions 
+           , a.InsideCommissions 
+           , a.CustomerFaceValue 
+           , a.GBORNet 
+           , a.Deductions 
+           , a.NBOR 
+           , a.EUROutsideCommissions 
+           , a.EURInsideCommissions 
+           , a.EURCustomerFaceValue 
+           , a.EURGBORNet 
+           , a.EURDeductions 
+           , a.EURNBOR 
+           , a.InsideCommissionsPreESSystemFee 
+           , a.PaidPriceOld 
+           , a.TicketPriceOld 
+           , a.FullPriceReductionOld 
+           , a.ReferencePriceReductionOld 
+           , a.EURPaidPriceOld 
+           , a.EURTicketPriceOld 
+           , a.EURFullPriceReductionOld 
+           , a.EURReferencePriceReductionOld 
+           , a.PaidPricePreCommissionOld 
+           , a.InsideCommissionsResellers 
+           , a.InsideCommissionsCTS 
+           , a.InsideCommissionsCTSSystemFee 
+           , a.VAT 
+           , a.FiscalTax 
+           , a.Kickbacks 
+           , a.Turnover 
+           , a.EURInsideCommissionsResellers 
+           , a.EURInsideCommissionsCTS 
+           , a.EURInsideCommissionsCTSSystemFee 
+           , a.EURVAT 
+           , a.EURFiscalTax 
+           , a.EURKickbacks 
+           , a.EURTurnover 
+           , a.DimOriginalBookingDateId 
+           , a.DimGoldenCustomerAgeAtBookingId 
+           , a.GoldenCustomerDaysSinceLastBooking 
+           , a.DiscountPercentage 
+           , a.GoldenCustomerXOrder 
+           , a.IsReturningGoldenCustomer 
+           , a.IsReturningGoldenCustomer18Month 
+           , a.ProdLocPerformanceYear 
+           , a.ProdLocPerformanceFiscalYear 
+           , a.ProdLocBookingYear 
+           , a.ProdLocBookingFiscalYear 
+           , a.IsManualTicketSalesInput 
+           , a.CustomerFaceValue_Computed 
+           , a.TicketPrice_Computed 
+           , a.FiscalTax_Computed 
+           , a.Kickbacks_Computed 
+           , a.GborNet_Computed 
+           , a.Nbor_Computed 
+           , a.Turnover_Computed 
+           , a.DimOriginalRelocatedPerformanceId 
+           , a.DimInflowId 
+           , a.SourcePromotionCode 
+           , a.OutsideCommissionsSource 
+           , a.SourceCancellationReason 
+           , a.SourcePaymentStatusId 
+           , a.SourcePrintStatusId 
+           , a.SourceDeliveryMethod 
+           , a.DeltaReservationBooking 
+           , a.SourcePaymentMethod 
+           , a.DimPaymentMethodId 
+           , a.SourceAgencyId 
+           , a.SourceDeviceType 
+           , a.SourcePackageID 
+           , a.SourceSalesPartner 
+           , a.SourceSalesPartnerClass 
+           , a.SourceSalesPartnerClassId 
+           , a.SubClient 
+           , a.SourceDistributionChannelName 
+           , a.TicketsPerOrder 
+           , a.DimLeadDayRelationsStartSalesId 
+           , a.DimCommissionModelId 
+           , a.Rebate 
+           , a.NetCommission 
+           , a.GrossCommission 
+           , a.LastUpdateDate 
+           , a.SourcePromotionAdvertisingPartnerId 
+           , a.Rebooked 
+           , a.Replacement 
+           , a.ReplacementType 
+           , a.SwitchToPromoterVoucher 
+           , a.DimPromoterVoucherId 
+		FROM dbo.FactTicketSales a 
+			left join SE.fact_ticket_sales_bq b on a.FactTicketSalesId = b.FactTicketSalesId
+		where  a.DimBookingDateId >= 20190101
+			 and b.FactTicketSalesId is null
+
 GO
 
 

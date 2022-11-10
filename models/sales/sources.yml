@@ -9,7 +9,7 @@ sources:
         description:  Historical Sales Data 
 
 
-  - name: 'ft_mdb3_se'
+  - name: 'ft_mdb4_se'
     description:  MDB database 
     database: stage-landing
     tables:
@@ -20,7 +20,7 @@ sources:
           warn_after: {count: 2, period: day}
           error_after: {count: 7, period: day}  
 
-  - name: 'ft_mdb3_dbo'
+  - name: 'ft_mdb4_dbo'
     description:  export data from 3rd party for hotel and ticket in spain 
     database: stage-landing
     tables:
