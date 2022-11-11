@@ -44,14 +44,14 @@ with
     SELECT *
     --FROM {{ ref('sales_performance') }}
     FROM {{ source( 'ft_mdb4_dbo','dimperformance') }}
-     where {{ ft_filter() }} 
+     where {{ ft_filter(none) }} 
   ),
   
   ddis AS ( 
     SELECT *
    -- FROM {{ ref('sales_distribution') }}
     FROM {{ source( 'ft_mdb4_dbo','dimdistribution') }}
-     where {{ ft_filter() }} 
+     where {{ ft_filter(none) }} 
   ),
 
   dgc AS ( 
@@ -136,6 +136,7 @@ SELECT
     ,fts.source_distribution_channel_name
     ,fts.source_client_id
     ,fts.source_sales_partner
+    ,fts.dim_distribution_id
       ,ddis.localsaleschannel1 local_sales_channel_1
       ,ddis.localsaleschannel2 local_sales_channel_2
       ,ddis.distributionowner distribution_owner
