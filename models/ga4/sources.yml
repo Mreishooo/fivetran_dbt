@@ -10,6 +10,6 @@ sources:
         description:  Each row within a table corresponds to a event in GA4
         loaded_at_field: timestamp(PARSE_DATE("%Y%m%d",event_date))
         freshness: 
-          warn_after: {count: 2, period: day}
-          error_after: {count: 5, period: day}  
+          warn_after: {count: 200, period: day}
+          error_after: {count: 305, period: day}  
  

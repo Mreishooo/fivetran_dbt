@@ -128,6 +128,8 @@ SELECT
       ,dt.City                          AS theatre_city
    --- ,fts.production_location_performance_year
     -- Distribution
+    ,fts.source_distribution_point_id
+    ,fts.source_distribution_point 
     ,fts.source_distribution_channel
     ,fts.source_distribution_channel_name
     ,fts.source_client_id

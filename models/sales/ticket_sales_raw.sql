@@ -57,6 +57,8 @@ SELECT
 	  ,fts.DimTheatreId dim_theatre_id
     -- Distribution
     ,fts.DimDistributionId dim_distribution_id
+    ,fts.sourcedistributionpointid source_distribution_point_id
+    ,fts.sourcedistributionpoint source_distribution_point 
     ,fts.SourceDistributionChannel source_distribution_channel
     ,fts.SourceDistributionChannelName source_distribution_channel_name
     ,fts.SourceClientId source_client_id
