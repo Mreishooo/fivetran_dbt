@@ -49,7 +49,7 @@ SELECT
     ,fts.dimPerformanceId dim_Performance_id
     ,fts.DimPerformanceDateId dim_performance_date_id
     , PARSE_DATE("%Y%m%d", cast(DimPerformanceDateId as string )) AS performance_date
-    , struct ( {{ date_struct( 'PARSE_DATE("%Y%m%d", cast(DimBookingDateId as string ))' ) }}  ) as performance_date_struct 
+    , struct ( {{ date_struct( 'PARSE_DATE("%Y%m%d", cast(DimPerformanceDateId as string ))' ) }}  ) as performance_date_struct 
  	  ,fts.DimPerformanceTimeId dim_performance_time_id
     ,fts.DimProductionId dim_production_id
 	  ,fts.DimArticleTypeId dim_article_type_id
