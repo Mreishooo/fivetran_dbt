@@ -44,12 +44,14 @@ with
     SELECT *
     --FROM {{ ref('sales_performance') }}
     FROM {{ source( 'ft_mdb4_dbo','dimperformance') }}
-     
+     where {{ ft_filter() }} 
   ),
   
   ddis AS ( 
     SELECT *
-    FROM {{ ref('sales_distribution') }}
+   -- FROM {{ ref('sales_distribution') }}
+    FROM {{ source( 'ft_mdb4_dbo','dimdistribution') }}
+     where {{ ft_filter() }} 
   ),
 
   dgc AS ( 
@@ -134,10 +136,10 @@ SELECT
     ,fts.source_distribution_channel_name
     ,fts.source_client_id
     ,fts.source_sales_partner
-      ,ddis.local_sales_channel_1
-      ,ddis.local_sales_channel_2
-      ,ddis.distribution_owner
-      ,ddis.distribution_point
+      ,ddis.localsaleschannel1 local_sales_channel_1
+      ,ddis.localsaleschannel2 local_sales_channel_2
+      ,ddis.distributionowner distribution_owner
+      ,ddis.distributionpoint distribution_point
     -- additional Source information
     ,fts.source_promotion_id
     ,fts.source_production
@@ -192,7 +194,7 @@ left join  dp on (dp.dim_production_id=fts.dim_production_id )
 left join  dt using (dim_theatre_id) 
 left join  da  on (da.dim_age_id = fts.dim_golden_customer_age_at_booking_id)
 left join  dpf on (dpf.dimPerformanceid =fts.dim_Performance_id )
-left join  ddis using (dim_distribution_id)
+left join  ddis on (ddis.dimdistributionid = fts.dim_distribution_id)
 left join  dgc using (dim_golden_customer_id)
 left join  dpt using (dim_price_type_id)
 left join  dpc using (dim_price_category_id)
