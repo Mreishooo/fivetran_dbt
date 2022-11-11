@@ -140,6 +140,7 @@ SELECT
       ,ddis.distribution_point
     -- additional Source information
     ,fts.source_promotion_id
+    ,fts.source_production
     ,fts.source_promotion_name
     ,fts.source_promotion_code
     ,fts.source_promotion_advertising_partner_id

@@ -65,7 +65,9 @@ SELECT
     ,fts.SourceSalesPartner source_sales_partner
     
     -- additional Source information
+
     ,fts.SourcePromotionId source_promotion_id
+    ,fts.sourceproduction source_production
     ,fts.SourcePromotionName source_promotion_name
     ,fts.SourcePromotionCode source_promotion_code
     ,fts.SourcePromotionAdvertisingPartnerId source_promotion_advertising_partner_id
