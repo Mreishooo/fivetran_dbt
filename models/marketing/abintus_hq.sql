@@ -122,6 +122,7 @@ qualify  row_number() OVER (PARTITION BY _line ORDER BY _modified DESC)  = 1
 (
   select * , DATE_DIFF( end_date,start_date, day) + 1 days 
   FROM abintus_data_latest  
+
 ) 
 
 SELECT  _file,_line,
@@ -205,7 +206,7 @@ SELECT  _file,_line,
 {% for kpi in kpis %}
     ,SAFE_DIVIDE( {{kpi}} , days ) as {{kpi}}_per_day
 {% endfor %}
-FROM abintus_add_days  join 
+FROM abintus_add_days  left join 
 UNNEST(GENERATE_DATE_ARRAY(start_date, (end_date), INTERVAL 1 DAY)) as day  
 on day between  (start_date) and  (end_date)
 --where _line between 10 and 15
