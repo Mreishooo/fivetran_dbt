@@ -55,4 +55,5 @@ number_of_clicks,
 revenue
 
 FROM mind_share_data
-where _file = ( select `stage-landing.ft_mdb_dbo.get_latest_file_name`('Xaxis_Audio') )
+--where _file = ( select `stage-landing.ft_mdb_dbo.get_latest_file_name`('Xaxis_Audio') )
+{{ get_mindshare_latest_file('Xaxis_Audio')  }}

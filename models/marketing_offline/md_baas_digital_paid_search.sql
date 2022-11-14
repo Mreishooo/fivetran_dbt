@@ -56,5 +56,5 @@ number_of_clicks,
 revenue
 
 FROM mind_share_data
-where _file = ( select `stage-landing.ft_mdb_dbo.get_latest_file_name`('BaaS_Digital_Paid_Search') )
-
+--where _file = ( select `stage-landing.ft_mdb_dbo.get_latest_file_name`('BaaS_Digital_Paid_Search') )
+{{ get_mindshare_latest_file('BaaS_Digital_Paid_Search')  }}

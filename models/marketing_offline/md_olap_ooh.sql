@@ -52,5 +52,5 @@ null share_of_illuminated_sites_panels
 
 
 FROM mind_share_data
-where _file = ( select `stage-landing.ft_mdb_dbo.get_latest_file_name`('OLAP_OOH') )
-
+--where _file = ( select `stage-landing.ft_mdb_dbo.get_latest_file_name`('OLAP_OOH') )
+{{ get_mindshare_latest_file('OLAP_OOH')  }}

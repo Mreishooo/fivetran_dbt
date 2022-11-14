@@ -61,4 +61,5 @@ null affinity_index_targeting,
 _18_65_grps
 
 FROM mind_share_data
-where _file = ( select `stage-landing.ft_mdb_dbo.get_latest_file_name`('TV_Plan_Total') )
+--where _file = ( select `stage-landing.ft_mdb_dbo.get_latest_file_name`('TV_Plan_Total') )
+{{ get_mindshare_latest_file('TV_Plan_Total')  }}

@@ -30,6 +30,15 @@ jobs:
      
      - name: test models
        command: dbt test --models ga   # This example will run all your tests.
+ 
+ - name: Marketing_Offline_Daily 
+   schedule: 10 10 * * * 
+   steps:
+     - name: run models  
+       command: dbt run --models  marketing_offline 
+     
+     - name: test models
+       command: dbt test --models marketing_offline   
 
  - name: Sales_Models_Daily 
    schedule: 9 10 * * * 
