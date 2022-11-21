@@ -93,4 +93,25 @@ sources:
           - name: privacyinfo
             description:  session privacy info 
 
-            
+         
+  - name: '198328733'
+    description:  Google Analytic row data, linked with SP view 
+    database: stage-landing
+    tables:
+      - name: ga_sessions_2022*
+        description:  Each row within a table corresponds to a session in Analytics 360
+        loaded_at_field: timestamp(PARSE_DATE("%Y%m%d",date))
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}  
+
+  - name: '198014170' 
+    description:  Google Analytic row data, linked with France view 
+    database: stage-landing
+    tables:
+      - name: ga_sessions_2022*
+        description:  Each row within a table corresponds to a session in Analytics 360
+        loaded_at_field: timestamp(PARSE_DATE("%Y%m%d",date))
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}            

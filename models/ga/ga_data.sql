@@ -16,6 +16,12 @@ with
    union all 
    SELECT 'Netherlands' as country , *  
    FROM {{ source( '97634084','ga_sessions_2022*') }}
+   union all 
+   SELECT 'France' as country , *  
+   FROM {{ source( '198014170','ga_sessions_2022*') }}
+   union all 
+   SELECT 'Spain' as country , *  
+   FROM {{ source( '198328733','ga_sessions_2022*') }}
   ),
 
   ga_page_groups AS ( 

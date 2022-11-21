@@ -43,14 +43,14 @@ with
   dpf AS ( 
     SELECT *
     --FROM {{ ref('sales_performance') }}
-    FROM {{ source( 'ft_mdb4_dbo','dimperformance') }}
+    FROM {{ source( 'ft_mdb5_dbo','dimperformance') }}
      where {{ ft_filter(none) }} 
   ),
   
   ddis AS ( 
     SELECT *
    -- FROM {{ ref('sales_distribution') }}
-    FROM {{ source( 'ft_mdb4_dbo','dimdistribution') }}
+    FROM {{ source( 'ft_mdb5_dbo','dimdistribution') }}
      where {{ ft_filter(none) }} 
   ),
 

@@ -48,6 +48,9 @@ jobs:
      
      - name: test models
        command: dbt test --models sales   # This example will run all your tests.
+    
+     - name: run source freshness 
+       command: dbt source freshness
 
  - name: dbt_version 
    schedule: 1 1 1 1 1 
