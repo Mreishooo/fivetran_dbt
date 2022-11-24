@@ -48,7 +48,7 @@ with
     count (transaction_id ) transactions,
     sum (revenue) revenue, 
     sum (unique_items) unique_articles, 
-    sum (items_quantity) articles 
+    sum (items_quantity) total_articles 
     from purchase_date
     group by 1,2
   )
@@ -60,7 +60,7 @@ FROM traffic
   join purchase using (country,date)
 where false  --and date = '2022-10-01'
 union all
-select country, date ,sessions, unique_visitors, new_vistor, pageviews, newsletter,0 , 0, optin, transactions, revenue , unique_articles, articles ,converstion
+select country, date ,sessions, unique_visitors, new_vistor, pageviews, newsletter,0 , 0, optin, transactions, revenue , unique_articles, total_articles ,converstion
 from ga_daily_sessions
 
 
