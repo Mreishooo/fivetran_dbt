@@ -21,7 +21,7 @@ with
   
   ga_daily_sessions as (
   select * 
-  from {{ref('ga_daily_sessions')}}
+  from {{ref('ga_daily_summery')}}
   --where date < '2022-10-10'
   ),
 
@@ -58,9 +58,9 @@ SELECT
 transactions/sessions  as converstion 
 FROM traffic
   join purchase using (country,date)
-where true --and date = '2022-10-01'
+where false  --and date = '2022-10-01'
 union all
-select country, date ,visitors, unique_visitors, new_vistor, pageviews, newsletter,null , null, optin, transactions, total_transaction_revenue , null, null ,converstion
+select country, date ,sessions, unique_visitors, new_vistor, pageviews, newsletter,0 , 0, optin, transactions, revenue , unique_articles, articles ,converstion
 from ga_daily_sessions
 
 

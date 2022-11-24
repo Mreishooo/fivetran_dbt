@@ -4,7 +4,7 @@ version: 2
 models:
 
   - name: ga_data
-    description: table contains ga data per sessiion - each row contains data or a full session 
+    description: table contains ga data per sessiion - each row contains data or a full session https://support.google.com/analytics/answer/3437719?hl=en
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns:
@@ -36,38 +36,29 @@ models:
 
       - name: traffic_source
         description: This section contains information about the Traffic Source from which the session originated
-
-      - name: campaign
+      - name: traffic_source.campaign
         description: The campaign value. Usually set by the utm_campaign URL parameter
-
-      - name: medium
+      - name: traffic_source.medium
         description: The medium of the traffic source. Could be "organic", "cpc", "referral", or the value of the utm_medium URL parameter.
-
-      - name: source
+      - name: traffic_source.source
         description: The source of the traffic source. Could be the name of the search engine, the referring hostname, or a value of the utm_source URL parameter
-      
-      - name: ad_network_type
+      - name: traffic_source.ad_network_type
         description: Network Type. Takes one of the following values Google Search, Content, Search partners, Ad Exchange, Yahoo Japan Search, Yahoo Japan AFS, unknown
 
       - name: device
         description: This section contains information about the user devices
-
-      - name: device_category
+      - name: device.device_category
         description: The type of device (Mobile, Tablet, Desktop)
-
-      - name: browser
+      - name: device.browser
         description: The browser used (e.g., "Chrome" or "Firefox")
 
       - name: geo_network
         description: This section contains information about the geography of the user
-
-      - name: geo_country
+      - name: geo_network.geo_country
         description: The country from which sessions originated, based on IP address
-
-      - name: geo_city
+      - name: geo_network.geo_city
         description: Users' city, derived from their IP addresses or Geographical IDs
-
-      - name: geo_region
+      - name: geo_network.geo_region
         description: The region from which sessions originate, derived from IP addresses. In the U.S., a region is a state, such as New York
 
       - name: channel_grouping
@@ -75,93 +66,72 @@ models:
 
       - name: totals
         description: 	This section contains aggregate values across the session
-
-      - name: visits
+      - name: totals.visits
         description: The number of sessions (for convenience). This value is 1 for sessions with interaction events. The value is null if there are no interaction events in the session
-
-      - name: hits
+      - name: totals.hits
         description: Total number of hits within the session
-
-      - name: pageviews
+      - name: totals.pageviews
         description: Total number of pageviews within the session
-
-      - name: time_on_site
+      - name: totals.time_on_site
         description: 	Total time of the session expressed in seconds
-
-      - name: bounces
+      - name: totals.bounces
         description: Total bounces (for convenience). For a bounced session, the value is 1, otherwise it is null
-
-      - name: transactions
+      - name: totals.transactions
         description: Total number of ecommerce transactions within the session
-
-      - name: total_transaction_revenue
+      - name: totals.total_transaction_revenue
         description: Total transaction revenue
-
-      - name: new_visits
+      - name: totals.new_visits
         description: boolean show if the user is new
-
-      - name: session_quality_dim
+      - name: totals.session_quality_dim
         description: An estimate of how close a particular session was to transacting, ranging from 1 to 100, calculated for each session. A value closer to 1 indicates a low session quality, or far from transacting, while a value closer to 100 indicates a high session quality, or very close to transacting. A value of 0 indicates that Session Quality is not calculated for the selected time range
+      - name: totals.unique_articles
+        description: number of unique articale purchased in this sessios			
+      - name: totals.total_articles
+        description: total number or articales parchased on this session 
 
       - name: hits
         description: record contains data bout visit   hits
-
-      - name: hits_type
+      - name: hits.hits_type
         description: The type of hit One of  PAGE, TRANSACTION, ITEM, EVENT, SOCIAL, APPVIEW, EXCEPTION. Timing hits are considered an event type in the Analytics backend. When you query time-related fields (e.g., hits.latencyTracking.pageLoadTime), choose hits.type as Event if you want to use hit.type in your queries
-
-      - name: event_action
+      - name: hits.event_action
         description: The event action
-
-      - name: event_category
+      - name: hits.event_category
         description: 	The event category
-
-      - name: event_label
+      - name: hits.event_label
         description: The event label
-
-      - name: web_order_id
+      - name: hits.transaction_id
         description: The transaction ID of the ecommerce transaction
-
-      - name: revenue
+      - name: hits.revenue
         description: ER	Total revenue from the item - Value\10^6
-
-      - name: affiliation
+      - name: hits.affiliation
         description: The affiliate information passed to the ecommerce tracking code
-  
-      - name: source_property_tracking_id
+      - name: hits.source_property_tracking_id
         description: Source property tracking ID of roll-up properties. This is valid for only roll-up properties
-
-      - name: hits_timestampe
+      - name: hits.hits_timestampe
         description: Timestame of hit
-
-      - name: time
+      - name: hits.time
         description: secands after first hit
-
-      - name: hit_number
+      - name: hits.hit_number
         description: The sequenced hit number. For the first hit of each session, this is set to 1
-
-      - name: is_interaction
+      - name: hits.is_interaction
         description: ""
-
-      - name: page_path
+      - name: hits.page_path
         description: The URL path of the page
-
-      - name: hostname
+      - name: hits.hostname
         description: The hostname of the URL
-
-      - name: page_title
+      - name: hits.page_title
         description: 	The page title
-      
-      - name: page_group
+      - name: hits.page_group
         description: page group of session
-
-      - name: is_show
-        description: boolean show if the page group is related to a show or not 
-     
-      - name: group_desc
+      - name: hits.is_show
+        description: boolean show if the page group is related to a show or not    
+      - name: hits.page_group_desc
         description: desc of the page group - if musical or informational page ot checkout 
-
-      - name: screen_name
+      - name: hits.page_group_type
+        description: page type ( infomational or check out or show etc )
+      - name: hits.screen_name
         description: The name of the screen
+      
       - name: optin
         description: boolean show if the session has an optin event 
       - name: newsletter
@@ -169,11 +139,40 @@ models:
       - name: ecommerce
         description: boolean show if the session has an ecommerce event
       
-      - name:   experiment_id
+      - name:   experiment
+        description: repeted records contains experiments used in the session 
+      - name:   experiment.experiment_id
         description: contains latest ( not null) id for ab test base on session 
+      - name:   experiment.experiment_variant
+        description: The variation or combination of variations present in a hit for an experiment 
+      
+      - name:   product
+        description: record contains productions (articales) which were bought duing the session
+      - name:   product.transaction_id
+        description: record contains productions (articales) which were bought duing the session 
+      - name:   product.product_name
+        description: Product Name 
+      - name:   product.product_revenue
+        description: The revenue of the product in local currency, expressed as the value passed to Analyticsn 
+      - name:   product.product_price
+        description: The price of the product, expressed as the value passed to Analytics
+      - name:   product.product_quantity
+        description: The quantity of the product purchased
+
+      - name:   landing_page
+        description: contains latest ( not null) id for ab test base on session    
+      - name: landing_page.landing_page_path
+        description: 	landing page path  
+      - name: landing_page.landing_page_group
+        description: langing page group of session
+      - name: landing_page.landing_page_group_desc
+        description: landing page desc of the page group - if musical or informational page ot checkout      
+      - name: landing_page.landing_page_group_type
+        description: landing page type ( infomational or check out or show etc ) 
+     
 
 
-  - name: ga_daily_sessions
+  - name: ga_daily_summery
     description: ga data sessions aggragded per on day - country 
     tests:
       - dbt_utils.unique_combination_of_columns:
@@ -267,7 +266,7 @@ models:
         description: The unique visitor ID
       - name: hostname
         description:  The hostname of the URL
-      - name: web_order_id
+      - name: transaction_id
         description: transaction id
         tests:
           - unique
@@ -276,5 +275,4 @@ models:
         description: revenue of the transaction 
       - name: affiliation
         description:  The affiliate information passed to the ecommerce tracking code
-      - name: ticket_sales
-        description: linked data from MDB - Linked Transaction id = order_web_id 
+      

@@ -16,6 +16,8 @@
       	OR LOWER( {{ page_path }}) LIKE "%ku\'damm%" )) THEN 'DE - KD - TDW - 1'
       WHEN ({{country}} = 'Germany' AND LOWER({{ page_path }}) LIKE '%aladdin%') THEN 'DE - ALA - APO - 1'
       WHEN ({{country}} = 'Germany' AND LOWER({{ page_path }}) LIKE '%vampire%') THEN 'DE - TDV - PAL - 3'
+      WHEN ({{country}} = 'Germany' AND LOWER({{ page_path }}) LIKE '%tarzan%') THEN 'DE - TAR - PAL - 1'
+      
      
      
      -- Ntherlands 
