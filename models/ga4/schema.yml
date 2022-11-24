@@ -1,0 +1,141 @@
+
+version: 2
+ 
+models:
+
+  - name: daily_summery
+    description: Table contains the daily summery for GA data - One row per day - per country 
+    columns:
+      - name: country
+        description: Country Name 
+      - name: date
+        description: Date 
+      - name: sessions
+        description: Number of session ( count of event session_start)
+      - name: unique_visitors
+        description: count of unque visitor created an event 
+      - name: new_vistor
+        description: count of event ( first_open , first_visit)
+      - name: pageviews
+        description: count of event  page_view
+      - name: newsletter_signup
+        description: count of event  newsletter_signup
+      - name: newsletter_unsubscribe
+        description: count of event  newsletter_unsubscribe
+      - name: error_pages
+        description: count of event 404_error
+      - name: optin
+        description: count of event cookie_consent
+      - name: transactions
+        description: counr of transaction_id
+      - name: revenue
+        description: sum of transations revenue
+      - name: unique_articles 
+        description: sum of unique items/articles purchaes
+      - name: total_articles
+        description: sum of items/articles purchaes
+      - name: converstion
+        description: number of transactions/ number of sessions 
+  
+  - name: ga4_data
+    description: GA4 data - schema https://support.google.com/analytics/answer/7029846?hl=en
+    columns:
+      - name: country
+        description: County of GA data
+      - name: date
+        description: Date
+      - name: event_timestamp
+        description: Event timestamp
+      - name: user_first_touch_timestamp
+        description: Timestamp at which the user first opened the app or visited the site.
+      - name: user_pseudo_id
+        description: The pseudonymous id (e.g., app instance ID) for the user
+      - name: session_id
+        description: session id 
+      - name: event_name
+        description: The name of the event
+      - name: event_params
+        description: A repeated record of the parameters associated with this event
+      - name:   event_params.key	
+        description: The event parameter's key
+      - name:   event_params.value	
+        description: A record of the event parameter's value
+      - name: device
+        description: A record of device information.
+      - name: device.category
+        description: The device category (mobile, tablet, desktop)
+      - name: device.operating_system
+        description: The operating system of the device
+      - name: device.hostname
+        description: The hostname associated with the logged event
+      - name: traffic_source
+        description: Name of the traffic source that first acquired the user. This field is not populated in intraday tables
+      - name: traffic_source.name
+        description: Name of the marketing campaign that first acquired the user. This field is not populated in intraday tables
+      - name: traffic_source.medium 
+        description: Name of the medium (paid search, organic search, email, etc.) that first acquired the user. This field is not populated in intraday tables
+      - name: traffic_source.source
+        description: Name of the network that first acquired the user. This field is not populated in intraday tables
+
+      - name: geo
+        description: A record of the user's geographic information 
+      - name: geo.continent 
+        description: The continent from which events were reported, based on IP address
+      - name: geo.country
+        description: The country from which events were reported, based on IP address
+      - name: geo.region
+        description: The region from which events were reported, based on IP address
+      - name: geo.city
+        description: The city from which events were reported, based on IP address
+      - name: platform
+        description: platfrom 
+      - name: ecommerce
+        description: A record of information about ecommerce 
+      - name: ecommerce.transaction_id
+        description: The transaction ID of the ecommerce transaction
+      - name: ecommerce.unique_items
+        description: The number of unique items in this event, based on item_id, item_name, and item_brand
+      - name: ecommerce.purchase_revenue
+        description: Purchase revenue of this event, represented in local currency with standard unit. Populated for purchase event only
+      - name: ecommerce.total_item_quantity
+        description: Total number of items in this event, which is the sum of items.quantity
+      - name: items
+        description: A repeated record of items included in this event 
+ 
+  - name: purchase
+    description: Table conatins data of purchase event
+    columns:
+      - name: country
+        description: Country
+      - name: date
+        description: Date
+      - name: user_pseudo_id
+        description:  The pseudonymous id (e.g., app instance ID) for the user
+      - name: session_id
+        description: Session id 
+      - name: event_name
+        description: Event name - always purchase 
+      - name: transaction_id
+        description: The transaction ID of the ecommerce transaction
+      - name: show
+        description: Show name 
+      - name: revenue
+        description: Purchase revenue of this event
+      - name: page_referrer
+        description: Page referrer for the event 
+      - name: affiliation
+        description: Purchese event affiliation
+      - name: page_location
+        description: Page location whenre event trigger 
+      - name: ignore_referrer
+        description: Ignore_referrer
+      - name: location
+        description: Location
+      - name: engagement_time_msec
+        description: Engagment time in msec
+      - name: unique_items
+        description: Number of unique item in purchase event
+      - name: items_quantity
+        description: Total number of items purchase in the event 
+      - name: items
+        description: A repeated record of items included in this event.
