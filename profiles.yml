@@ -9,6 +9,7 @@ fivetran_dbt:
       method: service-account
       priority: interactive
       project: stage-commercial
+      database: stage-commercial
       threads: 10
       type: bigquery
     play:
@@ -20,6 +21,7 @@ fivetran_dbt:
       method: service-account
       priority: interactive
       project: stage-playground
+      database: stage-playground
       threads: 10
       type: bigquery
   target: play
