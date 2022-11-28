@@ -8,7 +8,6 @@ fivetran_dbt:
       location: EU
       method: service-account
       priority: interactive
-      project: stage-commercial
       database: stage-commercial
       threads: 10
       type: bigquery
@@ -20,7 +19,6 @@ fivetran_dbt:
       location: EU
       method: service-account
       priority: interactive
-      project: stage-playground
       database: stage-playground
       threads: 10
       type: bigquery
