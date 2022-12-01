@@ -143,7 +143,8 @@ SELECT country,
                         {{ fix_google_value ('product.productRevenue') }} as product_revenue ,  
                         {{ fix_google_value ('product.productPrice') }}  as product_price ,
                         product.productQuantity as product_quantity ,
-                        {{ get_production_name('country','product.v2ProductName')}} as production_location_id ))  product
+                       -- {{ get_production_name('country','product.v2ProductName')}} as production_location_id 
+                       ))  product
 from hit_data_enr ,  unnest ( product ) product 
 where transaction_id is not null 
 and ifnull(totals_transactions,0) > 0 

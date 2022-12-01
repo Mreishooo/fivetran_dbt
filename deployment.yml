@@ -41,7 +41,7 @@ jobs:
        command: dbt test --models marketing_offline   
 
  - name: Sales_Models_Daily 
-   schedule: 9 10 * * * 
+   schedule: 8 0 * * * 
    steps:
      - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
        command: dbt run --models sales # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.

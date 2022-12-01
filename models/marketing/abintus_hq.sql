@@ -68,7 +68,7 @@ SELECT _file,_line
           , final_gross_contacts_overall_in_mio_tg_a_14_ final_gross_contacts_overall_in_mio_tg_a_14
           , safe_cast (final_net_media_cost_in_000_ as float64) final_net_media_cost_in_000
           , final_net_reach_in_mio_within_planned_tg_ final_net_reach_in_mio_within_planned_tg
-          , frequency_ots
+          , safe_cast (frequency_ots as float64) frequency_ots
           , safe_cast (gross_negotiated_net_cost as float64) gross_negotiated_net_cost
           , impressions
           , local_currency
