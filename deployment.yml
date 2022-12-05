@@ -1,5 +1,6 @@
 
 jobs:
+# https://crontab.guru/
 # Give each job a unique name. The name will be displayed in the Fivetran dashboard once your jobs are imported.
 # Job names must be unique.
  - name: Marketing_Models_Daily 

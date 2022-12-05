@@ -69,14 +69,14 @@ SELECT _file,_line
           , safe_cast (final_net_media_cost_in_000_ as float64) final_net_media_cost_in_000
           , final_net_reach_in_mio_within_planned_tg_ final_net_reach_in_mio_within_planned_tg
           , safe_cast (frequency_ots as float64) frequency_ots
-          , safe_cast (gross_negotiated_net_cost as float64) gross_negotiated_net_cost
+          , safe_cast ( replace(GROSS_NEGOTIATED_NET_COST,',','') as float64)  gross_negotiated_net_cost
           , impressions
           , local_currency
           , market_region
           , media_channel_level_1
           , media_channel_level_2
           , {{fix_md_valye('negotiated_media_discount_')}} negotiated_media_discount
-          , safe_cast (net_cost_net_net_cost as float64)  net_cost_net_net_cost
+          , safe_cast (replace(net_cost_net_net_cost,',','')  as float64)  net_cost_net_net_cost
           , no_of_days
           , number_of_clicks
           , number_of_comments
@@ -96,7 +96,7 @@ SELECT _file,_line
           , prime_time_drive_time_definition
           , production
           , production_costs_if_applicable_ production_costs_if_applicable
-          , safe_cast ( ratecard_gross_cost as float64)  ratecard_gross_cost
+          , safe_cast ( replace(ratecard_gross_cost,',','') as float64)   ratecard_gross_cost
           , reach_
           , remarks_comments
           , share_of_digital
