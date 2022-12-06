@@ -17,10 +17,9 @@ sources:
         description:  Each row within a table is information about ticket /*timestamp(PARSE_DATE("%Y%m%d", cast(DimBookingDateId as string )) )*/
         loaded_at_field: _fivetran_synced  
         freshness: 
-          warn_after: {count: 2, period: day}
-          error_after: {count: 7, period: day}  
+          warn_after: {count: 1, period: day}
+          error_after: {count: 1, period: day}  
       
-      - name: fact_ticket_sales_bq_16_18
 
   - name: 'ft_mdb5_dbo'
     description:  export data from 3rd party for hotel and ticket in spain 
@@ -30,8 +29,8 @@ sources:
         description: Customer Data copied from MDB  
         loaded_at_field: _fivetran_synced
         freshness: 
-          warn_after: {count: 2, period: day}
-          error_after: {count: 7, period: day}  
+          warn_after: {count: 1, period: day}
+          error_after: {count: 1, period: day}  
       - name: dimperformance
         description: Perfomance Data copied from MDB 
       - name: dimdistribution
