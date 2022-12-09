@@ -176,11 +176,16 @@ models:
 
   - name: ticket_daily_summery
     description: Table containes summer data of the sale per booking date
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - booking_date
+            - country_name
     columns:
       - name: booking_date
         description: booking data 
-        tests:
-          - unique 
+      - name: country_name
+        description: country of the bookings
       - name: iso_week
         description: iso week of the booking date 
       - name: articles

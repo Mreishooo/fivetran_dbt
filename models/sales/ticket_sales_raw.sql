@@ -12,7 +12,7 @@
 with  
   fts AS (
    SELECT *  
-   FROM {{ source( 'ft_mdb5_se','fact_ticket_sales_bq') }}
+   FROM {{ source( 'ft_mdb6_se','fact_ticket_sales_bq') }}
    where {{ ft_filter('FactTicketSalesId') }} 
    --union all
    --SELECT *  

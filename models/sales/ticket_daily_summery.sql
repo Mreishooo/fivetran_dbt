@@ -16,7 +16,7 @@ with
   )
 
 
-SELECT booking_date, 
+SELECT booking_date, country_name ,
 cast( FORMAT_DATE("%Y-%m-%d", booking_date) as string ) booking_date_string,
 booking_date_struct.week	iso_week,
 sum(article_count) articles , 
@@ -28,7 +28,7 @@ SAFE_DIVIDE (sum(if (article_type_code= 'TICKET',  euro_paid_price , 0 )) , sum(
 SAFE_DIVIDE (sum(euro_paid_price) , sum(article_count) ) avg_article_price 
 
  FROM ticket_sales
- group by 1 , 2 ,3
+ group by 1 , 2 ,3 , 4
 
 
 
