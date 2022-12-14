@@ -26,9 +26,19 @@ sources:
       
       - name: Keyword_9940526481
         description: Google ads keywords  data
+      - name: Ad_9940526481
+        description: Google ads search stats data
 
       - name: SearchQueryStats_9940526481
         description: Google ads search stats data
+      - name: VideoBasicStats_9940526481
+        description: Google ads search stats data
+      - name: VideoNonClickStats_9940526481
+        description: Google ads search stats data
+      - name: KeywordCrossDeviceStats_9940526481
+        description: Google ads search stats data
+
+        
 
   - name: 'ft_facebook_ads'
     description:  Facebook ad data comes from fivetran conntion for more info visit  https://fivetran.com/docs/applications/facebook-ads#facebookads

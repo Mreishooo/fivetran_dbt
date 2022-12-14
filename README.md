@@ -30,6 +30,8 @@ dbt test --select source:*
 
 
  dbt run-operation generate_model_yaml --args '{"model_name": "marking_offline"}'
+dbt run-operation generate_base_model --args '{"source_name": "ft_mdb6_dbo", "table_name": "dimgoldencustomer"}'
+ dbt run-operation generate_model_yaml --args '{"model_name": "dyc_customer"}' -- works
 
  dbt docs generate
  dbt docs serve
@@ -39,3 +41,5 @@ dbt test --select source:*
 
  cd .\fivetran_dbt\
  & c:/dbt/dbt-env/Scripts/Activate.ps1
+ policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'

@@ -314,3 +314,172 @@ models:
       - name: tpt_de_value_eur
         description: ""
 
+  - name: golden_customer
+    description: ""
+    columns:
+      - name: dim_golden_customer_id
+        description: ""
+
+      - name: customer_code
+        description: ""
+
+      - name: client_id
+        description: ""
+
+      - name: sub_client_id
+        description: ""
+
+      - name: country_code
+        description: ""
+
+      - name: sub_client
+        description: ""
+
+      - name: customer_category
+        description: ""
+
+      - name: customer_type
+        description: ""
+
+      - name: company_name
+        description: ""
+
+      - name: salutation
+        description: ""
+
+      - name: first_name
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: last_name
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: address
+        description: ""
+
+      - name: postcode
+        description: ""
+
+      - name: city
+        description: ""
+
+      - name: phone_number
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: fax_number
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: mobile_number
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: email
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: opt_in_id
+        description: ""
+
+      - name: opt_in_name
+        description: ""
+
+      - name: birthday
+        description: ""
+
+      - name: region
+        description: ""
+
+      - name: created_on
+        description: ""
+
+      - name: last_modified_on
+        description: ""
+
+      - name: customer_country_code
+        description: ""
+
+      - name: current_age
+        description: ""
+
+      - name: created_customer_id
+        description: ""
+
+      - name: customer_name
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: name_upper
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: start_time
+        description: ""
+
+      - name: end_time
+        description: ""
+
+      - name: dim_zip_code_id
+        description: ""
+
+      - name: dim_source_id
+        description: ""
+
+      - name: dim_file_id
+        description: ""
+
+      - name: original_name
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: original_email
+        description: ""
+        policy_tags:
+          - 'projects/stage-commercial/locations/eu/taxonomies/7781825326639857630/policyTags/873386705705506136'
+
+      - name: gender
+        description: ""
+
+      - name: cluster_2017_nielsen_static
+        description: ""
+
+      - name: cluster_2017_dlw_static
+        description: ""
+
+      - name: cluster_2017_dlw_static_id
+        description: ""
+
+      - name: cluster_2017_dlw_dynamic_id
+        description: ""
+
+      - name: is_email_hard_bounced
+        description: ""
+
+      - name: cluster_2017_nielsen_static_id
+        description: ""
+
+      - name: is_gdpr_anonymized
+        description: ""
+
+      - name: gdpr_anonymized_date
+        description: ""
+
+      - name: gdpr_date_of_request
+        description: ""
+
+      - name: gdpr_requested_by_name
+        description: ""
+
+      - name: gdpr_requested_by_department
+        description: ""

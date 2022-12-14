@@ -10,7 +10,7 @@ models:
       - name: _line
         description:  "metaData for the line on the csv file"
       - name:  fecha_compra
-        description:  "date of purchase"
+        description:  "date of purchase" 
       - name:  musical
         description:  "show"
       - name:  fecha_check_in

@@ -65,3 +65,7 @@ models:
     admin:
       +schema: admin # this applies to all models in the `marts/admin/`` directory
       description: dataset contains admin table 
+    dymatrix:
+      +schema: dymatrix # this applies to all models in the `marts/admin/`` directory
+      description: dataset contains dymatrix table 
+

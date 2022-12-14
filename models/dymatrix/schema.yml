@@ -1,0 +1,41 @@
+
+version: 2
+ 
+models:
+  - name: dyc_customer
+    description:  Table containes customer information shated with dymatric for crm system to read  
+    columns:
+      - name: country_code
+        description: ""
+      - name: golden_customer_id
+        description: ""
+      - name: salutation
+        description: ""
+      - name: first_name
+        description: ""
+      - name: last_name
+        description: ""
+      - name: email
+        description: ""
+      - name: company_name
+        description: ""
+      - name: birthday
+        description: ""
+      - name: gender
+        description: ""
+      - name: customer_type
+        description: ""
+      - name: mobile_number
+        description: ""
+      - name: customer_code
+        description: ""
+      - name: city
+        description: ""
+      - name: postcode
+        description: ""
+      - name: phone_number
+        description: ""
+      - name: created_on
+        description: ""
+      - name: last_modified_on
+        description: ""

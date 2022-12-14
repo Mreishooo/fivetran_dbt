@@ -23,15 +23,15 @@ SELECT
       , CustomerType  customer_type
       , CompanyName  company_name
       , Salutation  salutation
-      , {{ hash_pii('FirstName') }}  first_name
-      , {{ hash_pii('LastName') }} last_name
+      , FirstName  first_name
+      , LastName last_name
       , Address address
       , Postcode postcode 
       , City  city
-      , {{ hash_pii('PhoneNumber') }}  phone_number
-      , {{ hash_pii('FaxNumber') }}   fax_number
-      , {{ hash_pii('MobileNumber ') }}  mobile_number
-      , {{ hash_pii('Email') }}   email
+      ,PhoneNumber  phone_number
+      , FaxNumber   fax_number
+      , MobileNumber  mobile_number
+      , Email   email
       , OptInId  opt_in_id
       , OptInName  opt_in_name
       , BirthDay  birthday
@@ -41,15 +41,15 @@ SELECT
       , CustomerCountryCode  customer_country_code
       , CurrentAge  current_age
       , CreatedCustomerId created_customer_id 
-      , {{ hash_pii('Name') }}   customer_name
-      , {{ hash_pii('NameUPPER') }}   name_upper
+      , Name customer_name
+      , NameUPPER name_upper
       , StartTime  start_time
       , EndTime  end_time
       , DimZipCodeId  dim_zip_code_id
       , DimSourceId  dim_source_id
       , DimFileId  dim_file_id
-      , {{ hash_pii('OriginalName') }}   original_name
-      , {{ hash_pii('OriginalEmail') }}   original_email
+      , OriginalName  original_name
+      , OriginalEmail  original_email
       , Gender  gender
       , Cluster2017NielsenStatic cluster_2017_nielsen_static 
       , Cluster2017DlwStatic cluster_2017_dlw_static 
