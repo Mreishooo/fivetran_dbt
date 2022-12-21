@@ -7,7 +7,7 @@
 with  
   dimpricecategory AS (
    SELECT *  
-   FROM {{ source( 'ft_mdb6_dbo','dimpricecategory') }}
+   FROM {{ source( 'ft_mdb7_dbo','dimpricecategory') }}
    where {{ ft_filter(none) }} 
   )
 

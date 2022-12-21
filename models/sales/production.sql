@@ -7,7 +7,7 @@
 with  
   dimproduction AS (
    SELECT *  
-   FROM {{ source( 'ft_mdb6_dbo','dimproduction') }}
+   FROM {{ source( 'ft_mdb7_dbo','dimproduction') }}
    where {{ ft_filter(none) }} 
   )
 

@@ -7,7 +7,7 @@
 with  
   dimpricetype AS (
    SELECT *  
-   FROM {{ source( 'ft_mdb6_dbo','dimpricetype') }}
+   FROM {{ source( 'ft_mdb7_dbo','dimpricetype') }}
    where {{ ft_filter(none) }} 
   )
 

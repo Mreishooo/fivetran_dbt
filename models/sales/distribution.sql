@@ -7,7 +7,7 @@
 with  
   dimdistribution AS (
    SELECT *  
-   FROM {{ source( 'ft_mdb6_dbo','dimdistribution') }}
+   FROM {{ source( 'ft_mdb7_dbo','dimdistribution') }}
    where {{ ft_filter(none) }} 
   )
 

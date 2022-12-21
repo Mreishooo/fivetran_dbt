@@ -30,7 +30,7 @@ dbt test --select source:*
 
 
  dbt run-operation generate_model_yaml --args '{"model_name": "marking_offline"}'
-dbt run-operation generate_base_model --args '{"source_name": "ft_mdb6_dbo", "table_name": "dimgoldencustomer"}'
+dbt run-operation generate_base_model --args '{"source_name": "ft_mdb7_dbo", "table_name": "dimgoldencustomer"}'
  dbt run-operation generate_model_yaml --args '{"model_name": "dyc_customer"}' -- works
 
  dbt docs generate

@@ -18,7 +18,7 @@ with
   dpl AS ( 
     select *
     FROM {{ ref('production_location') }}
-    --FROM {{ source( 'ft_mdb6_dbo','dimproductionlocation') }}
+    --FROM {{ source( 'ft_mdb7_dbo','dimproductionlocation') }}
     -- where {{ ft_filter(none) }}
   ),
 
@@ -31,7 +31,7 @@ with
   dp AS ( 
     SELECT *
     FROM {{ ref('production') }}
-    --FROM {{ source( 'ft_mdb6_dbo','dimproduction') }}
+    --FROM {{ source( 'ft_mdb7_dbo','dimproduction') }}
      --where {{ ft_filter(none) }} 
   ),
   
@@ -48,14 +48,14 @@ with
   dpf AS ( 
     SELECT *
     FROM {{ ref('performance') }}
-    --FROM {{ source( 'ft_mdb6_dbo','dimperformance') }}
+    --FROM {{ source( 'ft_mdb7_dbo','dimperformance') }}
     --where {{ ft_filter(none) }} 
   ),
   
   ddis AS ( 
     SELECT *
     FROM {{ ref('distribution') }}
-    --FROM {{ source( 'ft_mdb6_dbo','dimdistribution') }}
+    --FROM {{ source( 'ft_mdb7_dbo','dimdistribution') }}
     -- where {{ ft_filter(none) }} 
   ),
 
@@ -67,14 +67,14 @@ with
   dpt AS ( 
     SELECT *
     FROM {{ ref('price_type') }}
-  --- FROM {{ source( 'ft_mdb6_dbo','dimpricetype') }}
+  --- FROM {{ source( 'ft_mdb7_dbo','dimpricetype') }}
     -- where {{ ft_filter(none) }}
   ),
 
   dpc AS ( 
     SELECT *
     FROM {{ ref('price_category') }}
-   -- FROM {{ source( 'ft_mdb6_dbo','dimpricecategory') }}
+   -- FROM {{ source( 'ft_mdb7_dbo','dimpricecategory') }}
     --where {{ ft_filter(none) }}
   ),
 

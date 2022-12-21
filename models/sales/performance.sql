@@ -7,7 +7,7 @@
 with  
   dimperformance AS (
    SELECT *  
-   FROM {{ source( 'ft_mdb6_dbo','dimperformance') }}
+   FROM {{ source( 'ft_mdb7_dbo','dimperformance') }}
    where {{ ft_filter(none) }} 
   )
 
