@@ -195,7 +195,7 @@ SELECT
     ,fts.tpt_de_value_eur
     ,fts.euro_paid_price
     ,fts.euro_customer_face_value
-    ,fts.eurpaidprice = 0 is_free 
+    ,fts.euro_paid_price = 0 is_free 
     
 
 FROM  fts

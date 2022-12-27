@@ -71,4 +71,7 @@ models:
     business:
       +schema: business # this applies to all models in the `marts/admin/`` directory
       description: dataset contains common table
+    mreish:
+      +schema: mreish # this applies to all models in the `marts/admin/`` directory
+      description: dataset contains test table
 
