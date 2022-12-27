@@ -13,7 +13,7 @@ with mind_share_data as
 select distinct _file ,_line,
 country,
 market_region,
-production,
+{{fix_md_production_name('production')}}  production,
 campaign_name,
 date,
 time,
