@@ -1,6 +1,6 @@
 {{ config(
     materialized='view',
-    labels = {'source': 'generated', 'refresh': 'view','connection':'ns','type':'enriched'},
+    labels = {'source': 'generated', 'refresh': 'view','connection':'bq','type':'mart'},
 )}}
 
  

@@ -6,36 +6,36 @@ models:
     description:  Table containes customer information shated with dymatric for crm system to read  
     columns:
       - name: country_code
-        description: ""
+        description: customer country code
       - name: golden_customer_id
-        description: ""
+        description: customer id
       - name: salutation
-        description: ""
+        description: customer inti
       - name: first_name
-        description: ""
+        description: customer first name
       - name: last_name
-        description: ""
+        description: customer last name
       - name: email
-        description: ""
+        description: customer email
       - name: company_name
-        description: ""
+        description: customer company name
       - name: birthday
-        description: ""
+        description: customer birthday
       - name: gender
-        description: ""
+        description: customer gender
       - name: customer_type
-        description: ""
+        description: customer type
       - name: mobile_number
-        description: ""
+        description: customer mobile number
       - name: customer_code
-        description: ""
+        description: customer code
       - name: city
-        description: ""
+        description: customer city
       - name: postcode
-        description: ""
+        description: customer postcode
       - name: phone_number
-        description: ""
+        description: customer phone number 
       - name: created_on
-        description: ""
+        description: timestamp when customer was created 
       - name: last_modified_on
-        description: ""
+        description: timestamp when customer was last modified

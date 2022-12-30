@@ -275,4 +275,46 @@ models:
         description: revenue of the transaction 
       - name: affiliation
         description:  The affiliate information passed to the ecommerce tracking code
-      
+  
+  - name: web_sales
+    description: sales ticket where distribution_point in ('stage-entertainment.nl','stage-entertainment.fr' ,'musicals.de' ,'ElReyLeon.es','Tina.es') and booked after 2021
+
+    columns:
+      - name: country_code
+        description: ticket country code
+
+      - name: country
+        description: ticket country
+
+      - name: booking_date
+        description: ticket booking date 
+
+      - name: week
+        description: ticket booking date week
+
+      - name: production_location_id
+        description: production location id for the ticket
+
+      - name: production_name
+        description: production name for the ticket
+
+      - name: article_type_code
+        description: ticket artical type
+
+      - name: price_type_name
+        description: price type name 
+
+      - name: fact_ticket_sales_id
+        description: ticket id
+
+      - name: web_order_number
+        description: ticket web order number AKA transation id in GA
+
+      - name: cancellation_status
+        description: boolean if the ticket cancelled
+
+      - name: article_count
+        description: artical count 
+
+      - name: euro_paid_price
+        description: ticket price

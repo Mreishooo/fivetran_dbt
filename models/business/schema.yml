@@ -1,0 +1,111 @@
+
+version: 2
+ 
+models:
+  - name: date_info
+    description: table contains date with different format and flags 
+    columns:
+      - name: date
+        description: the date
+
+      - name: day_of_week
+        description: number of the day in week 1-7
+
+      - name: day
+        description: day
+
+      - name: day_name
+        description: day name 
+
+      - name: day_name_short
+        description: the day short name
+
+      - name: week
+        description: week of the date 
+
+      - name: iso_week
+        description: iso week of the date
+
+      - name: month
+        description: month of the date
+
+      - name: month_name
+        description: month name of the date
+
+      - name: month_name_short
+        description: month name short of the date
+
+      - name: quarter
+        description: quarter of the date
+
+      - name: year
+        description: year of the date
+
+      - name: iso_year
+        description: iso year of the date
+
+      - name: days_to_date
+        description: number between today and the date
+
+      - name: is_weekend
+        description: boolean if the date weekend 
+
+      - name: is_2_days_ago
+        description: boolean if the date 2 days go
+
+      - name: is_yesterday
+        description: boolean if the date yesterday 
+
+      - name: is_today
+        description: boolean if the date today
+
+      - name: is_tomorrow
+        description: boolean if the date tomorrow
+
+      - name: is_two_weeks_ago
+        description: boolean if the date two weeks ago
+
+      - name: is_last_week
+        description: boolean if if the date last week
+
+      - name: is_this_week
+        description: boolean if the date this week
+
+      - name: is_next_week
+        description: boolean if the date next week
+
+      - name: is_two_months_ago
+        description: boolean if the date two months ago
+
+      - name: is_last_month
+        description: boolean if the date last month
+
+      - name: is_this_month
+        description: boolean if the date this month
+
+      - name: is_next_month
+        description: boolean if the date next month
+
+      - name: is_two_quarter_ago
+        description: boolean if the date two quarter ago
+
+      - name: is_last_quarter
+        description: boolean if the date last quarter
+
+      - name: is_this_quarter
+        description: boolean if the date this quarter
+
+      - name: is_next_quarter
+        description: boolean if the date next quarter
+
+      - name: is_two_years_ago
+        description: boolean if the date two years ago
+
+      - name: is_last_year
+        description: boolean if the date last year
+
+      - name: is_this_year
+        description: boolean if the date this year
+
+      - name: is_next_year
+        description: boolean if the date next year

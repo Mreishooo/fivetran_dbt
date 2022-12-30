@@ -76,7 +76,6 @@ models:
         description: Name of the medium (paid search, organic search, email, etc.) that first acquired the user. This field is not populated in intraday tables
       - name: traffic_source.source
         description: Name of the network that first acquired the user. This field is not populated in intraday tables
-
       - name: geo
         description: A record of the user's geographic information 
       - name: geo.continent 
