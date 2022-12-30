@@ -10,17 +10,17 @@
 
 with facebook_ad_basic as
 (
-  select * FROM {{ source('ft_facebook_ads', 'basic_report') }}
+  select * FROM {{ source('ft_facebook_ad', 'basic_report') }}
 ) ,
 
 facebook_basic_report_actions as
 (
-  select * from {{ source('ft_facebook_ads', 'basic_report_actions') }}  
+  select * from {{ source('ft_facebook_ad', 'basic_report_actions') }}  
 ) ,
 
 facebook_basic_report_action_values as
 (
-  select * from {{ source('ft_facebook_ads', 'basic_report_action_values') }}  
+  select * from {{ source('ft_facebook_ad', 'basic_report_action_values') }}  
 ) ,
 
 fb_actions_pivot as 

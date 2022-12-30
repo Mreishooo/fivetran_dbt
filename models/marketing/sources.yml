@@ -40,7 +40,7 @@ sources:
 
         
 
-  - name: 'ft_facebook_ads'
+  - name: 'ft_facebook_ad'
     description:  Facebook ad data comes from fivetran conntion for more info visit  https://fivetran.com/docs/applications/facebook-ads#facebookads
     database: stage-landing
     tables:
@@ -49,16 +49,84 @@ sources:
         loaded_at_field: timestamp(date)
         freshness: 
           warn_after: {count: 2, period: day}
-          error_after: {count: 5, period: day} 
-        
+          error_after: {count: 5, period: day}       
       - name: basic_report_actions
         description:  facebook actions data
-       
-        
       - name: basic_report_action_values
         description:  facebook actions data value 
+      - name: basic_report_video_p_100_watched_actions
+        description:  facebook ad video info 
+      - name: basic_report_video_p_75_watched_actions
+        description:  facebook ad video info 
+      - name: basic_report_video_p_50_watched_actions
+        description:  facebook ad video info 
+      - name: basic_report_video_p_25_watched_actions
+        description:  facebook ad video info
+      - name: basic_report_video_p_95_watched_actions
+        description:  facebook ad video info
+      
+      - name: platform_device_click
+        description:   Facebook ad basic perfomance report
+        loaded_at_field: timestamp(date)
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}       
+      - name: platform_device_click_actions
+        description:  facebook actions data
+      - name: platform_device_click_action_values
+        description:  facebook actions data value 
+      - name: platform_device_click_video_p_100_watched_actions
+        description:  facebook ad video info 
+      - name: platform_device_click_video_p_75_watched_actions
+        description:  facebook ad video info 
+      - name: platform_device_click_video_p_50_watched_actions
+        description:  facebook ad video info 
+      - name: platform_device_click_video_p_25_watched_actions
+        description:  facebook ad video info
+      - name: platform_device_click_video_p_95_watched_actions
+        description:  facebook ad video info
 
+      - name: age_gender_click
+        description:   Facebook ad basic perfomance report
+        loaded_at_field: timestamp(date)
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}       
+      - name: age_gender_click_actions
+        description:  facebook actions data
+      - name: age_gender_click_action_values
+        description:  facebook actions data value 
+      - name: age_gender_click_video_p_100_watched_actions
+        description:  facebook ad video info 
+      - name: age_gender_click_video_p_75_watched_actions
+        description:  facebook ad video info 
+      - name: age_gender_click_video_p_50_watched_actions
+        description:  facebook ad video info 
+      - name: age_gender_click_video_p_25_watched_actions
+        description:  facebook ad video info
+      - name: age_gender_click_video_p_95_watched_actions
+        description:  facebook ad video info
 
+      - name: region_click
+        description:   Facebook ad basic perfomance report
+        loaded_at_field: timestamp(date)
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}       
+      - name: region_click_actions
+        description:  facebook actions data
+      - name: region_click_action_values
+        description:  facebook actions data value 
+      - name: region_click_video_p_100_watched_actions
+        description:  facebook ad video info 
+      - name: region_click_video_p_75_watched_actions
+        description:  facebook ad video info 
+      - name: region_click_video_p_50_watched_actions
+        description:  facebook ad video info 
+      - name: region_click_video_p_25_watched_actions
+        description:  facebook ad video info
+      - name: region_click_video_p_95_watched_actions
+        description:  facebook ad video info
 
 
   - name: 'ft_google_display_and_video_360'
