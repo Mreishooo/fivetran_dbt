@@ -51,7 +51,7 @@ sources:
     description:  Google Analytic row data, linked with NL view  https://support.google.com/analytics/answer/97634084?hl=en 
     database: stage-landing
     tables:
-      - name: ga_sessions_2022*
+      - name: ga_sessions_202*
         description:  Each row within a table corresponds to a session in Analytics 360
         loaded_at_field: timestamp(PARSE_DATE("%Y%m%d",date))
         freshness: 
@@ -98,7 +98,7 @@ sources:
     description:  Google Analytic row data, linked with SP view 
     database: stage-landing
     tables:
-      - name: ga_sessions_2022*
+      - name: ga_sessions_202*
         description:  Each row within a table corresponds to a session in Analytics 360
         loaded_at_field: timestamp(PARSE_DATE("%Y%m%d",date))
         freshness: 
@@ -109,7 +109,7 @@ sources:
     description:  Google Analytic row data, linked with France view 
     database: stage-landing
     tables:
-      - name: ga_sessions_2022*
+      - name: ga_sessions_202*
         description:  Each row within a table corresponds to a session in Analytics 360
         loaded_at_field: timestamp(PARSE_DATE("%Y%m%d",date))
         freshness: 

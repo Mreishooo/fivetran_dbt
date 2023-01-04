@@ -15,13 +15,13 @@ with
    FROM {{ source( '75566045','ga_sessions_202*') }}
    union all 
    SELECT 'Netherlands' as country ,PARSE_DATE("%Y%m%d", date) date , * except (date)  
-   FROM {{ source( '97634084','ga_sessions_2022*') }}
+   FROM {{ source( '97634084','ga_sessions_202*') }}
    union all 
    SELECT 'France' as country  ,PARSE_DATE("%Y%m%d", date) date , * except (date)  
-   FROM {{ source( '198014170','ga_sessions_2022*') }}
+   FROM {{ source( '198014170','ga_sessions_202*') }}
    union all 
    SELECT 'Spain' as country  ,PARSE_DATE("%Y%m%d", date) date , * except (date)  
-   FROM {{ source( '198328733','ga_sessions_2022*') }}
+   FROM {{ source( '198328733','ga_sessions_202*') }}
   ),
 
   ga_page_groups AS ( 
