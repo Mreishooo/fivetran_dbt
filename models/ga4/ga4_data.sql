@@ -15,7 +15,7 @@ with
    FROM {{ source( 'analytics_272653220','events_202*') }}
    --union all 
    --SELECT 'Netherlands' as country , *  
-   --FROM {{ source( '97634084','ga_sessions_2022*') }}
+   --FROM {{ source( '97634084','ga_sessions_202*') }}
   ),
 
   ga_page_groups AS ( 
