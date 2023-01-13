@@ -40,13 +40,12 @@ google_customer as
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
-google_search_stat as
+google_keyword_cross as
 (
-   select *  FROM {{ source('GoogleAd', 'SearchQueryStats_9940526481') }}  
+   select *  FROM {{ source('GoogleAd', 'KeywordCrossDeviceStats_9940526481') }}  
 )
 
 SELECT distinct  'google_ads' platform ,
-CreativeId ad_id,
 st.CriterionId keyword_id,
 key.Criteria keyword ,
 st.ExternalCustomerId customer_id ,
@@ -56,29 +55,22 @@ CampaignName campaign_name,
 AdGroupName ad_group_name,
 AdNetworkType1 ad_network_type_1,
 AdNetworkType2 ad_network_type_2,
+ date,
 AccountCurrencyCode currency_code ,
 AccountDescriptiveName account_name ,
-key.qualityScore quality_score,
-CreativeQualityScore creative_quality_score ,
-status,
-KeywordMatchType keyword_match_type,
-device,
-Query query, 
-QueryMatchTypeWithVariant query_match_type_with_variant, 
-QueryTargetingStatus query_targeting_status ,
-date, 
- {{ fix_google_value ('cost') }} cost , 
-clicks, 
-impressions ,
-conversions , 
-ConversionValue conversion_value,
-AllConversions all_conversions, 
-AllConversionValue all_conversion_value, 
-AllConversionRate all_conversion_rate, 
-ConversionRate conversion_rate, 
-AbsoluteTopImpressionPercentage  absolute_top_impression_percentage, 
+SearchImpressionShare search_impression_share,
+SearchAbsoluteTopImpressionShare search_absolute_top_impression_share,
+SearchBudgetLostAbsoluteTopImpressionShare search_budget_lost_absolute_top_impression_share,
+SearchBudgetLostTopImpressionShare search_budget_lost_top_impression_share,
+SearchExactMatchImpressionShare search_exact_match_impression_share,
+SearchRankLostAbsoluteTopImpressionShare search_rank_lost_absolute_top_impression_share,
+SearchRankLostImpressionShare search_rank_lost_impression_share,
+SearchRankLostTopImpressionShare search_rank_lost_top_impression_share,
+SearchTopImpressionShare search_top_impression_share,
 TopImpressionPercentage top_impression_percentage,
-FROM google_search_stat st
+AbsoluteTopImpressionPercentage  absolute_top_impression_percentage
+
+FROM google_keyword_cross st
 left join google_customer  using (ExternalCustomerId)
 join google_Keyword key using (CriterionId , CampaignId , AdGroupId)
 --left join google_Criteria using ( CriterionId,CampaignId ,AdGroupId)

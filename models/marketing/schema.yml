@@ -274,3 +274,358 @@ models:
         description: " Total number of viewable impressions"
       - name: views
         description: " Total number of Views"
+
+  - name: google_search_keyword
+    description: "All search keyword related metrics and descriptions"
+    columns:
+      - name: platform
+        description: "Name of the Ad Platform"
+
+      - name: ad_id
+        description: "Unique ID for each ad"
+
+      - name: keyword_id
+        description: "Unique Key for each keyword"
+
+      - name: keyword
+        description: "Bidding Keyword"
+
+      - name: customer_id
+        description: "Stage Entertainment Customer ID"
+
+      - name: campaign_id
+        description: "Unique Campaign identifier for each campaign"
+
+      - name: ad_group_id
+        description: "Unique Ad Group ID identifier for each campaign"
+
+      - name: campaign_name
+        description: "Unique Campaign name each campaign "
+
+      - name: ad_group_name
+        description: "Unique Ad Group name each campaign "
+
+      - name: ad_network_type_1
+        description: "Which ad network do we bid on"
+
+      - name: ad_network_type_2
+        description: "Which sub ad network do we bid on "
+
+      - name: currency_code
+        description: "The Currency in which the costs are tracked"
+
+      - name: account_name
+        description: "Stage Entertainment Google Ads Account Name"
+
+      - name: quality_score
+        description: "A higher Quality Score means that your ad and landing page are more relevant and useful to someone searching for your keyword, compared to other advertisers"
+
+      - name: creative_quality_score
+        description: " A higher Quality Score means that your ads are more relevant and useful to someone searching for your keyword, compared to other advertisers "
+
+      - name: status
+        description: "Status of the keyword Paused or active"
+
+      - name: keyword_match_type
+        description: "Selected match type for this keyword"
+
+      - name: device
+        description: "Device on which the keyword got an add"
+
+      - name: query
+        description: "Search query on which the keyword got an add"
+
+      - name: query_match_type_with_variant
+        description: "Sub Match type on which the query matched"
+
+      - name: query_targeting_status
+        description: "Status of the query targeting type"
+
+      - name: date
+        description: "date on which the keyword got an impression"
+
+      - name: cost
+        description: "cost of showing the keyword on that query"
+
+      - name: clicks
+        description: "Total clicks the keyword got on that query"
+
+      - name: impressions
+        description: "Total impressions the keyword got on that query "
+
+      - name: conversions
+        description: "Total conversions the keyword got on that query "
+
+      - name: conversion_value
+        description: "Total conversion value the keyword got on that query "
+
+      - name: all_conversions
+        description: " includes the data in your Conversions column plus conversion actions you've chosen not to include in your Conversions column. It also includes cross-device conversions, store visits, certain phone calls, and more"
+
+      - name: all_conversion_value
+        description: "includes the data in your Conversion Value column plus conversion actions you've chosen not to include in your Conversions column. It also includes cross-device conversions, store visits, certain phone calls, and more"
+
+      - name: all_conversion_rate
+        description: "includes the data in your Conversion Rate column plus conversion actions you've chosen not to include in your Conversions column. It also includes cross-device conversions, store visits, certain phone calls, and more"
+
+      - name: conversion_rate
+        description: "Actual Conversion rate for the conversions included in conversion column"
+
+      - name: absolute_top_impression_percentage
+        description: " is the percent of your ad impressions that are shown as the very first ad above the organic search"
+
+      - name: top_impression_percentage
+        description: "is the percent of your ad impressions that are shown anywhere above the organic search results"
+
+  
+  - name: google_ads_all_channels
+    description: "Google Ads Key metrics across all Google Ads Channels like YT, Search and Display at an Ad ID conversions level"
+    columns:
+      - name: platform
+        description: "Platform on which the ad is shown"
+
+      - name: ad_id
+        description: "Ad ID of the ad being shown"
+
+      - name: ad_type
+        description: "Format of ad"
+
+      - name: ad_satatus
+        description: "Status of the ad on that day"
+
+      - name: approval_status
+        description: "Google approval of the actual ad"
+
+      - name: customer_id
+        description: "Stage Entertainment Customers ID with Google Ads"
+
+      - name: campaign_id
+        description: "Campaign ID under which the ad is executed"
+
+      - name: ad_group_id
+        description: " Adgroup ID under which the ad is executed "
+
+      - name: campaign_name
+        description: "Campaign Name under which the ad is executed "
+
+      - name: ad_group_name
+        description: "Adgroup name under which the ad is executed "
+
+      - name: ad_network_type1
+        description: "Ad Channel on which the ad is shown"
+
+      - name: ad_network_type2
+        description: "Ad Sub Channel on which the ad is shown "
+
+      - name: account_name
+        description: "Stage Entertainment Account Name with Google Ads "
+
+      - name: currency_code
+        description: "Currency of Billing/spend storage"
+
+      - name: campaign_type
+        description: "Type of campaign"
+
+      - name: ad_status
+        description: " Status of the ad on the date"
+
+      - name: ad_group_type
+        description: "Type of Adgroup used"
+
+      - name: ad_group_status
+        description: "Status of the Adgroup"
+
+      - name: date
+        description: "Date on which the ad was shown"
+
+      - name: campaign_start_date
+        description: "Start date of the campaign"
+
+      - name: campaign_end_date
+        description: "End date of the campaign"
+
+      - name: campaign_status
+        description: "Status of the campaign"
+
+      - name: bidding_strategy_type
+        description: "Type of bidding strategy used specifically for search"
+
+      - name: device
+        description: "Device on which the ad was shown"
+
+      - name: campaign_trial_type
+        description: "Type of campaign being used"
+
+      - name: advertising_channel_type
+        description: "Advertising Channel on which the ad is shown"
+
+      - name: clicks
+        description: "Clicks received on the ad on that day"
+
+      - name: impressions
+        description: "Impressions received on the ad on that day "
+
+      - name: cost
+        description: "Cost of clikcs received on the ad on that day "
+
+      - name: conversions
+        description: "Ecommerce Conversions received on the ad on that day "
+
+      - name: conversion_value
+        description: "Ecommerce Conversions Value received on the ad on that day "
+
+      - name: engagements
+        description: "engagements received on the ad on that day video Specific"
+
+      - name: video_quartile_25rate
+        description: "%of users seeing 25% quartile of the of the video ad seen"
+
+      - name: video_quartile_50rate
+        description: "%of users seeing 50% quartile of the of the video ad seen "
+
+      - name: video_quartile_75rate
+        description: "%of users seeing 75% quartile of the of the video ad seen "
+
+      - name: video_quartile_100rate
+        description: "%of users seeing 100% quartile of the of the video ad seen "
+
+      - name: video_views
+        description: "%of users with a view of the video ad"
+
+  - name: google_ads_details
+    description: "Ad Parameters that define/Describe the Ad"
+    columns:
+      - name: ad_id
+        description: "Google Ads ID for the Ad"
+
+      - name: customer_id
+        description: "Stage entertainment customer ID on Google Ads"
+
+      - name: ad_type
+        description: "Format of the ad"
+
+      - name: headline
+        description: "Headline of the Ad"
+
+      - name: headline_part1
+        description: "Sub Part 1 of the headline of the ad"
+
+      - name: headline_part2
+        description: "Sub Part 2 of the headline of the ad "
+
+      - name: description
+        description: "Description of the ad"
+
+      - name: description1
+        description: "Sub part 1 Description of the ad"
+
+      - name: description2
+        description: "Sub part 2 Description of the ad "
+
+      - name: expanded_text_ad_description2
+        description: "Expanded text of the ad Description"
+
+      - name: image_ad_url
+        description: "Url of the image of the ad"
+
+      - name: creative_final_urls
+        description: "Url of the creative"
+
+      - name: domain_url
+        description: "Url of the landing domain"
+
+      - name: status
+        description: "Status of the Ad"
+
+      - name: responsive_search_ad_path1
+        description: "Responsive search Ad path"
+
+      - name: responsive_search_ad_path2
+        description: " Responsive search Ad path "
+
+      - name: short_headline
+        description: "Short headline of the ad"
+
+      - name: call_only_phone_number
+        description: "And phone number indicated in the ad"
+
+      - name: call_to_action_text
+        description: "Specified call to action on the text"
+
+      - name: policy_summary
+        description: "Policy covering the ad"
+
+  - name: google_search_competitive
+    description: "Competitive metrics for Google search"
+    columns:
+      - name: platform
+        description: "Platform on which the ad is shown"
+
+      - name: keyword_id
+        description: "Google Keyword ID"
+
+      - name: keyword
+        description: "Actual keyword the bidding is done on"
+
+      - name: customer_id
+        description: "Stage entertainment customer ID on google"
+
+      - name: campaign_id
+        description: "Campaign ID of the Ad"
+
+      - name: ad_group_id
+        description: "Ad Group ID of the Ad"
+
+      - name: campaign_name
+        description: "Campaign Name of the Ad"
+
+      - name: ad_group_name
+        description: "Ad Group name of the Ad"
+
+      - name: ad_network_type_1
+        description: "Primary platform on which the ad is seen"
+
+      - name: ad_network_type_2
+        description: "Secondary platform on which the Ad is seen"
+
+      - name: date
+        description: "Date on which the ad is seen"
+
+      - name: currency_code
+        description: "the currency of billing /cost"
+
+      - name: account_name
+        description: "Stage entertainment Account name"
+
+      - name: search_impression_share
+        description: "Impression share of the total search universe received for that keyword"
+
+      - name: search_absolute_top_impression_share
+        description: "Impression share of the total search universe received for that keyword above the organic search"
+
+      - name: search_budget_lost_absolute_top_impression_share
+        description: " estimates budget how often your ad wasn't the very first ad above the organic search results due to poor Ad Rank"
+
+      - name: search_budget_lost_top_impression_share
+        description: "estimates budget of how often your ad wasn't shown  due to poor Ad Rank"
+
+      - name: search_exact_match_impression_share
+        description: "Impression share of the total exact matches in the search universe received for that keyword"
+
+      - name: search_rank_lost_absolute_top_impression_share
+        description: " estimates how often your ad wasn't the very first ad above the organic search results due to poor Ad Rank"
+
+      - name: search_rank_lost_impression_share
+        description: " estimates how often your ad wasn not shown due to poor Ad Rank"
+
+      - name: search_rank_lost_top_impression_share
+        description: " estimates how often your ad wasn't the very first ad above the organic search results due to poor Ad Rank"
+
+      - name: search_top_impression_share
+        description: "estimates how often your ad wasn't above the organic search results "
+
+      - name: top_impression_percentage
+        description: " estimates how often your ad wasn't above the organic search results "
+
+      - name: absolute_top_impression_percentage
+        description: " estimates how often your ad the very first ad above the organic search results "
