@@ -407,6 +407,14 @@ models:
 
       - name: campaign_name
         description: "Campaign Name under which the ad is executed "
+      - name: campaign_type_split
+        description: "Differentiation between AON, prospecting, retargeting"
+      - name: show
+        description: "Production Code / Name of the production"
+      - name: theatre_location
+        description: "Location of the theatre"
+      - name: free_text
+        description: "campaign reason/discount/AB testing variations etc"
 
       - name: ad_group_name
         description: "Adgroup name under which the ad is executed "
