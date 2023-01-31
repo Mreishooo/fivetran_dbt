@@ -4,12 +4,13 @@
 )}}
 with google_ad as
 (
-  select *  FROM {{ source('GoogleAd', 'Ad_9940526481') }}  
+  select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Ad_9940526481') }}  
    where _LATEST_DATE = _DATA_DATE
    -- and CriterionId = 300545487483
     
 ) 
 select 
+country,
 CreativeId ad_id,
 ExternalCustomerId customer_id  ,
 AdType ad_type,

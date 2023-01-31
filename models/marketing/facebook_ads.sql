@@ -10,24 +10,24 @@
 
 with facebook_ad_basic as
 (
-  select * FROM {{ source('ft_facebook_ad', 'basic_report') }}
+  select 'Germany' as country ,* FROM {{ source('ft_facebook_ad', 'basic_report') }}
 ) ,
 
 facebook_basic_report_actions as
 (
-  select * from {{ source('ft_facebook_ad', 'basic_report_actions') }}  
+  select 'Germany' as country ,* from {{ source('ft_facebook_ad', 'basic_report_actions') }}  
 ) ,
 
 facebook_basic_report_action_values as
 (
-  select * from {{ source('ft_facebook_ad', 'basic_report_action_values') }}  
+  select 'Germany' as country ,* from {{ source('ft_facebook_ad', 'basic_report_action_values') }}  
 ) ,
 
 fb_actions_pivot as 
 (
   SELECT * 
       FROM(
-        select ad_id, date, action_type , ra._1_d_view view_1 , ra._7_d_click click_7, ra.value  
+        select ad_id,country, date, action_type , ra._1_d_view view_1 , ra._7_d_click click_7, ra.value  
         from facebook_basic_report_actions ra 
         where true
       and action_type in ( 'omni_add_to_cart',  'omni_view_content','omni_purchase') )
@@ -40,7 +40,7 @@ fb_action_values_pivot as
 SELECT * 
    FROM(
       select 
-      ad_id,date,action_type, 
+      ad_id,date,action_type, country,
       ifnull(view_1_omni_view_content,0) view_content_1view  ,
       ifnull(click_7_omni_view_content,0) view_content_7click  ,
       ifnull(value_omni_view_content,0) view_content  ,
@@ -54,7 +54,7 @@ SELECT *
       ifnull(rav._1_d_view,0) value_1view, 
       ifnull(rav._7_d_click,0) value_7click,
       from fb_actions_pivot _1view
-      left join  facebook_basic_report_action_values    rav  using (ad_id, date  ) 
+      left join  facebook_basic_report_action_values    rav  using (ad_id, date ,country ) 
       where true
       --and '23850523304830668' = ad_id
       --and date ='2022-12-13'
@@ -65,6 +65,7 @@ SELECT *
 
  
 SELECT 'facebook_ads' platform , 
+country,
 account_name ,
 campaign_name campaign_name,
 adset_name,
@@ -92,6 +93,6 @@ value_omni_purchase  conversions_value
 
 
 FROM facebook_ad_basic
- join  fb_action_values_pivot ra using (ad_id, date ) 
+ join  fb_action_values_pivot ra using (ad_id, date,country) 
 where true-- and date ='2022-09-11')
 

@@ -9,7 +9,7 @@
 )}}
 with google_keyword as
 (
-  select *  FROM {{ source('GoogleAd', 'Keyword_9940526481') }}  
+  select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Keyword_9940526481') }}  
    where _LATEST_DATE = _DATA_DATE
    and  ApprovalStatus = 'APPROVED'
    -- and CriterionId = 300545487483
@@ -18,34 +18,35 @@ with google_keyword as
 
 google_campaign as
 (
-  select *  FROM {{ source('GoogleAd', 'Campaign_9940526481') }} 
+  select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Campaign_9940526481') }} 
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_group_ads as 
 (
-  select *  FROM {{ source('GoogleAd', 'AdGroup_9940526481') }} 
+  select  'Germany' as country , *  FROM {{ source('GoogleAd', 'AdGroup_9940526481') }} 
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_Criteria as 
 (
-  select *  FROM {{ source('GoogleAd', 'Criteria_9940526481') }} 
+  select  'Germany' as country , *  FROM {{ source('GoogleAd', 'Criteria_9940526481') }} 
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_customer as 
 (
-  select *  FROM {{ source('GoogleAd', 'Customer_9940526481') }}  
+  select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Customer_9940526481') }}  
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_keyword_cross as
 (
-   select *  FROM {{ source('GoogleAd', 'KeywordCrossDeviceStats_9940526481') }}  
+   select  'Germany' as country ,*  FROM {{ source('GoogleAd', 'KeywordCrossDeviceStats_9940526481') }}  
 )
 
-SELECT distinct  'google_ads' platform ,
+SELECT distinct  'google_ads' platform ,  
+country ,
 st.CriterionId keyword_id,
 key.Criteria keyword ,
 st.ExternalCustomerId customer_id ,
@@ -71,8 +72,8 @@ TopImpressionPercentage top_impression_percentage,
 AbsoluteTopImpressionPercentage  absolute_top_impression_percentage
 
 FROM google_keyword_cross st
-left join google_customer  using (ExternalCustomerId)
-join google_Keyword key using (CriterionId , CampaignId , AdGroupId)
+left join google_customer  using (ExternalCustomerId,country)
+join google_Keyword key using (CriterionId , CampaignId , AdGroupId,country)
 --left join google_Criteria using ( CriterionId,CampaignId ,AdGroupId)
-left join  google_campaign   using ( CampaignId)
-left join  google_group_ads  using ( AdGroupId)
+left join  google_campaign   using ( CampaignId,country)
+left join  google_group_ads  using ( AdGroupId,country)

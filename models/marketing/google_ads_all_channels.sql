@@ -11,43 +11,44 @@
 with 
 google_campaign as
 (
-  select * FROM {{ source('GoogleAd', 'Campaign_9940526481') }}    
+  select 'Germany' as country ,* FROM {{ source('GoogleAd', 'Campaign_9940526481') }}    
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_group_ads as 
 (
-  select *  FROM {{ source('GoogleAd', 'AdGroup_9940526481') }}     
+  select'Germany' as country , *  FROM {{ source('GoogleAd', 'AdGroup_9940526481') }}     
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 google_ads as 
 (
-  select *  FROM {{ source('GoogleAd', 'Ad_9940526481') }}   
+  select 'Germany' as country ,*  FROM {{ source('GoogleAd', 'Ad_9940526481') }}   
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 google_customer as 
 (
-  select *  FROM {{ source('GoogleAd', 'Customer_9940526481') }}   
+  select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Customer_9940526481') }}   
   where  _LATEST_DATE = _DATA_DATE
   
 ),
 
 google_ad_stats as
 (
-  select *  FROM {{ source('GoogleAd', 'AdBasicStats_9940526481') }}  
+  select 'Germany' as country ,*  FROM {{ source('GoogleAd', 'AdBasicStats_9940526481') }}  
 ) ,
 
 VideoStats as
 (
-  SELECT * FROM {{ source('GoogleAd', 'VideoBasicStats_9940526481') }}  
+  SELECT 'Germany' as country , * FROM {{ source('GoogleAd', 'VideoBasicStats_9940526481') }}  
 ),
 VideoNonClickStats as
   (
-  SELECT  * FROM {{ source('GoogleAd', 'VideoNonClickStats_9940526481') }}   
+  SELECT 'Germany' as country ,  * FROM {{ source('GoogleAd', 'VideoNonClickStats_9940526481') }}   
   )
 
   
 SELECT distinct   'google_ads' platform ,
+country,
 CreativeId ad_id,
 AdType ad_type,
 CombinedApprovalStatus approval_status,
@@ -88,9 +89,9 @@ VideoQuartile75Rate video_quartile_75rate,
 VideoQuartile100Rate video_quartile_100rate, 
 VideoViews video_views
 FROM google_ads   ads
-left join google_customer using (ExternalCustomerId)
-left join  google_campaign   using (CampaignId)
-left join  google_group_ads  using ( AdGroupId,CampaignId)
-left join google_ad_stats ad_stats  using ( AdGroupId,CampaignId,CreativeId) 
+left join google_customer using (ExternalCustomerId,country)
+left join  google_campaign   using (CampaignId,country)
+left join  google_group_ads  using ( AdGroupId,CampaignId,country)
+left join google_ad_stats ad_stats  using ( AdGroupId,CampaignId,CreativeId,country) 
 --left join VideoStats    using ( AdGroupId,CampaignId,CreativeId)  
-left join  VideoNonClickStats  using ( CreativeId,AdGroupId,CampaignId,AdNetworkType1,AdNetworkType2,Date,Device)
+left join  VideoNonClickStats  using ( CreativeId,AdGroupId,CampaignId,AdNetworkType1,AdNetworkType2,Date,Device,country)

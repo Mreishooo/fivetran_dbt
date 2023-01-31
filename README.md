@@ -47,11 +47,12 @@ dbt run-operation generate_base_model --args '{"source_name": "ft_mdb7_dbo", "ta
 
 
 dbt run-operation generate_model_yaml --args '{"model_name": "date_view"}' 
-dbt run-operation generate_model_yaml --args '{"model_name": "facebook_platform_device_click"}' >>facebook.txt
-dbt run-operation generate_model_yaml --args '{"model_name": "facebook_region_click"}' >>facebook.txt
-dbt run-operation generate_model_yaml --args '{"model_name": "facebook_ad_conversions"}' >>facebook.txt
+dbt run-operation generate_model_yaml --args '{"model_name": "facebook_platform_device_click"}' >>facebook_google.txt
+dbt run-operation generate_model_yaml --args '{"model_name": "facebook_region_click"}' >>facebook_google.txt
+dbt run-operation generate_model_yaml --args '{"model_name": "facebook_age_gender_click"}' >>facebook_google.txt
+dbt run-operation generate_model_yaml --args '{"model_name": "facebook_ad_conversions"}' >>facebook_google.txt
 
-dbt run-operation generate_model_yaml --args '{"model_name": "google_search_keyword"}' >>google.txt
-dbt run-operation generate_model_yaml --args '{"model_name": "google_ads_all_channels"}' >>google.txt
-dbt run-operation generate_model_yaml --args '{"model_name": "google_ads_details"}' >>google.txt
-dbt run-operation generate_model_yaml --args '{"model_name": "google_search_competitive"}' >>google.txt
+dbt run-operation generate_model_yaml --args '{"model_name": "google_search_keyword"}' >>facebook_google.txt
+dbt run-operation generate_model_yaml --args '{"model_name": "google_ads_all_channels"}' >>facebook_google.txt
+dbt run-operation generate_model_yaml --args '{"model_name": "google_ads_details"}' >>facebook_google.txt
+dbt run-operation generate_model_yaml --args '{"model_name": "google_search_competitive"}' >>facebook_google.txt
