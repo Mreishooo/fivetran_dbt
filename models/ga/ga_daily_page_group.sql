@@ -16,26 +16,26 @@
 )}}
 
 with ga_data as 
-( select * FROM {{ ref('ga_data' ) }} ),
+( select * FROM {{ ref('ga_data' ) }} )
 
 
-mpl AS ( 
-    select *
-    FROM {{ ref('sales_production_location') }})
+-- , mpl AS ( 
+--     select *
+--     FROM {{ ref('production') }})
 
 SELECT date,
 country,
 page_group,
 page_group_desc,
 is_show, 
-mpl.production_name ,
+if (is_show ,page_group_desc , null ) production_name,
 count(distinct  concat (full_visitor_id , visit_id )) visitors ,
 count(distinct full_visitor_id ) unique_visitors ,
 count(DISTINCT IF(totals.new_visits, full_visitor_id, NULL))  new_vistor ,
 count(*) impressions 
 FROM ga_data
 join unnest  (hits)  hits  
-left join mpl on  page_group = Production_Location_Id   
+--left join mpl on  page_group = Production_Location_Id   
 where true 
 and hits.hits_type = 'PAGE' 
 group by 1 , 2 , 3 , 4 ,5 ,6

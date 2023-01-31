@@ -50,7 +50,7 @@ VideoNonClickStats as
 SELECT distinct   'google_ads' platform ,
 CreativeId ad_id,
 AdType ad_type,
-status ad_satatus,CombinedApprovalStatus approval_status,
+CombinedApprovalStatus approval_status,
 ads.ExternalCustomerId customer_id ,
 ads.CampaignID  campaign_id,
 ads.adGroupid  ad_group_id,
