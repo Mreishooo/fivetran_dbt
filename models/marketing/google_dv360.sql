@@ -10,10 +10,11 @@
 
 with google_dv_360 as
 (
-  select *  FROM {{ source('ft_google_display_and_video_360', 'basic_report') }}  
+  select 'Germany' as country ,*  FROM {{ source('ft_google_display_and_video_360', 'basic_report') }}  
 ) 
 
 SELECT 'google_dv360' platform, 
+country,
 advertiser account_name ,
 campaign campaign_name,
 date,
