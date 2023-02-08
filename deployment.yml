@@ -26,12 +26,19 @@ jobs:
  - name: Ga_Models_Daily 
    schedule: 13 10 * * * 
    steps:
-     - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
-       command: dbt run --models ga # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.
+     - name: run models 
+       command: dbt run --models ga 
      
      - name: test models
-       command: dbt test --models ga   # This example will run all your tests.
- 
+       command: dbt test --models ga   
+    
+      - name: run models 
+       command: dbt run --models ga4 
+
+     - name: test models
+       command: dbt test --models ga4  
+
+
  - name: Marketing_Offline_Daily 
    schedule: 10 10 * * * 
    steps:

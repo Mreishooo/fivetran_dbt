@@ -12,17 +12,18 @@
 with  
   ga4_source AS (
    SELECT 'Germany' as country , *  
-   FROM {{ source( 'analytics_272653220','events_202*') }}
-   --union all 
-   --SELECT 'Netherlands' as country , *  
-   --FROM {{ source( '97634084','ga_sessions_202*') }}
-  ),
-
-  ga_page_groups AS ( 
-    SELECT *
-    FROM {{ ref('ga_page_groups') }}
+   FROM {{ source( 'analytics_272653220','events_2023*') }}
+   union all 
+   SELECT 'Spain' as country , *  
+   FROM {{ source( 'analytics_272654930','events_2023*') }}
+   union all 
+   SELECT 'Netherlands' as country , *  
+   FROM {{ source( 'analytics_272676813','events_2023*') }}
+   union all 
+   SELECT 'France' as country , *  
+   FROM {{ source( 'analytics_272685101','events_2023*') }}
+   
   )
-
 
 
 SELECT  country,

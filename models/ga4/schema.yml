@@ -138,3 +138,35 @@ models:
         description: Total number of items purchase in the event 
       - name: items
         description: A repeated record of items included in this event.
+
+
+
+  - name: user_journey
+    description: Table show the user journey on the webshop
+    columns:
+      - name: country
+        description: Country
+      - name: date
+        description: Date
+      - name: show
+        description: the show bases on the ga event parameter 
+      - name: calendar
+        description: count of unquie users have  ticketshop event
+      - name: seat_map
+        description: count of unquie users have  ticketshop_tabtwo event 
+      - name: search_api
+        description:  count of unquie users have  search_api event
+      - name: add_to_cart
+        description:  count of unquie users have  add_to_cart event
+      - name: begin_checkout
+        description:  count of unquie users have  begin_checkout event
+      - name: login
+        description:  count of unquie users have  login event
+      - name: add_shipping_info
+        description:  count of unquie users have  add_shipping_info event
+      - name: add_payment_info
+        description:  count of unquie users have  add_payment_info event
+      - name: checkout_summary
+        description:  count of unquie users have  checkout_summary event
+      - name: purchase
+        description:  count of unquie users have  purchase event
