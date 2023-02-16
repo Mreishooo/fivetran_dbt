@@ -81,6 +81,7 @@ models:
     mreish:
       +schema: mreish # this applies to all models in the `marts/admin/`` directory
       description: dataset contains test table
+
     finance :
       +schema: finance # this applies to all models in the `marts/admin/`` directory
       description: dataset contains finance table

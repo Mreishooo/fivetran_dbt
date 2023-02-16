@@ -40,7 +40,8 @@ as
 ( 
 SELECT _file,_line 
           , _30_ta_cpp 
-          , _30_ta_grps_20_in_spain_ _30_ta_grps_20_in_spain
+          , _30_ta_grps_20_in_spain_
+          , safe_cast (_30_ta_grps_20_in_spain_ as float64)   as _30_ta_grps_20_in_spain
           , ad_serving_tracking_costs_if_applicable_ ad_serving_tracking_costs_if_applicable
           , added_value_eur_ added_value_eur
           , affinity_index_targeting_ affinity_index_targeting
