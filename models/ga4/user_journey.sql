@@ -18,7 +18,7 @@ with
 
 , journey_events as (
     SELECT distinct  country, date, user_pseudo_id,-- session_id ,
-      show.value.string_value show , event_name
+      show.value.string_value show , event_name,page_location landing_page,
     FROM ga4_data 
         left join unnest (event_params) show on show.key = 'show' 
     WHERE date >= "2023-02-1"
@@ -35,7 +35,7 @@ with
       'purchase') 
    )
 
- select country, date , show,
+ select country, date , show,landing_page,
   countif(event_name ='ticketshop' )  calendar, 
  --count ( distinct (if (event_name ='ticketshop' ,user_pseudo_id, null  )))hh,
   countif(event_name ='ticketshop_tabtwo' ) seat_map,
@@ -49,4 +49,4 @@ with
   countif(event_name ='purchase' ) purchase,
  from journey_events
 
- group by 1 , 2,3
+ group by 1 , 2,3,4

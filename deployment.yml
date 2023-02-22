@@ -32,7 +32,7 @@ jobs:
      - name: test models
        command: dbt test --models ga   
     
-      - name: run models_ga4
+     - name: run models_ga4
        command: dbt run --models ga4 
 
      - name: test models_ga4

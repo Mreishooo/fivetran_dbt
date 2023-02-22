@@ -138,6 +138,10 @@ models:
         description: Total number of items purchase in the event 
       - name: items
         description: A repeated record of items included in this event.
+      - name: page_location
+        description: session_start parameter based on session id
+      - name: page_referrer
+        description: session_start parameter based on session id
 
 
 
@@ -150,6 +154,8 @@ models:
         description: Date
       - name: show
         description: the show bases on the ga event parameter 
+      - name: landing_page
+        description: the page_location for the same sassion_id based on session_start event
       - name: calendar
         description: count of unquie users have  ticketshop event
       - name: seat_map

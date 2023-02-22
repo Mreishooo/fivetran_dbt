@@ -1,8 +1,8 @@
 fivetran_dbt:
   outputs:
     prod:
-      dataset: marketing
-      job_execution_timeout_seconds: 300
+      dataset: admin
+      job_execution_timeout_seconds: 600
       job_retries: 1
       keyfile:  ./fivetran-dbt-sa.json
       location: EU
@@ -12,14 +12,25 @@ fivetran_dbt:
       threads: 10
       type: bigquery
     play:
-      dataset: marketing
-      job_execution_timeout_seconds: 300
+      dataset: admin
+      job_execution_timeout_seconds: 600
       job_retries: 1
       keyfile:  ./fivetran-dbt-sa.json   
       location: EU
       method: service-account
       priority: interactive
       database: stage-playground
+      threads: 10
+      type: bigquery
+    qa:
+      dataset: admin
+      job_execution_timeout_seconds: 600
+      job_retries: 1
+      keyfile:  ./fivetran-dbt-sa.json   
+      location: EU
+      method: service-account
+      priority: interactive
+      database: stage-qa
       threads: 10
       type: bigquery
   target: play

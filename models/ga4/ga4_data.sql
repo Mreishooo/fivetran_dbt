@@ -25,7 +25,7 @@ with
    
   )
 
-
+, ga4_date as (
 SELECT  country,
 PARSE_DATE("%Y%m%d",event_date)  date ,
 TIMESTAMP_MICROS(event_timestamp)  event_timestamp,
@@ -48,3 +48,26 @@ left join unnest (event_params) ga_session_id on ga_session_id.key = 'ga_session
 where PARSE_DATE("%Y%m%d",event_date) >= '2022-10-10'
 qualify  row_number() OVER (PARTITION BY country ,date ,user_pseudo_id ,event_name ,event_timestamp ORDER BY  event_timestamp DESC )  = 1 
  -- where  fullVisitorId = '3190936853180529794'
+)
+
+,landing_page as (
+  SELECT country,
+    user_pseudo_id,
+    session_id,
+    page_location.value.string_value page_location,
+    page_referrer.value.string_value page_referrer
+ FROM ga4_date 
+ left join unnest (event_params) page_location on page_location.key = 'page_location' 
+ left join unnest (event_params) page_referrer on page_referrer.key = 'page_referrer' 
+ 
+ WHERE 
+ true
+ --and  date = "2023-01-20"
+ and event_name='session_start'
+ and session_id is not null 
+ qualify  row_number() OVER (PARTITION BY country  ,user_pseudo_id ,session_id  ORDER BY  event_timestamp )  = 1 
+
+
+)
+
+select * from ga4_date left join landing_page using (country,user_pseudo_id,session_id )

@@ -2,7 +2,7 @@
 version: 2
  
 models:
-  - name: dyc_customer
+  - name: dim_customer
     description:  Table containes customer information shated with dymatric for crm system to read  
     columns:
       - name: country_code
