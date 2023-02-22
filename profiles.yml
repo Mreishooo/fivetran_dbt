@@ -22,7 +22,7 @@ fivetran_dbt:
       database: stage-playground
       threads: 10
       type: bigquery
-    qa:
+    cicd:
       dataset: admin
       job_execution_timeout_seconds: 600
       job_retries: 1
@@ -30,7 +30,7 @@ fivetran_dbt:
       location: EU
       method: service-account
       priority: interactive
-      database: stage-qa
+      database: stage-cicd
       threads: 10
       type: bigquery
   target: play

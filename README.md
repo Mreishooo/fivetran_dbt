@@ -1,5 +1,8 @@
 Welcome to your new dbt project!
 
+
+C:\Users\mmreish\.dbt
+
 ### Using the starter project
 
 Try running the following commands:

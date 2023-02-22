@@ -43,8 +43,8 @@ jobs:
       - name: Run dbt deps
         run: dbt deps --profiles-dir .
 
-      - name: Run dbt build - playground
-        run: dbt build --profiles-dir .
+      - name: Run dbt build - cicd
+        run: dbt build --profiles-dir . --target  cicd
 
       - name: Run dbt build - prod 
         run: dbt build --profiles-dir . --target prod
