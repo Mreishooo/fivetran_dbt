@@ -18,8 +18,8 @@ second_orders as
 ( select  distinct  dim_golden_customer_id  golden_customer_id, main_order_number second_order
 from ts 
 where order_rank =2 ),
-thrid_orders as
-( select  distinct  dim_golden_customer_id  golden_customer_id, main_order_number thrid_order
+third_orders as
+( select  distinct  dim_golden_customer_id  golden_customer_id, main_order_number third_order
 from ts 
 where order_rank =3 ),
 forth_orders as
@@ -39,6 +39,6 @@ order by 1
 select * 
 from first_orders 
 left join second_orders using (golden_customer_id)
-left join thrid_orders using (golden_customer_id)
+left join third_orders using (golden_customer_id)
 left join forth_orders using (golden_customer_id)
 left join last_order using (golden_customer_id)

@@ -84,7 +84,7 @@ with
   )
 
   ,distinct_orders AS ( 
-    SELECT distinct booking_date, main_order_number,dim_golden_customer_id, 
+    SELECT distinct source_code,country_code,booking_date, main_order_number,dim_golden_customer_id, 
        -- row_number()over (PARTITION BY dim_golden_customer_id order by booking_date ) order_rank
     from fts
     where transaction_type ='Sale' 
