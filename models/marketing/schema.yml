@@ -11,6 +11,8 @@ models:
         description: google_ads
         tests:
           - not_null
+      - name: country
+        description: Country
       - name: account_name
         description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
       - name: date
@@ -30,13 +32,14 @@ models:
       - name: interactions
         description: ""  
 
-
   - name: facebook_ads
     description: Table containes data from facebook ads 
 
     columns:
       - name: platform
         description: marketing platforms,  Facebook
+      - name: country
+        description: Country
       - name: account_name
         description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
       - name: date
@@ -49,23 +52,42 @@ models:
         description: Count of times a digital ad is shown
       - name: conversions
         description: Orders
+      - name: conversions_1view
+        description: Orders
+      - name: conversions_7click
+        description: Orders
       - name: conversions_value
+        description: Order value
+      - name: conversions_1view_value
+        description: Order value
+      - name: conversions_7click_value
         description: Order value
       - name: spend
         description: money spent on digital Ads
       - name: interactions
         description: count of  interactions
       - name: adset_name
-        description: "" 
+        description: adset name 
       - name: ad_name
-        description: "" 
+        description: ad name
       - name: view_content
-        description: "" 
+        description: count of view content 
+      - name: view_content_1view 
+        description: count of view content 
+      - name: view_content_7click
+        description: count of view content
       - name: add_to_cart
-        description: "" 
+        description: count of item added to cart
       - name: add_to_cart_value
-        description: ""   
-
+        description: value of item added to cart  
+      - name: add_to_cart_1view
+        description: count of added to cart
+      - name: add_to_cart_7click
+        description: count of added to cart
+      - name: add_to_cart_1view_value 
+        description: value of item added to cart 
+      - name: add_to_cart_7click_value
+        description: value of item added to cart
 
   - name: google_dv360
     description: Table containes data from google dv360 
@@ -73,6 +95,8 @@ models:
     columns:
       - name: platform
         description: marketing platforms,  Google DV360
+      - name: country
+        description: Country
       - name: advertiser
         description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
       - name: date
@@ -104,6 +128,8 @@ models:
     columns:
       - name: platform
         description: marketing platforms, as in FB Ads, Google Ads, Google DV360
+      - name: country
+        description: Country
       - name: account_name
         description: Advertising type, as in Paid Search, Paid Social, Diplay, Video
       - name: date
@@ -280,6 +306,8 @@ models:
     columns:
       - name: platform
         description: "Name of the Ad Platform"
+      - name: country
+        description: Country
 
       - name: ad_id
         description: "Unique ID for each ad"
@@ -377,12 +405,13 @@ models:
       - name: top_impression_percentage
         description: "is the percent of your ad impressions that are shown anywhere above the organic search results"
 
-  
   - name: google_ads_all_channels
     description: "Google Ads Key metrics across all Google Ads Channels like YT, Search and Display at an Ad ID conversions level"
     columns:
       - name: platform
         description: "Platform on which the ad is shown"
+      - name: country
+        description: Country
 
       - name: ad_id
         description: "Ad ID of the ad being shown"
@@ -505,6 +534,8 @@ models:
     columns:
       - name: ad_id
         description: "Google Ads ID for the Ad"
+      - name: country
+        description: Country
 
       - name: customer_id
         description: "Stage entertainment customer ID on Google Ads"
@@ -568,6 +599,8 @@ models:
     columns:
       - name: platform
         description: "Platform on which the ad is shown"
+      - name: country
+        description: Country
 
       - name: keyword_id
         description: "Google Keyword ID"
@@ -637,3 +670,443 @@ models:
 
       - name: absolute_top_impression_percentage
         description: " estimates how often your ad the very first ad above the organic search results "
+
+  - name: facebook_platform_device_click
+    description: Table containes facebook data grouped by device and platfroms 
+    columns:
+      - name: platform
+        description: "Platform on which the Ad is served"
+
+      - name: account_name
+        description: "Facebook Account Name"
+
+      - name: campaign_name
+        description: "Name of the campaign the ad belongs to"
+
+      - name: adset_name
+        description: "Name of the Ad set of the campaign and the Ad set the ad belongs to"
+
+      - name: ad_name
+        description: "Name of the ad being shown"
+
+      - name: date
+        description: "Date on which the ad was shown"
+
+      - name: account_id
+        description: "FaceBook Account ID"
+
+      - name: campaign_id
+        description: "Campaign Id"
+
+      - name: adset_id
+        description: " Asset ID"
+
+      - name: ad_id
+        description: "Ad_id"
+
+      - name: device_platform
+        description: "Type of Device on which the Ad was seen"
+
+      - name: impression_device
+        description: "Device on which the Ad was seen"
+
+      - name: platform_position
+        description: "Type of Ad or mode of showing the ad"
+
+      - name: publisher_platform
+        description: "Platform within Meta that the ad was shown on"
+
+      - name: purchases
+        description: "Actual conversions on the Facebook Platform"
+
+      - name: reach
+        description: "Total Audience that was reached by the ad"
+
+      - name: impressions
+        description: "Total impressions that was reached by the ad"
+
+      - name: frequency
+        description: "Impressions/ Reach - Average frequency each user sees the ad"
+
+      - name: currency
+        description: "currenct used for billing"
+
+      - name: spend
+        description: "Amount spent on the Ads"
+
+      - name: attribution_setting
+        description: "Type of attribution window used for the Ad"
+
+      - name: link_clicks
+        description: "Number of link clicks from the ads"
+
+      - name: clicks
+        description: "Number of clicks from the ads"
+
+      - name: value_page_engagement
+        description: "% of users engaged in the page"
+
+      - name: page_likes
+        description: "Number of page_likes from the ads"
+
+      - name: post_comments
+        description: "Number of post comments from the ads"
+
+      - name: post_engagement
+        description: "% of users engaged in the post"
+
+      - name: post_reactions
+        description: "Number of reactions on the post"
+
+      - name: post_shares
+        description: "Number of shares of the post"
+
+      - name: video_plays_3s
+        description: "% of ads with 3s of video played"
+
+      - name: video_plays_at_25
+        description: "% of ads with 25% of video played"
+
+      - name: video_plays_at_50
+        description: "% of ads with 50% of video played"
+
+      - name: video_plays_at_75
+        description: "% of ads with 75% of video played"
+
+      - name: video_plays_at_95
+        description: "% of ads with 95% of video played"
+
+      - name: video_plays_at_100
+        description: "% of ads with 100% of video played"
+
+      - name: adds_to_cart
+        description: "Number of adds to cart from the ad"
+
+      - name: checkouts_initiated
+        description: "Number of checkouts initiated from the ad"
+
+      - name: content_views
+        description: "Number of content views from the Ad"
+
+      - name: landing_page_view
+        description: "Number of landing page views from the Ad"
+
+  - name: facebook_region_click
+    description:  Table containes facebook data grouped by region
+    columns:
+      - name: platform
+        description: "Platform on which the Ad is served"
+
+      - name: account_name
+        description: "Facebook Account Name"
+
+      - name: campaign_name
+        description: "Name of the campaign the ad belongs to"
+
+      - name: adset_name
+        description: "Name of the Ad set of the campaign and the Ad set the ad belongs to"
+
+      - name: ad_name
+        description: "Name of the ad being shown"
+
+      - name: date
+        description: "Date on which the ad was shown"
+
+      - name: account_id
+        description: "FaceBook Account ID"
+
+      - name: campaign_id
+        description: "Campaign Id"
+
+      - name: adset_id
+        description: " Asset ID"
+
+      - name: ad_id
+        description: "Ad_id"
+
+      - name: region
+        description: "region from where the ad is viewed"
+
+      - name: purchases
+        description: "Actual conversions on the Facebook Platform"
+
+      - name: reach
+        description: "Total Audience that was reached by the ad"
+
+      - name: impressions
+        description: "Total impressions that was reached by the ad"
+
+      - name: frequency
+        description: "Impressions/ Reach - Average frequency each user sees the ad"
+
+      - name: currency
+        description: "currenct used for billing"
+
+      - name: spend
+        description: "Amount spent on the Ads"
+
+      - name: attribution_setting
+        description: "Type of attribution window used for the Ad"
+
+      - name: link_clicks
+        description: "Number of link clicks from the ads"
+
+      - name: clicks
+        description: "Number of clicks from the ads"
+
+      - name: value_page_engagement
+        description: "% of users engaged in the page"
+
+      - name: page_likes
+        description: "Number of page_likes from the ads"
+
+      - name: post_comments
+        description: "Number of post comments from the ads"
+
+      - name: post_engagement
+        description: "% of users engaged in the post"
+
+      - name: post_reactions
+        description: "Number of reactions on the post"
+
+      - name: post_shares
+        description: "Number of shares of the post"
+
+      - name: video_plays_3s
+        description: "% of ads with 3s of video played"
+
+      - name: adds_to_cart
+        description: "Number of adds to cart from the ad"
+
+      - name: checkouts_initiated
+        description: "Number of checkouts initiated from the ad"
+
+      - name: content_views
+        description: "Number of content views from the Ad"
+
+      - name: landing_page_view
+        description: "Number of landing page views from the Ad"
+
+  - name: facebook_age_gender_click
+    description:  Table containes facebook data grouped by age and gender
+    columns:
+      - name: platform
+        description: "Platform on which the Ad is served"
+
+      - name: account_name
+        description: "Facebook Account Name"
+
+      - name: campaign_name
+        description: "Name of the campaign the ad belongs to"
+
+      - name: adset_name
+        description: "Name of the Ad set of the campaign and the Ad set the ad belongs to"
+
+      - name: ad_name
+        description: "Name of the ad being shown"
+
+      - name: date
+        description: "Date on which the ad was shown"
+
+      - name: account_id
+        description: "FaceBook Account ID"
+
+      - name: campaign_id
+        description: "Campaign Id"
+
+      - name: adset_id
+        description: " Asset ID"
+
+      - name: ad_id
+        description: "Ad_id"
+
+      - name: age
+        description: "age of the user seeing the ad "
+
+      - name: gender
+        description: "Gender of the user seeing the ad"
+
+      - name: purchases
+        description: "Actual conversions on the Facebook Platform"
+
+      - name: reach
+        description: "Total Audience that was reached by the ad"
+
+      - name: impressions
+        description: "Total impressions that was reached by the ad"
+
+      - name: frequency
+        description: "Impressions/ Reach - Average frequency each user sees the ad"
+
+      - name: currency
+        description: "currenct used for billing"
+
+      - name: spend
+        description: "Amount spent on the Ads"
+
+      - name: attribution_setting
+        description: "Type of attribution window used for the Ad"
+
+      - name: link_clicks
+        description: "Number of link clicks from the ads"
+
+      - name: clicks
+        description: "Number of clicks from the ads"
+
+      - name: value_page_engagement
+        description: "% of users engaged in the page"
+
+      - name: page_likes
+        description: "Number of page_likes from the ads"
+
+      - name: post_comments
+        description: "Number of post comments from the ads"
+
+      - name: post_engagement
+        description: "% of users engaged in the post"
+
+      - name: post_reactions
+        description: "Number of reactions on the post"
+
+      - name: post_shares
+        description: "Number of shares of the post"
+
+      - name: video_plays_3s
+        description: "% of ads with 3s of video played"
+
+      - name: video_plays_at_25
+        description: "% of ads with 25% of video played"
+
+      - name: video_plays_at_50
+        description: "% of ads with 50% of video played"
+
+      - name: video_plays_at_75
+        description: "% of ads with 75% of video played"
+
+      - name: video_plays_at_95
+        description: "% of ads with 95% of video played"
+
+      - name: video_plays_at_100
+        description: "% of ads with 100% of video played"
+
+      - name: adds_to_cart
+        description: "Number of adds to cart from the ad"
+
+      - name: checkouts_initiated
+        description: "Number of checkouts initiated from the ad"
+
+      - name: content_views
+        description: "Number of content views from the Ad"
+
+      - name: landing_page_view
+        description: "Number of landing page views from the Ad"
+
+  - name: facebook_ad_conversions
+    description: table contains facebook conversions 
+    columns:
+      - name: platform
+        description: "Platform on which the Ad is served"
+      - name: country
+        description: Country
+
+      - name: account_name
+        description: "Facebook Account Name"
+
+      - name: campaign_name
+        description: "Name of the campaign the ad belongs to"
+
+      - name: adset_name
+        description: "Name of the Ad set of the campaign and the Ad set the ad belongs to"
+
+      - name: ad_name
+        description: "Name of the ad being shown"
+
+      - name: date
+        description: "Date on which the ad was shown"
+
+      - name: account_id
+        description: "FaceBook Account ID"
+
+      - name: campaign_id
+        description: "Campaign Id"
+
+      - name: adset_id
+        description: " Asset ID"
+
+      - name: ad_id
+        description: "Ad_id"
+
+      - name: purchases
+        description: "Actual conversions on the Facebook Platform"
+
+      - name: reach
+        description: "Total Audience that was reached by the ad"
+
+      - name: impressions
+        description: "Total impressions that was reached by the ad"
+
+      - name: frequency
+        description: "Impressions/ Reach - Average frequency each user sees the ad"
+
+      - name: currency
+        description: "currenct used for billing"
+
+      - name: spend
+        description: "Amount spent on the Ads"
+
+      - name: attribution_setting
+        description: "Type of attribution window used for the Ad"
+
+      - name: link_clicks
+        description: "Number of link clicks from the ads"
+
+      - name: clicks
+        description: "Number of clicks from the ads"
+
+      - name: value_page_engagement
+        description: "% of users engaged in the page"
+
+      - name: page_likes
+        description: "Number of page_likes from the ads"
+
+      - name: post_comments
+        description: "Number of post comments from the ads"
+
+      - name: post_engagement
+        description: "% of users engaged in the post"
+
+      - name: post_reactions
+        description: "Number of reactions on the post"
+
+      - name: post_shares
+        description: "Number of shares of the post"
+
+      - name: video_plays_3s
+        description: "% of ads with 3s of video played"
+
+      - name: video_plays_at_25
+        description: "% of ads with 25% of video played"
+
+      - name: video_plays_at_50
+        description: "% of ads with 50% of video played"
+
+      - name: video_plays_at_75
+        description: "% of ads with 75% of video played"
+
+      - name: video_plays_at_95
+        description: "% of ads with 95% of video played"
+
+      - name: video_plays_at_100
+        description: "% of ads with 100% of video played"
+
+      - name: adds_to_cart
+        description: "Number of adds to cart from the ad"
+
+      - name: checkouts_initiated
+        description: "Number of checkouts initiated from the ad"
+
+      - name: content_views
+        description: "Number of content views from the Ad"
+
+      - name: landing_page_view
+        description: "Number of landing page views from the Ad"
