@@ -93,7 +93,7 @@ value_omni_purchase  conversions_value
 
 
 FROM facebook_ad_basic
- join  fb_action_values_pivot ra using (_fivetran_id,ad_id, date) 
+ left join  fb_action_values_pivot ra using (_fivetran_id,ad_id, date) 
 where true-- and date ='2022-09-11')
-and account_id in (   641810463098719 , 2441671829467106 )
+--and account_id in (   641810463098719 , 2441671829467106 )
 

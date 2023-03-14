@@ -65,9 +65,6 @@ models:
     sales_new:
       +schema: sales # this applies to all models in the `marts/sales/`` directory
       description: dataset contains sales and tickets  data
-    staging:
-      +schema: staging # this applies to all models in the `marts/staging/`` directory
-      description: dataset contains staging  tickets  data
 
     admin:
       +schema: admin # this applies to all models in the `marts/admin/`` directory

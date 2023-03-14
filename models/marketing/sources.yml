@@ -38,6 +38,43 @@ sources:
       - name: KeywordCrossDeviceStats_9940526481
         description: Google ads search stats data
 
+  - name: 'google_ad_fr'
+    description:  Google Ads France data for more info visit  https://cloud.google.com/bigquery-transfer/docs/adwords-transformation 
+    database: stage-landing
+    tables:
+      - name: AdBasicStats_8396768808
+        description: Google Ads basic perfomance report
+        loaded_at_field: timestamp(date)
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}
+       
+      - name: Campaign_8396768808
+        description: Google ads campaigns data
+
+      - name: AdGroup_8396768808
+        description: Google ads group name data
+      
+      - name: Criteria_8396768808
+        description: Google ads criteria_ data
+
+      - name: Customer_8396768808
+        description: Google ads customers  data
+      
+      - name: Keyword_8396768808
+        description: Google ads keywords  data
+      - name: Ad_8396768808
+        description: Google ads search stats data
+
+      - name: SearchQueryStats_8396768808
+        description: Google ads search stats data
+      - name: VideoBasicStats_8396768808
+        description: Google ads search stats data
+      - name: VideoNonClickStats_8396768808
+        description: Google ads search stats data
+      - name: KeywordCrossDeviceStats_8396768808
+        description: Google ads search stats data
+
         
 
   - name: 'ft_facebook_ad'

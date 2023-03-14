@@ -8,10 +8,15 @@
     labels = {'source': 'google_ads', 'refresh': 'daily','connection':'bq_transfer','type':'enriched'},
 )}}
 
+
+
 with 
 google_campaign as
 (
   select 'Germany' as country ,* FROM {{ source('GoogleAd', 'Campaign_9940526481') }}    
+  where  _LATEST_DATE = _DATA_DATE
+  union all 
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'Campaign_8396768808') }}    
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
@@ -19,15 +24,24 @@ google_group_ads as
 (
   select'Germany' as country , *  FROM {{ source('GoogleAd', 'AdGroup_9940526481') }}     
   where  _LATEST_DATE = _DATA_DATE
+  union all 
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'AdGroup_8396768808') }}    
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 google_ads as 
 (
   select 'Germany' as country ,*  FROM {{ source('GoogleAd', 'Ad_9940526481') }}   
   where  _LATEST_DATE = _DATA_DATE
+  union all 
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'Ad_8396768808') }}    
+  where  _LATEST_DATE = _DATA_DATE 
 ) ,
 google_customer as 
 (
   select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Customer_9940526481') }}   
+  where  _LATEST_DATE = _DATA_DATE
+  union all 
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'Customer_8396768808') }}    
   where  _LATEST_DATE = _DATA_DATE
   
 ),
@@ -35,15 +49,24 @@ google_customer as
 google_ad_stats as
 (
   select 'Germany' as country ,*  FROM {{ source('GoogleAd', 'AdBasicStats_9940526481') }}  
+  union all 
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'AdBasicStats_8396768808') }}    
+ 
 ) ,
 
 VideoStats as
 (
   SELECT 'Germany' as country , * FROM {{ source('GoogleAd', 'VideoBasicStats_9940526481') }}  
+  union all 
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'VideoBasicStats_8396768808') }}    
+
 ),
 VideoNonClickStats as
   (
   SELECT 'Germany' as country ,  * FROM {{ source('GoogleAd', 'VideoNonClickStats_9940526481') }}   
+  union all 
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'VideoNonClickStats_8396768808') }}    
+
   )
 
   

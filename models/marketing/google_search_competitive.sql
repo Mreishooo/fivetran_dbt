@@ -13,6 +13,9 @@ with google_keyword as
    where _LATEST_DATE = _DATA_DATE
    and  ApprovalStatus = 'APPROVED'
    -- and CriterionId = 300545487483
+   union all
+   select 'France' as country , *  FROM {{ source('google_ad_fr', 'Keyword_8396768808') }} 
+   where  _LATEST_DATE = _DATA_DATE
     
 ) ,
 
@@ -20,11 +23,17 @@ google_campaign as
 (
   select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Campaign_9940526481') }} 
   where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'France' as country , *  FROM {{ source('google_ad_fr', 'Campaign_8396768808') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_group_ads as 
 (
   select  'Germany' as country , *  FROM {{ source('GoogleAd', 'AdGroup_9940526481') }} 
+  where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'France' as country , *  FROM {{ source('google_ad_fr', 'AdGroup_8396768808') }} 
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
@@ -32,17 +41,25 @@ google_Criteria as
 (
   select  'Germany' as country , *  FROM {{ source('GoogleAd', 'Criteria_9940526481') }} 
   where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'France' as country , *  FROM {{ source('google_ad_fr', 'Criteria_8396768808') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_customer as 
 (
   select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Customer_9940526481') }}  
   where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'France' as country , *  FROM {{ source('google_ad_fr', 'Customer_8396768808') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_keyword_cross as
 (
    select  'Germany' as country ,*  FROM {{ source('GoogleAd', 'KeywordCrossDeviceStats_9940526481') }}  
+   union all
+   select 'France' as country , *  FROM {{ source('google_ad_fr', 'KeywordCrossDeviceStats_8396768808') }} 
 )
 
 SELECT distinct  'google_ads' platform ,  

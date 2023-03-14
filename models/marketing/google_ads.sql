@@ -10,17 +10,25 @@
 with google_ad_basic as
 (
   select  'Germany' as country , *  FROM {{ source('GoogleAd', 'AdBasicStats_9940526481') }}  
+  union all
+  select 'France' as country , *  FROM {{ source('google_ad_fr', 'AdBasicStats_8396768808') }}  
 ) ,
 
 google_campaign as
 (
   select   'Germany' as country ,*  FROM {{ source('GoogleAd', 'Campaign_9940526481') }} 
   where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'France' as country , *  FROM {{ source('google_ad_fr', 'Campaign_8396768808') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_group_ads as 
 (
   select   'Germany' as country , *  FROM {{ source('GoogleAd', 'AdGroup_9940526481') }} 
+  where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'France' as country , *  FROM {{ source('google_ad_fr', 'AdGroup_8396768808') }} 
   where  _LATEST_DATE = _DATA_DATE
 ) 
 
