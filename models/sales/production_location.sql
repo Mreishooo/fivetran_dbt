@@ -27,7 +27,7 @@ productionlocationpremieredate	production_location_premiere_date,
 productionlocationstartdate	production_location_start_date,	
 productionlocationtype	production_location_type,	
 salesstartdate	sales_start_date,	
-showingroupsalesreporting	showing_roupsales_reporting,	
-showingroupsalesreportingname	showing_roupsales_reporting_name,	
+showingroupsalesreporting	showing_group_sales_reporting,	
+showingroupsalesreportingname	showing_group_sales_reporting_name,	
 FROM
   dimproductionlocation
