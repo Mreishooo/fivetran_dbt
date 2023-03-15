@@ -134,6 +134,7 @@ SELECT
     -- additional dates and times
       ,dpl.production_location_premiere_date
       ,dpl.sales_start_date
+      ,dpl.showing_group_sales_reporting
     -- Production / Prerformance
 	  ,fts.dim_production_id
 	  ,fts.dim_article_type_id
