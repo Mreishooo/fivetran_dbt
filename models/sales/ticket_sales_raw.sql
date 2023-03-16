@@ -31,7 +31,7 @@ SELECT
     ,fts.SubOrderNumber sub_order_number
     ,fts.BarCode bar_code
     -- Transaction / status
-    ,fts.TransactionType transaction_type
+    ,trim(fts.TransactionType) transaction_type
     ,fts.CancellationStatus cancellation_status
     ,fts.Rebooked is_replaced
     ,fts.Replacement is_replacement
