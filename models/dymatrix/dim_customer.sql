@@ -1,7 +1,13 @@
 {{ config(
     materialized='view',
     labels = {'source': 'sales', 'refresh': 'daily','connection':'fivetran','type':'mart'},
+    grant_access_to=[
+      {'project': 'stage-playground', 'dataset': 'sales'},
+      {'project': 'stage-commercial', 'dataset': 'sales'}
+    ]
 )}}
+
+
 
 with customer as
 (
