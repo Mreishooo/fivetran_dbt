@@ -5,13 +5,16 @@
 with google_ad as
 (
   select 'Germany' as country , *  FROM {{ source('GoogleAd', 'Ad_9940526481') }}  
-   where _LATEST_DATE = _DATA_DATE
+  where _LATEST_DATE = _DATA_DATE
    -- and CriterionId = 300545487483
-   union all 
+  union all 
   select 'France' as country , *  FROM {{ source('google_ad_fr', 'Ad_8396768808') }}  
-   where _LATEST_DATE = _DATA_DATE
+  where _LATEST_DATE = _DATA_DATE
    -- and CriterionId = 300545487483
-    
+  union all 
+  select 'Spain' as country , *  FROM {{ source('google_ad_sp', 'Ad_1713416990') }}  
+  where _LATEST_DATE = _DATA_DATE
+   
 ) 
 select 
 country,

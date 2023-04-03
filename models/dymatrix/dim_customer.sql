@@ -14,7 +14,7 @@ with customer as
   select * FROM {{ ref('golden_customer' )}}
   
 ) 
-SELECT 
+SELECT distinct
 country_code,
 dim_golden_customer_id golden_customer_id,
 salutation,

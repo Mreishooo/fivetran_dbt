@@ -16,6 +16,9 @@ with google_keyword as
    union all
    select 'France' as country , *  FROM {{ source('google_ad_fr', 'Keyword_8396768808') }} 
    where  _LATEST_DATE = _DATA_DATE
+   union all
+   select 'Spain' as country , *  FROM {{ source('google_ad_sp', 'Keyword_1713416990') }} 
+   where  _LATEST_DATE = _DATA_DATE
     
 ) ,
 
@@ -26,6 +29,9 @@ google_campaign as
   union all
   select 'France' as country , *  FROM {{ source('google_ad_fr', 'Campaign_8396768808') }} 
   where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'Spain' as country , *  FROM {{ source('google_ad_sp', 'Campaign_1713416990') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_group_ads as 
@@ -34,6 +40,9 @@ google_group_ads as
   where  _LATEST_DATE = _DATA_DATE
   union all
   select 'France' as country , *  FROM {{ source('google_ad_fr', 'AdGroup_8396768808') }} 
+  where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'Spain' as country , *  FROM {{ source('google_ad_sp', 'AdGroup_1713416990') }} 
   where  _LATEST_DATE = _DATA_DATE
 ) ,
 
@@ -44,6 +53,9 @@ google_Criteria as
   union all
   select 'France' as country , *  FROM {{ source('google_ad_fr', 'Criteria_8396768808') }} 
   where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'Spain' as country , *  FROM {{ source('google_ad_sp', 'Criteria_1713416990') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_customer as 
@@ -53,13 +65,19 @@ google_customer as
   union all
   select 'France' as country , *  FROM {{ source('google_ad_fr', 'Customer_8396768808') }} 
   where  _LATEST_DATE = _DATA_DATE
+  union all
+  select 'Spain' as country , *  FROM {{ source('google_ad_sp', 'Customer_1713416990') }} 
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_keyword_cross as
 (
-   select  'Germany' as country ,*  FROM {{ source('GoogleAd', 'KeywordCrossDeviceStats_9940526481') }}  
+   select 'Germany' as country ,*  FROM {{ source('GoogleAd', 'KeywordCrossDeviceStats_9940526481') }}  
    union all
-   select 'France' as country , *  FROM {{ source('google_ad_fr', 'KeywordCrossDeviceStats_8396768808') }} 
+   select 'France' as country , *  FROM {{ source('google_ad_fr', 'KeywordCrossDeviceStats_8396768808') }}
+   union all
+   select 'Spain' as country , *  FROM {{ source('google_ad_sp', 'KeywordCrossDeviceStats_1713416990') }} 
+
 )
 
 SELECT distinct  'google_ads' platform ,  

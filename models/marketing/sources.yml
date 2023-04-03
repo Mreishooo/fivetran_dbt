@@ -75,6 +75,43 @@ sources:
       - name: KeywordCrossDeviceStats_8396768808
         description: Google ads search stats data
 
+  - name: 'google_ad_sp'
+    description:  Google Ads France data for more info visit  https://cloud.google.com/bigquery-transfer/docs/adwords-transformation 
+    database: stage-landing
+    tables:
+      - name: AdBasicStats_1713416990
+        description: Google Ads basic perfomance report
+        loaded_at_field: timestamp(date)
+        freshness: 
+          warn_after: {count: 2, period: day}
+          error_after: {count: 5, period: day}
+       
+      - name: Campaign_1713416990
+        description: Google ads campaigns data
+
+      - name: AdGroup_1713416990
+        description: Google ads group name data
+      
+      - name: Criteria_1713416990
+        description: Google ads criteria_ data
+
+      - name: Customer_1713416990
+        description: Google ads customers  data
+      
+      - name: Keyword_1713416990
+        description: Google ads keywords  data
+      - name: Ad_1713416990
+        description: Google ads search stats data
+
+      - name: SearchQueryStats_1713416990
+        description: Google ads search stats data
+      - name: VideoBasicStats_1713416990
+        description: Google ads search stats data
+      - name: VideoNonClickStats_1713416990
+        description: Google ads search stats data
+      - name: KeywordCrossDeviceStats_1713416990
+        description: Google ads search stats data
+
         
 
   - name: 'ft_facebook_ad'
@@ -164,7 +201,6 @@ sources:
         description:  facebook ad video info
       - name: region_click_video_p_95_watched_actions
         description:  facebook ad video info
-
 
   - name: 'ft_google_display_and_video_360'
     description: google display and video data comes from fivetran conntion for more info visit https://fivetran.com/docs/applications/google-display-and-video-360 

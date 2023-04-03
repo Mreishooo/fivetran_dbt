@@ -18,6 +18,9 @@ google_campaign as
   union all 
   select 'France' as country ,* FROM {{ source('google_ad_fr', 'Campaign_8396768808') }}    
   where  _LATEST_DATE = _DATA_DATE
+  union all 
+  select 'Spain' as country ,* FROM {{ source('google_ad_sp', 'Campaign_1713416990') }}    
+  where  _LATEST_DATE = _DATA_DATE
 ) ,
 
 google_group_ads as 
@@ -27,6 +30,10 @@ google_group_ads as
   union all 
   select 'France' as country ,* FROM {{ source('google_ad_fr', 'AdGroup_8396768808') }}    
   where  _LATEST_DATE = _DATA_DATE
+  union all 
+  select 'Spain' as country ,* FROM {{ source('google_ad_sp', 'AdGroup_1713416990') }}    
+  where  _LATEST_DATE = _DATA_DATE
+  
 ) ,
 google_ads as 
 (
@@ -34,6 +41,9 @@ google_ads as
   where  _LATEST_DATE = _DATA_DATE
   union all 
   select 'France' as country ,* FROM {{ source('google_ad_fr', 'Ad_8396768808') }}    
+  where  _LATEST_DATE = _DATA_DATE 
+  union all 
+  select 'Spain' as country ,* FROM {{ source('google_ad_sp', 'Ad_1713416990') }}    
   where  _LATEST_DATE = _DATA_DATE 
 ) ,
 google_customer as 
@@ -43,6 +53,9 @@ google_customer as
   union all 
   select 'France' as country ,* FROM {{ source('google_ad_fr', 'Customer_8396768808') }}    
   where  _LATEST_DATE = _DATA_DATE
+  union all 
+  select 'Spain' as country ,* FROM {{ source('google_ad_sp', 'Customer_1713416990') }}    
+  where  _LATEST_DATE = _DATA_DATE
   
 ),
 
@@ -50,7 +63,9 @@ google_ad_stats as
 (
   select 'Germany' as country ,*  FROM {{ source('GoogleAd', 'AdBasicStats_9940526481') }}  
   union all 
-  select 'France' as country ,* FROM {{ source('google_ad_fr', 'AdBasicStats_8396768808') }}    
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'AdBasicStats_8396768808') }}
+  union all 
+  select 'Spain' as country ,* FROM {{ source('google_ad_sp', 'AdBasicStats_1713416990') }}    
  
 ) ,
 
@@ -58,14 +73,18 @@ VideoStats as
 (
   SELECT 'Germany' as country , * FROM {{ source('GoogleAd', 'VideoBasicStats_9940526481') }}  
   union all 
-  select 'France' as country ,* FROM {{ source('google_ad_fr', 'VideoBasicStats_8396768808') }}    
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'VideoBasicStats_8396768808') }} 
+  union all 
+  select 'Spain' as country ,* FROM {{ source('google_ad_sp', 'VideoBasicStats_1713416990') }}    
 
 ),
 VideoNonClickStats as
   (
   SELECT 'Germany' as country ,  * FROM {{ source('GoogleAd', 'VideoNonClickStats_9940526481') }}   
   union all 
-  select 'France' as country ,* FROM {{ source('google_ad_fr', 'VideoNonClickStats_8396768808') }}    
+  select 'France' as country ,* FROM {{ source('google_ad_fr', 'VideoNonClickStats_8396768808') }}   
+  union all 
+  select 'Spain' as country ,* FROM {{ source('google_ad_sp', 'VideoNonClickStats_1713416990') }}   
 
   )
 
