@@ -89,4 +89,4 @@ and Prioriy = 4
 
 
 select * from prioriy_4
-QUALIFY row_number() OVER (PARTITION BY fact_ticket_sales_id , booking_date ORDER BY 1 DESC) = 1
+QUALIFY row_number() OVER (PARTITION BY ticket_id , booking_date ORDER BY 1 DESC) = 1

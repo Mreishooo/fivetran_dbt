@@ -2,6 +2,7 @@
 {{ config(
     materialized='table',
     on_schema_change='fail',
+    schema='sales_attribution',
 
     labels = {'source': 'share_point', 'refresh': 'daily','connection':'fivetran','type':'source'},
 )}}

@@ -15,18 +15,16 @@ with
   fts AS (
    SELECT *  
    FROM {{ source( 'ft_mdb7_se','fact_ticket_sales_bq') }}
-   where {{ ft_filter('FactTicketSalesId') }} 
-  
-
-   --union all
-   --SELECT *  
-   --FROM {{ source( 'ft_mdb_dbo','factticketsales') }}
-   
+   where {{ ft_filter('FactTicketSalesId') }}    
+  )
+  ,dpl AS ( 
+    select *
+    FROM {{ ref('production_location') }}
   )
 
 
 Select distinct 
-    concat( fts.sourcecountrycode ,'-',fts.SourceCode,'-' ,fts.BarCode,'-',upper(TransactionType) ) fact_ticket_sales_id 
+    concat( fts.sourcecountrycode ,'-',fts.SourceCode,'-' ,fts.BarCode,'-',upper(TransactionType) ) ticket_id 
 
     ,fts.sourcecountrycode country_code
     ,'EUR' currency_code --fix
@@ -36,6 +34,7 @@ Select distinct
     ,fts.SubOrderNumber sub_order_number
     ,fts.BarCode barcode
     ,substr(fts.BarCode, 0 ,13) barcode_13
+    ,dpl.production_location_id
     -- Transaction / status
     ,fts.TransactionType transaction_type
     ,cast(fts.CancellationStatus as boolean)  cancellation_status
@@ -111,6 +110,7 @@ Select distinct
 
 
 FROM  fts
+left join  dpl  on  dimproductionlocationid = dim_production_location_id
 
 
 

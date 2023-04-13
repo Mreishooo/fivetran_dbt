@@ -38,7 +38,7 @@ exchange_rate_daily as
 t1 as ( 
   
  select 
-    concat( fts.Country_Code ,'-',fts.Source_Code,'-' ,fts.BarCode,'-',transaction_type) fact_ticket_sales_id 
+    concat( fts.Country_Code ,'-',fts.Source_Code,'-' ,fts.BarCode,'-',transaction_type) ticket_id 
 
     ,fts.Country_Code country_code
     ,currency_code
@@ -48,6 +48,7 @@ t1 as (
     ,fts.sub_order_number
     ,fts.barcode
     ,substr(fts.BarCode, 0 ,13) barcode_13
+    ,fts.production_location_id
     -- Transaction / status
     ,fts.transaction_type
     ,cast(fts.cancellation_status as boolean)  cancellation_status
@@ -67,7 +68,6 @@ t1 as (
 	  ,fts.theatre_id
     -- Distribution
     
-   -- ,fts.distribution_id --here 
     ,fts.source_distribution_point_id
     ,fts.source_distribution_point 
     ,fts.source_distribution_channel

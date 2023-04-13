@@ -2,7 +2,6 @@
 {{ config(
     materialized='table',
     on_schema_change='fail',
-
     labels = {'source': 'exchange_rate', 'refresh': 'daily','connection':'fivetran','type':'enrich'},
 )}}
 

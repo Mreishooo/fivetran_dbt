@@ -63,7 +63,7 @@ models:
       +schema: sales # this applies to all models in the `marts/sales/`` directory
       description: dataset contains sales and tickets  data
     sales_new:
-      +schema: sales # this applies to all models in the `marts/sales/`` directory
+      +schema: business # this applies to all models in the `marts/sales/`` directory
       description: dataset contains sales and tickets  data
 
     admin:

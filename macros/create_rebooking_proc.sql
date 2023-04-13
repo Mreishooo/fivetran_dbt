@@ -14,7 +14,7 @@
 
 
 
-    CREATE OR REPLACE PROCEDURE sales.ticket_rebook_handeling( start_date date , end_date date )
+    CREATE OR REPLACE PROCEDURE sales_stg.ticket_rebook_handeling( start_date date , end_date date )
         BEGIN 
         DECLARE work_date DATE DEFAULT '2023-01-01';
         DECLARE max_date DATE DEFAULT current_date();
