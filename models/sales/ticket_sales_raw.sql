@@ -62,6 +62,7 @@ SELECT
     ,fts.SourceDistributionChannelName source_distribution_channel_name
     ,fts.SourceClientId source_client_id
     ,fts.SourceSalesPartner source_sales_partner
+    ,fts.sourcesalespartnerclass source_sales_partner_class
     
     -- additional Source information
 
@@ -82,9 +83,19 @@ SELECT
     ,fts.DimPriceTypeId dim_price_type_id
     ,fts.DimPriceCategoryId dim_price_category_id
     ,fts.SourcePriceCategoryId source_price_category_id
+    ,fts.sourcepricetypeid source_price_type_id
 	  ,fts.SourcePriceTypeName source_price_type_name
     --sums
     ,fts.ArticleCount article_count
+    
+    ,fts.TicketPriceOld orignal_ticket_price
+    ,fts.TicketPriceOld ticket_price
+    ,fts.PaidPriceOld paid_price --FOR ES, A COMMISSION ADJUSTMENT IS ADDED TO THE PAID PRICE
+    ,fts.netpriceold net_price
+    ,fts.netnetpriceold net_net_price
+    ,fts.CustomerPriceOld customer_price
+    ,fts.customerFacevalue customer_Face_value
+    
     ,fts.eurpaidprice  euro_paid_price
     ,fts.eurcustomerfacevalue euro_customer_face_value
     ,fts.EURNetPriceOld net_price_value_eur
@@ -92,6 +103,9 @@ SELECT
     ,fts.EURTicketPriceOld ticket_price_value_eur
     ,fts.EURCustomerPriceOld customer_price_value_eur
     ,fts.EURTicketPriceOld * 1.07937 tpt_de_value_eur
+    ,fts._fivetran_synced _last_update
+    ,fts._fivetran_synced _loaded_at
+    ,current_timestamp() _run_at
 FROM  fts
 
 

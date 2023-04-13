@@ -161,6 +161,7 @@ SELECT
     ,fts.source_distribution_channel_name
     ,fts.source_client_id
     ,fts.source_sales_partner
+    ,fts.source_sales_partner_class
     ,fts.dim_distribution_id
       ,ddis.local_sales_channel_1
       ,ddis.local_sales_channel_2
@@ -200,12 +201,23 @@ SELECT
       ,dpc.price_category_name
       ,dpc.price_category_group
       ,dpc.sort_code as price_category_sort_code
+    ,fts.source_price_type_id
 	  ,fts.source_price_type_name
       ,dpt.price_type_id
       ,dpt.price_type_name
       ,dpt.price_type_group
     --sums
     ,fts.article_count
+
+    ,fts.orignal_ticket_price
+    ,fts.ticket_price
+    ,fts.paid_price --FOR ES, A COMMISSION ADJUSTMENT IS ADDED TO THE PAID PRICE
+    ,fts.net_price
+    ,fts.net_net_price
+    ,fts.customer_price
+    ,fts.customer_Face_value
+
+
     ,fts.net_price_value_eur
     ,fts.net_net_price_value_eur
     ,fts.ticket_price_value_eur
@@ -215,7 +227,9 @@ SELECT
     ,fts.euro_customer_face_value
     ,fts.euro_paid_price = 0 is_free 
     ,order_rank
-    
+    ,_last_update
+    ,_loaded_at
+    ,_run_at
 
 FROM  fts
 left join  c using (country_code)

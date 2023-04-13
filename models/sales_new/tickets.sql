@@ -98,15 +98,16 @@ with
 
 
 SELECT
+
     fts.ticket_id
-	  ,fts.country_id
     ,fts.country_code
       ,c.country_name
     ,fts.source_code
     ,fts.web_order_number
     ,fts.main_order_number
     ,fts.sub_order_number
-    ,fts.bar_code
+    ,fts.barcode
+    ,fts.barcode_13
     -- Transaction / status
     ,fts.transaction_type
     ,fts.cancellation_status
@@ -117,35 +118,33 @@ SELECT
     --Booking Date
   
     ,fts.booking_date
-    ,fts.booking_date_struct 
+    ,fts.booking_timestamp
   -- ,fts.InflowBookingCodeGT180 inflow_booking_code_gt180
     --Performance Date
-    ,fts.performance_date_id
-    ,fts.performance_date
+    ,concat(production_location_id,' - ', Date(performance_date) ,' - ', time(performance_date)) performance_id
+    ,fts.performance_date  performance_timestamp
+    ,Date(performance_date) performance_date
+    ,time(performance_date) performance_time
        --,dpf.performance_time  here 
        --,dpf.show show  here 
-    ,fts.performance_date_struct 
 
-      --,dpf.performance_id here 
-      --,dpf.performance_date_time here 
-      --,dpf.performance_weekday_time here 
   -- ,.  AS lead_weeks_performance_number
   -- ,fts.LeadDaysPerformanceNumber   AS lead_days_performance_number
     -- additional dates and times
       ,dpl.production_location_premiere_date
       ,dpl.sales_start_date
-      ,dpl.showing_group_sales_reporting
+      ,dpl.show_in_group_sales_reporting  
     -- Production / Prerformance
-	  ,fts.production_id
-	  ,fts.article_type_id
-      ,dat.article_type_code
+	  
+	  ,fts.article_type_code
+      ,dat.article_type_name
      
 	  ,fts.production_location_id
-      ,dp.production_id
+      ,dpl.production_id
       ,dp.production_name
       ,dp.license_name production_license_name
      -- ,dpf.performance_status here 
-      ,DATE_DIFF(fts.booking_date,fts.performance_date, day) lead_days_perfomance 
+      ,DATE_DIFF(fts.booking_date,date(fts.performance_date), day) lead_days_perfomance 
       --,DATE_DIFF(fts.booking_date, date(sales_start_date), day) lead_day_sales_start
 	  ,fts.theatre_id
       ,dt.theatre_code
@@ -207,23 +206,27 @@ SELECT
       ,dpt.price_type_group
     --sums
     ,fts.article_count
-    ,fts.net_price_value_eur
-    ,fts.net_net_price_value_eur
-    ,fts.ticket_price_value_eur
-    ,fts.customer_price_value_eur
+    ,fts.net_price_euro
+    ,fts.net_net_price_euro
+    ,fts.ticket_price_euro
+    ,fts.customer_price_euro
     ,fts.tpt_de_value_eur
-    ,fts.euro_paid_price
-    ,fts.euro_customer_face_value
-    ,fts.euro_paid_price = 0 is_free 
+    ,fts.paid_price_euro
+    ,fts.customer_facevalue_euro
+    ,fts.paid_price_euro = 0 is_free 
   --  ,order_rank
+    ,fts._last_update
+    ,fts._loaded_at
+    ,fts._run_at
+    ,fts._source 
     
 
 FROM  fts
 left join  c using (country_code)
 left join  dpl  using (production_location_id)
-left join  dat using (article_Type_Id )
-left join  dp on (dp.production_id=fts.production_id )
-left join  dt using (theatre_id) 
+left join  dat using (article_type_code )
+left join  dp on (dp.production_id=dpl.production_id )
+left join  dt on (dt.theatre_id = fts.theatre_id) 
 --left join  da  on (da.dim_age_id = fts.dim_golden_customer_age_at_booking_id)
 --left join  dpf  on (dpf.Performance_id =fts.Performance_id )
 left join  ddis on (ddis.distribution_id = fts.distribution_id)

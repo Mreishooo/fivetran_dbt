@@ -357,5 +357,13 @@ models:
           config:
             where : "_source='BQ'"
      
-
-          
+  - name: tickets
+    description:  Table containes tickets mapped 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+          - booking_timestamp
+          - ticket_id
+          config:
+            where : "_source='BQ'"
+        
