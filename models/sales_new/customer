@@ -1,0 +1,26 @@
+UPDATE TS
+SET TS.DimCustomerId = C.DimCustomerId,
+TS.DimGoldenCustomerId = C.DimGoldenCustomerId,
+TS.DimZipCodeId = C.DimZipCodeId,
+TS.DimGoldenCustomerAgeAtBookingId = CASE
+	-- updated on 11/02/2019 following incident I-242975 : I1809-218 Number of customers with value to be calculated for age increases
+    --WHEN (TS.SourceCode = 'CTS' AND SourceClientId <> 2229) THEN -1  -- Customers from CTS, SourceClientId <> 2229 are not recorded in DimCustomer
+	WHEN GC.Birthday >= CONVERT(DATETIME, CAST(DimBookingDateId as char(8)),112) THEN -1 -- invalid Birthdate (>= BookingDate)
+	-- Original conditions
+	WHEN YEAR(GC.Birthday) IN (1899,1900,1901) THEN -1 
+	WHEN YEAR(GC.Birthday) >= YEAR(GETDATE()) THEN -1
+	ELSE (TS.DimBookingDateId/10000) - YEAR(GC.Birthday) + CASE WHEN DimBookingDateId % 10000 < MONTH(GC.BirthDay)*100+DAY(GC.BirthDay) THEN -1 ELSE 0 END END
+
+FROM Screening.S_FactTicketSales TS
+INNER JOIN DimCustomer C
+ON TS.SourceCustomerId = C.CustomerId
+INNER JOIN DimGoldenCustomer GC
+ON COALESCE(C.DimGoldenCustomerId,TS.DimGoldenCustomerId) = GC.DimGoldenCustomerId
+WHERE 1=1
+AND (
+	TS.DimCustomerId <> C.DimCustomerId
+	OR TS.DimGoldenCustomerId <> C.DimGoldenCustomerId
+	OR TS.DimZipCodeId <> C.DimZipCodeId
+	OR TS.DimGoldenCustomerAgeAtBookingId = -2
+	OR @Incremental = 1
+	);

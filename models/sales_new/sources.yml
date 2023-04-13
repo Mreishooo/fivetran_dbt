@@ -1,0 +1,47 @@
+version: 2
+
+sources:
+
+  - name: 'ft_sales2'
+    description:  CTS FTP File   
+    database: stage-landing
+    tables:
+      - name: cts_verkauf
+        description: CTS sales file
+        loaded_at_field: _fivetran_synced  
+        freshness: 
+          warn_after: {count: 1, period: day}
+          error_after: {count: 1, period: day}  
+
+
+  - name: 'ft_sales_seeds'
+    description:  seeds files imported from sharepoint folder    
+    database: stage-landing
+    tables:
+      - name: data_import_limitation_data_import_limitation
+        description: bla bla 
+      
+      - name: production_mapping_production_mapping
+        description: bla bla 
+
+      - name: production_locations_production_locations
+        description: bla bla 
+      
+      - name: exchange_rates_exchange_rate
+        description: bla bla
+      
+      - name: article_types_article_types
+
+      - name: price_categories_price_categories
+
+      - name: price_category_mapping_price_category_mapping
+
+      - name: price_types_price_types
+      - name: price_type_mapping_price_type_mapping
+
+      - name: theatres_theatres
+      - name: productions_productions
+      - name: distributions_distributions
+      - name: countries_countries
+      - name: distribution_mapping_distributions_mapping
+

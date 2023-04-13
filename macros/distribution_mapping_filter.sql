@@ -13,8 +13,17 @@ and cast(t.source_customer_code as string)  = ifnull( trim(m.source_customer_cod
 and cast(t.source_promotion_code as string)  = ifnull( trim(m.source_promotion_code),cast(t.source_promotion_code as string))
 and cast(t.source_promotion_id as string)  = ifnull( trim(m.source_promotion_id),cast(t.source_promotion_id as string) )
 
---look at
-and  ifnull(m.source_promotion_name ,t.source_promotion_name)  LIKE concat ('%' ,  t.source_promotion_name , '%')
+and safe_cast(t.source_price_type_id as int64)  between ifnull( m.source_price_type_id_from ,safe_cast(t.source_price_type_id as int64)  ) and  ifnull( m.source_price_type_id_to ,safe_cast(t.source_price_type_id as int64)  )  
 
+--look at
+
+and  t.source_promotion_name   LIKE concat ('%' , ifnull( m.source_promotion_name, t.source_promotion_name) , '%')
+and  t.source_price_type_name   LIKE concat ('%' , ifnull( m.source_price_type_name, t.source_price_type_name) , '%') 
+    
+
+--and  ifnull(m.source_price_type_name ,t.source_price_type_name)  LIKE concat ('%' ,  t.source_price_type_name , '%')
 
 {% endmacro %}
+
+
+ 

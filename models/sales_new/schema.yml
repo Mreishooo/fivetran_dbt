@@ -1,0 +1,89 @@
+
+version: 2
+ 
+models:
+
+  - name: cts_tickets
+    description:  Table compained CTS data 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - barcode 
+            - transaction_type
+            - booking_date
+
+  - name: tickets_all_sources
+    description:  Table compained all sales files table in on table 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - source_code
+            - barcode
+            - booking_date
+            - transaction_type
+
+  - name: tickets_filtered
+    description:  Table compained all sales files table in on table 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - source_code
+            - barcode
+            - booking_date
+            - transaction_type
+
+            
+  - name: tickets_mapped
+    description:  Table containes tickets mapped 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - barcode 
+            - transaction_type
+            - booking_date
+            - source_code
+            - country_code
+        
+  - name: tickets_mdb
+    description:  Table containes tickets raw 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+          - booking_date
+          - fact_ticket_sales_id
+          config:
+            error_if: ">1000"
+            warn_if: ">705"
+            where : " not is_replaced_cancellation and replacement_type <> 'Original'"
+
+  - name: tickets_union_mdb
+    description:  Table containes tickets raw 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+          - booking_timestamp
+          - fact_ticket_sales_id
+          config:
+            where : "_source='BQ'"
+
+  - name: tickets_mapped_distributions
+    description:  Table containes tickets mapped 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+          - booking_timestamp
+          - fact_ticket_sales_id
+          config:
+            where : "_source='BQ'"
+
+  - name: tickets_mapped_distributions
+    description:  Table containes tickets mapped 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+          - booking_timestamp
+          - fact_ticket_sales_id
+          config:
+            where : "_source='BQ'"        
+
+          

@@ -683,6 +683,16 @@ models:
       - name: campaign_name
         description: "Name of the campaign the ad belongs to"
 
+      - name: campaign_type_split
+        description: "Differentiation between AON, prospecting, retargeting"
+      - name: show
+        description: "Production Code / Name of the production"
+      - name: theatre_location
+        description: "Location of the theatre"
+      - name: free_text
+        description: "campaign reason/discount/AB testing variations etc"
+
+
       - name: adset_name
         description: "Name of the Ad set of the campaign and the Ad set the ad belongs to"
 
@@ -802,6 +812,15 @@ models:
 
       - name: campaign_name
         description: "Name of the campaign the ad belongs to"
+      - name: campaign_type_split
+        description: "Differentiation between AON, prospecting, retargeting"
+      - name: show
+        description: "Production Code / Name of the production"
+      - name: theatre_location
+        description: "Location of the theatre"
+      - name: free_text
+        description: "campaign reason/discount/AB testing variations etc"
+
 
       - name: adset_name
         description: "Name of the Ad set of the campaign and the Ad set the ad belongs to"
@@ -898,6 +917,14 @@ models:
 
       - name: campaign_name
         description: "Name of the campaign the ad belongs to"
+      - name: campaign_type_split
+        description: "Differentiation between AON, prospecting, retargeting"
+      - name: show
+        description: "Production Code / Name of the production"
+      - name: theatre_location
+        description: "Location of the theatre"
+      - name: free_text
+        description: "campaign reason/discount/AB testing variations etc"
 
       - name: adset_name
         description: "Name of the Ad set of the campaign and the Ad set the ad belongs to"
@@ -1014,6 +1041,14 @@ models:
 
       - name: campaign_name
         description: "Name of the campaign the ad belongs to"
+      - name: campaign_type_split
+        description: "Differentiation between AON, prospecting, retargeting"
+      - name: show
+        description: "Production Code / Name of the production"
+      - name: theatre_location
+        description: "Location of the theatre"
+      - name: free_text
+        description: "campaign reason/discount/AB testing variations etc"
 
       - name: adset_name
         description: "Name of the Ad set of the campaign and the Ad set the ad belongs to"
