@@ -69,7 +69,7 @@
 
         -- insert new line to correct balance 
         insert into   {{ ref( 'tickets_mapped_distributions') }}   
-        (  fact_ticket_sales_id,transaction_type,is_replaced,is_replacement,replacement_type,booking_date,booking_timestamp,_run_at,_source
+        (  ticket_id,transaction_type,is_replaced,is_replacement,replacement_type,booking_date,booking_timestamp,_run_at,_source
           {% for same_col in same_cols %} ,{{same_col}}  {% endfor %}  
           {% for prices_col in prices_cols %} ,{{prices_col}}  {% endfor %} )
         select concat( Country_Code ,'-',Source_Code,'-' ,BarCode,'-rebooking-',working_ticket_transaction_type) , concat(working_ticket_transaction_type,'-rebooking'), if(transaction_operation =1 , true , false) , true, 'Original' ,working_ticket_booking_date,working_ticket_booking_timestamp, current_timestamp , "BQ"
