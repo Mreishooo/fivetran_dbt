@@ -4,6 +4,7 @@ with facebook_region_click as
 select country
 ,campaign_name
 ,date	
+,show
 ,sum(impressions)impressions	
 ,sum( clicks	) clicks
 ,sum(post_reactions	) post_reactions
@@ -12,5 +13,5 @@ select country
 from facebook_region_click
 where date >= '2023-01-01'
 and country <> 'Netherlands'
-group by 1,2,3
+group by 1,2,3,4
 order by  date desc

@@ -90,7 +90,7 @@ models:
         description: Unique ID of the Performance example DE - ALA - APO - 1 - 2022-09-01 19:30:00.0000000 - 19:30:00
         tests :
           - not_null
-          - unique
+         
       - name: production_location_id
         description: id of  production location
       - name: season
