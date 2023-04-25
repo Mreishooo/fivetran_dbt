@@ -99,7 +99,11 @@ ads.CampaignID  campaign_id,
 ads.adGroupid  ad_group_id,
 CampaignName campaign_name,
 SPLIT(CampaignName,'_') [safe_OFFSET(3)] campaign_type_split,
-SPLIT(CampaignName,'_') [safe_OFFSET(4)] show,
+case country 
+when 'Spain' then 
+  SPLIT(CampaignName,'-') [safe_OFFSET(2)]
+else SPLIT(CampaignName,'_') [safe_OFFSET(4)] 
+end show,
 SPLIT(CampaignName,'_') [safe_OFFSET(5)] theatre_location,
 SPLIT(CampaignName,'_') [safe_OFFSET(12)] free_text,
 AdGroupName ad_group_name,

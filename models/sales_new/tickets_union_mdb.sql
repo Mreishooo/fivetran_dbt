@@ -65,6 +65,7 @@ t1 as (
     , Date(booking_date) AS booking_date
     , booking_date booking_timestamp
     --Performance Date
+    , concat(production_location_id,' - ', Date(performance_date) ,' - ', time(performance_date))  performance_id
     , performance_date 
     
    
@@ -154,7 +155,8 @@ Select distinct
     --Booking Date
     , fts.booking_date booking_date 
     , timestamp(booking_date) AS  booking_timestampe
-    , timestamp( concat ( performance_date,' ' ,performance_time)) performance
+    , concat(production_location_id,' - ', performance_date ,' - ', performance_date)  performance_id
+    , timestamp( concat ( performance_date,' ' ,performance_time)) performance_date
   
 	  ,fts.theatre_id theatre_id 
     -- Distribution

@@ -44,13 +44,13 @@ with
     SELECT *
     FROM {{ ref('sales_age') }}
   ),
-  
+*/
   dpf AS ( 
     SELECT *
-    FROM {{ ref('performance') }}
+    FROM {{ ref('performances') }}
     --FROM {{ source( 'ft_mdb7_dbo','dimperformance') }}
     --where {{ ft_filter(none) }} 
-  ),*/
+  ),
   
   ddis AS ( 
     SELECT *
@@ -115,21 +115,18 @@ SELECT
     ,fts.is_replacement
     ,fts.replacement_type
     ,fts.is_replaced_cancellation
+    
     --Booking Date
-  
     ,fts.booking_date
     ,fts.booking_timestamp
-  -- ,fts.InflowBookingCodeGT180 inflow_booking_code_gt180
-    --Performance Date
-    ,concat(production_location_id,' - ', Date(performance_date) ,' - ', time(performance_date)) performance_id
-    ,fts.performance_date  performance_timestamp
-    ,Date(performance_date) performance_date
-    ,time(performance_date) performance_time
-       --,dpf.performance_time  here 
-       --,dpf.show show  here 
 
-  -- ,.  AS lead_weeks_performance_number
-  -- ,fts.LeadDaysPerformanceNumber   AS lead_days_performance_number
+    --Performance Date
+    ,fts.performance_id
+    ,fts.performance_date  performance_timestamp
+    ,Date(fts.performance_date) performance_date
+    ,time(fts.performance_date) performance_time
+      ,dpf.show show  
+  
     -- additional dates and times
       ,dpl.production_location_premiere_date
       ,dpl.sales_start_date
@@ -143,15 +140,15 @@ SELECT
       ,dpl.production_id
       ,dp.production_name
       ,dp.license_name production_license_name
-     -- ,dpf.performance_status here 
+      ,dpf.performance_status  
       ,DATE_DIFF(fts.booking_date,date(fts.performance_date), day) lead_days_perfomance 
-      --,DATE_DIFF(fts.booking_date, date(sales_start_date), day) lead_day_sales_start
+      ,DATE_DIFF(fts.booking_date, date(sales_start_date), day) lead_day_sales_start
 	  ,fts.theatre_id
       ,dt.theatre_code
       ,dt.theatre_name
       ,dt.City_Code                      AS theatre_city_Code
       ,dt.City                          AS theatre_city
-   --- ,fts.production_location_performance_year
+
     -- Distribution
     ,fts.source_distribution_point_id
     ,fts.source_distribution_point 
@@ -228,7 +225,7 @@ left join  dat using (article_type_code )
 left join  dp on (dp.production_id=dpl.production_id )
 left join  dt on (dt.theatre_id = fts.theatre_id) 
 --left join  da  on (da.dim_age_id = fts.dim_golden_customer_age_at_booking_id)
---left join  dpf  on (dpf.Performance_id =fts.Performance_id )
+left join  dpf  on (dpf.Performance_id =fts.Performance_id )
 left join  ddis on (ddis.distribution_id = fts.distribution_id)
 --left join  dgc using (golden_customer_id)
 left join  dpt using (price_type_id)
