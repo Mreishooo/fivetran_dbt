@@ -15,11 +15,14 @@ with
    FROM {{ ref('tickets_mapped_distributions') }}
   ),
 
+  re_run AS ( 
+    SELECT *
+    FROM {{ ref('rebooking_run') }}
+  ),
+
   dpl AS ( 
     select *
     FROM {{ ref('production_locations') }}
-    --FROM {{ source( 'ft_mdb7_dbo','dimproductionlocation') }}
-    -- where {{ ft_filter(none) }}
   ),
 
   dat AS ( 
@@ -31,8 +34,6 @@ with
   dp AS ( 
     SELECT *
     FROM {{ ref('productions') }}
-    --FROM {{ source( 'ft_mdb7_dbo','dimproduction') }}
-     --where {{ ft_filter(none) }} 
   ),
   
   dt AS ( 
@@ -40,23 +41,14 @@ with
     FROM {{ ref('theatres') }}
   ),
 
-/*  da AS ( 
-    SELECT *
-    FROM {{ ref('sales_age') }}
-  ),
-*/
   dpf AS ( 
     SELECT *
     FROM {{ ref('performances') }}
-    --FROM {{ source( 'ft_mdb7_dbo','dimperformance') }}
-    --where {{ ft_filter(none) }} 
   ),
   
   ddis AS ( 
     SELECT *
     FROM {{ ref('distributions') }}
-    --FROM {{ source( 'ft_mdb7_dbo','dimdistribution') }}
-    -- where {{ ft_filter(none) }} 
   ),
 
   dgc AS ( 
@@ -67,15 +59,11 @@ with
   dpt AS ( 
     SELECT *
     FROM {{ ref('price_types') }}
-  --- FROM {{ source( 'ft_mdb7_dbo','dimpricetype') }}
-    -- where {{ ft_filter(none) }}
   ),
 
   dpc AS ( 
     SELECT *
     FROM {{ ref('price_categories') }}
-   -- FROM {{ source( 'ft_mdb7_dbo','dimpricecategory') }}
-    --where {{ ft_filter(none) }}
   ),
 
   c AS ( 

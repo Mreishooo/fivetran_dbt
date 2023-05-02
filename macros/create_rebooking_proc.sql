@@ -1,7 +1,7 @@
 {% macro create_rebooking_proc()%}
 
-{% set same_cols =["source_code","country_code","currency_code","web_order_number","main_order_number","sub_order_number",
-"barcode","barcode_13","cancellation_status","is_replaced_cancellation",
+{% set same_cols =["source_code","country_code","currency_code","web_order_number","main_order_number","sub_order_number","production_location_id",
+"barcode","barcode_13","cancellation_status","is_replaced_cancellation", "price_category_id","price_type_id",
 "performance_date","theatre_id","source_distribution_point_id","source_distribution_point","source_distribution_channel",
 "source_distribution_channel_name","source_client_id","source_sales_partner","source_promotion_id","source_production","source_promotion_name",
 "source_promotion_code","source_promotion_advertising_partner_id","source_customer_code","source_seat","source_seat_row","source_seat_number",

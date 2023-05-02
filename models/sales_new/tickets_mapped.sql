@@ -49,9 +49,12 @@ SELECT
        AS source_payment_method_screening_payment_method,
   -- join table 
   c.country_name,c.currency_code, c.vat,	c.vat_high,
-  PM.article_type_code, PM.production_location_id, PM.theatre_id,if( ifnull( PM.delete_from_bi,0)  = 1 , true , false) delete_from_bi ,
-  pcm.price_category_id,
-  ptm.price_type_id,
+  PM.article_type_code, 
+  ifnull(PM.production_location_id,concat(ts.Country_code, ' - unknown')) production_location_id, 
+  ifnull(PM.theatre_id,concat(ts.Country_code, ' - unknown')) theatre_id ,
+  if( ifnull( PM.delete_from_bi,0)  = 1 , true , false) delete_from_bi ,
+  ifnull(pcm.price_category_id,concat(ts.Country_code ,' - unknown'))  price_category_id,
+  ifnull(ptm.price_type_id,concat(ts.Country_code, ' - unknown'))  price_type_id,
   If (Transaction_type = 'Cancellation' , - 1 , 1 )  AS article_count
 FROM
   tickets AS ts
