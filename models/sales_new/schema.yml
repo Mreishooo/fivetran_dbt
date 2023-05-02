@@ -254,6 +254,16 @@ models:
       - name : last_update
         description: source file last update 
 
+  - name: production_mapping
+    description: production_mapping
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+          - country_code
+          - source_code
+          - source_location
+          - source_production
+  
   - name: theatres
     description: table conatins Information about theatre
     columns:
