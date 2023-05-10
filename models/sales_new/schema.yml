@@ -314,7 +314,7 @@ models:
             - booking_date
             - transaction_type
           config:
-            where : "_source='CTS'"
+            where : "source_code='CTS'"
 
   - name: tickets_filtered
     description:  Table compained all sales files table in on table 
