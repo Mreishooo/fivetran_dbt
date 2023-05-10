@@ -61,7 +61,7 @@ jobs:
        command: dbt source freshness
 
  - name: Sales_New_Models_Daily 
-   schedule: 45 7 * * *
+   schedule: 45 6 * * *
    steps:
      - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
        command: dbt run --models sales_new # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.
@@ -73,7 +73,7 @@ jobs:
        command: dbt source freshness
 
  - name: dymatrix_Models_Daily 
-   schedule: 0 8 * * *
+   schedule: 15 7 * * *
    steps:
      - name: run models # Give each step in your job a name. This will enable you to track the steps in the logs.
        command: dbt run --models dymatrix # Enter the dbt command that should run in this step. This example will run all your models. For a list of available commands visit https://docs.getdbt.com/reference/model-selection-syntax/.

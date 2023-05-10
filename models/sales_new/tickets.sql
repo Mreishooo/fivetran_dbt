@@ -191,11 +191,12 @@ SELECT
       ,dpt.price_type_group
     --sums
     ,fts.article_count
+    ,fts.orignal_ticket_price
     ,fts.net_price_euro
     ,fts.net_net_price_euro
     ,fts.ticket_price_euro
     ,fts.customer_price_euro
-    ,fts.tpt_de_value_eur
+    ,fts.tpt_value_eur
     ,fts.paid_price_euro
     ,fts.customer_facevalue_euro
     ,fts.paid_price_euro = 0 is_free 
@@ -204,6 +205,12 @@ SELECT
     ,fts._loaded_at
     ,fts._run_at
     ,fts._source 
+    ,case _source 
+    when 'BQ' then   
+    not  ( transaction_type  in ('Sale','Cancellation' ) )
+    else  (  is_replaced_cancellation or replacement_type = 'Original' )
+    end  _rebooking
+    
     
 
 FROM  fts

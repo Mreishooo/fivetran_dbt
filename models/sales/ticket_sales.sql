@@ -230,6 +230,7 @@ SELECT
     ,_last_update
     ,_loaded_at
     ,_run_at
+    ,  (  is_replaced_cancellation or replacement_type = 'Original' )  _rebooking
 
 FROM  fts
 left join  c using (country_code)

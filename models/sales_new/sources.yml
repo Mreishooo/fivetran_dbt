@@ -12,6 +12,18 @@ sources:
         freshness: 
           warn_after: {count: 1, period: day}
           error_after: {count: 1, period: day}  
+  
+  - name: 'ft_mdb8_stagingelektrahistorical'
+    description:  ELEKTRA database
+    database: stage-landing
+    tables:
+      - name: ticketsales
+        description: ELEKTRA sales file
+        loaded_at_field: _fivetran_synced  
+        freshness: 
+          warn_after: {count: 1, period: day}
+          error_after: {count: 1, period: day}  
+
 
 
   - name: 'ft_sales_seeds'

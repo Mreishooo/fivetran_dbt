@@ -14,6 +14,14 @@ with cts_tickts as
    from {{ ref( 'cts_tickets') }}
 
 )
+,
+elektra_tickets as
+(
+ select *  
+   from {{ ref( 'elektra_tickets') }}
+   where booking_date >='2023-01-01'
+
+)
 
 SELECT
   ts .source_code,
@@ -89,3 +97,79 @@ SELECT
   current_timestamp _run_at
 FROM
   cts_tickts ts
+
+UNION ALL
+  /*Add Elektra*/
+SELECT
+  Source_Code,
+  BarCode,
+  Customer_Id,
+  Client_Id,
+  SubClient_Id,
+  SubClient,
+  Customer_Code,
+  cast(Main_Order_Number as string) Main_Order_Number,
+  Sub_Order_Number,
+  timestamp(date(Reservation_Date)),
+  timestamp(date(Booking_Date)),
+  timestamp(date(Cancellation_Date)),
+  '_N/A' AS Source_Cancellation_Reason,
+  IFNULL(Payment_Status_Id, - 1) AS SourcePaymentStatusId,
+  Source_Print_Status_Id,
+  Cancellation_Status,
+  Transaction_Type,
+  Source_Production,
+  timestamp(Performance_Date),
+  Source_Location,
+  Source_Seat,
+  Seat_Row,
+  Seat_Number,
+  End_Price,
+  Source_Price_Category_Id,
+  Source_Price_Type_Id,
+  Source_Price_Type_Name,
+  Source_Distribution_Channel,
+  Source_Distribution_Channel_Name,
+  IFNULL(Source_Delivery_Method,  '_N/A') AS SourceDeliveryMethod,
+  Source_Promotion_Id,
+  Source_Promotion_Name,
+  cast (null as int64) Source_Promotion_Advertising_Partner_Id,
+  Source_Referer,
+  Source_Distribution_Point_Id,
+  Source_Distribution_Point,
+  Venue_City,
+  IfNULL(Payment_Type, '_N/A') AS SourcePaymentMethod,
+  Ticket_Fee1,
+  Web_Order_Number,
+  Free_Ticket_Reason,
+  Country_Code,
+  File_Id, 
+  Source_Campaign_Code,
+  Delta_Reservation_Booking,
+  /******* Price analysis 1.0 ********/  
+  Ticket_Price_Old,
+  Customer_Price_Old,
+  Paid_Price_Old,
+  Net_Price_Old,
+  /******* Price analysis 2.0 ********/ 
+  Paid_Price,
+  Outside_Commissions,
+  Customer_FaceValue,
+  Inside_Commissions,
+  Inside_Commissions_Resellers,
+  Ticket_Price,
+  GBOR_Net,
+  Deductions,
+  NBOR,
+  Source_Promotion_Code,
+  Source_Sales_Partner, 
+  Source_Sales_Partner_Class_Id,
+  Source_Sales_Partner_Class,
+  Source_Agency_Id,
+  Source_Device_Type,
+  Source_Package_ID,
+  _last_update,
+  _loaded_at,
+  current_timestamp _run_at
+FROM
+ elektra_tickets

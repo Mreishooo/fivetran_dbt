@@ -11,7 +11,6 @@ with cts as
 (
  SELECT *  
    FROM {{ source( 'ft_sales2','cts_verkauf') }}
-
 ),
 
 cts_data as (
@@ -109,7 +108,7 @@ IF( Cancellation_status =1, -1 * ABS(End_price ) , ABS(End_price ) )
 
 IF( Cancellation_status =1, -1 * ABS(End_price ) , ABS(End_price ) ) 
 + IF ( Cancellation_status =1 , -1 * ABS(FIELD07 ) , ABS(FIELD07 ) )
-+ IF ( Cancellation_status =1 , -1 * ABS(Ticket_Fee1 ) , ABS(Ticket_Fee1 ) )
++ IF ( Cancellation_status =1 , -1 * ABS(ticket_fee1 ) , ABS(ticket_fee1 ) )
 + IF ( Cancellation_status =1 , -1 * ABS(FIELD09 ) , ABS(FIELD09 ) )
 + IF ( Cancellation_status =1 , -1 * ABS(FIELD10 ) , ABS(FIELD10 ) ) as paid_price_old,
 

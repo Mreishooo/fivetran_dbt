@@ -22,7 +22,7 @@ with tickets_mapped as
 (
  SELECT *  
    FROM {{ ref( 'ticket_sales') }}
-   where booking_date <'2023-01-01'
+   where   booking_date <= if (Source_Code = 'DE_TICKETMASTER' ,booking_date , '2022-12-31')
 ),
 
 
@@ -106,7 +106,7 @@ t1 as (
     ,fts._loaded_at
     ,current_timestamp _run_at
     ,"BQ" _source 
-
+ 
     ,fts.article_count 
   
     ,ticket_price_old orignal_ticket_price
@@ -125,13 +125,13 @@ select t1.*
 {% for price in prices %}
     ,{{price}} *   ifnull(rate,1)  as {{price}}_euro
 {% endfor %} 
-, ticket_price *   ifnull(rate,1)   * 1.07937 as tpt_de_value_eur
+, ticket_price *   ifnull(rate,1)   * 1.07937 as tpt_value_eur
 from  t1 left join exchange_rate_daily on booking_date = date and currency_code = from_currency_code
 
 union all 
 
 Select distinct 
-    concat( fts.source_code ,'-',fts.Source_Code,'-' ,fts.Bar_Code,'-',upper(Transaction_Type) ) ticket_id 
+    concat( fts.country_code ,'-',fts.Source_Code,'-' ,fts.Bar_Code,'-',upper(Transaction_Type) ) ticket_id 
 
     ,fts.country_code country_code
     ,'Eur' 

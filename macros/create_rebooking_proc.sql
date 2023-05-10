@@ -5,10 +5,10 @@
 "performance_date","theatre_id","source_distribution_point_id","source_distribution_point","source_distribution_channel",
 "source_distribution_channel_name","source_client_id","source_sales_partner","source_promotion_id","source_production","source_promotion_name",
 "source_promotion_code","source_promotion_advertising_partner_id","source_customer_code","source_seat","source_seat_row","source_seat_number",
-"source_price_category_id","source_price_type_name","_loaded_at","_last_update","orignal_ticket_price"] %}
+"source_price_category_id","source_price_type_name","orignal_ticket_price"] %}
 
 {% set prices_cols  = ["article_count","ticket_price","paid_price","net_price","net_net_price","customer_price",
-"customer_facevalue","ticket_price_euro","paid_price_euro","net_price_euro","net_net_price_euro","customer_price_euro","customer_facevalue_euro","tpt_de_value_eur"] %}
+"customer_facevalue","ticket_price_euro","paid_price_euro","net_price_euro","net_net_price_euro","customer_price_euro","customer_facevalue_euro","tpt_value_eur"] %}
 
 {% set temp_table = "sales_stg.working_temp" %}
 
@@ -39,6 +39,8 @@
         ticket_work_date.booking_timestamp working_ticket_booking_timestamp, 
         ticket_work_date.transaction_type working_ticket_transaction_type,
         ticket_work_date.barcode ticket_work_date_barcode, 
+        ticket_work_date._loaded_at ticket_work_date_loaded_at, 
+        ticket_work_date._last_update ticket_work_date_last_update, 
          if (ticket_work_date.transaction_type = 'Sale' , -1 ,1) transaction_operation 
         from  {{ ref( 'tickets_mapped_distributions') }} original_ticket   join  {{ ref( 'tickets_mapped_distributions') }}    ticket_work_date  
                                         on  ticket_work_date.booking_date between work_date and  max_date
@@ -54,7 +56,8 @@
         update   {{ ref( 'tickets_mapped_distributions') }}  t 
         set t.replacement_type = 'Automatic' 
            ,t.is_replacement = true 
-           ,t.tpt_de_value_eur = wt.tpt_de_value_eur * t.article_count
+           {% for prices_col in prices_cols %} ,t.{{prices_col}}  = wt.{{prices_col}}  * t.article_count {% endfor %} 
+      --     ,t.customer_facevalue = wt.customer_facevalue * t.article_count
            ,_run_at = current_timestamp
         from  {{temp_table}}  wt 
                 where 
@@ -69,10 +72,10 @@
 
         -- insert new line to correct balance 
         insert into   {{ ref( 'tickets_mapped_distributions') }}   
-        (  ticket_id,transaction_type,is_replaced,is_replacement,replacement_type,booking_date,booking_timestamp,_run_at,_source
+        (  ticket_id,transaction_type,is_replaced,is_replacement,replacement_type,booking_date,booking_timestamp,_run_at,_source,_last_update,_loaded_at
           {% for same_col in same_cols %} ,{{same_col}}  {% endfor %}  
           {% for prices_col in prices_cols %} ,{{prices_col}}  {% endfor %} )
-        select concat( Country_Code ,'-',Source_Code,'-' ,BarCode,'-rebooking-',working_ticket_transaction_type) , concat(working_ticket_transaction_type,'-rebooking'), if(transaction_operation =1 , true , false) , true, 'Original' ,working_ticket_booking_date,working_ticket_booking_timestamp, current_timestamp , "BQ"
+        select concat( Country_Code ,'-',Source_Code,'-' ,BarCode,'-rebooking-',working_ticket_transaction_type) , concat(working_ticket_transaction_type,'-rebooking'), if(transaction_operation =1 , true , false) , true, 'Original' ,working_ticket_booking_date,working_ticket_booking_timestamp, current_timestamp , "BQ" ,ticket_work_date_loaded_at, ticket_work_date_last_update
           {% for same_col in same_cols %} ,{{same_col}} {% endfor %}  
           {% for prices_col in prices_cols %} ,{{prices_col}} * transaction_operation {% endfor %} 
         --working_ticket_booking_date ,barcode, tpt_de_value_eur * transaction_operation  ,'Original',true, if(transaction_operation =1 , true , false) ,article_count * transaction_operation, concat('rebooking-',working_ticket_transaction_type)
