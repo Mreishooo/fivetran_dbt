@@ -325,6 +325,8 @@ models:
             - barcode
             - booking_date
             - transaction_type
+          config:
+            where : "source_code='CTS'"
  
   - name: tickets_mapped
     description:  Table containes tickets mapped 
@@ -336,6 +338,8 @@ models:
             - booking_date
             - source_code
             - country_code
+          config:
+            where : "source_code='CTS'"
         
   - name: tickets_mdb
     description:  Table containes tickets raw 
@@ -357,7 +361,7 @@ models:
           - booking_timestamp
           - ticket_id
           config:
-            where : "_source='BQ'"
+            where : "_source='BQ' and source_code='CTS' "
 
   - name: tickets_mapped_distributions
     description:  Table containes tickets mapped 
@@ -367,7 +371,7 @@ models:
           - booking_timestamp
           - ticket_id
           config:
-            where : "_source='BQ'"
+            where : "_source='BQ' and source_code='CTS'"
      
   - name: tickets
     description:  Table containes tickets mapped 
@@ -377,5 +381,5 @@ models:
           - booking_timestamp
           - ticket_id
           config:
-            where : "_source='BQ'"
+            where : "_source='BQ' and source_code='CTS'"
         
