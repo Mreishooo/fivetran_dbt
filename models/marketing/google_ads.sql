@@ -49,7 +49,7 @@ date ,
 clicks clicks ,
 impressions impressions , 
 conversions  conversions , 
-conversionValue conversions_value, 
+conversionValue conversion_value, 
  {{ fix_google_value ('cost') }}  as spend, 
 interactions interactions
 FROM google_ad_basic 

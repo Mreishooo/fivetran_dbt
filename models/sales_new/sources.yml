@@ -24,8 +24,18 @@ sources:
           warn_after: {count: 1, period: day}
           error_after: {count: 1, period: day}  
 
+  - name: 'ft_eci'
+    description:  ECI FTP file
+    database: stage-landing
+    tables:
+      - name: eci_tickets
+        description: ECI sales file
+        loaded_at_field: _fivetran_synced  
+        freshness: 
+          warn_after: {count: 1, period: day}
+          error_after: {count: 1, period: day}  
 
-
+ 
   - name: 'ft_sales_seeds'
     description:  seeds files imported from sharepoint folder    
     database: stage-landing

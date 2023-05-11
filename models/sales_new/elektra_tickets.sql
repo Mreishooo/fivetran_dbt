@@ -31,6 +31,9 @@ concat ( 'ELEKTRA-DE-' , TS.ClientId , '-' , CustomerNumberDwh) AS customer_id
 ,'ELEKTRA' AS source_code
 ,CONCAT(TS.ClientId, '-', TS .MainOrderNumber, '-', TS .SystemId, '.', TS .SubOrderIdConcatenation, '.', TS .SubOrderLineNumber) AS barcode
 ,ClientId client_id
+,SystemId system_id
+,SubOrderIdConcatenation sub_order_id_concatenation
+,SubOrderLineNumber sub_order_line_number
 ,'_N/A' AS subclient,
 TS .BoxOfficeNumber AS subclient_id,
 TS .CustomerCode customer_code,

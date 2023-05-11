@@ -61,7 +61,7 @@ FROM
  LEFT OUTER JOIN  sales_production_mapping AS PM
 ON
       PM.Source_Code =  upper(ts.Source_Code)
-  AND PM.Source_Location = upper(ifnull(ts.Source_Location,PM.Source_Location))
+  AND ifnull( PM.Source_Location, '') = upper(ifnull(ts.Source_Location, ifnull( PM.Source_Location, '')))
   AND PM.Source_Production = upper(ts.Source_Production)
   AND PM.Country_Code = upper(ts.Country_code)
 

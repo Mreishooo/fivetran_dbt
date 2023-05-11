@@ -22,8 +22,16 @@ elektra_tickets as
    where booking_date >='2023-01-01'
 
 )
+,
+eci_tickets as
+(
+ select *  
+   from {{ ref( 'eci_tickets') }}
+   where booking_date >='2023-01-01'
 
+)
 SELECT
+  concat( ts.Country_Code ,'-',ts.Source_Code,'-' ,ts.BarCode,'-',transaction_type) ticket_id,
   ts .source_code,
   ts .barcode,
   ts .customer_id source_customer_id,
@@ -101,6 +109,7 @@ FROM
 UNION ALL
   /*Add Elektra*/
 SELECT
+  concat( Country_Code ,'-',Source_Code,'-',barcode,'-', Cancellation_Status,'-', Transaction_Type ) ticket_id,
   Source_Code,
   BarCode,
   Customer_Id,
@@ -173,3 +182,80 @@ SELECT
   current_timestamp _run_at
 FROM
  elektra_tickets
+
+union all
+
+Select
+concat( country_code ,'-',source_code,'-',barcode,'-', cancellation_status,'-', transaction_type ) ticket_id,
+  source_code,
+  barcode,
+  customer_id,
+  client_id,
+  subclient_id,
+  subclient,
+  customer_code,
+  main_order_number,
+  sub_order_number,
+  timestamp(reservation_date),
+  booking_timestamp,
+  timestamp(cancellation_date),
+  '_n/a' as sourcecancellationreason,
+  null as sourcepaymentstatusid,
+  null as sourceprintstatusid,
+  cancellation_status,
+  transaction_type,
+  source_production,
+  performance_date_time,
+  source_location,
+  source_seat,
+  seat_row,
+  seat_number,
+  end_price,
+  source_price_category_id,
+  source_price_type_id,
+  source_price_type_name,
+  /*additionalfeeotheramount, */ 
+  source_distribution_channel,
+  source_distribution_channel_name,
+  '_n/a' as sourcedeliverymethod,
+  '_n/a' as source_promotion_id,
+  source_promotion_name,
+  cast ( null as int64) source_promotion_advertising_partner_id,
+  source_referer,
+  source_distribution_point_id,
+  source_distribution_point,
+  venue_city,
+  '_n/a' as source_payment_method,
+  ticket_fee1,
+  web_order_number,
+  free_ticket_reason,
+  country_code,
+  file_id,
+  source_campaign_code,
+  cast(- 1 as int) as delta_reservation_booking,
+  /******* price analysis 1.0 ********/ 
+  ticket_price_old,
+  customer_price_old,
+  paid_price_old,
+  net_price_old,
+  /******* price analysis 2.0 ********/ 
+  paid_price,
+  outside_commissions,
+  customer_facevalue,
+  inside_commissions,
+  inside_commissions_resellers,
+  ticket_price,
+  gbor_net,
+  deductions,
+  nbor,
+  source_promotion_code,
+  source_sales_partner,
+  source_sales_partner_class_id,
+  source_sales_partner_class,
+  source_agency_id,
+  source_device_type,
+  -1 source_package_id,
+  _last_update,
+  _loaded_at,
+  current_timestamp _run_at
+  from eci_tickets

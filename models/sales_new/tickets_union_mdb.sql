@@ -22,7 +22,11 @@ with tickets_mapped as
 (
  SELECT *  
    FROM {{ ref( 'ticket_sales') }}
-   where   booking_date <= if (Source_Code = 'DE_TICKETMASTER' ,booking_date , '2022-12-31')
+   where   booking_date <= ( case Source_Code 
+                              when 'DE_TICKETMASTER' then booking_date 
+                              when 'ECI' Then '2023-05-01'
+                              else '2022-12-31'
+                              end)
 ),
 
 
@@ -38,7 +42,7 @@ exchange_rate_daily as
 t1 as ( 
   
  select 
-    concat( fts.Country_Code ,'-',fts.Source_Code,'-' ,fts.BarCode,'-',transaction_type) ticket_id 
+     ticket_id 
     ,fts.Country_Code country_code
     ,currency_code
     ,fts.source_code
