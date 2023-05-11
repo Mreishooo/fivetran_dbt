@@ -3,7 +3,7 @@
     labels = {'source': 'enriched_table', 'refresh': 'daily','connection':'multi','type':'mart'},
 )}}
 
-{% set kpis  = ["clicks","impressions","conversions","conversions_value","spend","interactions"] %}
+{% set kpis  = ["clicks","impressions","conversions","conversion_value","spend","interactions"] %}
 
 with google_ads as
 (

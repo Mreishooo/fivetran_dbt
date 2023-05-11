@@ -93,7 +93,7 @@ conversions_7click,
 conversions,
 _1view_omni_purchase conversions_1view_value,
 _7click_omni_purchase conversions_7click_value,
-value_omni_purchase  conversions_value 
+value_omni_purchase  conversion_value 
 
 
 FROM facebook_ad_basic

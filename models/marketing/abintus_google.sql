@@ -10,7 +10,7 @@ country
 ,date	 
 ,sum(impressions) impressions 
 ,sum(clicks) clicks	
-,sum( cost) cost
+,sum( spend) spend
 ,sum(video_views) video_views,
  FROM google_ads_all_channels
  where date >= '2023-01-01'

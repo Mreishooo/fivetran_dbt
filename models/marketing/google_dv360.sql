@@ -21,7 +21,7 @@ date,
 clicks clicks ,
 impressions impressions , 
 post_click_conversions  conversions , 
-cm_360_post_click_revenue conversions_value, 
+cm_360_post_click_revenue conversion_value, 
 media_cost_advertiser_currency as spend, 
 clicks interactions
 FROM  google_dv_360
