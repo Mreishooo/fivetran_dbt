@@ -12,6 +12,7 @@ with cts_tickts as
 (
  select *  
    from {{ ref( 'cts_tickets') }}
+   where booking_date >='2023-01-01'
 
 )
 ,

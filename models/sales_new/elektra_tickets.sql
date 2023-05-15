@@ -88,7 +88,6 @@ TS .DeltaReservationBooking AS delta_reservation_booking
 
 FROM elektra  TS
 where true 
-
 QUALIFY ROW_NUMBER() OVER (PARTITION BY TS.ClientId, TS .MainOrderNumber, TS .SystemId, TS.SubOrderIdConcatenation,  TS.SubOrderLineNumber , TS.TicketCancellationStatus , TS.TicketReservationDateTime ORDER BY _fivetran_synced DESC) = 1
 )
 
@@ -120,6 +119,9 @@ LEFT JOIN
   elektra_changes SC
 ON
   E.BarCode = SC.Barcode  
+  QUALIFY ROW_NUMBER() OVER (PARTITION BY BarCode ORDER BY Reservation_Date DESC) = 1
+
+
      /* A sold ticket in ELEKTRA can have a cancellationstatus = 1 and cancellationdate != null
    For every SALE ticket, which was cancelled, an extra record should be added with transaction type CANCELLATION (union) and bookingdate = cancellationdate */
 

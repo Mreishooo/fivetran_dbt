@@ -5,7 +5,6 @@ models:
 
   - name: stage_ventas_packs
     description:  Table containes data of hotel and tickets for spain by the revenue labs 
-
     columns:
       - name: _line
         description:  "metaData for the line on the csv file"
@@ -41,3 +40,34 @@ models:
         description:   "bill"
       - name:  pagado
         description:   "paid"
+
+
+  - name: segmentation_panel
+    description: "Segmentation survey questions and answers at responses level"
+    columns:
+      - name: user_id
+        description: "User response identifier for the survey"
+      - name: country
+        description: "Country of the survey"
+      - name: survey_i
+        description: "Survey identifier"
+      - name: sample
+        description: "Survey sample number"
+      - name: question
+        description: "Question code"
+      - name: answer
+        description: "Survey response"
+
+  - name: segmentation_crm
+    description: "Segmentation survey questions and answers at responses level"
+    columns:
+      - name: user_id
+        description: "User response identifier for the survey"
+      - name: country
+        description: "Country of the survey"
+      - name: survey_i
+        description: "Survey identifier"
+      - name: question
+        description: "Question code"
+      - name: answer
+        description: "Survey response"
