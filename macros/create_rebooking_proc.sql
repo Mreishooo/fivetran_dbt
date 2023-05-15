@@ -3,7 +3,7 @@
 {% set same_cols =["source_code","country_code","currency_code","web_order_number","main_order_number","sub_order_number","production_location_id",
 "barcode","barcode_13","cancellation_status","is_replaced_cancellation", "price_category_id","price_type_id",
 "performance_date","theatre_id","source_distribution_point_id","source_distribution_point","source_distribution_channel",
-"distribution_id","local_sales_channel_1","local_sales_channel_2","distribution_point","distribution_owner",
+"distribution_id",
 "source_distribution_channel_name","source_client_id","source_sales_partner","source_promotion_id","source_production","source_promotion_name",
 "source_promotion_code","source_promotion_advertising_partner_id","source_customer_code","source_customer_id","source_seat","source_seat_row","source_seat_number",
 "source_price_category_id","source_price_type_name","orignal_ticket_price"] %}

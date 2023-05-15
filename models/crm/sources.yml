@@ -11,6 +11,16 @@ sources:
         freshness: 
           warn_after: {count: 2, period: day}
 
+  - name: 'upload'
+    description: data set for tables were created by uploading files 
+    database: stage-landing
+    tables:
+      - name: segmentation_crm
+        description: segmentation crm table
+      - name: segmentation_panel
+        description: segmentation panel table
+        
+
 
           
 
