@@ -96,7 +96,7 @@ select
   ifnull( booking_date ,'1900-01-01') reservation_date,
   cancellation_date cancellation_date,
   if( cancellation_status=0,0,1 ) cancellation_status,
-  if( cancellation_status=0,'sale','cancellation' ) transaction_type,
+  if( cancellation_status=0,'Sale','Cancellation' ) transaction_type,
   performance_date,
   performance_time,
   timestamp( concat (performance_date, ' ', performance_time))performance_date_time,

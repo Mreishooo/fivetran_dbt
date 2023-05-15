@@ -174,6 +174,7 @@ SELECT
     ,fts.source_promotion_code
     ,fts.source_promotion_advertising_partner_id
     ,fts.source_customer_code
+    ,fts.source_customer_id
     --GoldenCustomer
 	  ,fts.dim_golden_customer_id
       ,dgc.current_age as golden_customer_current_age

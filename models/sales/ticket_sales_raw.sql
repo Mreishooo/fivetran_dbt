@@ -72,6 +72,7 @@ SELECT
     ,fts.SourcePromotionCode source_promotion_code
     ,fts.SourcePromotionAdvertisingPartnerId source_promotion_advertising_partner_id
     ,fts.SourceCustomerCode source_customer_code
+    ,fts.sourcecustomerid source_customer_id
     --GoldenCustomer
 	  ,fts.DimGoldenCustomerId dim_golden_customer_id
     ,fts.DimGoldenCustomerAgeAtBookingId dim_golden_customer_age_at_booking_id 

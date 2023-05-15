@@ -91,6 +91,7 @@ t1 as (
     ,fts.source_promotion_code
     ,cast (fts.source_promotion_advertising_partner_id as string) source_promotion_advertising_partner_id
     ,fts.source_customer_code
+    ,fts.source_customer_id
     
     
     /*--GoldenCustomer
@@ -182,6 +183,7 @@ Select distinct
     ,fts.source_promotion_code
     ,fts.source_promotion_advertising_partner_id
     ,fts.source_customer_code
+    ,fts.source_customer_id
     
     ---GoldenCustomer
 	  --,fts.DimGoldenCustomerId dim_golden_customer_id

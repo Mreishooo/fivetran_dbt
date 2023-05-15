@@ -142,7 +142,7 @@ SELECT
     ,fts.source_distribution_point 
     ,fts.source_distribution_channel
     ,fts.source_distribution_channel_name
-    ,fts.source_client_id
+    
     ,fts.source_sales_partner
     ,fts.distribution_id
       ,ddis.local_sales_channel_1
@@ -155,6 +155,8 @@ SELECT
     ,fts.source_promotion_name
     ,fts.source_promotion_code
     ,fts.source_promotion_advertising_partner_id
+    ,fts.source_customer_id
+    ,fts.source_client_id
     ,fts.source_customer_code
     --GoldenCustomer
 	  /* -- here 
