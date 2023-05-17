@@ -483,3 +483,6 @@ models:
 
       - name: gdpr_requested_by_department
         description: ""
+
+  - name: dimcustomer
+    description: ""

@@ -54,6 +54,8 @@ with
   dgc AS ( 
     SELECT *
     FROM {{ ref('golden_customer') }}
+    QUALIFY ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY dim_golden_customer_id DESC) = 1 
+ 
   ),
 
   dpt AS ( 
@@ -70,6 +72,10 @@ with
     SELECT *
     FROM {{ ref('countries') }}
   )
+
+
+ 
+
 
 /*  ,distinct_orders AS ( 
     SELECT distinct source_code,country_code,booking_date, main_order_number,dim_golden_customer_id, 
@@ -158,15 +164,17 @@ SELECT
     ,fts.source_customer_id
     ,fts.source_client_id
     ,fts.source_customer_code
+    
     --GoldenCustomer
-	  /* -- here 
-    ,fts.dim_golden_customer_id here 
+	   -- here 
+      ,dgc.dim_golden_customer_id golden_customer_id
+      ,dgc.customer_type
       ,dgc.current_age as golden_customer_current_age
       ,dgc.gender as golden_customer_gender
       ,dgc.customer_country_code as golden_customer_country_code
       ,dgc.postcode as golden_customer_postal_code
       ,LENGTH(dgc.postcode) as golden_customer_postalcodelength  
-      here */
+    --  here */
 
     ---,fts.is_returning_customer_flag
     ---,fts.is_returning_customer
@@ -221,12 +229,14 @@ left join  dpl  using (production_location_id)
 left join  dat using (article_type_code )
 left join  dp on (dp.production_id=dpl.production_id )
 left join  dt on (dt.theatre_id = fts.theatre_id) 
---left join  da  on (da.dim_age_id = fts.dim_golden_customer_age_at_booking_id)
+
 left join  dpf  on (dpf.Performance_id =fts.Performance_id )
 left join  ddis on (ddis.distribution_id = fts.distribution_id)
---left join  dgc using (golden_customer_id)
+
 left join  dpt using (price_type_id)
 left join  dpc using (price_category_id)
+ 
+left join  dgc on (customer_id = source_customer_id)
 --left join orders_rank using( booking_date, main_order_number,dim_golden_customer_id )
 
 

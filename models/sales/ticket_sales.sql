@@ -177,6 +177,8 @@ SELECT
     ,fts.source_customer_id
     --GoldenCustomer
 	  ,fts.dim_golden_customer_id
+      ,dgc.customer_id  
+      ,dgc.customer_type
       ,dgc.current_age as golden_customer_current_age
       ,dgc.gender as golden_customer_gender
       ,dgc.customer_country_code as golden_customer_country_code

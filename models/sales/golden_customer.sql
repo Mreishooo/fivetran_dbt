@@ -14,13 +14,14 @@ with
 
 SELECT 
       DimGoldenCustomerId  dim_golden_customer_id
+      , createdcustomerid customer_id
       , CustomerCode  customer_code
       , ClientId  client_id
       , SubClientId  sub_client_id
       , CountryCode  country_code
       , SubClient  sub_client
       , CustomerCategory customer_category 
-      , CustomerType  customer_type
+      , INITCAP(CustomerType)  customer_type
       , CompanyName  company_name
       , Salutation  salutation
       , FirstName  first_name
