@@ -43,6 +43,8 @@ sources:
         description: Price category Location Data copied from MDB 
       - name:  dimpricetype
         description: Price type  Data copied from MDB 
+      - name:  dimcustomer
+        description: customer   Data copied from MDB 
 
           
             

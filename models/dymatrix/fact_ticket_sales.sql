@@ -5,27 +5,45 @@
 
 with ticket_sales as
 (
-  select * FROM {{ ref('ticket_sales' )}}
+  select * FROM {{ ref('tickets' )}}
   
 ) 
  
 select distinct
 country_code,
-cast(fact_ticket_sales_id as string) fact_ticket_sales_id ,
+ticket_id fact_ticket_sales_id ,
 production_location_id,
-concat(production_location_id,' - ',performance_date ,' - ',performance_time) performance_id,
+performance_id,
 price_type_id,
-upper( concat (country_code, ' - ', distribution_owner ,' - ' ,distribution_point)) distribution_id,
-dim_golden_customer_id golden_customer_id,
+distribution_id,
+golden_customer_id,
 price_category_id,
 article_type_code article_type_id,
 booking_date,
 source_promotion_name,
-ticket_price_value_eur,
+tpt_value_eur ticket_price_value_eur,
 article_count,
 source_distribution_point_id,
 source_distribution_channel,
-current_timestamp last_update_date,
-current_timestamp insert_date,
+_loaded_at last_update_date,
+_last_update insert_date,
 FROM ticket_sales
 where country_code = 'DE'
+
+/*
+ country_code, 
+ticket_id,
+production_location_id, 
+price_type_id,
+distribution_id,
+golden_customer_id,
+price_category_id,
+article_type_code article_type_id,
+booking_date,
+source_promotion_name,
+tpt_value_eur ticket_price_value_eur,
+article_count,
+source_distribution_point_id,
+source_distribution_channel,
+_loaded_at insert_date, 
+_last_update last_update_date*/

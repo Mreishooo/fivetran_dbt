@@ -54,8 +54,7 @@ with
   dgc AS ( 
     SELECT *
     FROM {{ ref('golden_customer') }}
-    QUALIFY ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY dim_golden_customer_id DESC) = 1 
- 
+  
   ),
 
   dpt AS ( 
@@ -73,6 +72,10 @@ with
     FROM {{ ref('countries') }}
   )
 
+  , customer_stg AS ( 
+    SELECT *
+    FROM {{ ref('customer_stg') }}
+  )
 
  
 
@@ -235,8 +238,9 @@ left join  ddis on (ddis.distribution_id = fts.distribution_id)
 
 left join  dpt using (price_type_id)
 left join  dpc using (price_category_id)
- 
-left join  dgc on (customer_id = source_customer_id)
+left join customer_stg on (upper(customer_id) = upper(source_customer_id))
+left join  dgc using (dim_golden_customer_id)
+---on (upper(customer_id) = upper(source_customer_id))
 --left join orders_rank using( booking_date, main_order_number,dim_golden_customer_id )
 
 
