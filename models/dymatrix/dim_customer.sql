@@ -2,8 +2,8 @@
     materialized='view',
     labels = {'source': 'sales', 'refresh': 'daily','connection':'fivetran','type':'mart'},
     grant_access_to=[
-      {'project': 'stage-playground', 'dataset': 'sales'},
-      {'project': 'stage-commercial', 'dataset': 'sales'}
+      {'project': 'stage-playground', 'dataset': 'business'},
+      {'project': 'stage-commercial', 'dataset': 'business'}
     ]
 )}}
 
@@ -11,12 +11,12 @@
 
 with customer as
 (
-  select * FROM {{ ref('golden_customer' )}}
+  select * FROM {{ ref('golden_customers' )}}
   
 ) 
 SELECT distinct
 country_code,
-dim_golden_customer_id golden_customer_id,
+golden_customer_id,
 salutation,
 first_name,
 last_name,

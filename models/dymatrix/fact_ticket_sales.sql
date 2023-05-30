@@ -16,7 +16,7 @@ production_location_id,
 performance_id,
 price_type_id,
 distribution_id,
-golden_customer_id,
+source_customer_id customer_id,
 price_category_id,
 article_type_code article_type_id,
 booking_date,
@@ -27,23 +27,7 @@ source_distribution_point_id,
 source_distribution_channel,
 _loaded_at last_update_date,
 _last_update insert_date,
+_rebooking
 FROM ticket_sales
 where country_code = 'DE'
 
-/*
- country_code, 
-ticket_id,
-production_location_id, 
-price_type_id,
-distribution_id,
-golden_customer_id,
-price_category_id,
-article_type_code article_type_id,
-booking_date,
-source_promotion_name,
-tpt_value_eur ticket_price_value_eur,
-article_count,
-source_distribution_point_id,
-source_distribution_channel,
-_loaded_at insert_date, 
-_last_update last_update_date*/

@@ -171,6 +171,7 @@ SELECT
     --GoldenCustomer
 	   -- here 
       ,dgc.dim_golden_customer_id golden_customer_id
+       
       ,dgc.customer_type
       ,dgc.current_age as golden_customer_current_age
       ,dgc.gender as golden_customer_gender

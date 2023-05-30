@@ -13,7 +13,7 @@ with
   )
 
 
-SELECT 
+SELECT country_code,
        customerid customer_id,
       DimGoldenCustomerId  dim_golden_customer_id
      

@@ -220,4 +220,15 @@ sources:
       - name: abintus_hq
         description: Abintue HQ marketing data  - Data collected by abintus uploaded to GCP bucket
 
+  - name: 'upload'
+    database: stage-landing
+    tables:
+      - name: Google_All_Campaigns_Update
+
+      - name: Meta_AdSet_with_Freetext
+
+      - name: Meta_Adsets_with_extraction_of_free_text_as_Target_Group
+
+      - name: Meta_All_Campaigns_Update
        
+ 
