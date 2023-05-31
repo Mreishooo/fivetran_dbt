@@ -15,7 +15,7 @@ with
 
 SELECT country_code,
       customer_id,
-      COALESCE( email, phone_number,concat(postcode,customer_name), customer_id )  golden_customer_id
+      abs (FARM_FINGERPRINT(COALESCE( email, phone_number,concat(postcode,customer_name), customer_id )))  golden_customer_id
     from customer
  
 

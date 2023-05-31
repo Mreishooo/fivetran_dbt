@@ -19,7 +19,8 @@ tickets as
     FROM {{ ref( 'tickets_mapped') }}
  
 )
-
+,performance as 
+(
 SELECT 
 performance_id
 ,production_location_id
@@ -73,3 +74,8 @@ cast (null as string),
 current_timestamp
 from  tickets 
 where concat(production_location_id,' - ', Date(performance_date) ,' - ', time(performance_date))  not in ( select production_location_id from seed_date)
+)
+
+select * from performance
+QUALIFY ROW_NUMBER() OVER (PARTITION BY performance_id ORDER BY last_update DESC) = 1 
+ 
