@@ -4,6 +4,7 @@ sources:
   - name: 'ft_therevenuelabs'
     description:  export data from 3rd party for hotel and ticket in spain 
     database: stage-landing
+    tags: ['crm'] 
     tables:
       - name: stage_ventas_packs
         description: stage hotel and tickets data from 3rd party uploaded to cloud bucket
@@ -14,6 +15,7 @@ sources:
   - name: 'upload'
     description: data set for tables were created by uploading files 
     database: stage-landing
+    tags: ['crm'] 
     tables:
       - name: segmentation_crm
         description: segmentation crm table

@@ -28,3 +28,25 @@ pagado
 FROM facebook_ad_basic
 qualify  row_number() OVER (PARTITION BY _line ORDER BY _modified DESC)  = 1
 order by _line
+/*
+reference,
+date_of_purchase,
+show,
+checkin,
+checkout,
+show_date,
+show_time,
+number_of_tickets,
+name,
+surname,
+phone_number,
+email,
+hotel_code,
+hotel,
+pack_value,
+hotel_value,
+ticket_value,
+status,
+fee_stage_including_vat,
+invoiced,
+paid

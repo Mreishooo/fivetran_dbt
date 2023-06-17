@@ -4,6 +4,7 @@ sources:
   - name: 'ft_media_data'
     description:  marketing data gethered from media agency 
     database: stage-landing
+    tags: ['marketing']     
     tables:
       - name: mind_share
         description: table conatins all mida share data

@@ -4,6 +4,7 @@ sources:
   - name: 'gcp_logs'
     description:  all gcp ( bigQuery logs) sink 
     database: stage-landing
+    tags: ['admin'] 
     tables:
       - name: cloudaudit_googleapis_com_data_access
         description: logs table

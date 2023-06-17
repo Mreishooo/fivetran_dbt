@@ -36,6 +36,7 @@ seeds:
     +persist_docs:
       relation: true
       columns: true
+  
 
 models:
   fivetran_dbt: # this matches the `name:`` config
@@ -47,34 +48,55 @@ models:
     ga:
       +schema: ga # this applies to all models in the `marts/ga/`` directory
       description: dataset contains google analystic data
+      +tags:
+        ga
     ga4:
       +schema: ga4 # this applies to all models in the `marts/ga/`` directory
       description: dataset contains google analystic 4 data
+      +tags:
+        ga4
     marketing:
       +schema: marketing # this applies to all models in the `marts/marketing/`` directory
       description: dataset contains marketing  data
+      +tags:
+        marketing
     marketing_offline:
       +schema: marketing # this applies to all models in the `marts/marketing_offline/`` directory
       description: dataset contains marketing  data
+      +tags:
+        marketing
     crm:
       +schema: crm # this applies to all models in the `marts/crm/`` directory
       description: dataset contains crm  data
+      +tags:
+        crm
     sales:
       +schema: sales # this applies to all models in the `marts/sales/`` directory
       description: dataset contains sales and tickets  data
+      +tags:
+        sales
     sales_new:
       +schema: business # this applies to all models in the `marts/sales/`` directory
       description: dataset contains sales and tickets  data
+      +tags:
+        new_sales
 
     admin:
       +schema: admin # this applies to all models in the `marts/admin/`` directory
       description: dataset contains admin table 
+      +tags:
+        admin
     dymatrix:
       +schema: dymatrix # this applies to all models in the `marts/admin/`` directory
       description: dataset contains dymatrix table 
+      +tags:
+        d7
     business:
       +schema: business # this applies to all models in the `marts/admin/`` directory
       description: dataset contains common table
+      +tags:
+        - business
+        - new_sales
     mreish:
       +schema: mreish # this applies to all models in the `marts/admin/`` directory
       description: dataset contains test table

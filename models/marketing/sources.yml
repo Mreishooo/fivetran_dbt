@@ -4,6 +4,7 @@ sources:
   - name: 'GoogleAd'
     description:  Google Ads data for more info visit  https://cloud.google.com/bigquery-transfer/docs/adwords-transformation 
     database: stage-landing
+    tags: ['marketing']
     tables:
       - name: AdBasicStats_9940526481
         description: Google Ads basic perfomance report
@@ -41,6 +42,7 @@ sources:
   - name: 'google_ad_fr'
     description:  Google Ads France data for more info visit  https://cloud.google.com/bigquery-transfer/docs/adwords-transformation 
     database: stage-landing
+    tags: ['marketing']
     tables:
       - name: AdBasicStats_8396768808
         description: Google Ads basic perfomance report
@@ -78,6 +80,7 @@ sources:
   - name: 'google_ad_sp'
     description:  Google Ads France data for more info visit  https://cloud.google.com/bigquery-transfer/docs/adwords-transformation 
     database: stage-landing
+    tags: ['marketing']
     tables:
       - name: AdBasicStats_1713416990
         description: Google Ads basic perfomance report
@@ -117,6 +120,7 @@ sources:
   - name: 'ft_facebook_ad'
     description:  Facebook ad data comes from fivetran conntion for more info visit  https://fivetran.com/docs/applications/facebook-ads#facebookads
     database: stage-landing
+    tags: ['marketing']
     tables:
       - name: basic_report
         description:   Facebook ad basic perfomance report
@@ -205,6 +209,7 @@ sources:
   - name: 'ft_google_display_and_video_360'
     description: google display and video data comes from fivetran conntion for more info visit https://fivetran.com/docs/applications/google-display-and-video-360 
     database: stage-landing
+    tags: ['marketing']
     tables:
       - name: basic_report
         description:  google display and video basic perfomance report
@@ -216,12 +221,15 @@ sources:
   - name: 'ft_abintus'
     description:  Google Ads data for more info visit  https://cloud.google.com/bigquery-transfer/docs/adwords-transformation 
     database: stage-landing
+    tags: ['marketing']
     tables:
       - name: abintus_hq
         description: Abintue HQ marketing data  - Data collected by abintus uploaded to GCP bucket
 
   - name: 'upload'
     database: stage-landing
+    tags: ['marketing']
+    
     tables:
       - name: Google_All_Campaigns_Update
 

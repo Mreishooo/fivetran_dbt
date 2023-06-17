@@ -4,6 +4,7 @@ sources:
   - name: 'ft_mdb_dbo'
     description:  MDB database 
     database: stage-landing
+    tags: ['sales']
     tables:
       - name: factticketsales
         description:  Historical Sales Data 
@@ -12,6 +13,7 @@ sources:
   - name: 'ft_mdb7_se'
     description:  MDB database 
     database: stage-landing
+    tags: ['sales']
     tables:
       - name: fact_ticket_sales_bq
         description:  Each row within a table is information about ticket /*timestamp(PARSE_DATE("%Y%m%d", cast(DimBookingDateId as string )) )*/
@@ -24,6 +26,7 @@ sources:
   - name: 'ft_mdb7_dbo'
     description:  export data from 3rd party for hotel and ticket in spain 
     database: stage-landing
+    tags: ['sales']
     tables:
       - name: dimgoldencustomer
         description: Customer Data copied from MDB  

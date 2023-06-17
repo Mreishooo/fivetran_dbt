@@ -2,19 +2,8 @@
 version: 2
 
 seeds:
-      - name: ga_hostnames
-        description: hostname for our ga data
-        columns:
-          - name: hostname
-            description: hostname wher ga data comes from
-            test:
-              - unique
-          - name: country
-            description: contry owned hostname 
-          - name: internal
-            description: boolean show if the host name is internal website or external 
-    
       - name: ga_page_groups
+        tags: ['ga']
         description: ga page groups 
         columns:
           - name: page_group
@@ -25,6 +14,7 @@ seeds:
             description: desc of the page group - if musical or informational page ot checkout  
     
       - name: ga_event_types
+        tags: ['ga']
         description: ga event types bases on our internal defintion  
         columns:
           - name: event_category
@@ -33,6 +23,7 @@ seeds:
             description: ga event types - as optin , ecommerce or newsletter 
 
       - name: dc_media_budget 
+        tags: ['marketing']
         description: digital commerce media budget  
         columns:
           - name: month
@@ -43,6 +34,7 @@ seeds:
             description: media_ udget
 
       - name: sales_age
+        tags: ['sales']
         description: ""
         columns:
           - name: dim_age_id
@@ -72,3 +64,9 @@ seeds:
           - name: age_bin_c_id
             description: ""
 
+      - name: sales_article_type
+        tags: ['sales']
+      - name: sales_country
+        tags: ['sales']
+      - name: sales_theatre
+        tags: ['sales']
